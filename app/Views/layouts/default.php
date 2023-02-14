@@ -13,7 +13,8 @@
    
 </head>
 <body>
-aiodufyad
+
+<?= $this->renderSection("content") ?>
 
 </body>
 </html>
