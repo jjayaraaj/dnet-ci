@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/Views/*.php",
@@ -7,7 +8,16 @@ module.exports = {
     "./app/Views/**/**/**/*.php",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#0E609B",
+        secondary: "FFC700",
+        content: "#414141",
+      },
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
+    },
   },
   plugins: [],
 };

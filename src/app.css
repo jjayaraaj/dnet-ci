@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-poppins text-base;
+}
+
+.content {
+  @apply font-poppins text-content;
+}
+
+.display-6 {
+  @apply content text-sm uppercase;
+}
+
+nav a {
+  @apply text-white text-base font-light;
+}
