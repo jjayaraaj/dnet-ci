@@ -9,7 +9,7 @@
                 <div class=" w-1/3"></div>
             <!--nav-->
                 <nav class="flex gap-x-6    ">
-                    <a href="#">Home</a>
+                    <a href="#">Homes</a>
                     <a href="#">Industry</a>
                     <a href="#">Solution</a>
                     <a href="#">Service</a>
@@ -21,6 +21,13 @@
 </a>
                 </nav>
             <!--nav/-->
+            </div>
+        </div>
+
+        <!-- inner banner -->
+        <div>
+            <div class="display-1">
+            Accelerate your business velocity with
             </div>
         </div>
 
