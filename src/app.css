@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply max-w-screen-2xl px-4 mx-auto;
+  }
+}
+
+.max-w-container {
+  @apply max-w-[85rem];
+}
+
 body {
   @apply font-opensans text-base;
 }
@@ -12,12 +22,16 @@ body {
   @apply font-poppins text-content;
 }
 
+.display-lg {
+  @apply text-[4.375rem] font-bold;
+}
+
 .display-1 {
-  @apply font-opensans text-display1;
+  @apply font-opensans text-display1 font-bold;
 }
 
 .display-2 {
-  @apply font-opensans text-4xl;
+  @apply font-opensans text-[2.5rem] font-bold leading-10;
 }
 
 .display-6 {
@@ -26,4 +40,17 @@ body {
 
 nav a {
   @apply text-white text-base font-light;
+}
+
+.heading-1 {
+  @apply text-3xl font-bold text-black leading-normal;
+}
+
+/* components */
+.btn {
+  @apply py-2 px-8 rounded-full;
+}
+
+.btn-primary {
+  @apply btn bg-primary text-white text-base font-bold;
 }
