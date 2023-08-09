@@ -141,16 +141,88 @@
             </div>
         </div>
 
-        <div class=" flex justify-between">
+        <div class=" flex justify-between items-center">
             <div class="w-1/2 text-xl">
                 Specifically designed and pre-configured to streamline Real Estate
                 business operations to achieve enhanced productivity
             </div>
-            <button class="btn btn-primary">Connect with Us</button>
+            <div><button class="btn btn-primary">Connect with Us</button></div>
         </div>
     </div>
 </div>
 
+<!-- idustry vertical -->
+<div class="flex">
+    <div class="w-1/2 bg-secondary py-16">
+        <div class="px-16">
+            <div class=" text-3xl font-bold">Industry Vertical solutions include</div>
+        </div>
+    </div>
+
+    <div class=" w-1/2 bg-primary py-16">
+        <div class="px-16 text-white space-y-8 w-4/5">
+            <div class="text-xl font-bold ">RealEstate</div>
+            <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
+            <button class="btn btn-yellow">Read More</button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- succsess stories -->
+<div class=" bg-blue-500">
+    <div class="max-w-container mx-auto">
+        <div class="flex justify-between p-16">
+            <div class=" space-y-10">
+                <div class="text-3xl font-bold">
+                    Success Stories
+                </div>
+                <div class=" space-y-1">
+                    <div class="display-2 text-primary">
+                        GRIDCo
+                    </div>
+                    <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
+                    <p>Electricity transmission company in Ghana</p>
+                </div>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+            <div class="">
+                <div class="h-60 w-60 bg-gray-200"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- testimonial -->
+<div class=" max-w-container mx-auto p-16">
+    <div class="text-3xl font-bold text-center">Client Testimonials</div>
+</div>
+
+<!-- Accreditation -->
+<div class=" max-w-container mx-auto p-16">
+    <div class="text-3xl font-bold text-center">Accreditation</div>
+</div>
+
+<!-- digital partner -->
+<div class=" flex bg-secondary">
+    <div class=" w-2/5 grow bg-gray-300 rounded-tr-3xl"></div>
+    <div class="p-16 w-[60%] space-y-8">
+        <div class=" text-3xl font-bold">Why choose Dynamic Netsoft as your digital partner?</div>
+        <div class="space-y-4">
+            <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
+
+            <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
+
+            <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
+
+            <p>So, what are you waiting for?</p>
+        </div>
+        <button class="btn btn-primary">
+            Reach Our Experts
+        </button>
+    </div>
+</div>
 
 
 <?= $this->endSection() ?>
