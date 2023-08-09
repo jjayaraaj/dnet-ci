@@ -15,7 +15,7 @@
 }
 
 body {
-  @apply font-opensans text-base;
+  @apply font-opensans  lg:text-base;
 }
 
 .content {
@@ -48,9 +48,27 @@ nav a {
 
 /* components */
 .btn {
-  @apply py-2 px-8 rounded-full;
+  @apply py-2 px-8 rounded-full text-base font-bold;
 }
 
 .btn-primary {
-  @apply btn bg-primary text-white text-base font-bold;
+  @apply btn bg-primary text-white;
+}
+
+.btn-yellow {
+  @apply btn bg-d-yellow text-black;
+}
+
+/* common element */
+
+.service {
+  @apply flex flex-col items-center justify-center gap-4;
+}
+
+.service .circle {
+  @apply w-[9.5rem] h-[9.5rem] rounded-full bg-primary;
+}
+
+.service .title {
+  @apply text-xl font-medium text-center;
 }

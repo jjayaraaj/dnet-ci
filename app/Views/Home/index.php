@@ -46,13 +46,46 @@
 
 <!-- services -->
 <div class="">
-    <div class=" h-52 max-w-container mx-auto">
+    <div class=" py-16 max-w-container mx-auto">
         <div class="grid grid-cols-5 gap-4">
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
-            <div>01</div>
+            <div class="service">
+                <div class="circle">
+
+                </div>
+                <div class="title">Industry<br>Pioneers</div>
+            </div>
+
+            <div class="service">
+                <div class="circle">
+
+                </div>
+                <div class="title">80+ <br> Customers
+                    Worldwide</div>
+            </div>
+
+            <div class="service">
+                <div class="circle">
+
+                </div>
+                <div class="title">6<br>
+                    ISV Solutions</div>
+            </div>
+
+            <div class="service">
+                <div class="circle">
+
+                </div>
+                <div class="title">10+<br>
+                    Industries</div>
+            </div>
+
+            <div class="service">
+                <div class="circle">
+
+                </div>
+                <div class="title">Worldwide<br>
+                    Operations</div>
+            </div>
 
 
         </div>
@@ -61,20 +94,63 @@
 </div>
 
 <!-- dynamics -->
-<div class=" bg-secondary py-8">
+<div class=" bg-secondary py-8 space-y-8">
     <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
 
-    <div class=" flex gap-16">
-        <div class=" w-1/2 bg-black h-52"></div>
-        <div class=" w-1/2 bg-primary h-52">
-            <div class=" w-3/4">
-                <div class=" text-white">
-                    Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers
+    <div class=" flex gap-16 items-center">
+        <div class=" w-1/2">
+            <div class=" relative -left-1/4">
+                <div class=" h-[36rem] w-[36rem] bg-primary rounded-full p-24">
+                    <div class=" rounded-full w-full h-full bg-white"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" w-1/2 bg-primary py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
+            <div class="">
+                <div class=" text-white space-y-6">
+
+                    <div>RealEstatePro</div>
+
+                    <div class=" space-y-4">
+                        <p> The one-stop flagship product for the entire Real Estate
+                            and Property Management sector</p>
+                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                    </div>
+
+                    <div class=" flex gap-6">
+                        <button class=" btn btn-yellow">Download Brochure</button>
+
+                        <button class=" btn btn-yellow">Read More</button>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </div>
 
 </div>
+
+<!-- redefine -->
+
+<div class=" bg-gray-100 ">
+    <div class="py-16 max-w-container mx-auto space-y-24">
+        <div class=" flex flex-col gap-2">
+            <div class=" text-3xl font-bold">Redefine excellence with Dynamic Netsoft,</div>
+            <div class="display-2"><span class="font-medium">a worldwide</span> Microsoft Dynamics 365 - ISV Partner
+            </div>
+        </div>
+
+        <div class=" flex justify-between">
+            <div class="w-1/2 text-xl">
+                Specifically designed and pre-configured to streamline Real Estate
+                business operations to achieve enhanced productivity
+            </div>
+            <button class="btn btn-primary">Connect with Us</button>
+        </div>
+    </div>
+</div>
+
+
 
 <?= $this->endSection() ?>
