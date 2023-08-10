@@ -61,14 +61,38 @@ nav a {
 
 /* common element */
 
+.menu {
+  @apply ml-auto hidden lg:flex lg:items-center gap-8;
+}
+
+.menu a {
+  @apply text-lg text-black font-semibold inline-flex items-center justify-center gap-2;
+}
+
 .service {
   @apply flex flex-col items-center justify-center gap-4;
 }
 
 .service .circle {
-  @apply w-[9.5rem] h-[9.5rem] rounded-full bg-primary;
+  @apply w-[9.5rem] h-[9.5rem] rounded-full bg-primary  flex items-center justify-center;
 }
 
 .service .title {
   @apply text-xl font-medium text-center;
+}
+
+.faq {
+  @apply flex items-center justify-between py-6;
+}
+
+.faq .question {
+  @apply text-xl font-bold;
+}
+
+.faq .icon {
+  @apply flex items-center gap-4;
+}
+
+.faq .icon .q {
+  @apply py-0.5 px-2 text-xl font-bold bg-primary text-white;
 }
