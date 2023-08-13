@@ -762,26 +762,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\/images\/home-banner\.svg\)\]{
-  background-image: url(/images/home-banner.svg);
-}
-.bg-\[url\(\/images\/redefine-banner\.svg\)\]{
-  background-image: url(/images/redefine-banner.svg);
-}
-.bg-\[url\(\/images\/success-stories-bg\.svg\)\]{
-  background-image: url(/images/success-stories-bg.svg);
-}
-.bg-\[url\(\/images\/digital-banner\.svg\)\]{
-  background-image: url(/images/digital-banner.svg);
-}
-.bg-\[url\(\/images\/form-bg\.svg\)\]{
-  background-image: url(/images/form-bg.svg);
-}
 .bg-\[url\(\/images\/form-bg-2\.svg\)\]{
   background-image: url(/images/form-bg-2.svg);
 }
-.bg-\[url\(\/images\/footer-bg\.svg\)\]{
-  background-image: url(/images/footer-bg.svg);
+.bg-\[url\(http\:\/\/localhost\:8080\/images\/home-banner\.svg\)\]{
+  background-image: url(http://localhost:8080/images/home-banner.svg);
 }
 .bg-cover{
   background-size: cover;
@@ -1066,6 +1051,8 @@ nav a{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+/* background */
 
 @media (min-width: 640px){
 

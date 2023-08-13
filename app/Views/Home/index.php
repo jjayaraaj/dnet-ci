@@ -1,21 +1,23 @@
 <?= $this->extend("layouts/default") ?>
 
+<?= $this->section("title") ?> Home <?= $this->endSection("title") ?>
+
 <?= $this->section("content") ?>
 
 <!--banner-->
 
 
-<header class="relative z-50 flex-none text-sm font-semibold leading-6 text-slate-900 bg-[url(/images/home-banner.svg)] bg-cover">
+<header class="relative z-50 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
     <div class="max-w-container mx-auto h-full ">
         <nav aria-label="Global" class="mx-auto  px-4 sm:px-6 lg:px-8 ">
-            <div class="relative flex items-center py-[2.125rem]"><img src="/images/dnet-logo.svg" alt="">
+            <div class="relative flex items-center py-[2.125rem]"><img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
                 <div class="menu">
                     <a href="/components">Home
 
                     </a>
-                    <a href="#">Industries <img src="/images/down-arow.svg" alt=""></a>
-                    <a href="#">Solutions <img src="/images/down-arow.svg" alt=""></a>
-                    <a href="#">Services <img src="/images/down-arow.svg" alt=""></a>
+                    <a href="#">Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+                    <a href="#">Solutions <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+                    <a href="#">Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
                     <a href="#">Blog</a>
                     <a href="#">Contact us</a>
 
@@ -60,14 +62,14 @@
         <div class="grid grid-cols-5 gap-4">
             <div class="service">
                 <div class="circle">
-                    <img src="images/industry-pioneers.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
                 </div>
                 <div class="title">Industry<br>Pioneers</div>
             </div>
 
             <div class="service">
                 <div class="circle">
-                    <img src="images/80-customers-worldwide.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/80-customers-worldwide.svg" alt="">
                 </div>
                 <div class="title">80+ <br> Customers
                     Worldwide</div>
@@ -75,7 +77,7 @@
 
             <div class="service">
                 <div class="circle">
-                    <img src="images/6-ISV-solutions.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/6-ISV-solutions.svg" alt="">
                 </div>
                 <div class="title">6<br>
                     ISV Solutions</div>
@@ -83,7 +85,7 @@
 
             <div class="service">
                 <div class="circle">
-                    <img src="images/10-Industries.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/10-Industries.svg" alt="">
                 </div>
                 <div class="title">10+<br>
                     Industries</div>
@@ -91,7 +93,7 @@
 
             <div class="service">
                 <div class="circle">
-                    <img src="images/worldwide-operations.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/worldwide-operations.svg" alt="">
                 </div>
                 <div class="title">Worldwide<br>
                     Operations</div>
@@ -143,7 +145,7 @@
 
 <!-- redefine -->
 
-<div class="bg-[url(/images/redefine-banner.svg)] bg-cover ">
+<div class="bg-redefine bg-cover ">
     <div class="py-16 max-w-container mx-auto space-y-24">
         <div class=" flex flex-col gap-2">
             <div class=" text-3xl font-bold">Redefine excellence with Dynamic Netsoft,</div>
@@ -181,7 +183,7 @@
 
 
 <!-- succsess stories -->
-<div class=" bg-[url(/images/success-stories-bg.svg)] bg-cover ">
+<div class=" bg-success bg-cover ">
     <div class="max-w-container mx-auto">
         <div class="flex justify-between p-16">
             <div class=" space-y-10">
@@ -216,7 +218,7 @@
 
 <!-- digital partner -->
 <div class=" flex bg-secondary">
-    <div class=" w-2/5 grow  bg-[url(/images/digital-banner.svg)] bg-cover rounded-tr-3xl"></div>
+    <div class=" w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
     <div class="p-16 w-[60%] space-y-8">
         <div class=" text-3xl font-bold">Why choose Dynamic Netsoft as your digital partner?</div>
         <div class="space-y-4">
@@ -305,7 +307,7 @@
 </div>
 <div class=" h-24"></div>
 <!-- form -->
-<div class="h-[620px] relative bg-[url(/images/form-bg.svg)] bg-cover">
+<div class="h-[620px] relative bg-form bg-cover">
     <div class=" max-w-container mx-auto">
         <div class="flex justify-end">
             <div class=" -mt-16 w-[650px] h-[750px] bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl"></div>
@@ -314,7 +316,7 @@
 </div>
 
 <!-- footer -->
-<div class="bg-primary bg-[url(/images/footer-bg.svg)] bg-cover h-48">
+<div class="bg-primary bg-footer bg-cover h-48">
     <div class="max-w-container mx-auto"></div>
 </div>
 
