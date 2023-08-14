@@ -110,11 +110,14 @@
     <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
 
     <div class=" flex gap-16 items-center">
-        <div class=" w-1/2">
-            <div class=" relative -left-1/4">
+        <div class=" w-2/3">
+            <div class=" relative -left-[15%]">
+                <div class=" absolute py-9 bg-primary  right-0 w-1/2"> ghasd</div>
                 <div class=" h-[36rem] w-[36rem] bg-primary rounded-full p-24">
                     <div class=" rounded-full w-full h-full bg-white"></div>
                 </div>
+
+
             </div>
         </div>
         <div class=" w-1/2 bg-primary py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
@@ -164,14 +167,39 @@
 </div>
 
 <!-- idustry vertical -->
-<div class="flex">
-    <div class="w-1/2 bg-secondary py-16">
+<div class="flex items-center bg-primary">
+    <div class="w-2/3 bg-secondary py-16 h-full">
         <div class="px-16">
+
             <div class=" text-3xl font-bold">Industry Vertical solutions include</div>
+
+            <div class="flex gap-x-6 items-center w-[110%] solution relative z-40 py-16">
+                <div class="default">
+                    <div class=" image "></div>
+                    <div class="  title ">RealEstate</div>
+                </div>
+
+                <div class="active">
+                    <div class="image"></div>
+                    <div class=" title">Construction</div>
+                </div>
+
+                <div class="default">
+                    <div class=" image"></div>
+                    <div class=" title">Retail</div>
+                </div>
+
+                <div class="default">
+                    <div class=" image"></div>
+                    <div class=" title  ">Finance &
+                        Investment</div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class=" w-1/2 bg-primary py-16">
+    <div class=" w-1/2 bg-primary py-16 h-full">
         <div class="px-16 text-white space-y-8 w-4/5">
             <div class="text-xl font-bold ">RealEstate</div>
             <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
