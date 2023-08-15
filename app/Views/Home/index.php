@@ -112,7 +112,14 @@
     <div class=" flex gap-16 items-center">
         <div class=" w-2/3">
             <div class=" relative -left-[15%]">
-                <div class=" absolute py-9 bg-primary  right-0 w-1/2"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  right-0 w-1/2 rounded-full"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  -right-[10%] top-[15%] w-1/2 rounded-full"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  -right-[15%] top-[30%] w-1/2 rounded-full"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  -right-[15%] top-[45%] w-1/2 rounded-full"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  -right-[10%] top-[60%] w-1/2 rounded-full"> ghasd</div>
+                <div class=" absolute py-6 bg-primary  right-0 w-1/2 top-[75%] rounded-full"> ghasd</div>
+
+
                 <div class=" h-[36rem] w-[36rem] bg-primary rounded-full p-24">
                     <div class=" rounded-full w-full h-full bg-white"></div>
                 </div>
