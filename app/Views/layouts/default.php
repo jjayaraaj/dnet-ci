@@ -102,6 +102,8 @@
     ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+
 </body>
 
 </html>

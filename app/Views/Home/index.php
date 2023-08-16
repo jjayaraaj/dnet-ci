@@ -112,7 +112,7 @@
     <div class=" flex gap-16 items-center">
         <div class=" w-2/3 flex ">
             <div class=" relative  ">
-                <div class=" h-[30rem] w-[30rem] bg-primary rounded-full p-14">
+                <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
                     <div class=" rounded-full w-full h-full bg-white"></div>
                 </div>
 
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div class=" w-1/2 bg-primary py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
+        <div class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
             <div class="">
                 <div class=" text-white space-y-6">
 
@@ -196,7 +196,7 @@
 </div>
 
 <!-- idustry vertical -->
-<div class="flex items-center bg-primary">
+<div class="flex items-center bg-primary-gradient">
     <div class="w-2/3 bg-secondary py-16 h-full">
         <div class="px-16">
 
@@ -228,7 +228,7 @@
         </div>
     </div>
 
-    <div class=" w-1/2 bg-primary py-16 h-full">
+    <div class=" w-1/2  py-16 h-full">
         <div class="px-16 text-white space-y-8 w-4/5">
             <div class="text-xl font-bold ">RealEstate</div>
             <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
@@ -309,18 +309,32 @@
 <div class="max-w-container mx-auto py-16">
     <div class=" space-y-8 max-w-4xl mx-auto">
         <div class=" text-3xl font-bold text-center">Frequently Asked Questions</div>
-        <div class=" flex flex-col divide-y ">
-            <div class="faq">
-                <div class="icon ">
-                    <div class="q">Q</div>
+        <div class=" flex flex-col divide-y " x-data="{selected:1}">
+            <div>
+                <div class="faq" @click="selected !== 1 ? selected = 1 : selected = null">
+                    <div class="icon ">
+                        <div class="q">Q</div>
 
-                    <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+                        <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+
                 </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-
+                <div class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                    You should choose Microsoft Dynamics 365 Partners due to the following reasons;
+                    · Leader in ERP Software solutions
+                    · Benchmark features
+                    · Cloud-based products
+                    · Centralized platform
+                    · Business Analytics
+                    · Sure-step implementation methodology
+                    · Advanced data security
+                    · Real-time business insights
+                    · World-class support
+                </div>
             </div>
 
             <div class="faq">
@@ -411,8 +425,61 @@
 </div>
 
 <!-- footer -->
-<div class="bg-primary bg-footer bg-cover h-48">
-    <div class="max-w-container mx-auto"></div>
+<div class="bg-primary bg-footer bg-cover ">
+    <div class="max-w-container mx-auto py-16 space-y-6">
+        <div class=" flex justify-between w-full ">
+            <div class=" w-1/3">
+                <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
+            </div>
+            <div class="flex-1 flex justify-evenly">
+                <div class="">
+                    <div class="text-xl font-bold text-white">COMPANY OVERVIEW</div>
+                    <div class=" flex flex-col footer-link">
+                        <a>About us</a>
+                        <a>Contact us</a>
+                        <a>Blog</a>
+                        <a>Become a partner</a>
+                        <a>Careers</a>
+                        <a>Privacy policy</a>
+                        <a>Events</a>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="text-xl font-bold text-white">SOLUTIONS</div>
+                    <div class=" flex flex-col footer-link">
+                        <a>RealEstatePro</a>
+                        <a>Contract Management</a>
+                        <a> Bid Management</a>
+                        <a> Treasury Management</a>
+                        <a>Investment Portfolio Management</a>
+                        <a>AXOnePay</a>
+                        <a>Annata 365</a>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="text-xl font-bold text-white">SERVICES</div>
+                    <div class=" flex flex-col footer-link">
+                        <a>ERP Implementation</a>
+                        <a> Upgrade</a>
+                        <a>Support</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+            <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
+            <div class=" flex flex-col">
+                <div class="text-xl text-white font-bold">CONNECT WITH US</div>
+                <div class="flex">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?= $this->endSection() ?>
