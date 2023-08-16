@@ -110,21 +110,43 @@
     <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
 
     <div class=" flex gap-16 items-center">
-        <div class=" w-2/3">
-            <div class=" relative -left-[15%]">
-                <div class=" absolute py-6 bg-primary  right-0 w-1/2 rounded-full"> ghasd</div>
-                <div class=" absolute py-6 bg-primary  -right-[10%] top-[15%] w-1/2 rounded-full"> ghasd</div>
-                <div class=" absolute py-6 bg-primary  -right-[15%] top-[30%] w-1/2 rounded-full"> ghasd</div>
-                <div class=" absolute py-6 bg-primary  -right-[15%] top-[45%] w-1/2 rounded-full"> ghasd</div>
-                <div class=" absolute py-6 bg-primary  -right-[10%] top-[60%] w-1/2 rounded-full"> ghasd</div>
-                <div class=" absolute py-6 bg-primary  right-0 w-1/2 top-[75%] rounded-full"> ghasd</div>
-
-
-                <div class=" h-[36rem] w-[36rem] bg-primary rounded-full p-24">
+        <div class=" w-2/3 flex ">
+            <div class=" relative  ">
+                <div class=" h-[30rem] w-[30rem] bg-primary rounded-full p-14">
                     <div class=" rounded-full w-full h-full bg-white"></div>
                 </div>
 
 
+            </div>
+
+            <div class="relative flex-1 flex flex-col space-y-5 -left-14 ">
+                <div class=" dynamics-strip active  right-0 ">
+                    <div class="circle"></div>
+                    <div class="title">RealEstatePro</div>
+                </div>
+                <div class=" dynamics-strip default  ">
+                    <div class="circle"></div>
+                    <div class="title">RealEstatePro</div>
+                </div>
+                <div class=" dynamics-strip default  ">
+                    <div class="circle"></div>
+                    <div class="title">Contract Management</div>
+                </div>
+                <div class=" dynamics-strip default  ">
+                    <div class="circle"></div>
+                    <div class="title">Bid Management</div>
+                </div>
+                <div class=" dynamics-strip default">
+                    <div class="circle"></div>
+                    <div class="title">Treasury Management</div>
+                </div>
+                <div class="dynamics-strip default  ">
+                    <div class="circle"></div>
+                    <div>
+                        <div class="title">Investment Portfolio
+                            Management</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class=" w-1/2 bg-primary py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
@@ -342,10 +364,48 @@
 </div>
 <div class=" h-24"></div>
 <!-- form -->
-<div class="h-[620px] relative bg-form bg-cover">
-    <div class=" max-w-container mx-auto">
-        <div class="flex justify-end">
-            <div class=" -mt-16 w-[650px] h-[750px] bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl"></div>
+<div class=" relative bg-form bg-cover">
+    <div class=" max-w-container mx-auto h-full">
+        <div class="flex justify-end h-[115%]">
+            <div class=" -mt-16 w-2/5 h-full bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl p-10">
+                <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
+                <div class="h-5"></div>
+                <form class=" space-y-5">
+                    <div>
+                        <label for="username" class="sr-only">Name:</label>
+                        <input type="text" id="username" name="username" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">Company Name:</label>
+                        <input type="text" id="username" name="username" placeholder="Company Name" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">Designation:</label>
+                        <input type="text" id="username" name="username" placeholder="Designation" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">E-Mail ID:</label>
+                        <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">Phone Number:</label>
+                        <input type="text" id="username" name="username" placeholder="Phone Number" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">Which solution do you want?</label>
+                        <input type="text" id="username" name="username" placeholder="Which solution do you want?" required>
+                    </div>
+                    <div>
+                        <label for="username" class="sr-only">Requirment</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+
+                    <div class=" text-center">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 </div>

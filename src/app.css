@@ -116,4 +116,34 @@ nav a {
 .solution .active .title {
   @apply text-white w-full;
 }
+
+.dynamics-strip {
+  @apply rounded-full flex gap-x-4 items-center;
+}
+
+.dynamics-strip.active {
+  @apply bg-primary text-white;
+}
+
+.dynamics-strip.default {
+  @apply bg-secondary-dark text-primary;
+}
+
+.dynamics-strip .circle {
+  @apply rounded-full h-16 w-16 bg-white;
+}
+
+.dynamics-strip .title {
+  @apply text-base  font-bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  @apply bg-white text-base px-6 py-4 h-12 w-full rounded-full;
+}
+
+textarea {
+  @apply h-full rounded-3xl;
+}
 /* background */
