@@ -118,11 +118,12 @@ nav a {
 }
 
 .dynamics-strip {
-  @apply rounded-full flex gap-x-4 items-center;
+  @apply rounded-full flex gap-x-4 items-center hover:cursor-pointer;
 }
 
-.dynamics-strip.active {
-  @apply bg-primary-gradient text-white;
+.dynamics-strip.active,
+.dynamics-strip:hover {
+  @apply bg-primary-gradient !text-white;
 }
 
 .dynamics-strip.default {
@@ -130,7 +131,7 @@ nav a {
 }
 
 .dynamics-strip .circle {
-  @apply rounded-full h-16 w-16 bg-white;
+  @apply rounded-full h-16 w-16 bg-white flex items-center justify-center;
 }
 
 .dynamics-strip .title {
@@ -149,6 +150,10 @@ textarea {
 
 .footer-link {
   @apply text-white text-base font-normal space-y-1;
+}
+
+[x-cloak] {
+  display: none !important;
 }
 /* background */
 .bg-primary-gradient {
