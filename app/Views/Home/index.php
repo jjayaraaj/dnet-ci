@@ -8,7 +8,7 @@
 
 
 <header class="relative z-50 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
-    <div class="max-w-container mx-auto h-full ">
+    <div class="max-w-container mx-auto h-full big-screen">
         <nav aria-label="Global" class="mx-auto  px-4 sm:px-6 lg:px-8 ">
             <div class="relative flex items-center py-[2.125rem]"><img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
                 <div class="menu">
@@ -36,7 +36,7 @@
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container px-4 sm:px-6 lg:px-8 h-full flex items-center ">
+            <div class=" mx-auto max-w-container big-screen px-4 sm:px-6 lg:px-8 h-full flex items-center ">
                 <div class=" space-y-8">
                     <div class="display-2 !leading-[4rem] max-w-5xl flex-1 ">
                         Accelerate your business velocity with <br><span class="display-lg text-primary">Dynamic Netsoft</span>, a Microsoft
@@ -58,8 +58,8 @@
 
 <!-- services -->
 <div class="">
-    <div class=" py-16 max-w-container mx-auto">
-        <div class="grid grid-cols-5 gap-4">
+    <div class=" py-16 max-w-container mx-auto big-screen">
+        <div class=" grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4">
             <div class="service">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
@@ -106,224 +106,225 @@
 </div>
 
 <!-- dynamics -->
-<div class=" bg-secondary py-8 space-y-8" x-data="{solution:1}">
-    <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
+<div class=" hidden lg:block bg-secondary py-8    mx-auto" x-data="{solution:1}">
+    <div class="big-screen space-y-8 ">
+        <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
 
-    <div class=" flex gap-16 items-center">
-        <div class=" w-2/3 flex ">
-            <div class=" relative  ">
-                <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
-                    <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">
-                        <img src="<?php echo base_url() ?>/images/RealEstatePro-solution.svg" class=" object-cover rounded-full" x-show="solution===1" alt="">
-                        <img src="<?php echo base_url() ?>/images/contract-management-solution.svg" class=" object-cover rounded-full" x-show="solution===2" alt="">
-                        <img src="<?php echo base_url() ?>/images/bid-management-solution.svg" class=" object-cover rounded-full" x-show="solution===3" alt="">
-                        <img src="<?php echo base_url() ?>/images/treasury-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===4">
-                        <img src="<?php echo base_url() ?>/images/ip-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===5">
-                        <img src="<?php echo base_url() ?>/images/payroll-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===6">
+        <div class=" flex gap-16 items-center">
+            <div class=" w-2/3 flex ">
+                <div class=" relative  ">
+                    <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
+                        <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">
+                            <img src="<?php echo base_url() ?>/images/RealEstatePro-solution.svg" class=" object-cover rounded-full" x-show="solution===1" alt="">
+                            <img src="<?php echo base_url() ?>/images/contract-management-solution.svg" class=" object-cover rounded-full" x-show="solution===2" alt="">
+                            <img src="<?php echo base_url() ?>/images/bid-management-solution.svg" class=" object-cover rounded-full" x-show="solution===3" alt="">
+                            <img src="<?php echo base_url() ?>/images/treasury-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===4">
+                            <img src="<?php echo base_url() ?>/images/ip-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===5">
+                            <img src="<?php echo base_url() ?>/images/payroll-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===6">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="relative flex-1 flex flex-col space-y-5 -left-14 ">
+                    <div class=" dynamics-strip " :class="solution === 1 ? 'active' : 'default'" @click="solution = 1">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/RealEstatePro.svg" alt="">
+                        </div>
+                        <div class="title">RealEstatePro</div>
+                    </div>
+
+                    <div class=" dynamics-strip" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/Contract-Management.svg" alt="">
+                        </div>
+                        <div class="title">Contract Management</div>
+                    </div>
+                    <div class=" dynamics-strip" :class="solution === 3 ? 'active' : 'default'" @click="solution = 3">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/bid-management.svg" alt="">
+                        </div>
+                        <div class="title">Bid Management</div>
+                    </div>
+                    <div class=" dynamics-strip" :class="solution === 4 ? 'active' : 'default'" @click="solution = 4">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/Treasury-Management.svg" alt="">
+                        </div>
+                        <div class="title">Treasury Management</div>
+                    </div>
+                    <div class="dynamics-strip" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/investment-solution.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="title">Investment Portfolio
+                                Management</div>
+                        </div>
+                    </div>
+
+                    <div class=" dynamics-strip" :class="solution === 6 ? 'active' : 'default'" @click="solution = 6">
+                        <div class="circle">
+                            <img src="<?php echo base_url() ?>/images/icons/AXOnePay.svg" alt="">
+                        </div>
+                        <div class="title">AxOnePay</div>
+                    </div>
+                </div>
+            </div>
+            <div x-cloak class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
+                <!-- realestatepro -->
+                <div x-show="solution === 1">
+                    <div class=" text-white space-y-6">
+
+                        <div>RealEstatePro</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- contract -->
+                <div x-show="solution === 2">
+                    <div class=" text-white space-y-6">
+
+                        <div>Contract Management</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- BID -->
+                <div x-show="solution === 3">
+                    <div class=" text-white space-y-6">
+
+                        <div>Bid Management</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Treasury -->
+                <div x-show="solution === 4">
+                    <div class=" text-white space-y-6">
+
+                        <div>Treasury Management</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Investment -->
+                <div x-show="solution === 5">
+                    <div class=" text-white space-y-6">
+
+                        <div>Investment Portfolio Management</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Axopnepay -->
+                <div x-show="solution === 6">
+                    <div class=" text-white space-y-6">
+
+                        <div>AxOnePay</div>
+
+                        <div class=" space-y-4">
+                            <p> The one-stop flagship product for the entire Real Estate
+                                and Property Management sector</p>
+                            <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
+                        </div>
+
+                        <div class=" flex gap-6">
+                            <button class=" btn btn-yellow">Download Brochure</button>
+
+                            <button class=" btn btn-yellow">Read More</button>
+                        </div>
+
+
                     </div>
                 </div>
 
 
             </div>
-
-            <div class="relative flex-1 flex flex-col space-y-5 -left-14 ">
-                <div class=" dynamics-strip " :class="solution === 1 ? 'active' : 'default'" @click="solution = 1">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/RealEstatePro.svg" alt="">
-                    </div>
-                    <div class="title">RealEstatePro</div>
-                </div>
-
-                <div class=" dynamics-strip" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/Contract-Management.svg" alt="">
-                    </div>
-                    <div class="title">Contract Management</div>
-                </div>
-                <div class=" dynamics-strip" :class="solution === 3 ? 'active' : 'default'" @click="solution = 3">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/bid-management.svg" alt="">
-                    </div>
-                    <div class="title">Bid Management</div>
-                </div>
-                <div class=" dynamics-strip" :class="solution === 4 ? 'active' : 'default'" @click="solution = 4">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/Treasury-Management.svg" alt="">
-                    </div>
-                    <div class="title">Treasury Management</div>
-                </div>
-                <div class="dynamics-strip" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/investment-solution.svg" alt="">
-                    </div>
-                    <div>
-                        <div class="title">Investment Portfolio
-                            Management</div>
-                    </div>
-                </div>
-
-                <div class=" dynamics-strip" :class="solution === 6 ? 'active' : 'default'" @click="solution = 6">
-                    <div class="circle">
-                        <img src="<?php echo base_url() ?>/images/icons/AXOnePay.svg" alt="">
-                    </div>
-                    <div class="title">AxOnePay</div>
-                </div>
-            </div>
-        </div>
-        <div x-cloak class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
-            <!-- realestatepro -->
-            <div x-show="solution === 1">
-                <div class=" text-white space-y-6">
-
-                    <div>RealEstatePro</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- contract -->
-            <div x-show="solution === 2">
-                <div class=" text-white space-y-6">
-
-                    <div>Contract Management</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <!-- BID -->
-            <div x-show="solution === 3">
-                <div class=" text-white space-y-6">
-
-                    <div>Bid Management</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- Treasury -->
-            <div x-show="solution === 4">
-                <div class=" text-white space-y-6">
-
-                    <div>Treasury Management</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- Investment -->
-            <div x-show="solution === 5">
-                <div class=" text-white space-y-6">
-
-                    <div>Investment Portfolio Management</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- Axopnepay -->
-            <div x-show="solution === 6">
-                <div class=" text-white space-y-6">
-
-                    <div>AxOnePay</div>
-
-                    <div class=" space-y-4">
-                        <p> The one-stop flagship product for the entire Real Estate
-                            and Property Management sector</p>
-                        <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
-                    </div>
-
-                    <div class=" flex gap-6">
-                        <button class=" btn btn-yellow">Download Brochure</button>
-
-                        <button class=" btn btn-yellow">Read More</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
         </div>
     </div>
-
 </div>
 
 <!-- redefine -->
 
 <div class="bg-redefine bg-cover ">
-    <div class="py-16 max-w-container mx-auto space-y-24">
-        <div class=" flex flex-col gap-2">
+    <div class="py-16 max-w-container big-screen space-y-24">
+        <div class=" flex flex-col gap-2 text-center lg:text-left">
             <div class=" text-3xl font-bold">Redefine excellence with Dynamic Netsoft,</div>
             <div class="display-2"><span class="font-medium">a worldwide</span> Microsoft Dynamics 365 - ISV Partner
             </div>
         </div>
 
-        <div class=" flex justify-between items-center">
+        <div class=" flex flex-col lg:flex-row justify-between items-center">
             <div class="w-1/2 text-xl">
                 Specifically designed and pre-configured to streamline Real Estate
                 business operations to achieve enhanced productivity
@@ -334,29 +335,29 @@
 </div>
 
 <!-- idustry vertical -->
-<div class="flex items-center bg-primary-gradient">
-    <div class="w-2/3 bg-secondary py-16 h-full">
+<div class="flex items-center bg-primary-gradient big-screen tv:bg-secondary" x-data="{vertical: 1}">
+    <div class="w-2/3 bg-secondary py-16 h-full hidden lg:block ">
         <div class="px-16">
 
             <div class=" text-3xl font-bold">Industry Vertical solutions include</div>
 
-            <div class="flex gap-x-6 items-center w-[110%] solution relative z-40 py-16">
-                <div class="default">
+            <div class="solution">
+                <div :class="vertical === 1 ? 'active' : 'default'" @click=" vertical = 1">
                     <div class=" image "></div>
                     <div class="  title ">RealEstate</div>
                 </div>
 
-                <div class="active">
+                <div :class="vertical === 2 ? 'active' : 'default'" @click=" vertical = 2">
                     <div class="image"></div>
                     <div class=" title">Construction</div>
                 </div>
 
-                <div class="default">
+                <div :class="vertical === 3 ? 'active' : 'default'" @click=" vertical = 3">
                     <div class=" image"></div>
                     <div class=" title">Retail</div>
                 </div>
 
-                <div class="default">
+                <div :class="vertical === 4 ? 'active' : 'default'" @click=" vertical = 4">
                     <div class=" image"></div>
                     <div class=" title  ">Finance &
                         Investment</div>
@@ -366,11 +367,38 @@
         </div>
     </div>
 
-    <div class=" w-1/2  py-16 h-full">
-        <div class="px-16 text-white space-y-8 w-4/5">
-            <div class="text-xl font-bold ">RealEstate</div>
-            <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-            <button class="btn btn-yellow">Read More</button>
+    <div class=" w-full lg:w-1/2  py-16 h-full">
+        <div class="px-16 text-white  w-4/5">
+
+            <!-- realestate -->
+            <div x-show="vertical === 1" class="space-y-8">
+                <div class="text-xl font-bold ">RealEstate</div>
+                <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
+                <button class="btn btn-yellow">Read More</button>
+            </div>
+
+            <!-- Construction -->
+            <div x-show="vertical === 2" class="space-y-8">
+                <div class="text-xl font-bold ">Construction</div>
+                <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
+                <button class="btn btn-yellow">Read More</button>
+            </div>
+
+            <!-- retail -->
+            <div x-show="vertical === 3" class="space-y-8">
+                <div class="text-xl font-bold ">Retail</div>
+                <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
+                <button class="btn btn-yellow">Read More</button>
+            </div>
+
+            <!-- Finance -->
+            <div x-show="vertical === 4" class="space-y-8">
+                <div class="text-xl font-bold ">Finance & Investment</div>
+                <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
+                <button class="btn btn-yellow">Read More</button>
+            </div>
+
+
         </div>
 
     </div>
@@ -380,7 +408,7 @@
 <!-- succsess stories -->
 <div class=" bg-success bg-cover ">
     <div class="max-w-container mx-auto">
-        <div class="flex justify-between p-16">
+        <div class="flex flex-col lg:flex-row justify-between p-16">
             <div class=" space-y-10">
                 <div class="text-3xl font-bold">
                     Success Stories
@@ -413,29 +441,32 @@
 
 <!-- digital partner -->
 <div class=" flex bg-secondary">
-    <div class=" w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
-    <div class="p-16 w-[60%] space-y-8">
-        <div class=" text-3xl font-bold">Why choose Dynamic Netsoft as your digital partner?</div>
-        <div class="space-y-4">
-            <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
+    <div class="flex  big-screen">
+        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
+        <div class="p-16 w-full lg:w-[60%] space-y-8">
+            <div class=" text-3xl font-bold">Why choose Dynamic Netsoft as your digital partner?</div>
+            <div class="space-y-4">
+                <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
 
-            <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
+                <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
 
-            <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
+                <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
 
-            <p>So, what are you waiting for?</p>
+                <p>So, what are you waiting for?</p>
+            </div>
+            <button class="btn btn-primary">
+                Reach Our Experts
+            </button>
         </div>
-        <button class="btn btn-primary">
-            Reach Our Experts
-        </button>
     </div>
+
 </div>
 
 <!-- blogs -->
 <div class="max-w-container mx-auto py-16">
     <div class=" space-y-8">
         <div class=" text-3xl font-bold text-center">Recent Blog</div>
-        <div class=" grid grid-cols-3 gap-8">
+        <div class=" grid grid-cols-3 gap-8 hidden lg:block">
             <div class=" bg-gray-200 h-60"></div>
             <div class=" bg-gray-200 h-60"></div>
             <div class=" bg-gray-200 h-60"></div>
@@ -519,7 +550,7 @@
 <div class=" relative bg-form bg-cover">
     <div class=" max-w-container mx-auto h-full">
         <div class="flex justify-end h-[115%]">
-            <div class=" -mt-16 w-2/5 h-full bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl p-10">
+            <div class=" -mt-16 w-full lg:w-2/5 h-full bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl p-10">
                 <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
                 <div class="h-5"></div>
                 <form class=" space-y-5">
@@ -541,7 +572,7 @@
                     </div>
                     <div>
                         <label for="username" class="sr-only">Phone Number:</label>
-                        <input type="text" id="username" name="username" placeholder="Phone Number" required>
+                        <input type="text" id="phone" name="username" placeholder="Phone Number" required>
                     </div>
                     <div>
                         <label for="username" class="sr-only">Which solution do you want?</label>
@@ -565,7 +596,7 @@
 <!-- footer -->
 <div class="bg-primary bg-footer bg-cover ">
     <div class="max-w-container mx-auto py-16 space-y-6">
-        <div class=" flex justify-between w-full ">
+        <div class=" flex justify-between w-full hidden lg:block ">
             <div class=" w-1/3">
                 <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
             </div>
@@ -608,7 +639,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
             <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
             <div class=" flex flex-col">
                 <div class="text-xl text-white font-bold">CONNECT WITH US</div>

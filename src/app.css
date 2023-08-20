@@ -11,7 +11,11 @@
 }
 
 .max-w-container {
-  @apply max-w-[85rem];
+  @apply w-full lg:w-[85rem] mx-auto;
+}
+
+.big-screen {
+  @apply tv:w-[100rem] mx-auto;
 }
 
 body {
@@ -70,11 +74,11 @@ nav a {
 }
 
 .service {
-  @apply flex flex-col items-center justify-center gap-4;
+  @apply flex flex-col items-center justify-center gap-2 lg:gap-4;
 }
 
 .service .circle {
-  @apply w-[9.5rem] h-[9.5rem] rounded-full bg-primary-gradient  flex items-center justify-center;
+  @apply w-32 h-32 lg:w-[9.5rem] lg:h-[9.5rem] rounded-full bg-primary-gradient  flex items-center justify-center;
 }
 
 .service .title {
@@ -97,8 +101,16 @@ nav a {
   @apply py-0.5 px-2 text-xl font-bold bg-primary text-white;
 }
 
+.solution {
+  @apply flex gap-x-6 items-center w-[110%] relative z-40 py-16;
+}
+
 .solution .default {
   @apply h-48  w-1/4 bg-blue-50 shadow-blue-100 shadow-xl rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
+}
+
+.solution .default:hover {
+  @apply bg-primary cursor-pointer text-white;
 }
 
 .solution .active {
@@ -154,6 +166,14 @@ textarea {
 
 [x-cloak] {
   display: none !important;
+}
+
+.iti {
+  @apply w-full;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 /* background */
 .bg-primary-gradient {

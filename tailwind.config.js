@@ -29,6 +29,9 @@ module.exports = {
           },
         ],
       },
+      screens: {
+        tv: "1920px",
+      },
     },
   },
   plugins: [],
