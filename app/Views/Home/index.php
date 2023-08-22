@@ -343,22 +343,24 @@
 
             <div class="solution">
                 <div :class="vertical === 1 ? 'active' : 'default'" @click=" vertical = 1">
-                    <div class=" image "></div>
+                    <div class=" image ">
+                        <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                    </div>
                     <div class="  title ">RealEstate</div>
                 </div>
 
                 <div :class="vertical === 2 ? 'active' : 'default'" @click=" vertical = 2">
-                    <div class="image"></div>
+                    <div class=" image"><img src="<?php echo base_url() ?>/images/verticals/construction.svg" alt=""></div>
                     <div class=" title">Construction</div>
                 </div>
 
                 <div :class="vertical === 3 ? 'active' : 'default'" @click=" vertical = 3">
-                    <div class=" image"></div>
+                    <div class=" image"><img src="<?php echo base_url() ?>/images/verticals/retail.svg" alt=""></div>
                     <div class=" title">Retail</div>
                 </div>
 
                 <div :class="vertical === 4 ? 'active' : 'default'" @click=" vertical = 4">
-                    <div class=" image"></div>
+                    <div class=" image"><img src="<?php echo base_url() ?>/images/verticals/finance-investment.svg" alt=""></div>
                     <div class=" title  ">Finance &
                         Investment</div>
                 </div>
@@ -408,22 +410,45 @@
 <!-- succsess stories -->
 <div class=" bg-success bg-cover ">
     <div class="max-w-container mx-auto">
-        <div class="flex flex-col lg:flex-row justify-between p-16">
-            <div class=" space-y-10">
-                <div class="text-3xl font-bold">
-                    Success Stories
-                </div>
-                <div class=" space-y-1">
-                    <div class="display-2 text-primary">
-                        GRIDCo
+
+        <div class="owl-carousel owl-theme w-full">
+            <div class="flex flex-col lg:flex-row justify-between p-16">
+                <div class=" space-y-10">
+                    <div class="text-3xl font-bold">
+                        Success Stories
                     </div>
-                    <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                    <p>Electricity transmission company in Ghana</p>
+                    <div class=" space-y-1">
+                        <div class="display-2 text-primary">
+                            GRIDCo
+                        </div>
+                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
+                        <p>Electricity transmission company in Ghana</p>
+                    </div>
+                    <button class="btn btn-primary">Read More</button>
                 </div>
-                <button class="btn btn-primary">Read More</button>
+                <div class="">
+                    <div class="h-60 w-60 bg-gray-200"></div>
+                </div>
             </div>
-            <div class="">
-                <div class="h-60 w-60 bg-gray-200"></div>
+
+
+            <div class="flex flex-col lg:flex-row justify-between p-16">
+                <div class=" space-y-10">
+                    <div class="text-3xl font-bold">
+                        Success Stories
+                    </div>
+                    <div class=" space-y-1">
+                        <div class="display-2 text-primary">
+                            GRIDCo
+                        </div>
+                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
+                        <p>Electricity transmission company in Ghana</p>
+                    </div>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+                <div class="">
+                    <div class="h-60 w-60 bg-gray-200"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -466,7 +491,7 @@
 <div class="max-w-container mx-auto py-16">
     <div class=" space-y-8">
         <div class=" text-3xl font-bold text-center">Recent Blog</div>
-        <div class=" grid grid-cols-3 gap-8 hidden lg:block">
+        <div class=" lg:grid grid-cols-3 gap-8 hidden ">
             <div class=" bg-gray-200 h-60"></div>
             <div class=" bg-gray-200 h-60"></div>
             <div class=" bg-gray-200 h-60"></div>
@@ -596,7 +621,7 @@
 <!-- footer -->
 <div class="bg-primary bg-footer bg-cover ">
     <div class="max-w-container mx-auto py-16 space-y-6">
-        <div class=" flex justify-between w-full hidden lg:block ">
+        <div class=" lg:flex justify-between w-full hidden ">
             <div class=" w-1/3">
                 <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
             </div>

@@ -18,6 +18,9 @@
 
   <link rel="stylesheet" href="<?php echo base_url() ?>css/normalize.css">
   <link rel="stylesheet" href="<?php echo base_url() ?>/css/app.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>/css/owl.theme.default.min.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,8 +107,19 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script src="//unpkg.com/alpinejs" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+  <script src="<?php echo base_url() ?>/js/owl.carousel.min.js"></script>
 
   <script>
+    $(document).ready(function() {
+
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+      });
+
+    });
+
     const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
