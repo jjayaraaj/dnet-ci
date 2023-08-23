@@ -780,9 +780,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(14 97 157 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\/images\/form-bg-2\.svg\)\]{
-  background-image: url(/images/form-bg-2.svg);
-}
 .bg-cover{
   background-size: cover;
 }
@@ -1296,6 +1293,13 @@ textarea{
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
   background-color: rgba(0, 0, 0, 0) !important;
 }
+
+.owl-client .item{
+  display: flex;
+  height: 8rem;
+  align-items: center;
+}
+
 /* background */
 .bg-primary-gradient{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1309,6 +1313,12 @@ textarea{
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+@media (min-width: 768px){
+
+  .md\:w-5\/6{
+    width: 83.333333%;
   }
 }
 @media (min-width: 1024px){

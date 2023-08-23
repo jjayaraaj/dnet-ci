@@ -59,7 +59,7 @@
 <!-- services -->
 <div class="">
     <div class=" py-16 max-w-container mx-auto big-screen">
-        <div class=" grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4">
+        <div class="  md:w-5/6  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4">
             <div class="service">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
@@ -411,7 +411,7 @@
 <div class=" bg-success bg-cover ">
     <div class="max-w-container mx-auto">
 
-        <div class="owl-carousel owl-theme w-full">
+        <div class="owl-carousel owl-theme w-full" id="success">
             <div class="flex flex-col lg:flex-row justify-between p-16">
                 <div class=" space-y-10">
                     <div class="text-3xl font-bold">
@@ -457,6 +457,35 @@
 <!-- testimonial -->
 <div class=" max-w-container mx-auto p-16">
     <div class="text-3xl font-bold text-center">Client Testimonials</div>
+    <div class="owl-client owl-carousel  owl-theme  ">
+        <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
+        </div>
+        <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
+        </div>
+        <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
+        </div>
+        <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
+        </div>
+    </div>
 </div>
 
 <!-- Accreditation -->
@@ -575,7 +604,7 @@
 <div class=" relative bg-form bg-cover">
     <div class=" max-w-container mx-auto h-full">
         <div class="flex justify-end h-[115%]">
-            <div class=" -mt-16 w-full lg:w-2/5 h-full bg-[url(/images/form-bg-2.svg)] bg-cover rounded-3xl p-10">
+            <div class=" -mt-16 w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10">
                 <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
                 <div class="h-5"></div>
                 <form class=" space-y-5">

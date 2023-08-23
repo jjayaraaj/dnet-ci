@@ -34,6 +34,7 @@
   $successBg = base_url() . '/images/success-stories-bg.svg';
   $digitalBg = base_url() . '/images/digital-banner.svg';
   $formBg = base_url() . '/images/form-bg.svg';
+  $formBg2 = base_url() . '/images/form-bg-2.svg';
   $footerBg = base_url() . '/images/footer-bg.svg';
 
 
@@ -58,6 +59,10 @@
 
     .bg-form {
       background-image: url('<?php echo $formBg ?>');
+    }
+
+    .bg-form-2 {
+      background-image: url('<?php echo $formBg2 ?>');
     }
 
     .bg-footer {
@@ -114,8 +119,13 @@
   <script>
     $(document).ready(function() {
 
-      $(".owl-carousel").owlCarousel({
+      $("#success").owlCarousel({
         items: 1,
+      });
+
+      $(".owl-client").owlCarousel({
+        items: 8,
+        margin: 20
       });
 
     });

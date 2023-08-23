@@ -175,6 +175,11 @@ textarea {
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
   background-color: rgba(0, 0, 0, 0) !important;
 }
+
+.owl-client .item {
+  @apply flex items-center h-32;
+}
+
 /* background */
 .bg-primary-gradient {
   @apply bg-gradient-to-b from-primary to-primary-light;
