@@ -89,8 +89,336 @@
 </head>
 
 <body>
+  <nav x-data="{atTop: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
+    <div class="relative flex items-center "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-80" alt="">
+      <div class="menu">
+        <a href="/components">Home
+
+        </a>
+        <a href="#">Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+        <a href="#">Solutions <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+        <a href="#">Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+        <a href="#">Blog</a>
+        <a href="#">Contact us</a>
+
+      </div><button type="button" class="-my-1 -mr-1 ml-6 h-8 w-8 flex items-center justify-center lg:hidden"><span class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900">
+          <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></button>
+      <div class="hidden lg:ml-4 lg:flex lg:items-center  lg:pl-4">
+        <a class="btn btn-primary" href="#">
+          <span>Enquire Now </span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <div>
     <?= $this->renderSection("content") ?>
+  </div>
+
+
+  <!-- testimonial -->
+  <div class=" max-w-container big-screen  pt-16 ">
+    <div class="w-5/6 mx-auto ">
+      <div class="heading-1 text-center">Client Testimonials</div>
+      <div class="owl-client owl-carousel  owl-theme ">
+        <div class="item ">
+          <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
+        </div>
+        <div class="item ">
+          <img src="<?php echo base_url() ?>/images/client/Redington-logo_full.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Robosoft.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Shaarait-Logo.svg" alt="">
+        </div>
+        <div class="item ">
+          <img src="<?php echo base_url() ?>/images/client/sikich-logo-retina-1.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/TechM-Logo-True-Colors.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/wipro-logo-new-og.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Zerone-logo.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/AlfaPeople-Logo.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Annata.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/avanade-logo-vector.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/crayon-logo-secondary-rgb-original.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Delaware.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/dxc_logo_vt_blk_rgb.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Dynamics-Mobile.svg" alt="">
+        </div>
+        <div class="item">
+          <img src="<?php echo base_url() ?>/images/client/Infosys_logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accreditation -->
+  <div class=" max-w-container big-screen mx-auto pt-8 pb-16">
+    <div class="heading-1 text-center">Accreditation</div>
+
+    <div class=" mx-auto py-16">
+      <div class="flex flex-wrap gap-8 justify-center">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-19.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-20.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-21.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-22.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-23.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-24.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/image-25.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-1.svg" alt="">
+        <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-2.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- digital partner -->
+  <div class=" flex bg-secondary">
+    <div class="flex  big-screen">
+      <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
+      <div class="p-16 w-full lg:w-[60%] space-y-8">
+
+        <div class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</div>
+        <div class="space-y-4 w-5/6">
+          <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
+
+          <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
+
+          <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
+
+          <p>So, what are you waiting for?</p>
+        </div>
+        <button class="btn btn-primary">
+          Reach Our Experts <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- blogs -->
+  <div class="max-w-container big-screen mx-auto py-16">
+    <div class=" space-y-8">
+      <div class=" text-3xl font-bold text-center">Recent Blog</div>
+      <div class=" lg:grid grid-cols-3 gap-8 hidden ">
+        <div class=" bg-gray-200 h-60"></div>
+        <div class=" bg-gray-200 h-60"></div>
+        <div class=" bg-gray-200 h-60"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- faq -->
+  <div class="max-w-container mx-auto py-16">
+    <div class=" space-y-8 max-w-4xl mx-auto">
+      <div class=" heading-1 text-center">Frequently Asked Questions</div>
+      <div class=" flex flex-col divide-y " x-data="{selected:1}">
+        <div>
+          <div class="faq" @click="selected !== 1 ? selected = 1 : selected = null">
+            <div class="icon ">
+              <div class="q">Q</div>
+
+              <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+
+          </div>
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+            <p class="pb-8"> You should choose Microsoft Dynamics 365 Partners due to the following reasons;
+              · Leader in ERP Software solutions
+              · Benchmark features
+              · Cloud-based products
+              · Centralized platform
+              · Business Analytics
+              · Sure-step implementation methodology
+              · Advanced data security
+              · Real-time business insights
+              · World-class support</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="icon ">
+            <div class="q">Q</div>
+
+            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+
+        </div>
+
+        <div class="faq">
+          <div class="icon ">
+            <div class="q">Q</div>
+
+            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+
+        </div>
+
+        <div class="faq">
+          <div class="icon ">
+            <div class="q">Q</div>
+
+            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class=" h-24"></div>
+  <!-- form -->
+  <div class=" relative bg-form bg-cover">
+    <div class=" max-w-container big-screen mx-auto h-full">
+      <div class="flex justify-end h-[115%]">
+        <div class=" -mt-16 w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10">
+          <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
+          <div class="h-5"></div>
+          <form class=" space-y-5">
+            <div>
+              <label for="username" class="sr-only">Name:</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Company Name:</label>
+              <input type="text" id="username" name="username" placeholder="Company Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Designation:</label>
+              <input type="text" id="username" name="username" placeholder="Designation" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">E-Mail ID:</label>
+              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Phone Number:</label>
+              <input type="text" id="phone" name="username" placeholder="Phone Number" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Which solution do you want?</label>
+              <input type="text" id="username" name="username" placeholder="Which solution do you want?" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Requirment</label>
+              <textarea rows="4"></textarea>
+            </div>
+
+            <div class=" text-center">
+              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg></button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <div class="bg-primary bg-footer bg-cover ">
+    <div class="max-w-container big-screen mx-auto py-16 space-y-6">
+      <div class=" lg:flex justify-between w-full hidden ">
+        <div class=" w-1/3">
+          <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
+        </div>
+        <div class="flex-1 flex justify-evenly">
+          <div class="space-y-4">
+            <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
+            <div class=" flex flex-col footer-link">
+              <a>About us</a>
+              <a>Contact us</a>
+              <a>Blog</a>
+              <a>Become a partner</a>
+              <a>Careers</a>
+              <a>Privacy policy</a>
+              <a>Events</a>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="text-base font-semibold text-white">SOLUTIONS</div>
+            <div class=" flex flex-col footer-link">
+              <a>RealEstatePro</a>
+              <a>Contract Management</a>
+              <a> Bid Management</a>
+              <a> Treasury Management</a>
+              <a>Investment Portfolio Management</a>
+              <a>AXOnePay</a>
+              <a>Annata 365</a>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="text-base font-semibold text-white">SERVICES</div>
+            <div class=" flex flex-col footer-link">
+              <a>ERP Implementation</a>
+              <a> Upgrade</a>
+              <a>Support</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row justify-between items-center">
+        <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
+        <div class=" flex flex-col">
+          <div class="text-xl text-white font-bold">CONNECT WITH US</div>
+          <div class="flex">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="<?php echo base_url() ?>/js/vendor/modernizr-3.11.2.min.js"></script>
@@ -124,9 +452,16 @@
       });
 
       $(".owl-client").owlCarousel({
-        items: 8,
-        margin: 20
+        items: 6,
+        margin: 50
       });
+
+      $("#owl-dynamic").owlCarousel({
+        items: 4,
+        margin: 50
+      });
+
+
 
     });
 

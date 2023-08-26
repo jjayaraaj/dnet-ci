@@ -7,46 +7,27 @@
 <!--banner-->
 
 
-<header class="relative z-50 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
     <div class="max-w-container mx-auto h-full big-screen">
-        <nav aria-label="Global" class="mx-auto  px-4 sm:px-6 lg:px-8 ">
-            <div class="relative flex items-center py-[2.125rem]"><img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
-                <div class="menu">
-                    <a href="/components">Home
+        <div class="banner-space"></div>
 
-                    </a>
-                    <a href="#">Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
-                    <a href="#">Solutions <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
-                    <a href="#">Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact us</a>
-
-                </div><button type="button" class="-my-1 -mr-1 ml-6 h-8 w-8 flex items-center justify-center lg:hidden"><span class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900">
-                        <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
-                    </svg></button>
-                <div class="hidden lg:ml-4 lg:flex lg:items-center  lg:pl-4">
-                    <a class="btn btn-primary" href="#">
-                        <span>Enquire Now</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-        <div class="  w-full  h-[602px]">
+        <div class="  w-full  h-[500px]">
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen px-4 sm:px-6 lg:px-8 h-full flex items-center ">
+            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
                 <div class=" space-y-8">
-                    <div class="display-2 !leading-[4rem] max-w-5xl flex-1 ">
-                        Accelerate your business velocity with <br><span class="display-lg text-primary">Dynamic Netsoft</span>, a Microsoft
+                    <div class="text-[2rem] font-bold max-w-3xl flex-1 ">
+                        Accelerate your business velocity with <span class="display-lg text-primary  !leading-[5rem]">Dynamic Netsoft</span>, a Microsoft
                         Dynamics 365 partner
                     </div>
                     <div class=" text-lg font-semibold">
                         Level up your digital transformation process
                     </div>
 
-                    <button class="btn btn-primary">Connect with Us</button>
+                    <button class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></button>
 
                 </div>
             </div>
@@ -106,12 +87,12 @@
 </div>
 
 <!-- dynamics -->
-<div class=" hidden lg:block bg-secondary py-8    mx-auto" x-data="{solution:1}">
-    <div class="big-screen space-y-8 ">
+<div class=" hidden lg:block bg-secondary py-16    mx-auto" x-data="{solution:1}">
+    <div class="big-screen space-y-16 ">
         <h1 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h1>
 
         <div class=" flex gap-16 items-center">
-            <div class=" w-2/3 flex ">
+            <div class=" w-2/3 flex -ml-24 ">
                 <div class=" relative  ">
                     <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
                         <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">
@@ -127,15 +108,15 @@
 
                 </div>
 
-                <div class="relative flex-1 flex flex-col space-y-5 -left-14 ">
-                    <div class=" dynamics-strip " :class="solution === 1 ? 'active' : 'default'" @click="solution = 1">
+                <div class="relative  flex flex-col space-y-5 -left-14 ">
+                    <div class=" dynamics-strip  -ml-24" :class="solution === 1 ? 'active' : 'default'" @click="solution = 1">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/RealEstatePro.svg" alt="">
                         </div>
                         <div class="title">RealEstatePro</div>
                     </div>
 
-                    <div class=" dynamics-strip" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
+                    <div class=" dynamics-strip -ml-12" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/Contract-Management.svg" alt="">
                         </div>
@@ -153,7 +134,7 @@
                         </div>
                         <div class="title">Treasury Management</div>
                     </div>
-                    <div class="dynamics-strip" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
+                    <div class="dynamics-strip -m-12" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/investment-solution.svg" alt="">
                         </div>
@@ -163,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class=" dynamics-strip" :class="solution === 6 ? 'active' : 'default'" @click="solution = 6">
+                    <div class=" dynamics-strip -ml-24" :class="solution === 6 ? 'active' : 'default'" @click="solution = 6">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/AXOnePay.svg" alt="">
                         </div>
@@ -185,9 +166,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -208,9 +193,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -230,9 +219,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -253,9 +246,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -276,9 +273,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -299,9 +300,13 @@
                         </div>
 
                         <div class=" flex gap-6">
-                            <button class=" btn btn-yellow">Download Brochure</button>
+                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
 
-                            <button class=" btn btn-yellow">Read More</button>
+                            <button class=" btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></button>
                         </div>
 
 
@@ -317,9 +322,9 @@
 <!-- redefine -->
 
 <div class="bg-redefine bg-cover ">
-    <div class="py-16 max-w-container big-screen space-y-24">
+    <div class="py-16 max-w-container big-screen space-y-16">
         <div class=" flex flex-col gap-2 text-center lg:text-left">
-            <div class=" text-3xl font-bold">Redefine excellence with Dynamic Netsoft,</div>
+            <div class=" heading-1">Redefine excellence with Dynamic Netsoft,</div>
             <div class="display-2"><span class="font-medium">a worldwide</span> Microsoft Dynamics 365 - ISV Partner
             </div>
         </div>
@@ -329,7 +334,9 @@
                 Specifically designed and pre-configured to streamline Real Estate
                 business operations to achieve enhanced productivity
             </div>
-            <div><button class="btn btn-primary">Connect with Us</button></div>
+            <div><button class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></button></div>
         </div>
     </div>
 </div>
@@ -339,7 +346,7 @@
     <div class="w-2/3 bg-secondary py-16 h-full hidden lg:block ">
         <div class="px-16">
 
-            <div class=" text-3xl font-bold">Industry Vertical solutions include</div>
+            <div class=" heading-1">Industry Vertical solutions include</div>
 
             <div class="solution">
                 <div :class="vertical === 1 ? 'active' : 'default'" @click=" vertical = 1">
@@ -376,28 +383,36 @@
             <div x-show="vertical === 1" class="space-y-8">
                 <div class="text-xl font-bold ">RealEstate</div>
                 <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-                <button class="btn btn-yellow">Read More</button>
+                <button class="btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></button>
             </div>
 
             <!-- Construction -->
             <div x-show="vertical === 2" class="space-y-8">
                 <div class="text-xl font-bold ">Construction</div>
                 <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-                <button class="btn btn-yellow">Read More</button>
+                <button class="btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></button>
             </div>
 
             <!-- retail -->
             <div x-show="vertical === 3" class="space-y-8">
                 <div class="text-xl font-bold ">Retail</div>
                 <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-                <button class="btn btn-yellow">Read More</button>
+                <button class="btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></button>
             </div>
 
             <!-- Finance -->
             <div x-show="vertical === 4" class="space-y-8">
                 <div class="text-xl font-bold ">Finance & Investment</div>
                 <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-                <button class="btn btn-yellow">Read More</button>
+                <button class="btn btn-yellow">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></button>
             </div>
 
 
@@ -408,13 +423,16 @@
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover ">
-    <div class="max-w-container mx-auto">
+<div class=" bg-success bg-cover py-16">
+    <div class="max-w-container big-screen  ">
 
         <div class="owl-carousel owl-theme w-full" id="success">
-            <div class="flex flex-col lg:flex-row justify-between p-16">
+
+
+
+            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
                 <div class=" space-y-10">
-                    <div class="text-3xl font-bold">
+                    <div class="heading-1">
                         Success Stories
                     </div>
                     <div class=" space-y-1">
@@ -424,27 +442,9 @@
                         <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
                         <p>Electricity transmission company in Ghana</p>
                     </div>
-                    <button class="btn btn-primary">Read More</button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-
-
-            <div class="flex flex-col lg:flex-row justify-between p-16">
-                <div class=" space-y-10">
-                    <div class="text-3xl font-bold">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More</button>
+                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></button>
                 </div>
                 <div class="">
                     <div class="h-60 w-60 bg-gray-200"></div>
@@ -454,255 +454,7 @@
     </div>
 </div>
 
-<!-- testimonial -->
-<div class=" max-w-container mx-auto p-16">
-    <div class="text-3xl font-bold text-center">Client Testimonials</div>
-    <div class="owl-client owl-carousel  owl-theme  ">
-        <div class="item ">
-            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
-        </div>
-        <div class="item ">
-            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
-        </div>
-        <div class="item ">
-            <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
-        </div>
-        <div class="item">
-            <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
-        </div>
-    </div>
-</div>
 
-<!-- Accreditation -->
-<div class=" max-w-container mx-auto p-16">
-    <div class="text-3xl font-bold text-center">Accreditation</div>
-</div>
 
-<!-- digital partner -->
-<div class=" flex bg-secondary">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
-        <div class="p-16 w-full lg:w-[60%] space-y-8">
-            <div class=" text-3xl font-bold">Why choose Dynamic Netsoft as your digital partner?</div>
-            <div class="space-y-4">
-                <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
-
-                <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
-
-                <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
-
-                <p>So, what are you waiting for?</p>
-            </div>
-            <button class="btn btn-primary">
-                Reach Our Experts
-            </button>
-        </div>
-    </div>
-
-</div>
-
-<!-- blogs -->
-<div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8">
-        <div class=" text-3xl font-bold text-center">Recent Blog</div>
-        <div class=" lg:grid grid-cols-3 gap-8 hidden ">
-            <div class=" bg-gray-200 h-60"></div>
-            <div class=" bg-gray-200 h-60"></div>
-            <div class=" bg-gray-200 h-60"></div>
-        </div>
-    </div>
-</div>
-
-<!-- faq -->
-<div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
-        <div class=" text-3xl font-bold text-center">Frequently Asked Questions</div>
-        <div class=" flex flex-col divide-y " x-data="{selected:1}">
-            <div>
-                <div class="faq" @click="selected !== 1 ? selected = 1 : selected = null">
-                    <div class="icon ">
-                        <div class="q">Q</div>
-
-                        <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-
-                </div>
-                <div class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                    You should choose Microsoft Dynamics 365 Partners due to the following reasons;
-                    · Leader in ERP Software solutions
-                    · Benchmark features
-                    · Cloud-based products
-                    · Centralized platform
-                    · Business Analytics
-                    · Sure-step implementation methodology
-                    · Advanced data security
-                    · Real-time business insights
-                    · World-class support
-                </div>
-            </div>
-
-            <div class="faq">
-                <div class="icon ">
-                    <div class="q">Q</div>
-
-                    <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-
-            </div>
-
-            <div class="faq">
-                <div class="icon ">
-                    <div class="q">Q</div>
-
-                    <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-
-            </div>
-
-            <div class="faq">
-                <div class="icon ">
-                    <div class="q">Q</div>
-
-                    <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class=" h-24"></div>
-<!-- form -->
-<div class=" relative bg-form bg-cover">
-    <div class=" max-w-container mx-auto h-full">
-        <div class="flex justify-end h-[115%]">
-            <div class=" -mt-16 w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10">
-                <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
-                <div class="h-5"></div>
-                <form class=" space-y-5">
-                    <div>
-                        <label for="username" class="sr-only">Name:</label>
-                        <input type="text" id="username" name="username" placeholder="Name" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">Company Name:</label>
-                        <input type="text" id="username" name="username" placeholder="Company Name" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">Designation:</label>
-                        <input type="text" id="username" name="username" placeholder="Designation" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">E-Mail ID:</label>
-                        <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">Phone Number:</label>
-                        <input type="text" id="phone" name="username" placeholder="Phone Number" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">Which solution do you want?</label>
-                        <input type="text" id="username" name="username" placeholder="Which solution do you want?" required>
-                    </div>
-                    <div>
-                        <label for="username" class="sr-only">Requirment</label>
-                        <textarea rows="4"></textarea>
-                    </div>
-
-                    <div class=" text-center">
-                        <button class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- footer -->
-<div class="bg-primary bg-footer bg-cover ">
-    <div class="max-w-container mx-auto py-16 space-y-6">
-        <div class=" lg:flex justify-between w-full hidden ">
-            <div class=" w-1/3">
-                <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
-            </div>
-            <div class="flex-1 flex justify-evenly">
-                <div class="">
-                    <div class="text-xl font-bold text-white">COMPANY OVERVIEW</div>
-                    <div class=" flex flex-col footer-link">
-                        <a>About us</a>
-                        <a>Contact us</a>
-                        <a>Blog</a>
-                        <a>Become a partner</a>
-                        <a>Careers</a>
-                        <a>Privacy policy</a>
-                        <a>Events</a>
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="text-xl font-bold text-white">SOLUTIONS</div>
-                    <div class=" flex flex-col footer-link">
-                        <a>RealEstatePro</a>
-                        <a>Contract Management</a>
-                        <a> Bid Management</a>
-                        <a> Treasury Management</a>
-                        <a>Investment Portfolio Management</a>
-                        <a>AXOnePay</a>
-                        <a>Annata 365</a>
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="text-xl font-bold text-white">SERVICES</div>
-                    <div class=" flex flex-col footer-link">
-                        <a>ERP Implementation</a>
-                        <a> Upgrade</a>
-                        <a>Support</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="flex flex-col lg:flex-row justify-between items-center">
-            <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
-            <div class=" flex flex-col">
-                <div class="text-xl text-white font-bold">CONNECT WITH US</div>
-                <div class="flex">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <?= $this->endSection() ?>
