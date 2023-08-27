@@ -4,7 +4,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-realestatepro">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -55,13 +55,41 @@
             <div class="h-24"></div>
             <div class="owl-carousel owl-theme " id="owl-dynamic">
 
-                <div class="bg-secondary-dark owl-dynamic-child ">sk</div>
+                <div class=" owl-dynamic-child ">
 
-                <div class="bg-secondary owl-dynamic-child ">sk</div>
+                    <div class="bg-secondary-dark owl-dynamic-inner">
+                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class="h-10"></div>
+                        <p>Difficulty in tracking property information, vacancy/occupancy data</p>
+                    </div>
+                </div>
 
-                <div class="bg-secondary-dark owl-dynamic-child ">sk</div>
+                <div class=" owl-dynamic-child ">
 
-                <div class="bg-secondary owl-dynamic-child ">sk</div>
+                    <div class="bg-secondary-dark owl-dynamic-inner">
+                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class="h-10"></div>
+                        <p>Absence of structured and organized workflow for business operations</p>
+                    </div>
+                </div>
+
+                <div class=" owl-dynamic-child ">
+
+                    <div class="bg-secondary-dark owl-dynamic-inner">
+                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class="h-10"></div>
+                        <p>Time-consuming manual processes for quotation generation, invoicing, and agreement execution</p>
+                    </div>
+                </div>
+
+                <div class=" owl-dynamic-child ">
+
+                    <div class="bg-secondary-dark owl-dynamic-inner">
+                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class="h-10"></div>
+                        <p>Provide timely and accurate information on your prospects for faster business decision-making</p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -72,7 +100,7 @@
 <!-- section1 ends -->
 
 <!-- section 3 -->
-<div class=" bg-secondary py-16">
+<div class=" bg-secondary pt-16">
     <div class=" max-w-container space-y-8">
         <div class="heading-1 text-center w-4/6 mx-auto">
             Discover business profitability with Real Estate Management Software on Microsoft Dynamics 365
@@ -81,11 +109,13 @@
 
         <!-- dynamic -->
         <div class="flex">
-            <div class=" w-96 h-72 bg-gray-100"></div>
+            <div class=" w-96 h-72 ">
+                <img src="<?php echo base_url() ?>/images/realestatepro/Property-Leasing-Image.svg" alt="">
+            </div>
             <div class=" flex-1 space-y-8">
                 <div class=" inline-flex gap-4 pl-8">
                     <a class="btn btn-primary" href="#">
-                        <span>Enquire Now </span>
+                        <span>Property Leasing</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
@@ -93,7 +123,7 @@
                     </a>
 
                     <a class="btn btn-primary" href="#">
-                        <span>Enquire Now </span>
+                        <span>Property Sales</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
@@ -106,7 +136,7 @@
 
                     <div class=" inline-flex gap-4 ">
                         <a class="btn btn-yellow" href="#">
-                            <span>Enquire Now </span>
+                            <span>Request a Demo</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
@@ -114,7 +144,7 @@
                         </a>
 
                         <a class="btn btn-yellow" href="#">
-                            <span>Enquire Now </span>
+                            <span>Learn More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
@@ -140,58 +170,89 @@
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary-dark p-8">
-                <div>Process automation</div>
+            <div class="half-icon-box "></div>
+            <div class=" curve-div">
+                <div class="title">Process automation</div>
                 <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
             </div>
         </div>
+
         <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary p-8">
-                <div>Process automation</div>
+            <div class="half-icon-box "></div>
+            <div class=" curve-div !bg-secondary">
+                <div class="title">Process automation</div>
                 <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
             </div>
         </div>
+
 
     </div>
 
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary-dark p-8">
-                <div>Process automation</div>
-                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
-            </div>
-        </div>
-        <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary p-8">
-                <div>Process automation</div>
+            <div class="half-icon-box  "></div>
+            <div class=" curve-div !bg-secondary">
+                <div class="title">Process automation</div>
                 <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
             </div>
         </div>
 
+        <div class=" w-1/2 flex">
+            <div class="half-icon-box "></div>
+            <div class=" curve-div ">
+                <div class="title">Process automation</div>
+                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
+            </div>
+        </div>
+
+
     </div>
+
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary-dark p-8">
-                <div>Process automation</div>
-                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
-            </div>
-        </div>
-        <div class=" w-1/2 flex">
-            <div class="h-20 w-20 border"></div>
-            <div class=" flex-1 bg-secondary p-8">
-                <div>Process automation</div>
+            <div class="half-icon-box "></div>
+            <div class=" curve-div">
+                <div class="title">Process automation</div>
                 <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
             </div>
         </div>
 
+        <div class=" w-1/2 flex">
+            <div class="half-icon-box "></div>
+            <div class=" curve-div !bg-secondary">
+                <div class="title">Process automation</div>
+                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
+            </div>
+        </div>
+
+
     </div>
+
+
+    <div class=" flex gap-10">
+        <div class=" w-1/2 flex">
+            <div class="half-icon-box  "></div>
+            <div class=" curve-div !bg-secondary">
+                <div class="title">Process automation</div>
+                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
+            </div>
+        </div>
+
+        <div class=" w-1/2 flex">
+            <div class="half-icon-box "></div>
+            <div class=" curve-div ">
+                <div class="title">Process automation</div>
+                <p>Smart automation of critical business processes and streamlined workflow that connects processes, and people</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
 </div>
 <!-- section 4 -->
 

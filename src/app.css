@@ -198,11 +198,31 @@ textarea {
 }
 
 .owl-dynamic-child {
-  @apply h-52 rounded-t-2xl border-b-8  border-b-primary;
+  @apply h-60 flex flex-col  justify-end border-b-8  border-b-primary relative;
+}
+
+.owl-dynamic-inner {
+  @apply h-48 relative p-8 rounded-t-3xl;
+}
+
+.owl-dynamic-inner-2 {
+  @apply h-24 w-24 bg-gray-100 mx-auto -top-10 left-0 right-0 absolute border-t-8 rounded-full border-t-primary;
 }
 
 .banner-space {
   @apply h-24;
+}
+
+.half-icon-box {
+  @apply h-20 w-20 border-l-4 border-b-4 border-secondary-dark;
+}
+
+.curve-div {
+  @apply flex-1 bg-secondary-dark p-8 rounded-tr-3xl;
+}
+
+.curve-div .title {
+  @apply text-lg font-bold text-primary;
 }
 
 /* background */

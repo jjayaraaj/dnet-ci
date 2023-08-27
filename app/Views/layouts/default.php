@@ -36,6 +36,7 @@
   $formBg = base_url() . '/images/form-bg.svg';
   $formBg2 = base_url() . '/images/form-bg-2.svg';
   $footerBg = base_url() . '/images/footer-bg.svg';
+  $realestateproBanner = base_url() . '/images/realestatepro/realestatepro-banner.svg';
 
 
   ?>
@@ -67,6 +68,10 @@
 
     .bg-footer {
       background-image: url('<?php echo $footerBg ?>');
+    }
+
+    .bg-realestatepro {
+      background-image: url('<?php echo $realestateproBanner ?>');
     }
 
 
