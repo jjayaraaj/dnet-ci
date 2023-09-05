@@ -47,12 +47,28 @@
   @apply font-opensans text-[2rem] font-bold;
 }
 
+.display-3 {
+  @apply font-opensans text-[1.5rem] font-bold;
+}
+
 .display-6 {
   @apply content text-sm uppercase;
 }
 
 nav a {
   @apply text-white text-base font-light;
+}
+
+.sub-menu {
+  @apply py-2 text-sm text-gray-700 dark:text-gray-200 divide-y  divide-gray-100;
+}
+
+.sub-menu li {
+  @apply p-2  text-sm;
+}
+
+.sub-menu li a {
+  @apply !text-sm;
 }
 
 .heading-1 {
@@ -214,7 +230,11 @@ textarea {
 }
 
 .half-icon-box {
-  @apply h-20 w-20 border-l-4 border-b-4 border-secondary-dark;
+  @apply h-20 w-20 border-l-4 border-b-4 border-secondary-dark flex items-center justify-center;
+}
+
+.half-icon-box img {
+  @apply w-1/2;
 }
 
 .curve-div {
@@ -223,6 +243,10 @@ textarea {
 
 .curve-div .title {
   @apply text-lg font-bold text-primary;
+}
+
+.property-active {
+  @apply bg-white btn text-black;
 }
 
 /* background */

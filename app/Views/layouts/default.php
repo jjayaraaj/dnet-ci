@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title><?= $this->renderSection("title") ?></title>
-  <meta name="description" content="">
+  <meta name="description" content="<?= $this->renderSection('description') ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -37,6 +37,8 @@
   $formBg2 = base_url() . '/images/form-bg-2.svg';
   $footerBg = base_url() . '/images/footer-bg.svg';
   $realestateproBanner = base_url() . '/images/realestatepro/realestatepro-banner.svg';
+  $cloudBg = base_url() . '/images/realestatepro/cloud-bg.svg';
+
 
 
   ?>
@@ -74,6 +76,10 @@
       background-image: url('<?php echo $realestateproBanner ?>');
     }
 
+    .bg-cloud {
+      background-image: url('<?php echo $cloudBg ?>');
+    }
+
 
 
     /* @media (min-width: 640px) {
@@ -97,11 +103,59 @@
   <nav x-data="{atTop: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
     <div class="relative flex items-center "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-80" alt="">
       <div class="menu">
-        <a href="/components">Home
+        <a href="/">Home
 
         </a>
-        <a href="#">Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
-        <a href="#">Solutions <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+        <div class=" relative group/item">
+          <a href="#" class="">
+
+            Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
+
+          </a>
+          <div class="absolute   top-4 w-44 invisible  group-hover/item:visible">
+            <div class="h-4"></div>
+            <div class="bg-white rounded-2xl ">
+              <ul class="sub-menu">
+                <li class="p-2"><a href="#">Real Estate</a></li>
+                <li class="p-2"><a href="#">Construction</a></li>
+                <li class="p-2"><a href="#">Retail</a></li>
+                <li class="p-2"><a href="#">Financial Service</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" relative group/item">
+          <a href="#" class="">
+
+            Solution <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
+
+          </a>
+          <div class="absolute  invisible  top-4     group-hover/item:visible ">
+            <div class="h-4"></div>
+            <div class="bg-white rounded-2xl ">
+              <ul class="sub-menu">
+                <li class="relative group/sub "><a class="inline-flex " href="<?php echo base_url() ?>/property-management-software-dynamics-365">
+                    <div class="w-40">RealEstatePro</div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </a>
+                  <div class=" absolute z-20 bg-white  -right-20 border border-gray-50 invisible  group-hover/sub:visible  shadow-xl rounded-2xl w-44">
+                    <ul class=" divide-y  divide-gray-100 ">
+                      <li class="p-2"><a href="<?php echo base_url() ?>/realestatepro">Property Leasing</a></li>
+                      <li class="p-2"><a href="<?php echo base_url() ?>/realestatepro">Property Sale</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class=""><a href="#">Construction</a></li>
+                <li class=""><a href="#">Retail</a></li>
+                <li class=""><a href="#">Financial Service</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
         <a href="#">Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
         <a href="#">Blog</a>
         <a href="#">Contact us</a>
@@ -214,7 +268,7 @@
       <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
       <div class="p-16 w-full lg:w-[60%] space-y-8">
 
-        <div class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</div>
+        <h2 class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</h2>
         <div class="space-y-4 w-5/6">
           <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
 
@@ -225,7 +279,7 @@
           <p>So, what are you waiting for?</p>
         </div>
         <button class="btn btn-primary">
-          Reach Our Experts <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
         </button>
@@ -247,77 +301,7 @@
   </div>
 
   <!-- faq -->
-  <div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
-      <div class=" heading-1 text-center">Frequently Asked Questions</div>
-      <div class=" flex flex-col divide-y " x-data="{selected:1}">
-        <div>
-          <div class="faq" @click="selected !== 1 ? selected = 1 : selected = null">
-            <div class="icon ">
-              <div class="q">Q</div>
-
-              <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-
-          </div>
-          <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-            <p class="pb-8"> You should choose Microsoft Dynamics 365 Partners due to the following reasons;
-              · Leader in ERP Software solutions
-              · Benchmark features
-              · Cloud-based products
-              · Centralized platform
-              · Business Analytics
-              · Sure-step implementation methodology
-              · Advanced data security
-              · Real-time business insights
-              · World-class support</p>
-          </div>
-        </div>
-
-        <div class="faq">
-          <div class="icon ">
-            <div class="q">Q</div>
-
-            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-
-        </div>
-
-        <div class="faq">
-          <div class="icon ">
-            <div class="q">Q</div>
-
-            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-
-        </div>
-
-        <div class="faq">
-          <div class="icon ">
-            <div class="q">Q</div>
-
-            <div class="question">Why should I opt for Microsoft Dynamics 365?</div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div class=" h-24"></div>
+  <?= $this->renderSection("faq") ?>
   <!-- form -->
   <div class=" relative bg-form bg-cover">
     <div class=" max-w-container big-screen mx-auto h-full">
