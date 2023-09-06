@@ -152,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div x-cloak class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300">
+            <div x-cloak class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300 tv:rounded-[3.5em]">
                 <!-- realestatepro -->
                 <div x-show="solution === 1">
                     <div class=" text-white space-y-6">
@@ -471,24 +471,30 @@
                     <div class="pl-12 pb-8 space-y-2">
                         <p class=""> You should choose Microsoft Dynamics 365 Partners due to the following reasons;
                         </p>
-                        <ul class="list-disc pl-8">
-                            <li>Leader in ERP Software solutions</li>
-                            <li>Benchmark features</li>
-                            <li>Cloud-based products</li>
-                            <li>Centralized platform</li>
-                            <li>Business Analytics</li>
-                            <li>Sure-step implementation methodology</li>
-                            <li>Advanced data security</li>
-                            <li>Real-time business insights</li>
-                            <li>World-class support</li>
-                        </ul>
+                        <div class="flex gap-x-10">
+                            <ul class="list-disc pl-8">
+                                <li>Leader in ERP Software solutions</li>
+                                <li>Benchmark features</li>
+                                <li>Cloud-based products</li>
+                                <li>Centralized platform</li>
+                                <li>Business Analytics</li>
+
+                            </ul>
+
+                            <ul class="list-disc pl-8">
+                                <li>Sure-step implementation methodology</li>
+                                <li>Advanced data security</li>
+                                <li>Real-time business insights</li>
+                                <li>World-class support</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
             <div>
-                <div class="faq" @click="selected !== 2 ? selected = 2 : selected = null">
+                <div class=" faq" @click="selected !== 2 ? selected = 2 : selected = null">
                     <div class="icon ">
                         <div class="q">Q</div>
 

@@ -5,27 +5,27 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-realestatepro">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+        <div class="  w-full  h-[500px]">
 
 
             <!-- inner banner -->
             <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8 text-center md:text-left">
-                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight">
+                <div class=" space-y-8">
+                    <h1 class="text-[2rem] font-bold max-w-3xl flex-1 leading-tight">
                         <span class="display-lg text-primary  ">RealEstatePro</span><br>
                         an advanced Property Management software
                         on Microsoft Dynamics 365
                     </h1>
-                    <div class=" text-base md:text-lg font-semibold">
+                    <div class=" text-lg font-semibold">
                         Level up your digital transformation process
                     </div>
 
-                    <div class="flex  md:flex-row  gap-4 items-center">
+                    <div class="flex gap-x-4 items-center">
                         <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg></button>
@@ -44,17 +44,17 @@
 <!--banner /-->
 
 <!-- section1 -->
-<div class=" max-w-container md:py-16 md:space-y-4">
-    <div class="  mx-auto md:text-center py-8 md:py-0 bg-primary rounded-b-3xl md:rounded-none md:bg-transparent  ">
-        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve challenges in real estate operations with Microsoft Dynamics 365 Property management solution!</h2>
+<div class=" max-w-container py-16 space-y-4">
+    <div class="  mx-auto text-center ">
+        <h2 class=" heading-1 w-3/4 mx-auto">Resolve challenges in real estate operations with Microsoft Dynamics 365 Property management solution!</h2>
     </div>
 
-    <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center ">
-        <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry rapidly evolving and there is a dire need for a software solution that allows property owners and managers to do away with paper trails and streamline their business operations. RealEstatePro, our flagship Microsoft ISV product built on market-leading Microsoft Dynamics 365 Finance & Operations, is designed to address various real estate challenges such as:</p>
+    <div class=" w-4/5 mx-auto text-center">
+        <p>The Real Estate industry rapidly evolving and there is a dire need for a software solution that allows property owners and managers to do away with paper trails and streamline their business operations. RealEstatePro, our flagship Microsoft ISV product built on market-leading Microsoft Dynamics 365 Finance & Operations, is designed to address various real estate challenges such as:</p>
 
         <div>
             <div class="h-24"></div>
-            <div class="owl-carousel owl-theme owl-dynamic">
+            <div class="owl-carousel owl-theme " id="owl-dynamic">
 
                 <div class=" owl-dynamic-child ">
 

@@ -29,7 +29,7 @@
   <meta name="theme-color" content="#fafafa">
 
   <?php
-  $bannerImage = base_url() . '/images/home-banner.svg';
+  $bannerImage = base_url() . '/images/home/microsoft-dynamics-365-partner.svg';
   $redefineBg = base_url() . '/images/redefine-banner.svg';
   $successBg = base_url() . '/images/success-stories-bg.svg';
   $digitalBg = base_url() . '/images/digital-banner.svg';
@@ -73,7 +73,7 @@
     }
 
     .bg-realestatepro {
-      background-image: url('<?php echo $realestateproBanner ?>');
+      background-image: linear-gradient(rgba(244, 249, 253, 0.9), rgba(244, 249, 253, 0.9)), url('<?php echo $realestateproBanner ?>');
     }
 
     .bg-cloud {
@@ -100,8 +100,8 @@
 </head>
 
 <body>
-  <nav x-data="{atTop: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
-    <div class="relative flex items-center "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-80" alt="">
+  <nav x-data="{atTop: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
+    <div class="relative flex items-center "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
       <div class="menu">
         <a href="/">Home
 
@@ -183,33 +183,33 @@
   <!-- testimonial -->
   <div class=" max-w-container big-screen  pt-16 ">
     <div class="w-5/6 mx-auto ">
-      <div class="heading-1 text-center">Client Testimonials</div>
+      <div class="heading-1 text-center">Our Customers</div>
       <div class="owl-client owl-carousel  owl-theme ">
         <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/Mannai-logo-en.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/al-rajhi.svg" alt="">
         </div>
         <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/Microsoft-Logo.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/dart.svg" alt="">
         </div>
         <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/Qualysoft_Logo.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/ghana-ports-and-harbours-authority.svg" alt="">
         </div>
         <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/Redington-logo_full.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/indospace.svg" alt="">
         </div>
         <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/Robosoft.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/mtcc.svg" alt="">
         </div>
         <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/Shaarait-Logo.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/schlegelvillages.svg" alt="">
         </div>
         <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/sikich-logo-retina-1.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/tmkn.svg" alt="">
         </div>
         <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/TechM-Logo-True-Colors.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/client/union-properties.svg" alt="">
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <img src="<?php echo base_url() ?>/images/client/wipro-logo-new-og.svg" alt="">
         </div>
         <div class="item">
@@ -238,7 +238,7 @@
         </div>
         <div class="item">
           <img src="<?php echo base_url() ?>/images/client/Infosys_logo.svg" alt="">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -265,7 +265,7 @@
   <!-- digital partner -->
   <div class=" flex bg-secondary">
     <div class="flex  big-screen">
-      <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl"></div>
+      <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
       <div class="p-16 w-full lg:w-[60%] space-y-8">
 
         <h2 class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</h2>
@@ -303,10 +303,11 @@
   <!-- faq -->
   <?= $this->renderSection("faq") ?>
   <!-- form -->
-  <div class=" relative bg-form bg-cover">
-    <div class=" max-w-container big-screen mx-auto h-full">
-      <div class="flex justify-end h-[115%]">
-        <div class=" -mt-16 w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10">
+  <div class=" relative bg-form bg-cover h-[630px] ">
+    <div class=" max-w-container big-screen mx-auto h-full relative ">
+
+      <div class="flex justify-end ">
+        <div class="  w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10 -mt-16">
           <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
           <div class="h-5"></div>
           <form class=" space-y-5">
@@ -348,6 +349,7 @@
 
         </div>
       </div>
+
     </div>
   </div>
 
@@ -400,10 +402,14 @@
 
       <div class="flex flex-col lg:flex-row justify-between items-center">
         <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
-        <div class=" flex flex-col">
+        <div class=" flex flex-col space-y-4">
           <div class="text-xl text-white font-bold">CONNECT WITH US</div>
-          <div class="flex">
-
+          <div class="flex justify-between">
+            <a href="#"><img src="<?php base_url() ?>/images/home/facebook.svg" alt=""></a>
+            <a href="#"><img src="<?php base_url() ?>/images/home/instagram.svg" alt=""></a>
+            <a href="#"><img src="<?php base_url() ?>/images/home/linkedin.svg" alt=""></a>
+            <a href="#"><img src="<?php base_url() ?>/images/home/twitter.svg" alt=""></a>
+            <a href="#"><img src="<?php base_url() ?>/images/home/youtube.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -434,7 +440,8 @@
   <script src="<?php echo base_url() ?>/js/owl.carousel.min.js"></script>
 
   <script>
-    $(document).ready(function() {
+    function intiateOwl() {
+      var checkWidth = $(window).width();
 
       $("#success").owlCarousel({
         items: 1,
@@ -445,14 +452,54 @@
         margin: 50
       });
 
-      $("#owl-dynamic").owlCarousel({
-        items: 4,
-        margin: 50
+
+
+      $(".owl-dynamic").owlCarousel({
+
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 4,
+            nav: true,
+
+          }
+        }
       });
 
 
 
+    }
+
+
+    $(document).ready(function() {
+      intiateOwl();
+
+      //   if ($(window).width() > 765) {
+      //     intiateOwl();
+      //   } else {
+      //     $('.owl-carousel').addClass('off');
+      //   }
+      // });
+
+
+      // $(window).resize(function() {
+      //   if ($(window).width() > 765) {
+      //     intiateOwl();
+      //   } else {
+      //     stopCarousel();
+      //   }
     });
+
+    function stopCarousel() {
+      var owl = $('.owl-carousel');
+      owl.trigger('destroy.owl.carousel');
+      owl.addClass('off');
+    }
+
+
 
     const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {

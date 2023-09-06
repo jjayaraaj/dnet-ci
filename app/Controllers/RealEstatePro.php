@@ -8,4 +8,9 @@ class RealEstatePro extends BaseController
     {
         return view('RealEstatePro/index');
     }
+
+    public function leasing()
+    {
+        return view('RealEstatePro/property-leasing');
+    }
 }
