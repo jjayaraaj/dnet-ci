@@ -148,7 +148,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class=""><a href="#">Construction</a></li>
+                <li class=""><a href="#">Bid Management</a></li>
                 <li class=""><a href="#">Retail</a></li>
                 <li class=""><a href="#">Financial Service</a></li>
               </ul>
