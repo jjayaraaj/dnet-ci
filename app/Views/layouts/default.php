@@ -448,8 +448,18 @@
       });
 
       $(".owl-client").owlCarousel({
-        items: 6,
-        margin: 50
+
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 6,
+            nav: true,
+
+          }
+        }
       });
 
 

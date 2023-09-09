@@ -262,21 +262,41 @@ textarea {
 }
 
 .inner-section-blue .content-section {
-  @apply w-1/2 space-y-6 text-white;
+  @apply md:w-1/2 text-white;
 
   & h2 {
-    @apply !text-white heading-1;
+    @apply !text-white heading-1 bg-primary p-6 md:p-0;
   }
 }
 
+.sub-content {
+  @apply bg-secondary md:bg-transparent text-black md:text-white mx-6  md:m-0 -m-6   px-6 py-6 md:py-0 md:px-6 rounded-3xl space-y-4;
+}
+
+.inner-section-2 {
+  @apply max-w-container py-6 space-y-4 md:py-16 md:space-y-4 bg-primary md:bg-transparent mt-14 md:mt-0;
+
+  .h2-div {
+    @apply mx-auto md:text-center  md:py-0  rounded-b-3xl md:rounded-none md:bg-transparent;
+  }
+}
+
+.inner-section-2 h2 {
+  @apply heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black;
+}
+
+.inner-section-2 .content-div {
+  @apply px-6 md:px-0 md:w-4/5 mx-auto md:text-center;
+}
+
 .inner-section-box {
-  @apply flex px-16;
+  @apply flex md:px-16 px-6;
 
   & .tab {
-    @apply bg-white  w-2/5 p-6 mr-4 space-y-4 rounded-l-3xl;
+    @apply bg-white  w-2/5 p-6 mr-4 space-y-4 rounded-l-3xl hidden md:block;
 
     .item {
-      @apply bg-secondary-dark h-16 p-1 w-full rounded-l-full flex rounded-r-2xl shadow-sm border-r-4 border-white shadow-primary-light gap-x-4;
+      @apply bg-secondary-dark hover:cursor-pointer h-16 p-1 w-full rounded-l-full flex rounded-r-2xl shadow-sm border-r-4 border-white shadow-primary-light gap-x-4;
 
       & .circle {
         @apply h-14 w-14 rounded-full bg-white;
@@ -287,35 +307,87 @@ textarea {
       }
 
       & .default {
-        @apply text-primary;
+        @apply text-primary hover:text-white;
       }
+    }
+
+    .item:hover {
+      @apply bg-primary;
     }
   }
 
   & .content {
-    @apply bg-primary flex-1 rounded-r-3xl p-8 flex flex-col justify-center space-y-10;
+    @apply flex-1 rounded-r-3xl px-0 py-4 md:px-8 md:py-8 flex flex-col justify-center space-y-4 md:space-y-10;
 
     & .heading-1 {
-      @apply !text-white;
+      @apply text-black md:!text-white;
     }
 
     & ul {
-      @apply list-disc ml-8 text-white;
+      @apply list-disc ml-8 text-black md:text-white;
     }
   }
 }
 
+.inner-section-box .content {
+  @apply md:bg-primary;
+}
+
+.inner-section-box .mobile-tab {
+  @apply md:hidden bg-primary text-white flex px-3 py-3 rounded-3xl justify-between items-center;
+}
+
+.inner-section-box .left-container {
+  @apply flex gap-x-4 items-center;
+}
+
+.inner-section-box .tab .item:hover .default {
+  @apply text-white;
+}
+
+.inner-section-box .active {
+  @apply !bg-primary !text-white;
+}
+
+.inner-section-box .desktop-content {
+  @apply space-y-10 bg-secondary md:bg-transparent p-4 rounded-3xl;
+}
+
+.inner-section-box .desktop-content ul {
+  @apply space-y-4;
+}
+
 .feature {
-  @apply w-5/6 mx-auto pt-16;
+  @apply md:w-5/6 px-6 md:px-0 mx-auto md:pt-16;
   .box {
-    @apply grid grid-cols-5 gap-8;
+    @apply md:grid md:grid-cols-5 md:gap-8 space-y-4 pt-4 md:pt-0;
     & .top-div {
-      @apply h-16 bg-primary rounded-tl-3xl;
+      @apply hidden md:block h-16 bg-primary rounded-tl-3xl;
     }
     & .bottom-div {
-      @apply bg-secondary h-28 rounded-br-3xl text-center flex items-center shadow-md shadow-indigo-200 px-4;
+      @apply bg-primary-light border-l-4 border-l-secondary-dark md:bg-secondary md:h-28 md:rounded-br-3xl md:text-center flex items-center md:shadow-md md:shadow-indigo-200 px-4 py-2 md:py-0 font-semibold md:font-normal text-white md:text-black;
     }
   }
+}
+
+.inner-banner {
+  @apply mx-auto max-w-container big-screen  h-full flex items-center;
+}
+
+.inner-banner .first-div {
+  @apply space-y-8 text-center md:text-left;
+}
+
+.inner-banner .h1 {
+  @apply text-lg md:text-[2rem] px-8 md:px-0  font-bold md:max-w-3xl flex-1 leading-tight;
+}
+
+.inner-banner .span {
+  @apply display-lg text-primary;
+}
+
+.inner-banner .btn-div {
+  @apply flex  md:flex-row justify-center md:justify-start  gap-4 items-center;
 }
 
 /* background */

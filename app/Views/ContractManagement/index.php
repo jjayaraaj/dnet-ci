@@ -16,17 +16,17 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8 text-center md:text-left">
-                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight">
-                        <span class="display-lg text-primary  ">Contract Management</span><br>
+            <div class=" inner-banner ">
+                <div class=" first-div ">
+                    <h1 class="h1">
+                        <span class="span ">Contract Management</span><br>
                         Better manage Projects with Microsoft Dynamics 365 Contract Management Software
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="flex  md:flex-row  gap-4 items-center">
+                    <div class="btn-div">
                         <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg></button>
@@ -45,21 +45,23 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" bg-primary py-16">
+<div class=" md:bg-primary md:py-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
-            <div class="img-section ">
+            <div class="img-section hidden md:block">
 
             </div>
             <div class="content-section">
                 <h2> Reinvent the complete spectrum of contract management capabilities with <span class="text-d-yellow">Dynamics 365 Contract Management Software</span></h2>
-                <p class="text-white">
-                    Crafted to address the intricate needs of the construction and service sectors, our cutting-edge contract management software on Dynamics 365 finance and operations effectively streamlines bid and subcontracting processes.
-                </p>
-                <p>
-                    Perform routine contract operations efficiently with integrated project management functions. Elevate your contractual expertise with multi-tiered work breakdown structures, robust resource scheduling, and effective contract management.
+                <div class="sub-content">
+                    <p class="">
+                        Crafted to address the intricate needs of the construction and service sectors, our cutting-edge contract management software on Dynamics 365 finance and operations effectively streamlines bid and subcontracting processes.
+                    </p>
+                    <p>
+                        Perform routine contract operations efficiently with integrated project management functions. Elevate your contractual expertise with multi-tiered work breakdown structures, robust resource scheduling, and effective contract management.
 
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -67,95 +69,332 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <!-- section 1 ends -->
 
 <!-- section2 -->
-<div class="bg-secondary">
-    <div class=" max-w-container md:py-16 md:space-y-4">
-        <div class="  mx-auto md:text-center py-8 md:py-0 bg-primary rounded-b-3xl md:rounded-none md:bg-transparent  ">
-            <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Experience integrated and comprehensive Features of Dynamic Netsoft’s Contract Management Software</h2>
+<div class=" bg-secondary">
+    <div class="inner-section-2">
+        <div class="h2-div">
+            <h2>Experience integrated and comprehensive Features of Dynamic Netsoft’s Contract Management Software</h2>
         </div>
 
-        <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center ">
-            <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">Our contract management software on Dynamics presents a comprehensive portal that offers unparalleled visibility, affording both customers and contractors a 360-degree vantage point to closely monitor the progress of projects. This state-of-the-art solution promotes effective communication and collaboration, enabling stakeholders to work harmoniously toward project success, with the following core features. </p>
+        <div class="content-div ">
+            <p class="!text-white md:!text-black">Our contract management software on Dynamics presents a comprehensive portal that offers unparalleled visibility, affording both customers and contractors a 360-degree vantage point to closely monitor the progress of projects. This state-of-the-art solution promotes effective communication and collaboration, enabling stakeholders to work harmoniously toward project success, with the following core features. </p>
         </div>
     </div>
 </div>
 <!-- section2 ends -->
 
 <!-- section 3 -->
-<div class=" bg-secondary pb-16">
+<div class=" md:bg-secondary bg-white pb-16" x-data="{feature: 1}">
     <div class="max-w-container ">
 
-        <div class="inner-section-box px-16">
+        <div class="inner-section-box">
             <div class="tab">
-                <div class="item">
+                <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Contract Order</div>
+                        <div :class="feature === 1 ? 'active' : 'default'">Contract Order</div>
                     </div>
                 </div>
 
 
-                <div class="item">
+                <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Budget Control</div>
+                        <div class="" :class="feature === 2 ? 'active' : 'default'">Budget Control</div>
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Submittals/Deliverables Management</div>
+                        <div class="" :class="feature === 3 ? 'active' : 'default'">Submittals/Deliverables Management</div>
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Request for Inspection (RFI) Tracking</div>
+                        <div :class="feature === 4 ? 'active' : 'default'">Request for Inspection (RFI) Tracking</div>
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Work Completion Tracking</div>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class=" circle"></div>
-                    <div class="text">
-                        <div class="default">Dispute Tracking</div>
+                        <div :class="feature === 5 ? 'active' : 'default'">Work Completion Tracking</div>
                     </div>
                 </div>
 
 
-                <div class="item">
+                <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default">Contract Invoicing</div>
+                        <div :class="feature === 6 ? 'active' : 'default'">Dispute Tracking</div>
+                    </div>
+                </div>
+
+
+                <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
+                    <div class=" circle"></div>
+                    <div class="text">
+                        <div class="default" :class="feature === 7 ? 'active' : 'default'">Contract Invoicing</div>
                     </div>
                 </div>
 
 
             </div>
-            <div class="content">
+            <div class="content  ">
                 <!-- content 1  -->
 
-                <div class=" heading-1">Contract Order</div>
-                <ul>
-                    <li>Dynamics 365 Contract Management software enables efficient contract execution tracking in project management.</li>
-                    <li>Solution provides integrated and convenient features for letters of award to contractors.</li>
-                    <li>Manage payment terms flexibility, including quantity-based or milestone-based options, with linked deliverables/submittals.</li>
-                    <li>Create contract order activities accurately and monitor contractor work progress.</li>
-                    <li>Execute work orders/contract orders with diverse options such as labor, material, or both for holistic project control.</li>
+                <div class="mobile-tab " @click="feature = 1">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">Contract Order</div>
+                    </div>
 
-                </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
 
-                <div>
-                    <button class=" btn btn-yellow">Book a Demo</button>
+
                 </div>
+
+                <div class="desktop-content" x-show="feature=== 1">
+                    <div class=" heading-1 hidden md:block ">Contract Order</div>
+                    <ul class=" ">
+                        <li>Dynamics 365 Contract Management software enables efficient contract execution tracking in project management.</li>
+                        <li>Solution provides integrated and convenient features for letters of award to contractors.</li>
+                        <li>Manage payment terms flexibility, including quantity-based or milestone-based options, with linked deliverables/submittals.</li>
+                        <li>Create contract order activities accurately and monitor contractor work progress.</li>
+                        <li>Execute work orders/contract orders with diverse options such as labor, material, or both for holistic project control.</li>
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+
+                <!-- content 2  -->
+
+                <div class="mobile-tab " @click="feature = 2">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">Budget Control</div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class=" desktop-content" x-show="feature=== 2">
+                    <div class=" heading-1 hidden md:block ">Budget Control</div>
+                    <ul class=" space-y-4">
+                        <li>Our comprehensive ISV solution of Microsoft Dynamics 365 Contract Management facilitates prudent budget management through the allocation and revision of resources for contracted work.</li>
+                        <li>Experience seamless integration with the project management and accounting module to facilitate comprehensive and effective budget management.</li>
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+
+                <!-- content 3  -->
+
+                <div class="mobile-tab " @click="feature = 3">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">Submittals/Deliverables Management</div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class="desktop-content" x-show="feature=== 3">
+                    <div class=" heading-1 hidden md:block ">Submittals/Deliverables Management</div>
+                    <ul>
+                        <li>Dynamics 365 Contract Management software enables efficient contract execution tracking in project management.</li>
+                        <li>Solution provides integrated and convenient features for letters of award to contractors.</li>
+                        <li>Manage payment terms flexibility, including quantity-based or milestone-based options, with linked deliverables/submittals.</li>
+                        <li>Create contract order activities accurately and monitor contractor work progress.</li>
+                        <li>Execute work orders/contract orders with diverse options such as labor, material, or both for holistic project control.</li>
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+
+                <!-- content 4  -->
+
+                <div class="mobile-tab " @click="feature = 4">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">Request for Inspection (RFI) Tracking</div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class="desktop-content" x-show="feature=== 4">
+                    <div class=" heading-1 hidden md:block ">Request for Inspection (RFI) Tracking</div>
+                    <ul>
+                        <li> With our comprehensive suite of Dynamics 365 Contract Management Software, you can record and track the details of inspections performed by project managers, quality inspectors, third-party consultants, etc. </li>
+                        <li>Manage requests to customers for inspection and associated feedback to uphold superior project quality standards. </li>
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+                <!-- content 5  -->
+
+                <div class="mobile-tab " @click="feature = 5">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            Work Completion Tracking
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class="desktop-content" x-show="feature=== 5">
+                    <div class=" heading-1 hidden md:block ">
+                        Work Completion Tracking
+                    </div>
+                    <ul>
+                        <li> Our software built on Microsoft Dynamics 365 for Contract Management allows effective contract documentation for evaluation and records.</li>
+                        <li>Solution helps diligently update the progress of work completed on a percentage basis.</li>
+                        <li>Meticulously manage and record delivery of materials by contractors.</li>
+                        <li>Record Invoices and payments of work completion, benchmarked with agreed-upon terms and conditions.</li>
+
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+
+                <!-- content 6  -->
+
+                <div class="mobile-tab " @click="feature = 6">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            Dispute Tracking
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class="desktop-content" x-show="feature=== 6">
+                    <div class=" heading-1 hidden md:block ">
+                        Dispute Tracking
+                    </div>
+                    <ul>
+                        <li>Our Microsoft Dynamics 365 Contract Management Software tracks and manages disputes arising due to contractors’ work, quality, performance, payments, and other related matters.</li>
+                        <li>Enables proper tracking of any internal disputes that may arise during the project development phase, allowing efficient resolution and management.</li>
+                        <li>Leverages advanced case management and case process for precise tracking, ensuring optimal project outcomes.</li>
+
+
+
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
+
+
+                <!-- content 7  -->
+
+                <div class="mobile-tab " @click="feature = 7">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            Contract Invoicing
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
+                <div class="desktop-content" x-show="feature === 7">
+                    <div class=" heading-1 hidden md:block ">
+                        Contract Invoicing
+                    </div>
+                    <ul>
+                        <li>Our Dynamics 365 Contract Management software aids in invoice submission and detailed validation against payment terms, submittals/deliverables, and achieved milestones.</li>
+                        <li>Scrutinize validation with the thorough inspection process to ensure accuracy and compliance.</li>
+                        <li>Prudent retention and release of funds based on retention terms for optimal financial management.</li>
+                    </ul>
+
+                    <div>
+                        <button class=" btn btn-yellow">Book a Demo</button>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -170,7 +409,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <div class="  bg-cloud bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
                 <div>
                     <h3 class=" text-xl font-semibold">Ensure Compliance and Mitigate Risk with DNETSOFT’s
 
@@ -197,12 +436,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <!-- section 5 -->
 
 <!-- section-6 -->
-<div class="max-w-container py-16">
-    <div class="w-4/6 mx-auto space-y-8">
-        <h2 class="heading-1 text-center ">
+<div class="max-w-container py-16 bg-primary md:bg-white  md:px-0">
+    <div class="md:w-4/6 mx-auto space-y-4 md:space-y-8 px-6 md:px-0">
+        <h2 class="heading-1 text-left md:text-center !text-white md:text-black">
             Discover How Our Contract Management Software Can Benefit Your Business
         </h2>
-        <p class=" text-center">Endowed with the trust of numerous accomplished enterprises, our all-encompassing solution for contract management on Microsoft Dynamics 365 finance and operations, serves as a panacea for the complex task of contract management. It enables you to simplify your contract management processes, resulting in the efficacious completion of your projects, with its manifold benefits and streamlined approaches such as.</p>
+        <p class=" !text-white md:text-black md:text-center">Endowed with the trust of numerous accomplished enterprises, our all-encompassing solution for contract management on Microsoft Dynamics 365 finance and operations, serves as a panacea for the complex task of contract management. It enables you to simplify your contract management processes, resulting in the efficacious completion of your projects, with its manifold benefits and streamlined approaches such as.</p>
 
     </div>
     <div class="feature">
