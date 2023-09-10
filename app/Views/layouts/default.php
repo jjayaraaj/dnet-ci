@@ -148,9 +148,10 @@
                     </ul>
                   </div>
                 </li>
-                <li class=""><a href="#">Bid Management</a></li>
-                <li class=""><a href="#">Retail</a></li>
-                <li class=""><a href="#">Financial Service</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/dynamics-365-bid-management-software">Bid Management</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
+
               </ul>
             </div>
 

@@ -1220,7 +1220,7 @@ p{
   }
 
   & .display-6{
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   & .display-6 > :not([hidden]) ~ :not([hidden]){
@@ -1264,8 +1264,8 @@ p{
   @media (min-width: 768px){
 
     & .display-6{
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
   }
 
@@ -1285,7 +1285,7 @@ p{
   }
 
   & .display-6{
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   & .display-6 > :not([hidden]) ~ :not([hidden]){
@@ -1329,8 +1329,8 @@ p{
   @media (min-width: 768px){
 
     & .display-6{
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
   }
 
@@ -2394,7 +2394,7 @@ textarea{
   }
 
   & .content{
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   & .content > :not([hidden]) ~ :not([hidden]){
@@ -2438,8 +2438,8 @@ textarea{
   @media (min-width: 768px){
 
     & .content{
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
   }
 

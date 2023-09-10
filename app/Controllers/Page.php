@@ -14,4 +14,9 @@ class Page extends BaseController
     {
         return view('ContractManagement/index');
     }
+
+    public function Investment()
+    {
+        return view('Investment/index');
+    }
 }

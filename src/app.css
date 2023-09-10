@@ -317,7 +317,7 @@ textarea {
   }
 
   & .content {
-    @apply flex-1 rounded-r-3xl px-0 py-4 md:px-8 md:py-8 flex flex-col justify-center space-y-4 md:space-y-10;
+    @apply flex-1 rounded-r-3xl px-0 py-4 md:px-8 md:py-0 flex flex-col justify-start space-y-4 md:space-y-10;
 
     & .heading-1 {
       @apply text-black md:!text-white;
