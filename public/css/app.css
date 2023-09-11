@@ -653,17 +653,20 @@ p{
 .h-4{
   height: 1rem;
 }
+.h-\[550px\]{
+  height: 550px;
+}
+.h-7{
+  height: 1.75rem;
+}
+.h-6{
+  height: 1.5rem;
+}
 .h-24{
   height: 6rem;
 }
 .h-10{
   height: 2.5rem;
-}
-.h-6{
-  height: 1.5rem;
-}
-.h-7{
-  height: 1.75rem;
 }
 .h-\[500px\]{
   height: 500px;
@@ -695,6 +698,12 @@ p{
 .w-4{
   width: 1rem;
 }
+.w-7{
+  width: 1.75rem;
+}
+.w-6{
+  width: 1.5rem;
+}
 .w-4\/5{
   width: 80%;
 }
@@ -709,12 +718,6 @@ p{
 }
 .w-2\/5{
   width: 40%;
-}
-.w-6{
-  width: 1.5rem;
-}
-.w-7{
-  width: 1.75rem;
 }
 .w-2\/3{
   width: 66.666667%;
@@ -829,6 +832,11 @@ p{
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -838,11 +846,6 @@ p{
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -881,6 +884,9 @@ p{
 .overflow-hidden{
   overflow: hidden;
 }
+.overflow-y-auto{
+  overflow-y: auto;
+}
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -918,13 +924,17 @@ p{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 97 157 / var(--tw-bg-opacity));
-}
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(244 249 253 / var(--tw-bg-opacity));
+}
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 97 157 / var(--tw-bg-opacity));
 }
 .bg-secondary-dark{
   --tw-bg-opacity: 1;
@@ -933,10 +943,6 @@ p{
 .\!bg-secondary{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(244 249 253 / var(--tw-bg-opacity)) !important;
-}
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-gray-200{
   --tw-bg-opacity: 1;
@@ -977,17 +983,17 @@ p{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -1001,11 +1007,8 @@ p{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.pt-16{
-  padding-top: 4rem;
-}
-.pl-8{
-  padding-left: 2rem;
+.pb-16{
+  padding-bottom: 4rem;
 }
 .pl-12{
   padding-left: 3rem;
@@ -1013,8 +1016,11 @@ p{
 .pb-8{
   padding-bottom: 2rem;
 }
-.pb-16{
-  padding-bottom: 4rem;
+.pl-8{
+  padding-left: 2rem;
+}
+.pt-16{
+  padding-top: 4rem;
 }
 .pt-8{
   padding-top: 2rem;
@@ -1029,10 +1035,6 @@ p{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1044,6 +1046,10 @@ p{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-\[2rem\]{
   font-size: 2rem;
@@ -1073,21 +1079,21 @@ p{
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
-.text-primary{
+.text-d-yellow{
   --tw-text-opacity: 1;
-  color: rgb(14 97 157 / var(--tw-text-opacity));
+  color: rgb(255 199 0 / var(--tw-text-opacity));
 }
 .\!text-white{
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
+.text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(14 97 157 / var(--tw-text-opacity));
+}
 .text-blue-50{
   --tw-text-opacity: 1;
   color: rgb(239 246 255 / var(--tw-text-opacity));
-}
-.text-d-yellow{
-  --tw-text-opacity: 1;
-  color: rgb(255 199 0 / var(--tw-text-opacity));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -2574,11 +2580,6 @@ textarea{
 }
 
 .feature {
-  .box > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
   .box{
     padding-top: 1rem;
   }
@@ -2854,12 +2855,8 @@ textarea{
     height: 500px;
   }
 
-  .md\:w-3\/4{
-    width: 75%;
-  }
-
-  .md\:w-4\/5{
-    width: 80%;
+  .md\:h-\[550px\]{
+    height: 550px;
   }
 
   .md\:w-2\/5{
@@ -2868,6 +2865,14 @@ textarea{
 
   .md\:w-4\/6{
     width: 66.666667%;
+  }
+
+  .md\:w-3\/4{
+    width: 75%;
+  }
+
+  .md\:w-4\/5{
+    width: 80%;
   }
 
   .md\:w-5\/6{
@@ -2886,24 +2891,20 @@ textarea{
     flex-direction: row;
   }
 
-  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
   .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
-  .md\:rounded-none{
-    border-radius: 0px;
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
-  .md\:bg-transparent{
-    background-color: transparent;
+  .md\:rounded-none{
+    border-radius: 0px;
   }
 
   .md\:bg-primary{
@@ -2919,6 +2920,10 @@ textarea{
   .md\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-transparent{
+    background-color: transparent;
   }
 
   .md\:py-0{
@@ -2944,13 +2949,13 @@ textarea{
     text-align: center;
   }
 
-  .md\:text-\[2rem\]{
-    font-size: 2rem;
-  }
-
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[2rem\]{
+    font-size: 2rem;
   }
 
   .md\:\!text-black{

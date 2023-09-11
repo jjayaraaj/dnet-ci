@@ -1,9 +1,9 @@
 <?= $this->extend("layouts/default") ?>
 
 <?= $this->section("title") ?>
-Investment Portfolio Management Software on Dynamics 365
+Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 <?= $this->endSection("title") ?>
-<?= $this->section("description") ?>Juggling with multiple investment systems? Manage all your investments on a single platform with Dynamic Netsoft’s Investment Portfolio Management Software.<?= $this->endSection("description") ?>
+<?= $this->section("description") ?>Simplify your payroll process & enhance employee service capabilities with our Microsoft Dynamics 365 Payroll Solution. <?= $this->endSection("description") ?>
 
 <?= $this->section("content") ?>
 
@@ -19,8 +19,8 @@ Investment Portfolio Management Software on Dynamics 365
             <div class=" inner-banner ">
                 <div class=" first-div ">
                     <h1 class="h1">
-                        <span class="span ">Investment Portfolio Management</span><br>
-                        Intuitively Orchestrate Your Investment Strategies with Dynamic Netsoft’s Investment Portfolio Management Software on Dynamics 365
+                        <span class="span ">AXOnePay</span><br>
+                        Experience simplified and faster Payroll Management with AXOnePay, leading HR & Payroll Solution on Microsoft Dynamics 365
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
@@ -52,14 +52,10 @@ Investment Portfolio Management Software on Dynamics 365
 
             </div>
             <div class="content-section">
-                <h2> Experience forecast accuracy and market insights of your Portfolios with <span class="text-d-yellow">Investment Management Software on Dynamics 365</span></h2>
+                <h2>Optimize Your HR Operations with Our Advanced <span class="text-d-yellow">Payroll Solution on Microsoft Dynamics 365</span></h2>
                 <div class="sub-content">
                     <p class="">
-                        Our flagship ISV solution for Investment Portfolio Management offers real-time monitoring of investment transactions, partner borrowings and withdrawals, fund allocation, and portfolio management, and supports multi-currency transactions, all comprehensively integrated onto a unified platform, thereby offering a cohesive experience.
-                    </p>
-                    <p>
-                        Its intuitive and interactive platform helps you maximize efficiency and output, while its workflow automation and approvals streamline the investment process, reducing manual intervention.
-
+                        AXOnePay, our cloud-based tax-compliant Payroll software on Microsoft Dynamics 365 allows you to effortlessly manage and track all employee details, including employee dependents, family members, and their relevant information. The system empowers you to efficiently handle attendance, overtime, performance-linked incentives, leaves, expense reimbursements, and various deductions mandated by labor and tax laws.
                     </p>
                 </div>
             </div>
@@ -72,11 +68,11 @@ Investment Portfolio Management Software on Dynamics 365
 <div class=" bg-secondary">
     <div class="inner-section-2">
         <div class="h2-div">
-            <h2>Make Smarter Investment Decisions with the Intelligent Features of Investment Portfolio Management Software on Dynamics</h2>
+            <h2>Client-centric Features of Microsoft Dynamics HR Management Solution to Amplify Your Operational Efficiency</h2>
         </div>
 
         <div class="content-div ">
-            <p class="!text-white md:!text-black">As an investor, experience features that facilitate the streamlined administration of your monetary assets with panache and efficacy. Our Investment Management software empowers you with seamless control over your financial portfolios by offering exceptional features, providing users with speed at informed decisions. </p>
+            <p class="!text-white md:!text-black">The robust features of our Payroll Solution on Microsoft Dynamics Finance & Operations act as catalysts for your business growth by streamlining HR and payroll operations, ensuring compliance, enhancing efficiency, and enabling strategic decision-making. </p>
         </div>
     </div>
 </div>
@@ -87,11 +83,11 @@ Investment Portfolio Management Software on Dynamics 365
     <div class="max-w-container ">
 
         <div class="inner-section-box">
-            <div class="tab h-[500px] overflow-y-auto">
+            <div class="tab h-[550px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div :class="feature === 1 ? 'active' : 'default'">Investment Parameters</div>
+                        <div :class="feature === 1 ? 'active' : 'default'">Company Parameters</div>
                     </div>
                 </div>
 
@@ -99,28 +95,28 @@ Investment Portfolio Management Software on Dynamics 365
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="" :class="feature === 2 ? 'active' : 'default'">Risk Analysis</div>
+                        <div class="" :class="feature === 2 ? 'active' : 'default'">Vacation</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="" :class="feature === 3 ? 'active' : 'default'">Document Management</div>
+                        <div class="" :class="feature === 3 ? 'active' : 'default'">Employee Loans</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div :class="feature === 4 ? 'active' : 'default'">Key Performance Indicator</div>
+                        <div :class="feature === 4 ? 'active' : 'default'">Employee transactions</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div :class="feature === 5 ? 'active' : 'default'">Periodic Activities Area</div>
+                        <div :class="feature === 5 ? 'active' : 'default'">Employee Payments</div>
                     </div>
                 </div>
 
@@ -128,7 +124,7 @@ Investment Portfolio Management Software on Dynamics 365
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div :class="feature === 6 ? 'active' : 'default'">Inquiries on-the-fly</div>
+                        <div :class="feature === 6 ? 'active' : 'default'">Salary Processing</div>
                     </div>
                 </div>
 
@@ -136,34 +132,29 @@ Investment Portfolio Management Software on Dynamics 365
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default" :class="feature === 7 ? 'active' : 'default'">Designated Transaction Area</div>
+                        <div class="default" :class="feature === 7 ? 'active' : 'default'">Consolidated Reports for Finance and Payroll</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default" :class="feature === 8 ? 'active' : 'default'">Master Level Data-store</div>
+                        <div class="default" :class="feature === 8 ? 'active' : 'default'">Document Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 9" :class="feature === 9 ? 'active' : ''">
                     <div class=" circle"></div>
                     <div class="text">
-                        <div class="default" :class="feature === 9 ? 'active' : 'default'">Efficient Reporting System</div>
+                        <div class="default" :class="feature === 9 ? 'active' : 'default'">Employee self-service</div>
                     </div>
                 </div>
 
-                <div class="item" @click="feature = 10" :class="feature === 10 ? 'active' : ''">
-                    <div class=" circle"></div>
-                    <div class="text">
-                        <div class="default" :class="feature === 10 ? 'active' : 'default'">Open Platform for Integration</div>
-                    </div>
-                </div>
+
 
 
             </div>
-            <div class="content md:h-[500px]">
+            <div class="content md:h-[550px]">
                 <!-- content 1  -->
 
                 <div class="mobile-tab " @click="feature = 1">
@@ -172,7 +163,7 @@ Investment Portfolio Management Software on Dynamics 365
                                 <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
                             </svg>
                         </div>
-                        <div class=" heading-1 !text-white">Investment Parameters</div>
+                        <div class=" heading-1 !text-white">Company Parameters</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -183,13 +174,13 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
 
                 <div class="desktop-content" x-show="feature=== 1">
-                    <div class=" heading-1 hidden md:block ">Investment Parameters</div>
-                    <ul class=" ">
-                        <li>Our dynamic Investment Management Software incorporates parameterization of your requirements to ensure a full-fledged product flavor, catering to your unique investment needs.</li>
-                        <li>Investment journals have a separate identity from financial transactions, allowing for clear and concise tracking of investment activity.</li>
-                        <li>The software utilizes a designated number sequence for investment portfolio maintenance, providing organized and efficient management potential.</li>
-
+                    <div class=" heading-1 hidden md:block ">Company Parameters</div>
+                    <ul>
+                        <li>Our advanced Dynamics 365 Payroll Module aids in setting up company parameters based on the specific Labour Law requirements of each country.</li>
+                        <li>Ability to define Employee Master based on Employee types, Employee Groups, and other customizable criteria, Configuring Departments, contract Profession, Iqama Profession, Nationalities, Religion, Job positions, Relation Types, and other intricate aspects.</li>
+                        <li>Flexibility in defining End of Service Ranges for all employees, ensuring compliance and setup of essential Company documents, with a well-documented and organized system.</li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -206,7 +197,7 @@ Investment Portfolio Management Software on Dynamics 365
                                 <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
                             </svg>
                         </div>
-                        <div class=" heading-1 !text-white">Risk Analysis</div>
+                        <div class=" heading-1 !text-white">Vacation</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -217,13 +208,14 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
 
                 <div class="desktop-content" x-show="feature===2">
-                    <div class=" heading-1 hidden md:block ">Risk Analysis</div>
-                    <ul class=" ">
-                        <li>Our Investment Portfolio Management Software on Dynamics offers dedicated functions for risk analysis and mitigation to automate the investment-specific risk evaluation process.</li>
-                        <li>Risk evaluation process can be personalized based on each investment segment’s unique characteristics.</li>
-                        <li>Solution enables monitoring credit ratings from dignified risk agencies that hamper investment management.</li>
-
+                    <div class=" heading-1 hidden md:block ">Vacation</div>
+                    <ul>
+                        <li>Our Dynamics 365 HR Management Software allows the configuration of multiple annual vacation types, including precise durations such as 21 days, 30 days, and more.</li>
+                        <li>Provides flexibility to define distinct calculation methodologies for vacation pay, catering to both collective and individual employee requirements.</li>
+                        <li>Enables accurate calculation of vacation balances for different types, with customizable options for carry-forward or non-carry-forward policies.</li>
+                        <li>Ensures meticulous validation of employee leave balances during leave transactions, eliminating errors and maintaining accurate records.</li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -241,7 +233,7 @@ Investment Portfolio Management Software on Dynamics 365
                                 <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
                             </svg>
                         </div>
-                        <div class=" heading-1 !text-white">Document Management</div>
+                        <div class=" heading-1 !text-white">Employee Loans</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -252,13 +244,19 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
 
                 <div class="desktop-content" x-show="feature=== 3">
-                    <div class=" heading-1 hidden md:block ">Document Management</div>
+                    <div class=" heading-1 hidden md:block ">Employee Loans</div>
                     <ul>
-                        <li>Our all-in-one Investment Management Software on Dynamics provides dedicated features for handling investment-related documents & transactions.</li>
-                        <li>The documents are categorized, parameterized, and stored in an organized manner for easy access and management. </li>
-                        <li>Solution empowers users to create document templates and use them whenever applicable, thereby saving time and effort.</li>
-
+                        <li>
+                            The all-in-one Microsoft Dynamics 365 Hr & Payroll Solution facilitates the setting of a diverse range of loan types, encompassing personal loans, salary advances, car loans, and more.
+                        </li>
+                        <li>
+                            Empowers the inclusion or exclusion of loan deductions during the monthly payroll calculation, ensuring meticulous customization and precision.
+                        </li>
+                        <li>
+                            Offers the flexibility to suspend loans for a specified period, allowing for temporary relief or adjustment as needed.
+                        </li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -275,7 +273,7 @@ Investment Portfolio Management Software on Dynamics 365
                                 <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
                             </svg>
                         </div>
-                        <div class=" heading-1 !text-white">Key Performance Indicator</div>
+                        <div class=" heading-1 !text-white">Employee transactions</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -286,13 +284,22 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
 
                 <div class="desktop-content" x-show="feature=== 4">
-                    <div class=" heading-1 hidden md:block ">Key Performance Indicator</div>
+                    <div class=" heading-1 hidden md:block ">Employee transactions</div>
                     <ul>
-                        <li>With Investment Portfolio Management software, users can implement a dashboard to track Key Performance Indicators (KPIs) for investments. </li>
-                        <li>It allows real-time monitoring of KPIs related to investments, ensuring optimal investment management. </li>
-
-
+                        <li>
+                            Our Microsoft Payroll Software allows the configuration of additional transactions related to overtime, loss of pay, and various other intricate additions or deductions to the monthly payroll.
+                        </li>
+                        <li>
+                            Offers the capability to meticulously record and track Government Relation Officer Transactions, ensuring compliance and efficient follow-up actions.
+                        </li>
+                        <li>
+                            Enables the seamless recording and tracking of Business Trip transactions, facilitating accurate expense management and reimbursement processes.
+                        </li>
+                        <li>
+                            Provides the ability to define and manage fixed assets issued to employees, ensuring proper documentation and tracking of valuable resources.
+                        </li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -309,7 +316,7 @@ Investment Portfolio Management Software on Dynamics 365
                             </svg>
                         </div>
                         <div class=" heading-1 !text-white">
-                            Periodic Activities Area
+                            Employee Payments
                         </div>
                     </div>
 
@@ -322,12 +329,11 @@ Investment Portfolio Management Software on Dynamics 365
 
                 <div class="desktop-content" x-show="feature=== 5">
                     <div class=" heading-1 hidden md:block ">
-                        Periodic Activities Area
+                        Employee Payments
                     </div>
                     <ul>
-                        <li>Our market-leading Investment Management Software supports the automatic synchronization of investment market prices for industry needs.</li>
-                        <li>Dedicated financial closing engine for investment transactions ensures accurate accounting procedures.</li>
-                        <li>Revaluation of unsold investments with complete user-defined date control on portfolios helps users stay in control.</li>
+                        <li>The Microsoft Dynamics 365 HR & Payroll Solution facilitates the posting of payment vouchers to employees through diligently designed workflows, offering versatile options such as Bank transfer, check, cash, and more.</li>
+                        <li>Enables the comprehensive recording of payments related to loans, loans repayment, vacation pay, monthly salary, and other financial aspects through streamlined Payroll Disbursements.</li>
 
                     </ul>
 
@@ -347,7 +353,7 @@ Investment Portfolio Management Software on Dynamics 365
                             </svg>
                         </div>
                         <div class=" heading-1 !text-white">
-                            Inquiries on-the-fly
+                            Salary Processing
                         </div>
                     </div>
 
@@ -360,12 +366,18 @@ Investment Portfolio Management Software on Dynamics 365
 
                 <div class="desktop-content" x-show="feature=== 6">
                     <div class=" heading-1 hidden md:block ">
-                        Inquiries on-the-fly
+                        Salary Processing
                     </div>
                     <ul>
-                        <li>All indispensable inquiries are available instantly, anytime, anywhere with our cutting-edge Investment Portfolio Management Software on Dynamics 365 ERP.</li>
-                        <li>The solution also provides the creation of Dashboard integration for easy access to inquiry data.</li>
-
+                        <li>
+                            Our advanced solution of HR & Payroll on Microsoft Dynamics 365 Finance & Operations offers sophisticated salary processing options, allowing customization by employee, department, and employee groups for precise and tailored remuneration management.
+                        </li>
+                        <li>
+                            Provides the flexibility to halt salary payments for specific employees, ensuring control and accuracy in the disbursement process, and enables seamless integration of vacation pay with the monthly payroll, simplifying the handling of comprehensive employee compensation.
+                        </li>
+                        <li>
+                            Offers convenient email options to effortlessly send pay slips to employees, ensuring efficient and secure communication of sensitive information and integrates seamlessly with banking systems by generating the required Bank file format for swift and error-free salary transfers.
+                        </li>
                     </ul>
 
                     <div>
@@ -384,7 +396,7 @@ Investment Portfolio Management Software on Dynamics 365
                             </svg>
                         </div>
                         <div class=" heading-1 !text-white">
-                            Designated Transaction Area
+                            Consolidated Reports for Finance and Payroll
                         </div>
                     </div>
 
@@ -397,13 +409,20 @@ Investment Portfolio Management Software on Dynamics 365
 
                 <div class="desktop-content" x-show="feature === 7">
                     <div class=" heading-1 hidden md:block ">
-                        Designated Transaction Area
+                        Consolidated Reports for Finance and Payroll
                     </div>
                     <ul>
-                        <li>Our Investment Portfolio Management Software on Microsoft Dynamics 365 is a seamlessly integrated solution that benefits from all the core functions and capabilities of D365 Finance & Operations.</li>
-                        <li>Solution allows easy and efficient processing of transactions, ensuring accuracy and consistency throughout the investment process.</li>
-
+                        <li>
+                            Our innovative Payroll Solution on Dynamics 365 provides an integrated platform to access comprehensive and consolidated payroll and accounting reports, enabling a holistic view of financial and payroll data in a centralized location.
+                        </li>
+                        <li>
+                            Enhances visibility into payroll expenses, offering a deeper understanding and analysis of financial implications associated with remuneration.
+                        </li>
+                        <li>
+                            Empowers businesses with actionable insights by presenting critical financial and payroll information in a coherent and organized manner.
+                        </li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -419,7 +438,7 @@ Investment Portfolio Management Software on Dynamics 365
                             </svg>
                         </div>
                         <div class=" heading-1 !text-white">
-                            Master Level Data-store
+                            Document Management
                         </div>
                     </div>
 
@@ -432,13 +451,17 @@ Investment Portfolio Management Software on Dynamics 365
 
                 <div class="desktop-content" x-show="feature === 8">
                     <div class=" heading-1 hidden md:block ">
-                        Master Level Data-store
+                        Document Management
                     </div>
                     <ul>
-                        <li>The master data store of our futuristic solution for Investment Portfolio Management adheres to Microsoft’s best-practice architecture for investment Portfolio Management. </li>
-                        <li>Solution provides a designated section for holding and managing customer and partner information for convenient business operations.</li>
-
+                        <li>
+                            This sophisticated HR & Payroll Solution on Dynamics 365 allows you to effortlessly generate customized letters, encompassing bank loans, account openings, and letters of experience, utilizing the versatile document template feature, enhanced by configurable approval levels facilitated through intricate workflows.
+                        </li>
+                        <li>
+                            Seamlessly receive notifications and obtain approvals via email, ensuring efficient collaboration and streamlined document management processes.
+                        </li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -454,7 +477,7 @@ Investment Portfolio Management Software on Dynamics 365
                             </svg>
                         </div>
                         <div class=" heading-1 !text-white">
-                            Efficient Reporting System
+                            Employee self-service
                         </div>
                     </div>
 
@@ -467,14 +490,15 @@ Investment Portfolio Management Software on Dynamics 365
 
                 <div class="desktop-content" x-show="feature === 9">
                     <div class=" heading-1 hidden md:block ">
-                        Efficient Reporting System
+                        Employee self-service
                     </div>
                     <ul>
-                        <li>Our Investment Management software on Dynamics 365 offers sophisticated integration with crucial reports that cater to the dynamic investment market.</li>
-                        <li>A comprehensive and multifaceted reporting framework serves as a valuable resource for investment managers.</li>
-
-
+                        <li>Our Market-leading Payroll software on Dynamics 365 enables convenient access to comprehensive employee information, including payslips, via the Enterprise Portal.</li>
+                        <li>Empower employees to effortlessly generate payslips for any desired month, further enhancing transparency and autonomy in their financial management.</li>
+                        <li>Facilitate the seamless initiation of requests for leaves and loans directly from the portal, ensuring a streamlined workflow process for approval.</li>
+                        <li>Generate automated leave and loan transactions based on the approved requests, thus maximizing efficiency and minimizing administrative burden.</li>
                     </ul>
+
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -532,12 +556,12 @@ Investment Portfolio Management Software on Dynamics 365
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
                 <div>
-                    <h3 class=" text-xl font-semibold">Fortify Your Financial Fortune with Our </h3>
+                    <h3 class=" text-xl font-semibold">Set New Standards in </h3>
                     <div class=" text-3xl font-bold text-primary">
-                        Investment Portfolio Management Software on Dynamics
+                        in HR & Payroll Functions with Our Cutting-edge Software on Dynamics 365
                     </div>
                 </div>
-                <p>Revamp your investment strategy and take charge of your financial future with our world-class solutions!</p>
+                <p>AXOnePay: A Fusion of Uncompromised Precision & Unmatched Expertise in Payroll Management!</p>
 
                 <div class=" inline-flex">
                     <a class="btn btn-primary" href="#">
@@ -558,9 +582,9 @@ Investment Portfolio Management Software on Dynamics 365
 <div class="max-w-container py-16 bg-primary md:bg-white  md:px-0">
     <div class="md:w-4/6 mx-auto space-y-4 md:space-y-8 px-6 md:px-0">
         <h2 class="heading-1 text-left md:text-center !text-white md:!text-black">
-            How Can Dynamic Netsoft’s Investment Portfolio Management Software Transform Your Investment Management?
+            How Can Our Microsoft-powered Payroll Software Drive Your Business Growth?
         </h2>
-        <p class=" !text-white md:!text-black md:text-center">Our benchmark solution for Investment Portfolio Management on Dynamics significantly elevates control and operations of your portfolios across various investments. The feature-rich solution provides users:</p>
+        <p class=" !text-white md:!text-black md:text-center">As your business grows, so do the complexities of managing your employee information and payroll requirements. Discover the benefits of our Payroll management Solution on Microsoft Dynamics 365 that delivers actionable insights to build better workplaces.</p>
 
     </div>
     <div class="feature">
@@ -568,22 +592,14 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Efficient investment management
+                    Faster & accurate payroll execution
                 </div>
             </div>
 
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Real-time investment monitoring
-                </div>
-            </div>
-
-
-            <div class="">
-                <div class="top-div"></div>
-                <div class="bottom-div ">
-                    Complete visibility of portfolios
+                    Customized payment analysis & reports
                 </div>
             </div>
 
@@ -591,7 +607,7 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Informed investment decisions
+                    Accurate vacation calculations and tracking
                 </div>
             </div>
 
@@ -599,7 +615,7 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Personalized risk analysis and management
+                    Save time with pre-configured workflows
                 </div>
             </div>
 
@@ -607,14 +623,7 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Streamlined document management
-                </div>
-            </div>
-
-            <div class="">
-                <div class="top-div"></div>
-                <div class="bottom-div ">
-                    Enhanced KPI tracking
+                    Eliminate errors from manual & legacy systems
                 </div>
             </div>
 
@@ -622,7 +631,14 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Smooth financial closing and accurate accounting
+                    Quick tracking of historical payroll information
+                </div>
+            </div>
+
+            <div class="">
+                <div class="top-div"></div>
+                <div class="bottom-div ">
+                    Manage all pay groups from a single window.
                 </div>
             </div>
 
@@ -630,7 +646,7 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Simplified portfolio maintenance
+                    Regional Norms & legal compliance
                 </div>
             </div>
 
@@ -638,30 +654,33 @@ Investment Portfolio Management Software on Dynamics 365
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Easy inquiries & management
+                    Quick workflow for leave management
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="top-div"></div>
+                <div class="bottom-div ">
+                    Advanced salary processing options
                 </div>
             </div>
 
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Efficient reporting system
+                    Efficient document management
                 </div>
             </div>
 
             <div class="">
                 <div class="top-div"></div>
                 <div class="bottom-div ">
-                    Time-saving automation
+                    Secured & advanced self-service portal (ESS)
                 </div>
             </div>
 
-            <div class="">
-                <div class="top-div"></div>
-                <div class="bottom-div ">
-                    Consistency and accuracy in data processing
-                </div>
-            </div>
+
 
 
 
@@ -685,7 +704,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">What does contract management software do?</div>
+                        <div class="question">Why do companies need Microsoft Dynamics payroll software?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
@@ -695,16 +714,9 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">Our Dynamics 365 Contract Management Software
+                        <p class="">Microsoft Dynamics 365 Payroll Software empowers enterprises by effectively managing, automating, and maintaining accurate employee payments. Through its robust integration and meticulous configuration, this comprehensive software helps organizations reduce cost, save time and maintain compliance with tax laws and other financial regulations.
                         </p>
-                        <ul class=" list-disc pl-8">
-                            <li> Efficiently manages contractual agreements</li>
-                            <li>Offers a centralized platform</li>
-                            <li>Automated processes</li>
-                            <li>Streamline communication among stakeholders</li>
-                            <li>Ensures compliance with legal and regulatory requirements</li>
 
-                        </ul>
 
                     </div>
                 </div>
@@ -716,7 +728,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">How does contract management software help your business?</div>
+                        <div class="question">Can multiple users operate on Microsoft Payroll Software?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 2 ? 'rotate-180' : ''">
@@ -726,7 +738,7 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">The manual system of the contract management process is highly cumbersome and time-consuming. Our contract management software on Microsoft Dynamics 365 finance & operations empowers your organization to optimize contract processes, mitigate risks, and enhance your competitive edge.
+                        <p class="">Yes, Our Dynamics 365 Payroll Software supports multiple users, allowing different individuals within an organization to access and utilize the software simultaneously. This enables efficient collaboration, streamlined workflows, and secure access control, ensuring that authorized users can effectively manage and process payroll data.
                         </p>
 
 
@@ -739,7 +751,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">What kinds of businesses need Contract Management Software?</div>
+                        <div class="question">Can I create multiple companies and multiple branches with the Microsoft Dynamics 365 Payroll Solution?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 3 ? 'rotate-180' : ''">
@@ -749,35 +761,13 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">In today’s business world, where contracts serve as the backbone of agreements between parties, it is imperative that all types of businesses, from startups to Fortune 500 companies, need powerful contract management software to streamline their contract-related processes and enhance overall operational efficiency.
+                        <p class="">Certainly! Our Payroll Management Software provides the flexibility to create and manage multiple companies and branches within the system. You can easily set up separate entities, define specific parameters and configurations, and effectively handle payroll operations for each company and branch individually. This ensures seamless management and accurate processing across your organization’s diverse structure.
 
                         </p>
 
                     </div>
                 </div>
             </div>
-
-            <div>
-                <div class="faq" @click="selected !== 4 ? selected = 4 : selected = null">
-                    <div class="icon ">
-                        <div class="q">Q</div>
-
-                        <div class="question">Who offers the best Contract Management Solution in Microsoft Dynamics 365?</div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 4 ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-
-                </div>
-                <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
-                    <div class="pl-12 pb-8 space-y-2">
-                        <p class="">Multiple vendors offer contract management solutions on Microsoft Dynamics, each with its unique features and benefits. Dynamic Netsoft offers comprehensive contract management software on Dynamics 365, which is widely recognized as one of the best in the market.</p>
-
-                    </div>
-                </div>
-            </div>
-
 
 
 

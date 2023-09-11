@@ -19,4 +19,9 @@ class Page extends BaseController
     {
         return view('Investment/index');
     }
+
+    public function AxOnePay()
+    {
+        return view('AxOnePay/index');
+    }
 }
