@@ -449,6 +449,45 @@
     </div>
 </div>
 
+<?= $this->section('partner') ?>
+<div class=" flex bg-secondary">
+    <div class="flex  big-screen">
+        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+        <div class="p-16 w-full lg:w-[60%] space-y-8">
+
+            <h2 class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</h2>
+            <div class="space-y-4 w-5/6">
+                <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
+
+                <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
+
+                <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
+
+                <p>So, what are you waiting for?</p>
+            </div>
+            <button class="btn btn-primary">
+                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</div>
+<?= $this->endSection('partner') ?>
+
+<?= $this->section('blog') ?>
+<div class="max-w-container big-screen mx-auto py-16">
+    <div class=" space-y-8">
+        <div class=" text-3xl font-bold text-center">Recent Blog</div>
+        <div class=" lg:grid grid-cols-3 gap-8 hidden ">
+            <div class=" bg-gray-200 h-60"></div>
+            <div class=" bg-gray-200 h-60"></div>
+            <div class=" bg-gray-200 h-60"></div>
+        </div>
+    </div>
+</div>
+<?= $this->endSection('blog') ?>
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
     <div class=" space-y-8 max-w-4xl mx-auto">

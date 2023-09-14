@@ -143,8 +143,8 @@
                   </a>
                   <div class=" absolute z-20 bg-white  -right-20 border border-gray-50 invisible  group-hover/sub:visible  shadow-xl rounded-2xl w-44">
                     <ul class=" divide-y  divide-gray-100 ">
-                      <li class="p-2"><a href="<?php echo base_url() ?>/realestatepro">Property Leasing</a></li>
-                      <li class="p-2"><a href="<?php echo base_url() ?>/realestatepro">Property Sale</a></li>
+                      <li class="p-2"><a href="<?php echo base_url() ?>/property-leasing">Property Leasing</a></li>
+                      <li class="p-2"><a href="<?php echo base_url() ?>/property-sale">Property Sale</a></li>
                     </ul>
                   </div>
                 </li>
@@ -153,6 +153,8 @@
                 <li class=""><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
                 <li class=""><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
                 <li class=""><a href="<?php echo base_url() ?>/treasury-management-software-dynamics">Treasury Management</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/annata-365">Annata</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/propgoto">PropGoto</a></li>
 
               </ul>
             </div>
@@ -266,42 +268,12 @@
   </div>
 
   <!-- digital partner -->
-  <div class=" flex bg-secondary">
-    <div class="flex  big-screen">
-      <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
-      <div class="p-16 w-full lg:w-[60%] space-y-8">
+  <?= $this->renderSection("partner") ?>
 
-        <h2 class=" heading-1">Why choose Dynamic Netsoft as your digital partner?</h2>
-        <div class="space-y-4 w-5/6">
-          <p>Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth.
-
-          <p>Every day we earn our customers' trust by taking their business from survival to growth. Our top-ranked Microsoft Dynamics 365 ISV solutions for Industry verticals have been recognized and rewarded for their feature-rich capabilities and ability to address specific pain points of our customers</p>
-
-          <p>Trusted by more than 100 satisfied customers, our main objective is to bring every aspect of your business on a single platform so you can have a 360⁰ view and 100% visibility. Dynamic Netsoft offers a comprehensive suite of services to enhance the crucial facets of your business.</p>
-
-          <p>So, what are you waiting for?</p>
-        </div>
-        <button class="btn btn-primary">
-          Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-  </div>
 
   <!-- blogs -->
-  <div class="max-w-container big-screen mx-auto py-16">
-    <div class=" space-y-8">
-      <div class=" text-3xl font-bold text-center">Recent Blog</div>
-      <div class=" lg:grid grid-cols-3 gap-8 hidden ">
-        <div class=" bg-gray-200 h-60"></div>
-        <div class=" bg-gray-200 h-60"></div>
-        <div class=" bg-gray-200 h-60"></div>
-      </div>
-    </div>
-  </div>
+  <?= $this->renderSection("blog") ?>
+
 
   <!-- faq -->
   <?= $this->renderSection("faq") ?>

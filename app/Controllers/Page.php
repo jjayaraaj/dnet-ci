@@ -29,4 +29,14 @@ class Page extends BaseController
     {
         return view('TreasuryManagement/index');
     }
+
+    public function Annata()
+    {
+        return view('Annata/index');
+    }
+
+    public function PropGoto()
+    {
+        return view('PropGoto/index');
+    }
 }
