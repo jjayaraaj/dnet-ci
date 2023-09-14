@@ -24,4 +24,9 @@ class Page extends BaseController
     {
         return view('AxOnePay/index');
     }
+
+    public function TreasuryManagement()
+    {
+        return view('TreasuryManagement/index');
+    }
 }

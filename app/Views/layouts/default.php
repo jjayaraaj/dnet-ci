@@ -152,6 +152,7 @@
                 <li class=""><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
                 <li class=""><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
                 <li class=""><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
+                <li class=""><a href="<?php echo base_url() ?>/treasury-management-software-dynamics">Treasury Management</a></li>
 
               </ul>
             </div>

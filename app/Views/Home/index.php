@@ -96,12 +96,12 @@
                 <div class=" relative  ">
                     <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
                         <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">
-                            <img src="<?php echo base_url() ?>/images/RealEstatePro-solution.svg" class=" object-cover rounded-full" x-show="solution===1" alt="">
-                            <img src="<?php echo base_url() ?>/images/contract-management-solution.svg" class=" object-cover rounded-full" x-show="solution===2" alt="">
-                            <img src="<?php echo base_url() ?>/images/bid-management-solution.svg" class=" object-cover rounded-full" x-show="solution===3" alt="">
-                            <img src="<?php echo base_url() ?>/images/treasury-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===4">
-                            <img src="<?php echo base_url() ?>/images/ip-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===5">
-                            <img src="<?php echo base_url() ?>/images/payroll-management-solution.svg" class=" object-cover rounded-full" alt="" x-show="solution===6">
+                            <img src="<?php echo base_url() ?>/images/home/microsoft-dynamics-partner.svg" class=" object-cover rounded-full" x-show="solution===1" alt="">
+                            <img src="<?php echo base_url() ?>/images/home/dynamics-365-partner.svg" class=" object-cover rounded-full" x-show="solution===2" alt="">
+                            <img src="<?php echo base_url() ?>/images/home/microsoft-dynamics-365-isv-solutions.svg" class=" object-cover rounded-full" x-show="solution===3" alt="">
+                            <img src="<?php echo base_url() ?>/images/home/microsoft-dynamics-erp-partner.svg" class=" object-cover rounded-full" alt="" x-show="solution===4">
+                            <img src="<?php echo base_url() ?>/images/home/dynamics-365-finance-operation-partner-services.svg" class=" object-cover rounded-full" alt="" x-show="solution===5">
+                            <img src="<?php echo base_url() ?>/images/home/ms-d365 f&o-partner.svg" class=" object-cover rounded-full" alt="" x-show="solution===6">
                         </div>
                     </div>
 

@@ -42,6 +42,7 @@ $routes->get('/dynamics-365-bid-management-software', 'Page::BidManagement');
 $routes->get('/contract-management-software-dynamics-365', 'Page::ContractManagement');
 $routes->get('/investment-portfolio-management-software-dynamics', 'Page::Investment');
 $routes->get('/dynamics-365-HR-payroll', 'Page::AxOnePay');
+$routes->get('/treasury-management-software-dynamics', 'Page::TreasuryManagement');
 
 /*
  * --------------------------------------------------------------------
