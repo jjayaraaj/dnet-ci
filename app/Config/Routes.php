@@ -45,6 +45,7 @@ $routes->get('/dynamics-365-HR-payroll', 'Page::AxOnePay');
 $routes->get('/treasury-management-software-dynamics', 'Page::TreasuryManagement');
 $routes->get('/annata-365', 'Page::Annata');
 $routes->get('/propgoto', 'Page::PropGoto');
+$routes->get('/microsoft-dynamics-365-for-real-estate', 'Page::IndustryRealEstate');
 
 /*
  * --------------------------------------------------------------------

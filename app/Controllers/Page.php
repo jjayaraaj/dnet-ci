@@ -39,4 +39,9 @@ class Page extends BaseController
     {
         return view('PropGoto/index');
     }
+
+    public function IndustryRealEstate()
+    {
+        return view('Industry/realestate');
+    }
 }

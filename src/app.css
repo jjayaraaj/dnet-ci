@@ -126,7 +126,8 @@ nav a {
   @apply py-0.5 px-2 text-xl font-bold bg-primary text-white;
 }
 
-.solution {
+.solution,
+.owl-service {
   @apply flex gap-x-6 items-center w-full relative z-40 py-16;
 }
 
@@ -134,7 +135,12 @@ nav a {
   @apply h-48  w-1/4 bg-blue-50 shadow-blue-100 shadow-xl rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
 }
 
-.solution .default:hover {
+.owl-service .default {
+  @apply h-48   bg-blue-50  rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
+}
+
+.solution .default:hover,
+.owl-service .default:hover {
   @apply bg-primary cursor-pointer text-white;
 }
 
@@ -142,15 +148,22 @@ nav a {
   @apply h-72  w-1/3 bg-primary rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
 }
 
-.solution .image {
+.solution .image,
+.owl-service .image {
   @apply h-4/6 overflow-hidden;
 }
 
-.solution .title {
+.solution .title,
+.owl-service .title {
   @apply h-1/3 flex text-base font-semibold items-center justify-center text-center py-10 px-4;
 }
 
-.solution .active .title {
+.owl-service .title {
+  @apply !text-black;
+}
+
+.solution .active .title,
+.owl-service .active .title {
   @apply text-white w-full;
 }
 

@@ -114,7 +114,7 @@
           </a>
           <div class="absolute   top-4 w-44 invisible  group-hover/item:visible">
             <div class="h-4"></div>
-            <div class="bg-white rounded-2xl ">
+            <div class="bg-white rounded-b-2xl shadow">
               <ul class="sub-menu">
                 <li class="p-2"><a href="#">Real Estate</a></li>
                 <li class="p-2"><a href="#">Construction</a></li>
@@ -440,6 +440,22 @@
 
 
       $(".owl-dynamic").owlCarousel({
+
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1
+          },
+          1000: {
+            items: 4,
+            nav: true,
+
+          }
+        }
+      });
+
+
+      $(".owl-service").owlCarousel({
 
         margin: 50,
         responsive: {
