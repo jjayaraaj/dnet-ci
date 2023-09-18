@@ -116,10 +116,10 @@
             <div class="h-4"></div>
             <div class="bg-white rounded-b-2xl shadow">
               <ul class="sub-menu">
-                <li class="p-2"><a href="#">Real Estate</a></li>
-                <li class="p-2"><a href="#">Construction</a></li>
-                <li class="p-2"><a href="#">Retail</a></li>
-                <li class="p-2"><a href="#">Financial Service</a></li>
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate">Real Estate</a></li>
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp">Construction</a></li>
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail">Retail</a></li>
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services">Financial Service</a></li>
               </ul>
             </div>
 

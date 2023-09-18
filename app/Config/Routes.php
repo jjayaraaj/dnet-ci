@@ -46,6 +46,10 @@ $routes->get('/treasury-management-software-dynamics', 'Page::TreasuryManagement
 $routes->get('/annata-365', 'Page::Annata');
 $routes->get('/propgoto', 'Page::PropGoto');
 $routes->get('/microsoft-dynamics-365-for-real-estate', 'Page::IndustryRealEstate');
+$routes->get('/microsoft-dynamics-365-construction-erp', 'Page::IndustryConstruction');
+$routes->get('/microsoft-dynamics-365-for-retail', 'Page::IndustryRetail');
+$routes->get('/microsoft-dynamics-365-financial-services', 'Page::IndustryFinancial');
+
 
 /*
  * --------------------------------------------------------------------
