@@ -49,6 +49,10 @@ $routes->get('/microsoft-dynamics-365-for-real-estate', 'Page::IndustryRealEstat
 $routes->get('/microsoft-dynamics-365-construction-erp', 'Page::IndustryConstruction');
 $routes->get('/microsoft-dynamics-365-for-retail', 'Page::IndustryRetail');
 $routes->get('/microsoft-dynamics-365-financial-services', 'Page::IndustryFinancial');
+$routes->get('/microsoft-dynamics-365-implementation', 'Page::ServiceImplementation');
+$routes->get('/microsoft-dynamics-365-support', 'Page::ServiceSupport');
+$routes->get('/dynamics-365-finance-operations-upgrade-services', 'Page::ServiceUpgrade');
+
 
 
 /*

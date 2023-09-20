@@ -161,7 +161,26 @@
 
           </div>
         </div>
-        <a href="#">Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt=""></a>
+
+        <div class=" relative group/item">
+          <a href="#" class="">
+
+            Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
+
+          </a>
+          <div class="absolute   top-4 w-44 invisible  group-hover/item:visible">
+            <div class="h-4"></div>
+            <div class="bg-white rounded-b-2xl shadow">
+              <ul class="sub-menu">
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a></li>
+                <li class="p-2"><a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services">Upgrade</a></li>
+
+                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
         <a href="#">Blog</a>
         <a href="#">Contact us</a>
 

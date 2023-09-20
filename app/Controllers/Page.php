@@ -79,4 +79,54 @@ class Page extends BaseController
 
         return view('Industry/financial', $data);
     }
+
+
+    public function ServiceImplementation()
+    {
+
+
+        $benefits = array(
+            new Benifits('b1', 'RealEstatePro', 'Leading Property Management solution'),
+            new Benifits('b1', 'Contract Management', 'Project Sub-contractor tasks monitoring'),
+            new Benifits('b1', 'Bid Management', 'Facilitating Bid Contracts & execution'),
+            new Benifits('b1', 'Investment Portfolio Management', 'Effective control of Investment Portfolios'),
+            new Benifits('b1', 'Treasury Managemen', 'Optimize and track loan management'),
+            new Benifits('b1', 'AXOnePay', 'Cutting-edge Payroll Solutions'),
+
+        );
+
+
+
+
+        $data['benefits'] = $benefits;
+        return view('Service/implementation', $data);
+    }
+
+
+    public function ServiceSupport()
+    {
+
+
+        $benefits = array();
+
+
+
+
+        $data['benefits'] = $benefits;
+        return view('Service/support', $data);
+    }
+
+
+    public function ServiceUpgrade()
+    {
+
+
+        $benefits = array();
+
+
+
+
+        $data['benefits'] = $benefits;
+        return view('Service/upgrade', $data);
+    }
 }

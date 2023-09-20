@@ -351,10 +351,10 @@
 <!-- section-6 -->
 <div class="max-w-container py-16 bg-primary md:bg-white  md:px-0">
     <div class="md:w-4/6 mx-auto space-y-4 md:space-y-8 px-6 md:px-0">
-        <h2 class="heading-1 text-left md:text-center !text-white md:text-black">
+        <h2 class="heading-1 text-left md:text-center !text-white md:!text-black">
             Discover the unmatched benefits of Choosing our Microsoft Dynamics 365 Bid Management Software
         </h2>
-        <p class=" !text-white md:text-black md:text-center">Experience advanced features of our bid management software, built on the market-leading Microsoft Dynamics 365. Maximize efficiency and effectiveness of integrated Project management features for business benefits.</p>
+        <p class=" !text-white md:!text-black md:text-center">Experience advanced features of our bid management software, built on the market-leading Microsoft Dynamics 365. Maximize efficiency and effectiveness of integrated Project management features for business benefits.</p>
 
     </div>
     <div class="feature">

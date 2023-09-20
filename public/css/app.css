@@ -623,6 +623,9 @@ p{
 .-mt-5{
   margin-top: -1.25rem;
 }
+.ml-4{
+  margin-left: 1rem;
+}
 .block{
   display: block;
 }
@@ -689,6 +692,33 @@ p{
 .h-\[600px\]{
   height: 600px;
 }
+.\!h-auto{
+  height: auto !important;
+}
+.\!h-10{
+  height: 2.5rem !important;
+}
+.\!h-1\/5{
+  height: 20% !important;
+}
+.h-\[300px\]{
+  height: 300px;
+}
+.h-\[400px\]{
+  height: 400px;
+}
+.h-\[420px\]{
+  height: 420px;
+}
+.h-20{
+  height: 5rem;
+}
+.h-16{
+  height: 4rem;
+}
+.h-14{
+  height: 3.5rem;
+}
 .max-h-0{
   max-height: 0px;
 }
@@ -749,6 +779,9 @@ p{
 .w-96{
   width: 24rem;
 }
+.w-1\/4{
+  width: 25%;
+}
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -774,8 +807,14 @@ p{
 .resize{
   resize: both;
 }
+.list-inside{
+  list-style-position: inside;
+}
 .list-disc{
   list-style-type: disc;
+}
+.list-decimal{
+  list-style-type: decimal;
 }
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -999,6 +1038,9 @@ p{
 .p-6{
   padding: 1.5rem;
 }
+.p-3{
+  padding: 0.75rem;
+}
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1027,6 +1069,34 @@ p{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.\!py-0{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.\!py-3{
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.\!py-1{
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
 .pb-16{
   padding-bottom: 4rem;
 }
@@ -1047,6 +1117,15 @@ p{
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pt-3{
+  padding-top: 0.75rem;
+}
+.pt-5{
+  padding-top: 1.25rem;
+}
+.\!pt-3{
+  padding-top: 0.75rem !important;
 }
 .text-left{
   text-align: left;
@@ -1129,6 +1208,10 @@ p{
 .text-blue-50{
   --tw-text-opacity: 1;
   color: rgb(239 246 255 / var(--tw-text-opacity));
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -3028,6 +3111,10 @@ textarea{
 
   .md\:text-center{
     text-align: center;
+  }
+
+  .md\:\!text-center{
+    text-align: center !important;
   }
 
   .md\:text-lg{
