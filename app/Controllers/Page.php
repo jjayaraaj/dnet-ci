@@ -129,4 +129,9 @@ class Page extends BaseController
         $data['benefits'] = $benefits;
         return view('Service/upgrade', $data);
     }
+
+    public function About()
+    {
+        return view('About/index');
+    }
 }

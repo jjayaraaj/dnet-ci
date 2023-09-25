@@ -182,6 +182,7 @@
           </div>
         </div>
         <a href="#">Blog</a>
+        <a href="<?php echo base_url() ?>/about-us">About Us</a>
         <a href="#">Contact us</a>
 
       </div><button type="button" class="-my-1 -mr-1 ml-6 h-8 w-8 flex items-center justify-center lg:hidden"><span class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900">
