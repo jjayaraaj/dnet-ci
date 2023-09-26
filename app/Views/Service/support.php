@@ -7,7 +7,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-support-banner  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -70,7 +70,9 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
         <div class="inner-section-box">
             <div class="tab h-[420px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/support/microsoft-dynamics.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Microsoft Dynamics 365 Implementation</div>
                     </div>
@@ -78,28 +80,34 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/support/re-engineering.svg" alt="">
+
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Reengineering</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/support/business-process.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Business Process Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle"> <img src="<?php echo base_url() ?>/images/service/support/out-sourcing.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Outsourcing</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle"> <img src="<?php echo base_url() ?>/images/service/support/amc.svg" alt=""></div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">AMC</div>
                     </div>
@@ -282,7 +290,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/service/support/help-desk.svg" alt="">
             </div>
             <div class=" curve-div">
                 <div class="title">
@@ -294,7 +302,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/service/support/availability.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">24/7 Availability</div>
@@ -308,7 +316,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/service/support/urgent-issue.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Urgent Issue Resolution</div>
                 <p>Swift response time for urgent matters, ensuring prompt resolution.</p>
@@ -316,7 +324,9 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box ">
+                <img src="<?php echo base_url() ?>/images/service/support/flexible-payment.svg" alt="">
+            </div>
             <div class=" curve-div ">
                 <div class="title">Flexible Payment Options</div>
                 <p>Choose between pay-as-you-go or prepaid packs, empowering you to decide what suits your organization best.</p>
@@ -338,7 +348,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
 <div class=" flex bg-secondary ">
     <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+        <div class=" hidden lg:block w-2/5 grow  bg-support-partner bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Our Microsoft Dynamics 365 Support System is Your Best Choice??</h2>
@@ -371,37 +381,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+<?= $this->include('/layouts/success') ?>
 
 
 

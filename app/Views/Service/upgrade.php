@@ -7,7 +7,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-upgrade-banner  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -133,7 +133,9 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
         <div class="inner-section-box">
             <div class="tab h-[420px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/functional-enhancements.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Functional Enhancements and Embedded BI:</div>
                     </div>
@@ -141,28 +143,36 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/improved-accessibility.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'"> Improved Accessibility</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/unification-of-erp.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'"> Unification of ERP and CRM</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/seamless-integration.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'"> Seamless Integration Opportunities</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/real-time.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'"> Real-time Business Intelligence</div>
                     </div>
@@ -170,21 +180,27 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/reduced-maintenance.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'"> Reduced Maintenance</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/regular-updates.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 7 ? 'active' : 'default'"> Regular Updates</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/upgrade/modern-day.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 8 ? 'active' : 'default'"> Modern-day Marketplace Demands</div>
                     </div>
@@ -472,7 +488,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 <!-- section -3 ends -->
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-upgrade-connect bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -506,8 +522,8 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 <!-- partner -->
 
 <div class=" flex bg-secondary ">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex  w-full big-screen">
+        <div class=" hidden lg:block w-2/5 grow bg-upgrade-partner bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Dynamic Netsoft as Your Dynamics 365 Upgradation Partner?</h2>

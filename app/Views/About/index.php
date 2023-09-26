@@ -660,5 +660,25 @@
 </div>
 <!--global ends-->
 
+<!-- section-5 -->
+<div class="  bg-cloud bg-cover">
+    <div class=" max-w-container space-y-8 py-16 big-screen">
+        <div class="flex">
+            <div class=" md:w-3/5 space-y-8 text-center md:text-left px-16 ">
+                <div>
+
+                    <div class=" text-3xl font-bold text-primary">
+                        Our Promise
+                    </div>
+                </div>
+                <p>At Dynamic Netsoft Technologies, our promise is to simplify the application lifecycle for your organization. We are committed to delivering the highest quality solutions and support, ensuring that your business can thrive in today's dynamic and competitive environment. Whether you're considering a move to cloud computing or seeking to optimize your operations, we are here to guide you every step of the way. Your success is our ultimate goal, and we look forward to initiating this transformative journey with you. We will persistently innovate to empower digital transformation around the world.</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section 5 -->
+
 
 <?= $this->endSection() ?>
