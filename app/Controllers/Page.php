@@ -62,16 +62,16 @@ class Page extends BaseController
     {
 
         $benefits = array(
-            new Benifits('b1', 's', 'Enhanced financial visibility'),
-            new Benifits('b1', 's', 'Streamlined financial processes'),
-            new Benifits('b1', 's', 'Real-time insights '),
-            new Benifits('b1', 's', 'Improved financial management'),
-            new Benifits('b1', 's', 'Cost reduction'),
-            new Benifits('b1', 's', 'Better collaboration'),
-            new Benifits('b1', 's', 'Improved customer service'),
-            new Benifits('b1', 's', 'Efficient decision-making'),
-            new Benifits('b1', 's', 'Time-saving through process automation'),
-            new Benifits('b1', 's', 'Security & Compliance'),
+            new Benifits('b1', 's', 'Enhanced financial visibility', ''),
+            new Benifits('b1', 's', 'Streamlined financial processes', ''),
+            new Benifits('b1', 's', 'Real-time insights ', ''),
+            new Benifits('b1', 's', 'Improved financial management', ''),
+            new Benifits('b1', 's', 'Cost reduction', ''),
+            new Benifits('b1', 's', 'Better collaboration', ''),
+            new Benifits('b1', 's', 'Improved customer service', ''),
+            new Benifits('b1', 's', 'Efficient decision-making', ''),
+            new Benifits('b1', 's', 'Time-saving through process automation', ''),
+            new Benifits('b1', 's', 'Security & Compliance', ''),
 
         );
 
@@ -86,12 +86,12 @@ class Page extends BaseController
 
 
         $benefits = array(
-            new Benifits('b1', 'RealEstatePro', 'Leading Property Management solution'),
-            new Benifits('b1', 'Contract Management', 'Project Sub-contractor tasks monitoring'),
-            new Benifits('b1', 'Bid Management', 'Facilitating Bid Contracts & execution'),
-            new Benifits('b1', 'Investment Portfolio Management', 'Effective control of Investment Portfolios'),
-            new Benifits('b1', 'Treasury Managemen', 'Optimize and track loan management'),
-            new Benifits('b1', 'AXOnePay', 'Cutting-edge Payroll Solutions'),
+            new Benifits('b1', 'RealEstatePro', 'Leading Property Management solution', 'realestate-pro'),
+            new Benifits('b1', 'Contract Management', 'Project Sub-contractor tasks monitoring', 'contract-management'),
+            new Benifits('b1', 'Bid Management', 'Facilitating Bid Contracts & execution', 'bid-management'),
+            new Benifits('b1', 'Investment Portfolio Management', 'Effective control of Investment Portfolios', 'investment-portfolio-management'),
+            new Benifits('b1', 'Treasury Managemen', 'Optimize and track loan management', 'treasury-management'),
+            new Benifits('b1', 'AXOnePay', 'Cutting-edge Payroll Solutions', 'axone-pay'),
 
         );
 

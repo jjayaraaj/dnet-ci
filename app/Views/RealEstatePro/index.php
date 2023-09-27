@@ -21,9 +21,9 @@
                         an advanced Property Management software
                         on Microsoft Dynamics 365
                     </h1>
-                    <div class=" text-base md:text-lg font-semibold">
+                    <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
-                    </div>
+                    </div> -->
 
                     <div class="flex  md:flex-row  gap-4 items-center">
                         <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -160,7 +160,7 @@
             </div>
             <div class=" flex-1 space-y-8">
                 <div class=" inline-flex gap-4 pl-8">
-                    <button class="btn " :class="property === 1 ? 'property-active' : 'btn-primary'" @click="property = 1">
+                    <button class="btn " :class="property === 1 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'" @click="property = 1">
                         <h4>Property Leasing</h4>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -168,7 +168,7 @@
 
                     </button>
 
-                    <button class="btn btn-primary" @click="property = 2" :class="property === 2 ? 'property-active' : 'btn-primary'">
+                    <button class="btn btn-primary" @click="property = 2" :class="property === 2 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'">
                         <h4>Property Sales</h4>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

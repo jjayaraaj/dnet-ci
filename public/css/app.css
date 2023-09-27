@@ -617,6 +617,9 @@ p{
 .ml-6{
   margin-left: 1.5rem;
 }
+.ml-8{
+  margin-left: 2rem;
+}
 .-mr-1{
   margin-right: -0.25rem;
 }
@@ -1030,6 +1033,14 @@ p{
 .bg-primary-light{
   --tw-bg-opacity: 1;
   background-color: rgb(18 120 194 / var(--tw-bg-opacity));
+}
+.\!bg-primary-light{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(18 120 194 / var(--tw-bg-opacity)) !important;
+}
+.\!bg-secondary-dark{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(216 239 255 / var(--tw-bg-opacity)) !important;
 }
 .bg-cover{
   background-size: cover;
@@ -1983,9 +1994,9 @@ textarea{
 
 .property-active{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(14 97 157 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   display: flex;
   align-items: center;
   -moz-column-gap: 0.5rem;
@@ -2006,6 +2017,9 @@ textarea{
 
 .inner-section-blue{
   display: flex;
+  align-items: flex-end;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .inner-section-blue .img-section{
@@ -2775,6 +2789,12 @@ textarea{
       height: 4rem;
     }
     & .top-div{
+      align-items: center;
+    }
+    & .top-div{
+      justify-content: center;
+    }
+    & .top-div{
       border-top-left-radius: 1.5rem;
     }
     & .top-div{
@@ -2784,7 +2804,7 @@ textarea{
     @media (min-width: 768px){
 
       & .top-div{
-        display: block;
+        display: flex;
       }
     }
     & .bottom-div{
@@ -3082,10 +3102,6 @@ textarea{
     width: 20rem;
   }
 
-  .md\:w-full{
-    width: 100%;
-  }
-
   .md\:max-w-3xl{
     max-width: 48rem;
   }
@@ -3149,6 +3165,10 @@ textarea{
     padding-right: 0px;
   }
 
+  .md\:pt-16{
+    padding-top: 4rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -3208,10 +3228,6 @@ textarea{
 
   .lg\:w-2\/5{
     width: 40%;
-  }
-
-  .lg\:w-\[10\%\]{
-    width: 10%;
   }
 
   .lg\:grid-cols-5{

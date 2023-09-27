@@ -21,7 +21,7 @@ Microsoft Dynamics 365 for Real Estate Management
                 <div class=" first-div ">
                     <h1 class="h1">
                         Simplify Property Sales & Leasing with Microsoft Dynamics 365
-                        <span class="span ">Contract Management</span>
+                        <span class="span ">Real Estate Management Solution</span>
 
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">

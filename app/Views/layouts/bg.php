@@ -13,6 +13,9 @@ $supportPartnerBg = base_url() . '/images/service/support/microsoft-dynamics-365
 $upgradeBanner = base_url() . '/images/service/upgrade/dynamics-365-finance-operations-upgrade-services.svg';
 $upgradePartnerBg = base_url() . '/images/service/upgrade/dynamics-365-upgrades.svg';
 $upgradeConnectBg = base_url() . '/images/service/upgrade/microsoft-dynamics-365-upgrade-services.svg';
+$implementationBanner = base_url() . '/images/service/implementation/dynamics-365-finance-operations-implementation.svg';
+$implementationPartnerBanner = base_url() . '/images/service/implementation/microsoft-dynamics-365-implementation-services.svg';
+$implementationDynamicBg = base_url() . '/images/service/implementation/microsoft-dynamics-365-implementation.svg';
 
 
 
@@ -75,6 +78,18 @@ $upgradeConnectBg = base_url() . '/images/service/upgrade/microsoft-dynamics-365
 
     .bg-upgrade-connect {
         background-image: url('<?php echo $upgradeConnectBg ?>');
+    }
+
+    .bg-implementation-banner {
+        background-image: url('<?php echo $implementationBanner ?>');
+    }
+
+    .bg-implementation-partner {
+        background-image: url('<?php echo $implementationPartnerBanner ?>');
+    }
+
+    .bg-implementation-dynamic {
+        background-image: url('<?php echo $implementationDynamicBg ?>');
     }
 
 

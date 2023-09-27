@@ -50,7 +50,7 @@
 
             </div>
             <div class="content-section">
-                <h2>Boost your Business Competitiveness with Dynamic Netsoft’s Intelligent <span class="text-d-yellow">Boost your Business Competitiveness with Dynamic Netsoft’s Intelligent </span></h2>
+                <h2>Boost your Business Competitiveness with <span class="text-d-yellow">Dynamic Netsoft’s Intelligent</span></h2>
                 <div class="sub-content">
                     <p class="">
                         Dynamic Netsoft’s Bid Management software on Dynamics offers a comprehensive toolset to seamlessly navigate the intricate landscape of bid complexities, effortlessly streamline BOQ costing, and harness the power of our robust price simulator tools. </p>

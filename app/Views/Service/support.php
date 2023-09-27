@@ -168,7 +168,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                 </div>
 
                 <div class=" desktop-content" x-show="feature=== 2">
-                    <div class=" heading-1 hidden md:block ">Reengineeringp</div>
+                    <div class=" heading-1 hidden md:block ">Reengineering</div>
                     <p class="text-white">At Dynamic Netsoft, our Microsoft Dynamics 365 F&O support team begins with the process definitions from scratch, employing careful analysis and planning to identify the best outcomes for organizational productivity. Whether it's optimizing operational functions, streamlining the supply chain, or enhancing Finance & Operations and HR, our expert consultants offer comprehensive guidance across the entire enterprise. We also go the extra mile by designing customer experience strategies that extend beyond the confines of the organization, empowering companies to become highly reliable and trusted business partners. </p>
 
                     <div>

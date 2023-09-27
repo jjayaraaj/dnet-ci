@@ -438,10 +438,10 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <!-- section-6 -->
 <div class="max-w-container py-16 bg-primary md:bg-white  md:px-0">
     <div class="md:w-4/6 mx-auto space-y-4 md:space-y-8 px-6 md:px-0">
-        <h2 class="heading-1 text-left md:text-center !text-white md:text-black">
+        <h2 class="heading-1 text-left md:text-center !text-white md:!text-black">
             Discover How Our Contract Management Software Can Benefit Your Business
         </h2>
-        <p class=" !text-white md:text-black md:text-center">Endowed with the trust of numerous accomplished enterprises, our all-encompassing solution for contract management on Microsoft Dynamics 365 finance and operations, serves as a panacea for the complex task of contract management. It enables you to simplify your contract management processes, resulting in the efficacious completion of your projects, with its manifold benefits and streamlined approaches such as.</p>
+        <p class=" !text-white md:!text-black md:text-center">Endowed with the trust of numerous accomplished enterprises, our all-encompassing solution for contract management on Microsoft Dynamics 365 finance and operations, serves as a panacea for the complex task of contract management. It enables you to simplify your contract management processes, resulting in the efficacious completion of your projects, with its manifold benefits and streamlined approaches such as.</p>
 
     </div>
     <div class="feature">

@@ -7,7 +7,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-implementation-banner  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,11 +45,11 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
-        <div class=" inner-section-blue">
+        <div class=" inner-section-blue ">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/service/implementation/dynamics-365-implementation-partner.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Enhance operational efficiency & business potential with our<span class="text-d-yellow"> Dynamics 365 Finance & Operations Implementation Services</span></h2>
@@ -80,21 +80,20 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <div>
     <div class="max-w-container py-16">
         <div class="space-y-3">
-            <h3 class=" text-xl font-semibold text-center">Discover the Benefits of Microsoft ERP for the Construction Industry</h3>
-            <p class=" md:w-1/2 text-center mx-auto">Microsoft’s ERP – ISV solutions for Construction provide robust strategic planning tool that offers numerous
-                benefits to drive your business toward remarkable growth. These advantages include:</p>
+            <h3 class=" text-xl font-semibold text-center">Innovate, Integrate & Succeed: Explore Our Dynamic 365 ERP Implementation Services</h3>
+            <p class=" md:w-1/2 text-center mx-auto">Dynamic Netsoft, a Dynamics 365 Implementation partner, delivers world-class solutions tailored to diverse industry verticals, particularly the Property & Construction sector. With over a decade of experience and Microsoft affiliation, Dynamic Netsoft boasts the distinction of offering six world-class ISV solutions:</p>
         </div>
         <div>
             <div class="md:w-3/4 mx-auto ">
                 <div>
-                    <div class="h-24"></div>
+
                     <div class="">
                         <div class="owl-carousel owl-theme owl-service">
                             <?php foreach ($benefits as $product) {
                             ?>
                                 <div class=" default !h-auto ">
                                     <div class=" image ">
-                                        <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                        <img src="<?php echo base_url() ?>/images/service/implementation/<?php echo $product->image ?>.svg" alt="">
                                     </div>
 
                                     <div>
@@ -120,7 +119,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <!--section 2 ends-->
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-implementation-partner  bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -171,7 +170,9 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
         <div class="inner-section-box">
             <div class="tab h-[420px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/required-customizations.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Requirement analysis</div>
                     </div>
@@ -179,49 +180,63 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/designing-the-modules.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Designing the modules by setup</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/configuration.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Configuration</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/development-of-reports.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Development of reports</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/required-customizations.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Required customizations</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/end-user-training.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">End-User training</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/deploying-the-solution.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 7 ? 'active' : 'default'">Deploying the solution</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/service/implementation/go-live-with-post-implementation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 8 ? 'active' : 'default'">Go Live with post-implementation support</div>
                     </div>
@@ -435,14 +450,20 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/enhanced-operational.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Enhanced operational efficiency
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/faster-accurate.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Faster &
                     accurate decision-making
@@ -451,7 +472,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/streamlined-workflows.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Streamlined
                     workflows
@@ -460,7 +484,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/scalable-and-adaptable.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Scalable and
                     adaptable platform
@@ -469,7 +496,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/comprehensive-data.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Comprehensive
                     data insights and
@@ -479,7 +509,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/improved-customer.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Improved customer
                     engagement and
@@ -488,7 +521,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/enhanced-collaboration.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Enhanced
                     collaboration and
@@ -498,7 +534,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/robust-security.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Robust security
                     and compliance
@@ -508,7 +547,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/efficient-automation.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     Efficient automation
                     of functional
@@ -518,7 +560,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/service/implementation/a-holistic-view.svg" alt="">
+
+                </div>
                 <div class="bottom-div ">
                     A holistic view
                     of business
@@ -542,8 +587,8 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <!-- partner -->
 
 <div class=" flex bg-secondary ">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex  w-full">
+        <div class=" hidden lg:block w-2/5 grow  bg-implementation-dynamic bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Choose Dynamic Netsoft as Your Microsoft Dynamics 365 Implementation Partner?</h2>
@@ -572,36 +617,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('/layouts/success') ?>
 
 
 

@@ -685,7 +685,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">What does contract management software do?</div>
+                        <div class="question">What is Investment Portfolio Management Software?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 1 ? 'rotate-180' : ''">
@@ -695,16 +695,9 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">Our Dynamics 365 Contract Management Software
+                        <p class="">Investment Portfolio Management Software on Dynamics is designed to help organizations manage their investments, track their portfolio performance, and make informed decisions. It provides a centralized platform for managing investment-related data to help investors achieve their financial goals.
                         </p>
-                        <ul class=" list-disc pl-8">
-                            <li> Efficiently manages contractual agreements</li>
-                            <li>Offers a centralized platform</li>
-                            <li>Automated processes</li>
-                            <li>Streamline communication among stakeholders</li>
-                            <li>Ensures compliance with legal and regulatory requirements</li>
 
-                        </ul>
 
                     </div>
                 </div>
@@ -716,7 +709,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">How does contract management software help your business?</div>
+                        <div class="question">Who uses Investment Portfolio Management Software?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 2 ? 'rotate-180' : ''">
@@ -726,8 +719,7 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">The manual system of the contract management process is highly cumbersome and time-consuming. Our contract management software on Microsoft Dynamics 365 finance & operations empowers your organization to optimize contract processes, mitigate risks, and enhance your competitive edge.
-                        </p>
+                        <p class="">Investment Portfolio Management Software is typically used by investment professionals, asset managers, financial advisors, corporate finance departments, and individual investors to manage their investments and track their performance. </p>
 
 
                     </div>
@@ -739,7 +731,7 @@ Investment Portfolio Management Software on Dynamics 365
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">What kinds of businesses need Contract Management Software?</div>
+                        <div class="question">How does Investment Portfolio Management Software help entrepreneurs?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 3 ? 'rotate-180' : ''">
@@ -749,34 +741,23 @@ Investment Portfolio Management Software on Dynamics 365
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">In today’s business world, where contracts serve as the backbone of agreements between parties, it is imperative that all types of businesses, from startups to Fortune 500 companies, need powerful contract management software to streamline their contract-related processes and enhance overall operational efficiency.
-
+                        <p class=""> An Investment Portfolio Management Software can help entrepreneurs in several ways, such as
                         </p>
+                        <ul class=" list-disc ml-8">
+                            <li>Providing real-time insights </li>
+                            <li>Help make data-driven decisions</li>
+                            <li>Maximize returns </li>
+                            <li>Save time and resources</li>
+                            <li>Track and analyze portfolio performance.</li>
+                            <li>Manage & mitigate risk</li>
+                            <li>Streamlining processes & manage transactions.</li>
+
+                        </ul>
 
                     </div>
                 </div>
             </div>
 
-            <div>
-                <div class="faq" @click="selected !== 4 ? selected = 4 : selected = null">
-                    <div class="icon ">
-                        <div class="q">Q</div>
-
-                        <div class="question">Who offers the best Contract Management Solution in Microsoft Dynamics 365?</div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 4 ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-
-                </div>
-                <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
-                    <div class="pl-12 pb-8 space-y-2">
-                        <p class="">Multiple vendors offer contract management solutions on Microsoft Dynamics, each with its unique features and benefits. Dynamic Netsoft offers comprehensive contract management software on Dynamics 365, which is widely recognized as one of the best in the market.</p>
-
-                    </div>
-                </div>
-            </div>
 
 
 
