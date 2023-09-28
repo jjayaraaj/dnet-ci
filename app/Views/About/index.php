@@ -7,7 +7,7 @@
 <!--banner-->
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-about-banner">
     <div class="max-w-container mx-auto h-full big-screen">
         <div class="banner-space"></div>
 
@@ -69,8 +69,8 @@
         <!-- dynamic -->
         <div class="flex items-end">
             <div class=" w-96  ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-Leasing-Image.svg" x-show="property === 1">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-Sales.svg" x-show="property === 2">
+                <img src="<?php echo base_url() ?>/images/about/our-vision.svg" x-show="property === 1">
+                <img src="<?php echo base_url() ?>/images/about/our-mission.svg" x-show="property === 2">
             </div>
             <div class=" flex-1 space-y-8">
                 <div class=" inline-flex gap-4 pl-8">
@@ -121,7 +121,7 @@
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/about/design-phase.svg" alt="">
             </div>
             <div class=" curve-div">
                 <div class="title">Diagnostic Phase</div>
@@ -131,7 +131,7 @@
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/about/analysis-phase.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Analysis Phase</div>
@@ -145,7 +145,7 @@
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/about/design-phase.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Design Phase</div>
                 <p>During this phase, we design the solution and document its requirements. We also plan testing, outline training needs, and identify customizations.</p>
@@ -153,7 +153,7 @@
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/development-phase.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Development Phase</div>
                 <p>Now, we build the solution and any necessary custom features. We rigorously test it to ensure it meets business requirements. </p>
@@ -166,7 +166,7 @@
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/deployment-phase.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Deployment Phase</div>
                 <p>This phase includes installing the solution, migrating data, and final testing by users. We also carry out training and complete the deployment.</p>
@@ -174,7 +174,7 @@
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/operation-phase.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Operation Phase</div>
                 <p>In this ongoing phase, we provide continuous support, maintenance, and improvements to keep the solution running smoothly.</p>
@@ -202,7 +202,9 @@
         <div class="inner-section-box h-[300px] ">
             <div class="tab overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/inception.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Phase 1: Inception</div>
                     </div>
@@ -210,28 +212,36 @@
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/investment.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Phase 2: Investment</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/growth.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Phase 3: Growth</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/consolidation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Phase 4: Consolidation</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/expansion.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Phase 5: Expansion</div>
                     </div>
@@ -239,7 +249,9 @@
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/about/aspiration.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Phase 6: Aspiration</div>
                     </div>
@@ -538,8 +550,8 @@
 <!-- section -3 ends -->
 
 <div class="bg-secondary">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex">
+        <div class=" hidden lg:block w-2/5 grow  bg-about-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Dynamic Netsoft Technologies</h2>
@@ -573,7 +585,9 @@
                 <div class=" border-r border-b border-white h-56 px-8 items-center">
                     <div class="flex flex-col justify-center h-full space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/india.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
                                 India
                             </div>
@@ -587,9 +601,11 @@
                 <div class=" border-r border-b border-white px-8 h-56">
                     <div class="flex flex-col justify-center h-full space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/united-states.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
-                                India
+                                United States
                             </div>
                         </div>
                         <div class="text-white ">
@@ -601,9 +617,11 @@
                 <div class="   border-b h-56">
                     <div class="flex flex-col justify-center h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/singapore.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
-                                India
+                                Singapore
                             </div>
                         </div>
                         <div class="text-white ">
@@ -615,9 +633,11 @@
                 <div class=" border-r  border-white h-56">
                     <div class="flex flex-col justify-center h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/dubai-flag.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
-                                India
+                                Dubai
                             </div>
                         </div>
                         <div class="text-white ">
@@ -629,9 +649,11 @@
                 <div class=" border-r  border-white h-56">
                     <div class="flex flex-col justify-center h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/ghana.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
-                                India
+                                Ghana
                             </div>
                         </div>
                         <div class="text-white ">
@@ -643,9 +665,11 @@
                 <div class="   h-56">
                     <div class="flex flex-col justify-center h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 bg-gray-50"></div>
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" alt="">
+                            </div>
                             <div class="display-3 text-white ">
-                                India
+                                Saudi Arabia
                             </div>
                         </div>
                         <div class="text-white ">
@@ -661,7 +685,7 @@
 <!--global ends-->
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="bg-about-promise bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" md:w-3/5 space-y-8 text-center md:text-left px-16 ">

@@ -680,11 +680,11 @@ p{
 .h-auto{
   height: auto;
 }
-.h-24{
-  height: 6rem;
-}
 .h-\[550px\]{
   height: 550px;
+}
+.h-24{
+  height: 6rem;
 }
 .h-\[30rem\]{
   height: 30rem;
@@ -1030,17 +1030,13 @@ p{
 .\!bg-transparent{
   background-color: transparent !important;
 }
-.bg-primary-light{
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 120 194 / var(--tw-bg-opacity));
-}
-.\!bg-primary-light{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(18 120 194 / var(--tw-bg-opacity)) !important;
-}
 .\!bg-secondary-dark{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(216 239 255 / var(--tw-bg-opacity)) !important;
+}
+.bg-primary-light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 120 194 / var(--tw-bg-opacity));
 }
 .bg-cover{
   background-size: cover;
@@ -3189,11 +3185,6 @@ textarea{
   .md\:\!text-black{
     --tw-text-opacity: 1 !important;
     color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-  }
-
-  .md\:text-black{
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 }
 @media (min-width: 1024px){

@@ -16,8 +16,9 @@ $upgradeConnectBg = base_url() . '/images/service/upgrade/microsoft-dynamics-365
 $implementationBanner = base_url() . '/images/service/implementation/dynamics-365-finance-operations-implementation.svg';
 $implementationPartnerBanner = base_url() . '/images/service/implementation/microsoft-dynamics-365-implementation-services.svg';
 $implementationDynamicBg = base_url() . '/images/service/implementation/microsoft-dynamics-365-implementation.svg';
-
-
+$aboutBannerBg = base_url() . '/images/about/dynamic-netsoft-about-us.svg';
+$aboutDigitalBg = base_url() . '/images/about/dynamic-netsoft-technologies.svg';
+$aboutPromiseBg = base_url() . '/images/about/our-promise.svg';
 
 
 
@@ -90,6 +91,18 @@ $implementationDynamicBg = base_url() . '/images/service/implementation/microsof
 
     .bg-implementation-dynamic {
         background-image: url('<?php echo $implementationDynamicBg ?>');
+    }
+
+    .bg-about-banner {
+        background-image: url('<?php echo $aboutBannerBg ?>');
+    }
+
+    .bg-about-digital {
+        background-image: url('<?php echo $aboutDigitalBg ?>');
+    }
+
+    .bg-about-promise {
+        background-image: url('<?php echo $aboutPromiseBg ?>');
     }
 
 
