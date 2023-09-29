@@ -7,11 +7,11 @@
 <!--banner-->
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-banner">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-partner-banner">
     <div class="max-w-container mx-auto h-full big-screen">
         <div class="banner-space"></div>
 
-        <div class="  w-full  h-[500px]">
+        <div class="  w-full  h-[400px]">
 
 
             <!-- inner banner -->
@@ -31,9 +31,9 @@
 <!--banner /-->
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class=" bg-success-banner bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
-        <div class="flex">
+        <div class="flex justify-end">
             <div class=" md:w-3/5 space-y-8 text-center md:text-left px-16 ">
                 <div>
 
@@ -56,7 +56,7 @@
 
 <div class="bg-secondary">
     <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+        <div class=" hidden lg:block w-2/5 grow  bg-partner-why bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Partner with Dynamic Netsoft Technologies?</h2>
@@ -82,7 +82,7 @@
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/partner/enhanced-visibility.svg" alt="">
             </div>
             <div class=" curve-div">
                 <div class="title">Enhanced Visibility</div>
@@ -92,7 +92,7 @@
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/partner/extend-your-reach.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Extend Your Reach</div>
@@ -106,7 +106,7 @@
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/partner/deliver-exceptional.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title"> Deliver Exceptional Expertise</div>
                 <p>Leverage a dedicated team of Microsoft experts to enhance existing relationships and cultivate new levels of trust with your valued customers.</p>
@@ -114,7 +114,7 @@
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/partner/strategic-consultation.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title"> Strategic Consultation</div>
                 <p>Receive guidance in selecting the ideal services to meet customer’s current and future business requirements.</p>
@@ -127,7 +127,7 @@
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/partner/industry-specific.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title"> Industry-Specific Customization</div>
                 <p>Position solutions to unique needs and tailored functionality of market needs & customer requirements.</p>
@@ -135,7 +135,7 @@
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/partner/sustained-progression.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title"> Sustained Progression</div>
                 <p>Enjoy ongoing support and expert consultation to stay on the path of success.</p>

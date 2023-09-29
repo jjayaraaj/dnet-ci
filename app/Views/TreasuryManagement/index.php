@@ -6,7 +6,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-treasury1 ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -44,11 +44,11 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/treasury/treasury-management-system-on-d365.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Amplify Your Capital Efficiency with Our <span class="text-d-yellow">Loan Management Software on Dynamics</span></h2>
@@ -83,10 +83,12 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 <div class=" md:bg-secondary bg-white pb-16" x-data="{feature: 1}">
     <div class="max-w-container ">
 
-        <div class="inner-section-box">
-            <div class="tab">
+        <div class="inner-section-box ">
+            <div class="tab md:h-[400px] overflow-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/loan-memorandum.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Loan Memorandum</div>
                     </div>
@@ -94,28 +96,36 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/loan-contract.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Loan Contract</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/collaterals.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Collaterals</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/loan-disbursement.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Loan disbursement</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/manage-instalments.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Manage instalments</div>
                     </div>
@@ -123,7 +133,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/treasury/inquiries-reports.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Inquiries & Reports</div>
                     </div>
@@ -133,7 +145,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             </div>
-            <div class="content  md:h-[550px]">
+            <div class="content  md:h-[400px] overflow-auto">
                 <!-- content 1  -->
 
                 <div class="mobile-tab " @click="feature = 1">
@@ -366,7 +378,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-treasury4 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
@@ -405,14 +417,18 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/complete-visibility.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Complete visibility
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/human-error-elimination.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Human error elimination
                 </div>
@@ -420,7 +436,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/prevention-of-payment.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Prevention of payment delays
                 </div>
@@ -428,7 +446,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/data-driven.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Centralized and secured data storage.
                 </div>
@@ -436,7 +456,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/data-driven.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Data-driven decision making
                 </div>
@@ -444,14 +466,18 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/proficient-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Streamlined loan request management.
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/efficient-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Efficient loan approval process
                 </div>
@@ -459,7 +485,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/effective-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Flexibility in loan terms and management
                 </div>
@@ -467,7 +495,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/prevention-of-payment.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Easy and accurate loan distribution
                 </div>
@@ -475,42 +505,54 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/cost-effective.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Cost-effective & Time-saving
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/accurate-interest-tracking.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Accurate interest tracking
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/efficient-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Improved loan security by efficient collateral tracking
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/effective-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Effective loan repayment planning
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/detailed-payment.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Detailed payment tracking
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/treasury/proficient-loan.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Proficient loan monitoring
                 </div>

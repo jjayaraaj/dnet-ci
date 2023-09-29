@@ -19,12 +19,71 @@ $implementationDynamicBg = base_url() . '/images/service/implementation/microsof
 $aboutBannerBg = base_url() . '/images/about/dynamic-netsoft-about-us.svg';
 $aboutDigitalBg = base_url() . '/images/about/dynamic-netsoft-technologies.svg';
 $aboutPromiseBg = base_url() . '/images/about/our-promise.svg';
-
+$partnerBannerbg = base_url() . '/images/partner/dynamic-netsoft-become-a-partner.svg';
+$partnerSuccessbg = base_url() . '/images/partner/success-journey.svg';
+$partnerBg = base_url() . '/images/partner/why-partner.svg';
+$axone1 = base_url() . '/images/axone/microsoft-dynamics-365-payroll.svg';
+$axone2 = base_url() . '/images/axone/microsoft-dynamics-365-hr-and-payroll.svg';
+$axone4 = base_url() . '/images/axone/microsoft-payroll-software.svg';
+$annata1 =  base_url() . '/images/annata/annata-365.svg';
+$treasury1 =  base_url() . '/images/treasury/loan-management-software-on-dynamics.svg';
+$treasury4 =  base_url() . '/images/treasury/loan-management-software.svg';
+$propGoto1 = base_url() . '/images/propgoto/propgoto-banner.svg';
+$leasing1 = base_url() . '/images/leasing/property-lease-management-for-dynamics-365.svg';
+$leasing4 = base_url() . '/images/leasing/property-lease-management.svg';
 
 
 ?>
 
 <style>
+    .bg-leasing1 {
+        background-image: url('<?php echo $leasing4 ?>');
+    }
+
+    .bg-leasing4 {
+        background-image: url('<?php echo $leasing1 ?>');
+    }
+
+    .bg-propGoto1 {
+        background-image: url('<?php echo $propGoto1 ?>');
+    }
+
+    .bg-treasury4 {
+        background-image: url('<?php echo $treasury4 ?>');
+    }
+
+    .bg-treasury1 {
+        background-image: url('<?php echo $treasury1 ?>');
+    }
+
+    .bg-annata1 {
+        background-image: url('<?php echo $annata1 ?>');
+    }
+
+    .bg-axone-4 {
+        background-image: url('<?php echo $axone4 ?>');
+    }
+
+    .bg-axone-1 {
+        background-image: url('<?php echo $axone1 ?>');
+    }
+
+    .bg-axone-2 {
+        background-image: url('<?php echo $axone2 ?>');
+    }
+
+    .bg-partner-banner {
+        background-image: url('<?php echo $partnerBannerbg ?>');
+    }
+
+    .bg-partner-why {
+        background-image: url('<?php echo $partnerBg ?>');
+    }
+
+    .bg-success-banner {
+        background-image: url('<?php echo $partnerSuccessbg ?>');
+    }
+
     .bg-banner {
         background-image: url('<?php echo $bannerImage ?>');
     }

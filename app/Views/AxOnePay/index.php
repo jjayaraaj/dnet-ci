@@ -7,7 +7,7 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-axone-1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,13 +45,13 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/axone/microsoft-dynamics-365-hr-and-payroll.svg" alt="">
             </div>
-            <div class="content-section">
+            <div class="content-section ">
                 <h2>Optimize Your HR Operations with Our Advanced <span class="text-d-yellow">Payroll Solution on Microsoft Dynamics 365</span></h2>
                 <div class="sub-content">
                     <p class="">
@@ -85,7 +85,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
         <div class="inner-section-box">
             <div class="tab h-[550px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/company-parameters.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Company Parameters</div>
                     </div>
@@ -93,28 +95,36 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/vacation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Vacation</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/employee-loans.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Employee Loans</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/employee-transactions.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Employee transactions</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/employee-payments.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Employee Payments</div>
                     </div>
@@ -122,7 +132,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/salary-processing.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Salary Processing</div>
                     </div>
@@ -130,21 +142,27 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/consolidated-reports-for-finance-and-payroll.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 7 ? 'active' : 'default'">Consolidated Reports for Finance and Payroll</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/document-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 8 ? 'active' : 'default'">Document Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 9" :class="feature === 9 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/axone/employee-self-service.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 9 ? 'active' : 'default'">Employee self-service</div>
                     </div>
@@ -551,7 +569,7 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-axone-4 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
@@ -590,14 +608,18 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/faster-accurate.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Faster & accurate payroll execution
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/customized-payment.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Customized payment analysis & reports
                 </div>
@@ -605,7 +627,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/accurate-vacation.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Accurate vacation calculations and tracking
                 </div>
@@ -613,7 +637,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/save-time.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Save time with pre-configured workflows
                 </div>
@@ -621,7 +647,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/eliminate-errors.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Eliminate errors from manual & legacy systems
                 </div>
@@ -629,14 +657,18 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/quick-tracking.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Quick tracking of historical payroll information
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/manage-all-pay.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Manage all pay groups from a single window.
                 </div>
@@ -644,7 +676,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/regional-norms.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Regional Norms & legal compliance
                 </div>
@@ -652,7 +686,9 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/quick-workflow.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Quick workflow for leave management
                 </div>
@@ -660,21 +696,27 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/advanced-salary.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Advanced salary processing options
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/eliminate-errors.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Efficient document management
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/axone/manage-all-pay.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Secured & advanced self-service portal (ESS)
                 </div>

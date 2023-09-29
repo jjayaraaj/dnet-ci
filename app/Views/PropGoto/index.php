@@ -6,7 +6,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-propGoto1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -44,11 +44,11 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/propgoto/saas-image.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Amplify Your Capital Efficiency with Our <span class="text-d-yellow">Loan Management Software on Dynamics</span></h2>
@@ -84,9 +84,11 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
     <div class="max-w-container ">
 
         <div class="inner-section-box">
-            <div class="tab">
+            <div class="tab md:h-[400px] overflow-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Loan Memorandum</div>
                     </div>
@@ -94,28 +96,36 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Loan Contract</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Collaterals</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Loan disbursement</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Manage instalments</div>
                     </div>
@@ -123,7 +133,9 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/propgoto/.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Inquiries & Reports</div>
                     </div>
@@ -133,7 +145,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 
 
             </div>
-            <div class="content  md:h-[550px]">
+            <div class="content  md:h-[400px] overflow-auto">
                 <!-- content 1  -->
 
                 <div class="mobile-tab " @click="feature = 1">

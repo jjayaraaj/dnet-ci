@@ -704,6 +704,9 @@ p{
 .h-5{
   height: 1.25rem;
 }
+.h-\[400px\]{
+  height: 400px;
+}
 .h-\[600px\]{
   height: 600px;
 }
@@ -933,6 +936,9 @@ p{
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
+.overflow-auto{
+  overflow: auto;
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1018,10 +1024,6 @@ p{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 .bg-gray-200{
   --tw-bg-opacity: 1;
@@ -2013,7 +2015,7 @@ textarea{
 
 .inner-section-blue{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
 }
@@ -2521,6 +2523,10 @@ textarea{
       & .circle{
         --tw-bg-opacity: 1;
         background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+
+      & .circle{
+        padding: 0.75rem;
       }
 
       & .text{
@@ -3050,6 +3056,10 @@ textarea{
     display: block;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:h-64{
     height: 16rem;
   }
@@ -3060,6 +3070,14 @@ textarea{
 
   .md\:h-\[550px\]{
     height: 550px;
+  }
+
+  .md\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .md\:h-\[400px\]{
+    height: 400px;
   }
 
   .md\:w-4\/5{

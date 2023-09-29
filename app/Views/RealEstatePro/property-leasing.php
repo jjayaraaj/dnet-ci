@@ -5,7 +5,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-realestatepro">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-leasing1">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -42,11 +42,11 @@
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
-            <div class="img-section hidden md:block">
-
+            <div class="img-section hidden md:flex justify-end">
+                <img src="<?php echo base_url() ?>/images/leasing/property-lease-management-software-microsoft-dynamics.svg" alt="">
             </div>
             <div class="content-section">
                 <!-- <h2><span class="text-d-yellow">Annata 365</span></h2> -->
@@ -66,10 +66,12 @@
 <div class=" md:bg-secondary bg-white py-16" x-data="{feature: 1}">
     <div class="max-w-container ">
 
-        <div class="inner-section-box h-[600px] ">
-            <div class="tab overflow-y-auto">
+        <div class="inner-section-box ">
+            <div class="tab md:h-[550px]  overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/property-creation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Property Creation</div>
                     </div>
@@ -77,28 +79,36 @@
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/property-information-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Property Information Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/presales-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Presales Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/quotation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Quotation</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/reservations-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Reservations Management</div>
                     </div>
@@ -106,7 +116,9 @@
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/rent-lease-agreements.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Rent & Lease Agreements</div>
                     </div>
@@ -114,21 +126,27 @@
 
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/agreement-execution-function.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 7 ? 'active' : 'default'">Agreement Execution Function</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/rent-appraisal.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 8 ? 'active' : 'default'">Rent Appraisal</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 9" :class="feature === 9 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/leasing/analytics.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 9 ? 'active' : 'default'">Analytics</div>
                     </div>
@@ -136,7 +154,7 @@
 
 
             </div>
-            <div class="content  ">
+            <div class="content md:[h-550px] overflow-y auto ">
                 <!-- content 1  -->
 
                 <div class="mobile-tab " @click="feature = 1">
@@ -481,7 +499,7 @@
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-leasing4 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
