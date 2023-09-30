@@ -7,7 +7,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-contract1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,11 +45,11 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/contract/contract-management-software-on-dynamics.svg" alt="">
             </div>
             <div class="content-section">
                 <h2> Reinvent the complete spectrum of contract management capabilities with <span class="text-d-yellow">Dynamics 365 Contract Management Software</span></h2>
@@ -89,7 +89,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
         <div class="inner-section-box">
             <div class="tab">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/contract-order.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Contract Order</div>
                     </div>
@@ -97,28 +99,36 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/budget-control.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Budget Control</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/submittals-deliverables-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Submittals/Deliverables Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/request-for-inspection-tracking.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Request for Inspection (RFI) Tracking</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/work-completion-tracking.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Work Completion Tracking</div>
                     </div>
@@ -126,7 +136,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/dispute-tracking.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Dispute Tracking</div>
                     </div>
@@ -134,7 +146,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/contract/contract-invoicing.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 7 ? 'active' : 'default'">Contract Invoicing</div>
                     </div>
@@ -406,7 +420,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-contract2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
@@ -447,14 +461,18 @@ Contract Management Software on Dynamics 365 | DNETSOFT
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/advanced-project-management-system.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Advanced project management system
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/multilevel-work-breakdown-structures.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Multilevel work breakdown structures
                 </div>
@@ -462,7 +480,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/robust-resource-scheduling.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Robust resource scheduling
                 </div>
@@ -470,7 +490,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/project-document-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Project document management
                 </div>
@@ -478,7 +500,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/role-based-dashboards-and-reports.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Role-based dashboards and reports
                 </div>
@@ -486,14 +510,18 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/360-degree-project-visibility.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     360-degree project visibility
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/powerful-search-and-filter-functions.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Powerful search and filter functions
                 </div>
@@ -501,7 +529,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/contractor-portal-for-updates.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Contractor portal for updates
                 </div>
@@ -509,7 +539,9 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/accurate-contract-order-activities.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Accurate contract order activities
                 </div>
@@ -517,42 +549,54 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/effective-budget-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Effective budget management
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/contractor-portal-for-updates.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Payment control for submittals
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/advanced-project-management-system.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Inspection tracking by managers
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/robust-resource-scheduling.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Periodic work completion tracking
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/role-based-dashboards-and-reports.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Dispute tracking for contractor issues
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/contract/contractor-portal-for-updates.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Detailed contract invoicing tracking
                 </div>

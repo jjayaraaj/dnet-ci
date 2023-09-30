@@ -377,10 +377,15 @@ textarea {
     & .top-div {
       @apply hidden  h-16 bg-primary rounded-tl-3xl md:flex items-center justify-center;
     }
+
     & .bottom-div {
       @apply bg-primary-light border-l-4 border-l-secondary-dark md:bg-secondary md:h-28 md:rounded-br-3xl md:text-center flex items-center md:shadow-md md:shadow-indigo-200 px-4 py-2 md:py-0 font-semibold md:font-normal text-white md:text-black;
     }
   }
+}
+
+.top-div img {
+  @apply h-8;
 }
 
 .inner-banner {

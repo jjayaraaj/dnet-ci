@@ -33,8 +33,8 @@
 </head>
 
 <body>
-  <nav x-data="{atTop: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
-    <div class="relative flex items-center "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
+  <nav x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
+    <div class="relative flex items-center justify-between px-5 md:p-0 "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
       <div class="menu">
         <a href="/">Home
 
@@ -118,17 +118,141 @@
         <a href="<?php echo base_url() ?>/about-us">About Us</a>
         <a href="#">Contact us</a>
 
-      </div><button type="button" class="-my-1 -mr-1 ml-6 h-8 w-8 flex items-center justify-center lg:hidden"><span class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900">
-          <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg></button>
-      <div class="hidden lg:ml-4 lg:flex lg:items-center  lg:pl-4">
+      </div>
+
+
+      <div class=" hidden md:flex lg:ml-4 lg:flex lg:items-center  lg:pl-4">
         <a class="btn btn-primary" href="#">
           <span>Enquire Now </span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
 
         </a>
+      </div>
+
+      <div class="flex items-center  lg:hidden">
+        <a class="bg-primary text-white text-xs px-2 py-2 rounded-3xl font-bold" href="#">
+          <span>Enquire Now </span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+
+        </a>
+        <button type="button" class="-my-1 -mr-1 ml-2 h-8 w-8 flex items-center justify-center" @click="mobNav = !mobNav">
+          <span class="sr-only">Open navigation</span>
+
+          <svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900 ">
+            <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+
+
+
+
+    </div>
+    <div class="flex md:hidden h-screen bg-primary-light  w-full" x-show="mobNav">
+
+      <div class="px-6 py-2 w-full" x-data="{navMob: 0}">
+        <ul role="list" class="divide-y divide-blue-400 w-full">
+          <li class="py-4">
+            <a class=" font-semibold text-lg">Home</a>
+          </li>
+          <li class="py-4 " @click="navMob !== 1 ? navMob = 1 : navMob = null">
+            <div class="flex items-center justify-between">
+              <a class=" font-semibold text-lg">Idustries</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+
+            <div class=" bg-primary w-full h-32 overflow-y-auto px-3 py-5" x-show="navMob === 1">
+              <ul class=" space-y-3">
+                <li class=" flex text-white gap-x-2 items-cente">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Real Estate</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Construction</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Retail</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Financial Service</p>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="py-4 " @click="navMob !== 2 ? navMob = 2 : navMob = null">
+            <div class="flex items-center justify-between">
+              <a class=" font-semibold text-lg">Solutions</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+
+            <div class=" bg-primary w-full h-32 overflow-y-auto px-3 py-5" x-show="navMob === 2">
+              <ul class=" space-y-3">
+                <li class=" flex text-white gap-x-2 items-cente">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Real Estate</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Construction</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Retail</p>
+                </li>
+                <li class=" flex text-white gap-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  <p class="text-base">Financial Service</p>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="py-4">
+            <a class=" font-semibold text-lg">Services</a>
+          </li>
+          <li class="py-4">
+            <a class=" font-semibold text-lg">About Us</a>
+          </li>
+          <li class="py-4">
+            <a class=" font-semibold text-lg">Blog</a>
+          </li>
+
+          <li class="py-4">
+            <a class=" font-semibold text-lg">Contact</a>
+          </li>
+
+          <!-- More items... -->
+        </ul>
       </div>
     </div>
   </nav>

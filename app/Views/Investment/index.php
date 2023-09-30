@@ -7,7 +7,7 @@ Investment Portfolio Management Software on Dynamics 365
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-investment1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,11 +45,11 @@ Investment Portfolio Management Software on Dynamics 365
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/investment/investment-management-on-dynamics.svg" alt="">
             </div>
             <div class="content-section">
                 <h2> Experience forecast accuracy and market insights of your Portfolios with <span class="text-d-yellow">Investment Management Software on Dynamics 365</span></h2>
@@ -89,7 +89,9 @@ Investment Portfolio Management Software on Dynamics 365
         <div class="inner-section-box">
             <div class="tab h-[500px] overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/investment-parameters.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Investment Parameters</div>
                     </div>
@@ -97,28 +99,36 @@ Investment Portfolio Management Software on Dynamics 365
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/risk-analysis.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Risk Analysis</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/document-management.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Document Management</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/key-performance-indicator.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Key Performance Indicator</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/periodic-activities-area.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Periodic Activities Area</div>
                     </div>
@@ -126,7 +136,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
                 <div class="item" @click="feature = 6" :class="feature === 6 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/inquiries-on-the-fly.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 6 ? 'active' : 'default'">Inquiries on-the-fly</div>
                     </div>
@@ -134,28 +146,36 @@ Investment Portfolio Management Software on Dynamics 365
 
 
                 <div class="item" @click="feature = 7" :class="feature === 7 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/designated-transaction-area.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 7 ? 'active' : 'default'">Designated Transaction Area</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 8" :class="feature === 8 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/master-level-data-store.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 8 ? 'active' : 'default'">Master Level Data-store</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 9" :class="feature === 9 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/efficient-reporting-system.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 9 ? 'active' : 'default'">Efficient Reporting System</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 10" :class="feature === 10 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/investment/open-platform-for-integration.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="default" :class="feature === 10 ? 'active' : 'default'">Open Platform for Integration</div>
                     </div>
@@ -527,9 +547,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-investment2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
-        <div class="flex">
+        <div class="flex justify-end">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
                 <div>
                     <h3 class=" text-xl font-semibold">Fortify Your Financial Fortune with Our </h3>
@@ -566,14 +586,18 @@ Investment Portfolio Management Software on Dynamics 365
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/efficient-investment-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Efficient investment management
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/real-time-investment-monitoring.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Real-time investment monitoring
                 </div>
@@ -581,7 +605,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/complete-visibility-of-portfolios.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Complete visibility of portfolios
                 </div>
@@ -589,7 +615,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/informed-investment-decisions.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Informed investment decisions
                 </div>
@@ -597,7 +625,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/efficient-investment-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Personalized risk analysis and management
                 </div>
@@ -605,14 +635,18 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/streamlined-document-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Streamlined document management
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/enhanced-kpi-tracking.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Enhanced KPI tracking
                 </div>
@@ -620,7 +654,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/informed-investment-decisions.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Smooth financial closing and accurate accounting
                 </div>
@@ -628,7 +664,9 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/simplified-portfolio-maintenance.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Simplified portfolio maintenance
                 </div>
@@ -636,28 +674,36 @@ Investment Portfolio Management Software on Dynamics 365
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/easy-inquiries-management.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Easy inquiries & management
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/efficient-reporting-system1.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Efficient reporting system
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/time-saving-automation.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Time-saving automation
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/investment/complete-visibility-of-portfolios.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Consistency and accuracy in data processing
                 </div>

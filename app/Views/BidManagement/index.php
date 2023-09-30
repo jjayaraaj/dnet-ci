@@ -5,7 +5,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-bid1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -43,11 +43,11 @@
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/bid/bid-management-software-on-dynamics.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Boost your Business Competitiveness with <span class="text-d-yellow">Dynamic Netsoft’s Intelligent</span></h2>
@@ -87,7 +87,9 @@
         <div class="inner-section-box">
             <div class="tab">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/bid/bid-creation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 1 ? 'active' : 'default'">Bid Creation</div>
                     </div>
@@ -95,28 +97,36 @@
 
 
                 <div class="item" @click="feature = 2" :class="feature === 2 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/bid/bid-costing.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 2 ? 'active' : 'default'">Bid Costing</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 3" :class="feature === 3 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/bid/price-simulation.svg" alt="">
+                    </div>
                     <div class="text">
                         <div class="" :class="feature === 3 ? 'active' : 'default'">Price Simulation</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 4" :class="feature === 4 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/bid/integration-with-procurement.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 4 ? 'active' : 'default'">Integration with Procurement</div>
                     </div>
                 </div>
 
                 <div class="item" @click="feature = 5" :class="feature === 5 ? 'active' : ''">
-                    <div class=" circle"></div>
+                    <div class=" circle">
+                        <img src="<?php echo base_url() ?>/images/bid/bid-finalization-project-contracts.svg" alt="">
+                    </div>
                     <div class="text">
                         <div :class="feature === 5 ? 'active' : 'default'">Bid Finalization & Project Contracts</div>
                     </div>
@@ -318,7 +328,7 @@
 
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-bid2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
@@ -360,14 +370,18 @@
     <div class="feature">
         <div class="box">
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/enhance-bid-efficiency-and-effectiveness.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Enhance bid efficiency and effectiveness
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/reduce-the-complexity.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Reduce the complexity of cost sheet analysis
                 </div>
@@ -375,7 +389,9 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/streamline.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Streamline bid creation and submission process
                 </div>
@@ -383,7 +399,9 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/efficiently.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Efficiently manage customer RFQs/RFPs
                 </div>
@@ -391,7 +409,9 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/access.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Access pre-existing or customized templates
                 </div>
@@ -399,14 +419,18 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/automate-workflow.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Automate workflow and milestone approvals
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/gain.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Gain visibility into historical bids and details
                 </div>
@@ -414,7 +438,9 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/generate.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Generate actionable reports and documents
                 </div>
@@ -422,7 +448,9 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/convert.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Convert estimates into projects seamlessly
                 </div>
@@ -430,21 +458,27 @@
 
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/gain.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Achieve optimal pricing and margins
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/integrate.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Integrate with the procurement module
                 </div>
             </div>
 
             <div class="">
-                <div class="top-div"></div>
+                <div class="top-div">
+                    <img src="<?php echo base_url() ?>/images/bid/gain.svg" alt="">
+                </div>
                 <div class="bottom-div ">
                     Update opportunity details and win-loss ratio
                 </div>

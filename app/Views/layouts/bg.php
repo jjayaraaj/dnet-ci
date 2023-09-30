@@ -31,11 +31,41 @@ $treasury4 =  base_url() . '/images/treasury/loan-management-software.svg';
 $propGoto1 = base_url() . '/images/propgoto/propgoto-banner.svg';
 $leasing1 = base_url() . '/images/leasing/property-lease-management-for-dynamics-365.svg';
 $leasing4 = base_url() . '/images/leasing/property-lease-management.svg';
+$bid1 = base_url() . '/images/bid/microsoft-dynamics-365-bid-management.svg';
+$bid2 = base_url() . '/images/bid/bid-management-software.svg';
+$contract1 = base_url() . '/images/contract/microsoft-dynamics-365-contract-management.svg';
+$contract2 = base_url() . '/images/contract/dynamics-365-contract-management.svg';
+$investment1 = base_url() . '/images/investment/investment-portfolio-management-software-on-dynamics.svg';
+$investment2 = base_url() . '/images/investment/investment-portfolio-management-software.svg';
 
 
 ?>
 
 <style>
+    .bg-investment2 {
+        background-image: url('<?php echo $investment2 ?>');
+    }
+
+    .bg-investment1 {
+        background-image: url('<?php echo $investment1 ?>');
+    }
+
+    .bg-contract1 {
+        background-image: url('<?php echo $contract1 ?>');
+    }
+
+    .bg-contract2 {
+        background-image: url('<?php echo $contract2 ?>');
+    }
+
+    .bg-bid1 {
+        background-image: url('<?php echo $bid1 ?>');
+    }
+
+    .bg-bid2 {
+        background-image: url('<?php echo $bid2 ?>');
+    }
+
     .bg-leasing1 {
         background-image: url('<?php echo $leasing4 ?>');
     }
