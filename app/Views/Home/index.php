@@ -11,23 +11,21 @@
     <div class="max-w-container mx-auto h-full big-screen">
         <div class="banner-space"></div>
 
-        <div class="  w-full  h-[500px]">
+        <div class="  w-full  md:h-[500px] ">
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8">
-                    <h1 class="text-[2rem] font-bold max-w-3xl flex-1 ">
-                        Accelerate your business velocity with <span class="display-lg text-primary  !leading-[5rem]">Dynamic Netsoft</span>, a Microsoft
-                        Dynamics 365 partner
+            <div class="header-1">
+                <div class=" header-2">
+                    <h1 class="header-3 ">
+                        <div>Accelerate your business velocity with</div> <span class="header-blue-text">Dynamic Netsoft</span>, <div>a Microsoft
+                            Dynamics 365 partner</div>
                     </h1>
-                    <div class=" text-lg font-semibold">
+                    <div class="header-sub-text">
                         Level up your digital transformation process
                     </div>
 
-                    <button class="btn btn-primary">Get in Touch <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
+                    <?= $this->include('/layouts/get-touch') ?>
 
                 </div>
             </div>
@@ -38,9 +36,9 @@
 <!--banner /-->
 
 <!-- services -->
-<div class="">
+<div class="px-8 md:px-0">
     <div class=" py-16 max-w-container mx-auto big-screen">
-        <div class="  md:w-5/6  mx-auto grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4">
+        <div class="  md:w-5/6  mx-auto grid grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-4">
             <div class="service">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
@@ -152,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div x-cloak class=" w-1/2 bg-primary-gradient py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300 tv:rounded-[3.5em]">
+            <div x-cloak class=" w-1/2 bg-primary-gradient md:h-[500px] md:flex md:items-center py-10 px-20 rounded-tl-[3.5rem] border border-l-8 border-l-slate-300 tv:rounded-[3.5em]">
                 <!-- realestatepro -->
                 <div x-show="solution === 1">
                     <div class=" text-white space-y-6">
@@ -318,10 +316,12 @@
 
 <div class="bg-redefine bg-cover ">
     <div class="py-16 max-w-container big-screen space-y-16">
-        <div class=" flex flex-col gap-2 text-center lg:text-left">
+        <div class=" flex relative flex-col gap-2 text-center lg:text-left  w-fit">
+            <div class="absolute -left-6 -top-6"><img src="<?php echo base_url() ?>/images/home/open-tag.svg" alt=""></div>
             <h3 class=" heading-1">Redefine excellence with Dynamic Netsoft,</h3>
             <h3 class="display-2"><span class="font-medium">a worldwide</span> Microsoft Dynamics 365 - ISV Partner
             </h3>
+            <div class="absolute -right-6 -bottom-6"><img src="<?php echo base_url() ?>/images/home/close-tag.svg" alt=""></div>
         </div>
 
         <div class=" flex flex-col lg:flex-row justify-between items-center">

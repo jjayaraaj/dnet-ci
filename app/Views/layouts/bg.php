@@ -1,8 +1,8 @@
 <?php
 $bannerImage = base_url() . '/images/home/microsoft-dynamics-365-partner.svg';
-$redefineBg = base_url() . '/images/redefine-banner.svg';
+$redefineBg = base_url() . '/images/home/microsoft-dynamics-365-isv-partner.svg';
 $successBg = base_url() . '/images/success-stories-bg.svg';
-$digitalBg = base_url() . '/images/digital-banner.svg';
+$digitalBg = base_url() . '/images/home/dynamic-netsoft-technologies-microsoft-dynamics-365-partner.svg';
 $formBg = base_url() . '/images/form-bg.svg';
 $formBg2 = base_url() . '/images/form-bg-2.svg';
 $footerBg = base_url() . '/images/footer-bg.svg';

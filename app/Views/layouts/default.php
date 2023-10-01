@@ -167,7 +167,7 @@
               </svg>
             </div>
 
-            <div class=" bg-primary w-full h-32 overflow-y-auto px-3 py-5" x-show="navMob === 1">
+            <div class=" bg-primary w-full h-36 overflow-y-auto px-3 py-5" x-show="navMob === 1">
               <ul class=" space-y-3">
                 <li class=" flex text-white gap-x-2 items-cente">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -206,32 +206,15 @@
               </svg>
             </div>
 
-            <div class=" bg-primary w-full h-32 overflow-y-auto px-3 py-5" x-show="navMob === 2">
+            <div class=" bg-primary w-full h-44 overflow-y-auto px-3 py-5" x-show="navMob === 2">
               <ul class=" space-y-3">
-                <li class=" flex text-white gap-x-2 items-cente">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Real Estate</p>
-                </li>
-                <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Construction</p>
-                </li>
-                <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Retail</p>
-                </li>
-                <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Financial Service</p>
-                </li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/dynamics-365-bid-management-software">Bid Management</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/treasury-management-software-dynamics">Treasury Management</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/annata-365">Annata</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/propgoto">PropGoto</a></li>
               </ul>
             </div>
 
