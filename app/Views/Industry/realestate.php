@@ -8,7 +8,7 @@ Microsoft Dynamics 365 for Real Estate Management
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-real1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -47,11 +47,11 @@ Microsoft Dynamics 365 for Real Estate Management
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/realestate/dynamics-365-real-estate.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Why ERP is Essential for <span class="text-d-yellow">Real Estate Business? </span></h2>
@@ -91,7 +91,7 @@ Microsoft Dynamics 365 for Real Estate Management
 
                         <div class=" default ">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/residential.svg" alt="">
                             </div>
                             <div class="  title ">Residential</div>
                         </div>
@@ -99,21 +99,21 @@ Microsoft Dynamics 365 for Real Estate Management
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/commercial.svg" alt="">
                             </div>
                             <div class="  title ">Commercial buildings</div>
                         </div>
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/.svg" alt="">
                             </div>
                             <div class="  title ">Malls</div>
                         </div>
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/malls.svg" alt="">
                             </div>
                             <div class="  title ">Warehouses</div>
                         </div>
@@ -121,14 +121,14 @@ Microsoft Dynamics 365 for Real Estate Management
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/factories.svg" alt="">
                             </div>
                             <div class="  title ">Factories</div>
                         </div>
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/farmland-leasing.svg" alt="">
                             </div>
                             <div class="  title ">Farmland leasing</div>
                         </div>
@@ -136,21 +136,21 @@ Microsoft Dynamics 365 for Real Estate Management
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/hospitality-chains.svg" alt="">
                             </div>
                             <div class="  title ">Hospitality chains</div>
                         </div>
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/communities.svg" alt="">
                             </div>
                             <div class="  title ">Communities</div>
                         </div>
 
                         <div class="default">
                             <div class=" image ">
-                                <img src="<?php echo base_url() ?>/images/verticals/realestate.svg" alt="">
+                                <img src="<?php echo base_url() ?>/images/realestate/township.svg" alt="">
                             </div>
                             <div class="  title ">Township</div>
                         </div>
@@ -165,7 +165,7 @@ Microsoft Dynamics 365 for Real Estate Management
 <!--section 2 ends-->
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-real2 bg-cover bg-top ">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -206,7 +206,7 @@ Microsoft Dynamics 365 for Real Estate Management
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/realestate/maximize-returns.svg" alt="">
             </div>
             <div class=" curve-div">
                 <p>Our Microsoft Dynamics 365 real estate solutions streamline operations, boost productivity, reduce costs, and maximize returns.</p>
@@ -215,7 +215,7 @@ Microsoft Dynamics 365 for Real Estate Management
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/realestate/insights.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <p>Real-time insights provide better control and data-driven decision-making.</p>
@@ -228,7 +228,7 @@ Microsoft Dynamics 365 for Real Estate Management
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestate/enhanced-collaboration.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
 
                 <p>Enhanced collaboration among teams leads to better coordination.</p>
@@ -236,7 +236,7 @@ Microsoft Dynamics 365 for Real Estate Management
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestate/business-automation.svg" alt=""></div>
             <div class=" curve-div ">
 
                 <p>Business Automation leads to higher productivity levels.</p>
@@ -249,7 +249,7 @@ Microsoft Dynamics 365 for Real Estate Management
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestate/workflows.svg" alt=""></div>
             <div class=" curve-div">
 
                 <p>Streamlined workflows and Simplified tasks enhances productivity.</p>
@@ -257,7 +257,7 @@ Microsoft Dynamics 365 for Real Estate Management
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestate/regular-updates.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <p>Regular updates of Dynamics 365 real estate software ensure staying equipped with the latest technology.</p>
             </div>
@@ -274,41 +274,12 @@ Microsoft Dynamics 365 for Real Estate Management
 <!-- section 4 -->
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('/layouts/success') ?>
 
 <?= $this->section('partner') ?>
 <div class=" flex bg-secondary">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex  w-full">
+        <div class=" hidden lg:block  grow  bg-real3 bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Dynamic Netsoft: attuned to Your Aspirations for Growth & Success</h2>

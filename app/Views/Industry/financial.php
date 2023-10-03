@@ -7,7 +7,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-fin1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,10 +45,11 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
+                <img src="<?php echo base_url() ?>/images/fin/microsoft-dynamics-365-for-financial-services.svg" alt="">
 
             </div>
             <div class="content-section">
@@ -76,7 +77,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 <!-- section 1 ends -->
 
 <!-- section 1 -->
-<div class=" md:bg-primary-light md:py-16">
+<!-- <div class=" md:bg-primary-light md:py-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue flex-row-reverse">
             <div class="img-section hidden md:block">
@@ -103,7 +104,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- section 1 ends -->
 
 <!--section 2-->
@@ -126,7 +127,9 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                         ?>
                             <div class=" owl-dynamic-child ">
                                 <div class="bg-secondary-dark owl-dynamic-inner">
-                                    <div class=" owl-dynamic-inner-2 "></div>
+                                    <div class=" owl-dynamic-inner-2 ">
+                                        <img src="<?php echo base_url() ?>/images/fin/<?= $product->image ?>.svg" alt="">
+                                    </div>
                                     <div class="h-10"></div>
                                     <p class="flex-col flex text-center"><?= $product->content; ?></p>
                                 </div>
@@ -149,7 +152,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-fin2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -189,7 +192,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/fin/investment-parameters.svg" alt="">
             </div>
             <div class=" curve-div">
                 <div class="title">Investment Parameters</div>
@@ -199,7 +202,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/fin/risk-analysis.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Risk Analysis</div>
@@ -213,7 +216,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/fin/document-management.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Document Management</div>
                 <p>Our Microsoft Dynamics 365 for financial services organize and access critical documents effortlessly.</p>
@@ -221,7 +224,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/key-performance-indicator.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Key Performance Indicator (KPI)</div>
                 <p>Track and measure financial performance against defined KPIs with our ERP for Financial Services. </p>
@@ -234,7 +237,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/master-level-data-store.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Master Level Data-Store</div>
                 <p>Centralized data management ensures consistency and accuracy.</p>
@@ -242,7 +245,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/designated-transaction-area.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Designated Transaction Area</div>
                 <p>Easily manage financial transactions within a dedicated space.</p>
@@ -255,7 +258,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Pre-integrated.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/periodic-activity-analysis.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Periodic Activity Analysis</div>
                 <p>Gain insights into financial trends through periodic analysis. </p>
@@ -263,7 +266,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Fully-integrated.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/periodic-market-price.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Periodic Market-Price Revaluation</div>
                 <p>Keep valuations up-to-date with market fluctuations.</p>
@@ -276,7 +279,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/easy-enquiries-management.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Easy Enquiries Management</div>
                 <p>Streamlined process for managing financial inquiries.</p>
@@ -284,7 +287,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/open-platform.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Open Platform for Integration</div>
                 <p>Our Microsoft Dynamics 365 for financial services Seamlessly integrates with existing tools and systems.</p>
@@ -305,7 +308,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 <div class=" flex bg-secondary ">
     <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+        <div class=" hidden lg:block w-2/5 grow  bg-fin3 bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Choose Dynamic Netsoft’s ERP Software for Financial Services?</h2>
@@ -338,36 +341,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('/layouts/success') ?>
 
 
 

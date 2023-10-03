@@ -7,7 +7,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-cons1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,11 +45,11 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/construction/dynamics-365-construction-industry.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Strengthen the Foundation of Your Business with <span class="text-d-yellow">Microsoft Dynamics 365 – ISV solutions for Construction.</span></h2>
@@ -92,7 +92,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/enhanced-project.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Enhanced project efficiency with optimized management</p>
                             </div>
@@ -101,7 +104,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/superior-financial.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Superior financial control and real-time insights</p>
                             </div>
@@ -110,7 +116,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/efficient-resource.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Efficient resource allocation for optimal performance</p>
                             </div>
@@ -119,7 +128,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/centralized-data.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Centralized data management, reducing duplication</p>
                             </div>
@@ -131,7 +143,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/streamlined-bid.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Streamlined bid and contract administration</p>
                             </div>
@@ -139,7 +154,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/automated-workflows.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Automated workflows for time-saving precision</p>
                             </div>
@@ -147,7 +165,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/enhanced-collaboration.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Enhanced collaboration for seamless communication</p>
                             </div>
@@ -156,7 +177,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/real-time-analytics.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Real-time analytics and informed decision-making</p>
                             </div>
@@ -164,7 +188,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/compliance.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Compliance adherence and regulatory alignment</p>
                             </div>
@@ -172,7 +199,10 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/construction/scalability.svg" alt="">
+
+                                </div>
                                 <div class="h-10"></div>
                                 <p>Scalability to support growth and prosperity</p>
                             </div>
@@ -187,7 +217,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 <!--section 2 ends-->
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-cons2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -219,8 +249,8 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 <!-- partner -->
 
 <div class=" flex bg-secondary ">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex  w-full">
+        <div class=" hidden lg:block w-2/5 grow  bg-cons3 bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Choose Dynamic Netsoft as Your Dynamics ERP Partner for Construction</h2>
@@ -250,36 +280,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('/layouts/success') ?>
 
 
 

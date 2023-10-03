@@ -7,7 +7,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 <?= $this->section("content") ?>
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-retail1  ">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -45,11 +45,11 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 <!--banner /-->
 
 <!-- section 1 -->
-<div class=" md:bg-primary md:py-16">
+<div class=" md:bg-primary md:pt-16">
     <div class=" max-w-container big-screen">
         <div class=" inner-section-blue">
             <div class="img-section hidden md:block">
-
+                <img src="<?php echo base_url() ?>/images/retail/microsoft-dynamics-365-point-of-sale.svg" alt="">
             </div>
             <div class="content-section">
                 <h2>Digitally Optimize Your Retail Operations & Enhance Conversion Rates with <span class="text-d-yellow">Dynamics 365 Modern POS for Retail Business</span></h2>
@@ -93,7 +93,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/workflow-automation.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Workflow Automation</b> Boost efficiency with automated processes.</p>
                             </div>
@@ -102,7 +104,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/multi-location-inventory-tracker.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Multi-Location Inventory Tracker</b>Optimize supply chain across locations.</p>
 
@@ -112,7 +116,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/product-returns-management.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Product & Returns Management</b>Enhance customer satisfaction.</p>
                             </div>
@@ -121,7 +127,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/integrated-crm-personalize.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Integrated CRM</b>Personalize experiences for insights.</p>
                             </div>
@@ -133,7 +141,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/pricing-discounts-management.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Pricing & Discounts Management</b>Boost loyalty with ease.</p>
                             </div>
@@ -141,7 +151,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/procurement-supplier-management.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Procurement & Supplier Management</b>Strengthen relationships.</p>
                             </div>
@@ -149,7 +161,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/pos-integration.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>POS Integration</b>Efficient checkout experience.</p>
                             </div>
@@ -158,7 +172,9 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
-                                <div class=" owl-dynamic-inner-2 "></div>
+                                <div class=" owl-dynamic-inner-2 ">
+                                    <img src="<?php echo base_url() ?>/images/retail/property-leasing-integration.svg" alt="">
+                                </div>
                                 <div class="h-10"></div>
                                 <p class="flex-col flex text-center"><b>Property Leasing Integration</b>Simplify property operations.</p>
                             </div>
@@ -177,7 +193,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 <!--section 2 ends-->
 
 <!-- section -3 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-retail2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-2/5 space-y-8">
@@ -217,7 +233,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/retail/enhanced-customer.svg" alt="">
             </div>
             <div class=" curve-div">
                 <div class="title">Enhanced Customer Experience</div>
@@ -227,7 +243,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
         <div class=" w-1/2 flex">
             <div class="half-icon-box ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
+                <img src="<?php echo base_url() ?>/images/retail/streamlined-operations.svg" alt="">
             </div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Streamlined Operations</div>
@@ -241,7 +257,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
+            <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/retail/data-driven.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Data-Driven Insights</div>
                 <p>Gain sales and customer insights for informed decisions.</p>
@@ -249,7 +265,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/multichannel-consistency.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Multichannel Consistency</div>
                 <p>Unify brand experience across platforms. </p>
@@ -262,7 +278,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/efficient-checkout_.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Efficient Checkout</div>
                 <p>Reduce wait times, and elevate satisfaction.</p>
@@ -270,7 +286,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/real-time.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Real-time Inventory Visibility</div>
                 <p>Prevent stockouts, and build trust.</p>
@@ -283,7 +299,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Pre-integrated.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/seamless-crm.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Seamless CRM Integration</div>
                 <p>Enhance personal interactions with customers. </p>
@@ -291,7 +307,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Fully-integrated.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/promotion-management.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Promotion Management</div>
                 <p>Create enticing offers and discounts</p>
@@ -304,7 +320,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
     <div class=" flex gap-10">
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/supplier-collaboration.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Supplier Collaboration</div>
                 <p>Strengthen supplier ties, timely inventory.</p>
@@ -312,7 +328,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
         </div>
 
         <div class=" w-1/2 flex">
-            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
+            <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/retail/security-and-compliance.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Security and Compliance</div>
                 <p>Safeguard customer data, and ensure compliance.</p>
@@ -332,8 +348,8 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 <!-- partner -->
 
 <div class=" flex bg-secondary ">
-    <div class="flex  big-screen">
-        <div class=" hidden lg:block w-2/5 grow  bg-digital bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
+    <div class="flex  ">
+        <div class=" hidden lg:block w-2/5 grow  bg-retail3 bg-cover rounded-tr-3xl tv:rounded-3xl"></div>
         <div class="p-16 w-full lg:w-[60%] space-y-8">
 
             <h2 class=" heading-1">Why Should Dynamic Netsoft be Your Microsoft Dynamics 365 ERP Partner for Your Retail Business?</h2>
@@ -371,36 +387,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('/layouts/success') ?>
 
 
 

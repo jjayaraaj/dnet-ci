@@ -29,6 +29,7 @@ $annata1 =  base_url() . '/images/annata/annata-365.svg';
 $treasury1 =  base_url() . '/images/treasury/loan-management-software-on-dynamics.svg';
 $treasury4 =  base_url() . '/images/treasury/loan-management-software.svg';
 $propGoto1 = base_url() . '/images/propgoto/propgoto-banner.svg';
+$propGoto2 = base_url() . '/images/propgoto/saas-image.svg';
 $leasing1 = base_url() . '/images/leasing/property-lease-management-for-dynamics-365.svg';
 $leasing4 = base_url() . '/images/leasing/property-lease-management.svg';
 $bid1 = base_url() . '/images/bid/microsoft-dynamics-365-bid-management.svg';
@@ -37,11 +38,83 @@ $contract1 = base_url() . '/images/contract/microsoft-dynamics-365-contract-mana
 $contract2 = base_url() . '/images/contract/dynamics-365-contract-management.svg';
 $investment1 = base_url() . '/images/investment/investment-portfolio-management-software-on-dynamics.svg';
 $investment2 = base_url() . '/images/investment/investment-portfolio-management-software.svg';
+$sale1 =  base_url() . '/images/sale/property-sales-management-on-dynamics-365.svg';
+$sale2 =  base_url() . '/images/sale/property-sales-management.svg';
+$real1 = base_url() . '/images/realestate/microsoft-dynamics-365-for-real-estate.svg';
+$real2 = base_url() . '/images/realestate/real-estate-erp-software.svg';
+$real3 = base_url() . '/images/realestate/erp-for-the-real-estate-industry.svg';
+$cons1 = base_url() . '/images/construction/microsoft-dynamics-365-for-construction.svg';
+$cons2 = base_url() . '/images/construction/microsoft-dynamics-for-the-construction-industry.svg';
+$cons3 = base_url() . '/images/construction/dynamics-365-for-construction.svg';
+$retail1 = base_url() . '/images/retail/microsoft-dynamics-365-retail-pos.svg';
+$retail2 = base_url() . '/images/retail/retail-modern-pos-dynamics-365.svg';
+$retail3 = base_url() . '/images/retail/retail-pos-software.svg';
+$fin1 = base_url() . '/images/fin/microsoft-dynamics-365-financial-services.svg';
+$fin2 = base_url() . '/images/fin/financial-services-erp.svg';
+$fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
+
+
 
 
 ?>
 
 <style>
+    .bg-fin3 {
+        background-image: url('<?php echo $fin3 ?>');
+    }
+
+    .bg-fin2 {
+        background-image: url('<?php echo $fin2 ?>');
+    }
+
+    .bg-fin1 {
+        background-image: url('<?php echo $fin1 ?>');
+    }
+
+    .bg-retail3 {
+        background-image: url('<?php echo $retail3 ?>');
+    }
+
+    .bg-retail2 {
+        background-image: url('<?php echo $retail2 ?>');
+    }
+
+    .bg-retail1 {
+        background-image: url('<?php echo $retail1 ?>');
+    }
+
+    .bg-cons3 {
+        background-image: url('<?php echo $cons3 ?>');
+    }
+
+    .bg-cons2 {
+        background-image: url('<?php echo $cons2 ?>');
+    }
+
+    .bg-cons1 {
+        background-image: url('<?php echo $cons1 ?>');
+    }
+
+    .bg-real3 {
+        background-image: url('<?php echo $real3 ?>');
+    }
+
+    .bg-real2 {
+        background-image: url('<?php echo $real2 ?>');
+    }
+
+    .bg-real1 {
+        background-image: url('<?php echo $real1 ?>');
+    }
+
+    .bg-sale2 {
+        background-image: url('<?php echo $sale2 ?>');
+    }
+
+    .bg-sale1 {
+        background-image: url('<?php echo $sale1 ?>');
+    }
+
     .bg-investment2 {
         background-image: url('<?php echo $investment2 ?>');
     }

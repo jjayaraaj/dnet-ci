@@ -62,16 +62,16 @@ class Page extends BaseController
     {
 
         $benefits = array(
-            new Benifits('b1', 's', 'Enhanced financial visibility', ''),
-            new Benifits('b1', 's', 'Streamlined financial processes', ''),
-            new Benifits('b1', 's', 'Real-time insights ', ''),
-            new Benifits('b1', 's', 'Improved financial management', ''),
-            new Benifits('b1', 's', 'Cost reduction', ''),
-            new Benifits('b1', 's', 'Better collaboration', ''),
-            new Benifits('b1', 's', 'Improved customer service', ''),
-            new Benifits('b1', 's', 'Efficient decision-making', ''),
-            new Benifits('b1', 's', 'Time-saving through process automation', ''),
-            new Benifits('b1', 's', 'Security & Compliance', ''),
+            new Benifits('b1', 's', 'Enhanced financial visibility', 'enhanced-financial'),
+            new Benifits('b1', 's', 'Streamlined financial processes', 'streamlined-financial'),
+            new Benifits('b1', 's', 'Real-time insights ', 'real-time-insights'),
+            new Benifits('b1', 's', 'Improved financial management', 'improved-financial'),
+            new Benifits('b1', 's', 'Cost reduction', 'cost-reduction'),
+            new Benifits('b1', 's', 'Better collaboration', 'better-collaboration'),
+            new Benifits('b1', 's', 'Improved customer service', 'improved-customer-service'),
+            new Benifits('b1', 's', 'Efficient decision-making', 'efficient-decision'),
+            new Benifits('b1', 's', 'Time-saving through process automation', 'time-saving'),
+            new Benifits('b1', 's', 'Security & Compliance', 'security-compliance'),
 
         );
 

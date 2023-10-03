@@ -258,7 +258,7 @@ textarea {
 }
 
 .owl-dynamic-inner-2 {
-  @apply h-24 w-24 bg-gray-100 mx-auto -top-10 left-0 right-0 absolute border-t-8 rounded-full border-t-primary;
+  @apply h-24 w-24 bg-gray-100 mx-auto p-5 -top-10 left-0 right-0 absolute border-t-8 rounded-full border-t-primary;
 }
 
 .banner-space {
