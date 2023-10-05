@@ -32,7 +32,10 @@
 
 </head>
 
-<body>
+<body x-data="app">
+
+
+
   <nav x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
     <div class="relative flex items-center justify-between px-5 md:p-0 "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
       <div class="menu">
@@ -116,7 +119,7 @@
         </div>
         <a href="#">Blog</a>
         <a href="<?php echo base_url() ?>/about-us">About Us</a>
-        <a href="#">Contact us</a>
+        <a href="<?php echo base_url() ?>/contact">Contact us</a>
 
       </div>
 
@@ -247,39 +250,58 @@
 
   <!-- success-->
 
+  <?php
+  if (uri_string() !== 'contact') {
+
+  ?>
+
+    <!-- testimonial -->
+    <div class=" max-w-container big-screen  pt-16 ">
+      <div class="w-5/6 mx-auto relative">
+        <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
 
 
+          <button class="customerPrev relative -left-[5%]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <button class="customerNext relative -right-[5%]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+            </svg>
 
-  <!-- testimonial -->
-  <div class=" max-w-container big-screen  pt-16 ">
-    <div class="w-5/6 mx-auto ">
-      <div class="heading-1 text-center">Our Customers</div>
-      <div class="owl-client owl-carousel  owl-theme ">
-        <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/al-rajhi.svg" alt="">
+          </button>
+
+
         </div>
-        <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/dart.svg" alt="">
-        </div>
-        <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/ghana-ports-and-harbours-authority.svg" alt="">
-        </div>
-        <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/indospace.svg" alt="">
-        </div>
-        <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/mtcc.svg" alt="">
-        </div>
-        <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/schlegelvillages.svg" alt="">
-        </div>
-        <div class="item ">
-          <img src="<?php echo base_url() ?>/images/client/tmkn.svg" alt="">
-        </div>
-        <div class="item">
-          <img src="<?php echo base_url() ?>/images/client/union-properties.svg" alt="">
-        </div>
-        <!-- <div class="item">
+        <div class="heading-1 text-center">Our Customers</div>
+        <div class="owl-client owl-carousel  owl-theme ">
+          <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/al-rajhi.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/dart.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/ghana-ports-and-harbours-authority.svg" alt="">
+          </div>
+          <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/indospace.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/mtcc.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/schlegelvillages.svg" alt="">
+          </div>
+          <div class="item ">
+            <img src="<?php echo base_url() ?>/images/client/tmkn.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="<?php echo base_url() ?>/images/client/union-properties.svg" alt="">
+          </div>
+          <!-- <div class="item">
           <img src="<?php echo base_url() ?>/images/client/wipro-logo-new-og.svg" alt="">
         </div>
         <div class="item">
@@ -309,89 +331,97 @@
         <div class="item">
           <img src="<?php echo base_url() ?>/images/client/Infosys_logo.svg" alt="">
         </div> -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Accreditation -->
-  <div class=" max-w-container big-screen mx-auto pt-8 pb-16">
-    <div class="heading-1 text-center">Accreditation</div>
-
-    <div class=" mx-auto py-16">
-      <div class="flex flex-wrap gap-8 justify-center">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-19.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-20.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-21.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-22.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-23.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-24.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/image-25.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-1.svg" alt="">
-        <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-2.svg" alt="">
-      </div>
-    </div>
-  </div>
-
-  <!-- digital partner -->
-  <?= $this->renderSection("partner") ?>
-
-
-  <!-- blogs -->
-  <?= $this->renderSection("blog") ?>
-
-
-  <!-- faq -->
-  <?= $this->renderSection("faq") ?>
-  <!-- form -->
-  <div class=" relative bg-form bg-cover h-[630px] ">
-    <div class=" max-w-container big-screen mx-auto h-full relative ">
-
-      <div class="flex justify-end ">
-        <div class="  w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10 -mt-16">
-          <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
-          <div class="h-5"></div>
-          <form class=" space-y-5">
-            <div>
-              <label for="username" class="sr-only">Name:</label>
-              <input type="text" id="username" name="username" placeholder="Name" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Company Name:</label>
-              <input type="text" id="username" name="username" placeholder="Company Name" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Designation:</label>
-              <input type="text" id="username" name="username" placeholder="Designation" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">E-Mail ID:</label>
-              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Phone Number:</label>
-              <input type="text" id="phone" name="username" placeholder="Phone Number" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Which solution do you want?</label>
-              <input type="text" id="username" name="username" placeholder="Which solution do you want?" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Requirment</label>
-              <textarea rows="4"></textarea>
-            </div>
-
-            <div class=" text-center">
-              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg></button>
-            </div>
-          </form>
-
         </div>
       </div>
-
     </div>
-  </div>
+
+    <!-- Accreditation -->
+    <div class=" max-w-container big-screen mx-auto pt-8 pb-16">
+      <div class="heading-1 text-center">Accreditation</div>
+
+      <div class=" mx-auto py-16">
+        <div class="flex flex-wrap gap-8 justify-center">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-19.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-20.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-21.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-22.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-23.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-24.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/image-25.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-1.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/accreditation/MicrosoftTeams-image-2.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- digital partner -->
+    <?= $this->renderSection("partner") ?>
+
+
+    <!-- blogs -->
+    <?= $this->renderSection("blog") ?>
+
+
+    <!-- faq -->
+    <?= $this->renderSection("faq") ?>
+    <!-- form -->
+    <div class=" relative bg-form bg-cover h-[630px] ">
+      <div class=" max-w-container big-screen mx-auto h-full relative ">
+
+        <div class="flex justify-end ">
+          <div class="  w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10 -mt-16">
+            <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
+            <div class="h-5"></div>
+            <form class=" space-y-5">
+              <div>
+                <label for="username" class="sr-only">Name:</label>
+                <input type="text" id="username" name="username" placeholder="Name" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">Company Name:</label>
+                <input type="text" id="username" name="username" placeholder="Company Name" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">Designation:</label>
+                <input type="text" id="username" name="username" placeholder="Designation" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">E-Mail ID:</label>
+                <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">Phone Number:</label>
+                <input type="text" id="phone" name="username" placeholder="Phone Number" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">Which solution do you want?</label>
+                <input type="text" name="username" placeholder="Which solution do you want?" required>
+              </div>
+              <div>
+                <label for="username" class="sr-only">Requirment</label>
+                <textarea rows="4"></textarea>
+              </div>
+
+              <div class=" text-center">
+                <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg></button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  <?php
+
+  }
+  ?>
+
+
 
 
   <!-- footer -->
@@ -399,7 +429,7 @@
     <div class="max-w-container big-screen mx-auto py-16 space-y-6">
       <div class=" lg:flex justify-between w-full hidden ">
         <div class=" w-1/3">
-          <img src="<?php echo base_url() ?>/images/dnet-logo.svg" alt="">
+          <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt="">
         </div>
         <div class="flex-1 flex justify-evenly">
           <div class="space-y-4">
@@ -456,6 +486,201 @@
     </div>
   </div>
 
+  <button @click="openCommonDownloadForm" class="fixed z-50 top-1/2 hover:bg-yellow-500  btn btn-yellow rotate-90  text-center -right-16 ">Download Brochure </button>
+
+  <template x-teleport="body">
+    <!-- downloadBroucher -->
+    <div x-show="downloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
+      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
+        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+        </div>
+        <div class=" w-3/5 p-8">
+
+
+          <div class="heading-1 text-center !text-primary">Download a Brochure</div>
+          <div class="h-5"></div>
+          <form class=" space-y-5">
+            <div>
+              <label for="username" class="sr-only">Name:</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Company Name:</label>
+              <input type="text" id="username" name="username" placeholder="Company Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Designation:</label>
+              <input type="text" id="username" name="username" placeholder="Designation" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">E-Mail ID:</label>
+              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Phone Number:</label>
+              <input type="text" id="phone2" name="phone2" placeholder="Phone Number" required>
+            </div>
+
+
+            <div class=" text-center">
+              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg></button>
+            </div>
+          </form>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- common download -->
+
+  <template x-teleport="body">
+    <div x-show="commonDownloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
+      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
+        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+        </div>
+        <div class=" w-3/5 p-8">
+
+
+          <div class="heading-1 text-center ">Download Brochure</div>
+          <div class="h-5"></div>
+          <form class=" space-y-5">
+            <div>
+              <label for="username" class="sr-only">Name:</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Company Name:</label>
+              <input type="text" id="username" name="username" placeholder="Company Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Designation:</label>
+              <input type="text" id="username" name="username" placeholder="Designation" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">E-Mail ID:</label>
+              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Phone Number:</label>
+              <input type="text" id="phone4" name="phone4" placeholder="Phone Number" required>
+            </div>
+
+            <div class=" bg-white rounded-3xl p-6">
+              <div class=" font-semibold">Solution you are interested?</div>
+              <div class="flex gap-x-4 pt-3">
+                <div class="space-y-3">
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">Property Management</label>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">Bid Management</label>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">Treasury Management</label>
+                  </div>
+                </div>
+
+
+                <div class=" space-y-3">
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">Contract Management</label>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">Investment Portfolio
+                      Management</label>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+
+                    <input type="radio" id="propMan" name="propMan" required>
+                    <label for="propMan" class="text-xs">AXOnePay</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class=" text-center">
+              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg></button>
+            </div>
+          </form>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!--demo-->
+  <template x-teleport="body">
+    <div x-show="demoDivOpen" x-transition id="demoDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
+      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
+        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+        </div>
+        <div class=" w-3/5 p-8">
+
+
+          <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
+          <div class="h-5"></div>
+          <form class=" space-y-5">
+            <div>
+              <label for="username" class="sr-only">Name:</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Company Name:</label>
+              <input type="text" id="username" name="username" placeholder="Company Name" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Designation:</label>
+              <input type="text" id="username" name="username" placeholder="Designation" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">E-Mail ID:</label>
+              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+            </div>
+            <div>
+              <label for="username" class="sr-only">Phone Number:</label>
+              <input type="text" id="phone3" name="username" placeholder="Phone Number" required>
+            </div>
+
+
+            <div class=" text-center">
+              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg></button>
+            </div>
+          </form>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+
   <script src="<?php echo base_url() ?>/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="<?php echo base_url() ?>/js/plugins.js"></script>
   <script src="<?php echo base_url() ?>/js/main.js"></script>
@@ -483,23 +708,53 @@
     function intiateOwl() {
       var checkWidth = $(window).width();
 
-      $("#success").owlCarousel({
+      var successOwl = $("#success");
+
+      successOwl.owlCarousel({
         items: 1,
+        nav: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        loop: true
+      });
+
+      $('.successNext').click(function() {
+        successOwl.trigger('next.owl.carousel');
+      });
+
+      $('.successPrev').click(function() {
+        successOwl.trigger('prev.owl.carousel');
       });
 
       $(".owl-client").owlCarousel({
 
         margin: 50,
+        nav: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        loop: true,
         responsive: {
           0: {
             items: 1
           },
           1000: {
             items: 6,
-            nav: true,
+
 
           }
         }
+      });
+
+      $('.customerNext').click(function() {
+        $(".owl-client").trigger('next.owl.carousel');
+      });
+
+      $('.customerPrev').click(function() {
+        $(".owl-client").trigger('prev.owl.carousel');
       });
 
 
@@ -507,16 +762,25 @@
       $(".owl-dynamic").owlCarousel({
 
         margin: 50,
+        dots: false,
         responsive: {
           0: {
             items: 1
           },
           1000: {
             items: 4,
-            nav: true,
+            nav: false,
 
           }
         }
+      });
+
+      $('.dynamicNext').click(function() {
+        $(".owl-dynamic").trigger('next.owl.carousel');
+      });
+
+      $('.dynamicPrev').click(function() {
+        $(".owl-dynamic").trigger('prev.owl.carousel');
       });
 
 
@@ -568,9 +832,66 @@
 
 
     const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
+
+
+    intlTelInput(phoneInputField);
+    // intlTelInput(phoneDown2);
+
+
+
+
+
+
+
+    // $(downloadphoneInputField).intlTelInput();
+
+
+
+
+
+
+
+
+    const downloadDiv = document.getElementById("downloadDiv");
+
+    // console.log('ele height', downloadDiv.offsetHeight)
+
+    console.log("windoe")
+    document.addEventListener('alpine:init', () => {
+      // window.intlTelInput(phoneDown2, {
+      //   // initialCountry: 'gb',
+      //   // placeholderNumberType: 'MOBILE',
+      // });
+      console.log("alpine")
+      Alpine.data('app', () => ({
+
+
+        downloadDivOpen: false,
+        demoDivOpen: false,
+        commonDownloadDivOpen: false,
+
+        openCommonDownloadForm() {
+          const phoneDown4 = document.querySelector("#phone4");
+          intlTelInput(phoneDown4);
+          this.commonDownloadDivOpen = true;
+        },
+
+        openFormDownload(solution) {
+          const phoneDown2 = document.querySelector("#phone2");
+          intlTelInput(phoneDown2);
+          console.log(solution);
+          this.downloadDivOpen = true;
+
+
+        },
+        openFormDemoDiv(solution) {
+          const phoneDown3 = document.querySelector("#phone3");
+          intlTelInput(phoneDown3);
+          this.demoDivOpen = true;
+          console.log(solution);
+        }
+      }))
+    })
   </script>
 
 </body>

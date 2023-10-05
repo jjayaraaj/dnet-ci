@@ -139,4 +139,8 @@ class Page extends BaseController
     {
         return view('Partner/index');
     }
+    public function Contact()
+    {
+        return view('Contact/index');
+    }
 }

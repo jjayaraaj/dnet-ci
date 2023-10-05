@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-opensans  lg:text-base;
+    @apply font-opensans  lg:text-base antialiased;
   }
 
   p {
@@ -454,4 +454,15 @@ textarea {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* owl nav */
+.successPrev svg,
+.successNext svg {
+  @apply w-10 h-10 text-white hover:text-gray-200;
+}
+
+.customerPrev svg,
+.customerNext svg {
+  @apply w-10 h-10 text-gray-400 hover:text-gray-200;
 }

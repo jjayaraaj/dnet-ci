@@ -52,6 +52,7 @@ $retail3 = base_url() . '/images/retail/retail-pos-software.svg';
 $fin1 = base_url() . '/images/fin/microsoft-dynamics-365-financial-services.svg';
 $fin2 = base_url() . '/images/fin/financial-services-erp.svg';
 $fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
+$formDownloadImg = base_url() . '/images/download-brochure-1.svg';
 
 
 
@@ -59,6 +60,10 @@ $fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
 ?>
 
 <style>
+    .bg-formDownloadImg {
+        background-image: url('<?php echo $formDownloadImg; ?>');
+    }
+
     .bg-fin3 {
         background-image: url('<?php echo $fin3 ?>');
     }
@@ -216,7 +221,7 @@ $fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
     }
 
     .bg-realestatepro {
-        background-image: linear-gradient(rgba(244, 249, 253, 0.9), rgba(244, 249, 253, 0.9)), url('<?php echo $realestateproBanner ?>');
+        background-image: linear-gradient(rgba(244, 249, 253, 0.1), rgba(244, 249, 253, 0.1)), url('<?php echo $realestateproBanner ?>');
     }
 
     .bg-cloud {

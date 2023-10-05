@@ -18,7 +18,7 @@
                 <div class=" space-y-8 text-center md:text-left">
                     <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight">
                         <span class="display-lg text-primary  ">RealEstatePro</span><br>
-                        an advanced Property Management software
+                        an advanced <span class=" text-primary">Property Management software</span>
                         on Microsoft Dynamics 365
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">
@@ -26,13 +26,9 @@
                     </div> -->
 
                     <div class="flex  md:flex-row  gap-4 items-center">
-                        <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
+                        <?= $this->include('/layouts/download') ?>
+                        <?= $this->include('/layouts/request-demo') ?>
 
-                        <button class="btn btn-primary">Connect with Us! <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
                     </div>
 
                 </div>
@@ -49,17 +45,37 @@
         <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve challenges in real estate operations with Microsoft Dynamics 365 Property management solution!</h2>
     </div>
 
-    <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center ">
+    <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center relative">
+
         <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry rapidly evolving and there is a dire need for a software solution that allows property owners and managers to do away with paper trails and streamline their business operations. RealEstatePro, our flagship Microsoft ISV product built on market-leading Microsoft Dynamics 365 Finance & Operations, is designed to address various real estate challenges such as:</p>
 
-        <div>
-            <div class="h-24"></div>
-            <div class="owl-carousel owl-theme owl-dynamic">
+        <div class="relative w-full">
+            <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
+
+
+                <button class="dynamicPrev relative -left-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-secondary-dark">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button class="dynamicNext relative -right-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-secondary-dark">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                    </svg>
+
+                </button>
+
+
+            </div>
+            <div class="h-10"></div>
+            <div class="owl-carousel owl-theme owl-dynamic ">
 
                 <div class=" owl-dynamic-child ">
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p>Difficulty in tracking property information, vacancy/occupancy data</p>
                     </div>
@@ -68,7 +84,9 @@
                 <div class=" owl-dynamic-child ">
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p>Absence of structured and organized workflow for business operations</p>
                     </div>
@@ -77,7 +95,9 @@
                 <div class=" owl-dynamic-child ">
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/time-consuming.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p>Time-consuming manual processes for quotation generation, invoicing, and agreement execution</p>
                     </div>
@@ -86,7 +106,9 @@
                 <div class=" owl-dynamic-child ">
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p>Provide timely and accurate information on your prospects for faster business decision-making</p>
                     </div>
@@ -95,7 +117,9 @@
 
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-obtain.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p> Inability to obtain precise information and analytics on financial transactions such as revenue-expense ratio, aging analysis, etc.</p>
                     </div>
@@ -104,7 +128,9 @@
 
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p> Automated process in reservation management for properties</p>
                     </div>
@@ -112,7 +138,9 @@
 
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/lack-of-accuracy.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p> Lack of accuracy and updates in routine business transactions</p>
                     </div>
@@ -120,7 +148,9 @@
 
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p> Flexibility in renewal and canceling of agreements, changing orders, creating billing schedules, raising invoices, etc.</p>
                     </div>
@@ -129,7 +159,9 @@
 
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 "></div>
+                        <div class=" owl-dynamic-inner-2 ">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-manage.svg" alt="">
+                        </div>
                         <div class="h-10"></div>
                         <p> Inability to manage the periodic rent appraisals based on business demands and changing market conditions</p>
                     </div>

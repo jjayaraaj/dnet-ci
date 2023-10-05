@@ -55,6 +55,7 @@ $routes->get('/microsoft-dynamics-365-support', 'Page::ServiceSupport');
 $routes->get('/dynamics-365-finance-operations-upgrade-services', 'Page::ServiceUpgrade');
 $routes->get('/about-us', 'Page::About');
 $routes->get('/become-a-partner', 'Page::Partner');
+$routes->get('/contact', 'Page::Contact');
 
 
 
