@@ -143,4 +143,9 @@ class Page extends BaseController
     {
         return view('Contact/index');
     }
+
+    public function My404()
+    {
+        return view('my_404');
+    }
 }

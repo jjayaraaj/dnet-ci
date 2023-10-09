@@ -57,6 +57,10 @@ $routes->get('/about-us', 'Page::About');
 $routes->get('/become-a-partner', 'Page::Partner');
 $routes->get('/contact', 'Page::Contact');
 
+$routes->set404Override(function () {
+    return view('my_404');
+});
+
 
 
 /*

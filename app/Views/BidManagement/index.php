@@ -16,22 +16,18 @@
             <!-- inner banner -->
             <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
                 <div class=" space-y-8 text-center md:text-left">
-                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight">
-                        <span class="display-lg text-primary  ">Bid Management</span><br>
-                        Expedite operational success with Microsoft Dynamics 365 Bid Management Software
+                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight flex flex-col">
+                        Expedite operational success with Microsoft Dynamics 365
+                        <span class="display-lg text-primary  ">Bid Management</span>
+
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="flex  md:flex-row  gap-4 items-center">
-                        <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
-
-                        <button class="btn btn-primary">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
+                    <div class="btn-div flex gap-x-3">
+                        <?= $this->include('/layouts/download') ?>
+                        <?= $this->include('/layouts/request-demo') ?>
                     </div>
 
                 </div>

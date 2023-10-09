@@ -436,6 +436,10 @@ textarea {
   @apply bg-gradient-to-b from-primary to-primary-light;
 }
 
+.bg-secondary-gradient {
+  @apply bg-gradient-to-b from-secondary to-secondary;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;

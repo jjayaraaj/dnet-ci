@@ -25,7 +25,11 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
                         Fast-paced demands of business, time, and budget constraints often leave companies in a state of despair whilst choosing enterprise solutions. Software as service (SaaS) solutions often serve as an alternative to such situations. Centrally hosted, cloud-based, convenient licensing and delivery model on a subscription basis provides customers a distinct advantage in affordability, speed of service deployment and benefits realization.
                     </div>
 
-                    <?= $this->include('/layouts/banner-action') ?>
+                    <div class="btn-div flex">
+                        <a href="#" class="btn btn-primary">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg></a>
+                    </div>
 
                 </div>
             </div>

@@ -251,7 +251,10 @@
   <!-- success-->
 
   <?php
-  if (uri_string() !== 'contact') {
+
+  $currenUrl = uri_string();
+
+  if ($currenUrl !== 'contact') {
 
   ?>
 
@@ -336,7 +339,7 @@
     </div>
 
     <!-- Accreditation -->
-    <div class=" max-w-container big-screen mx-auto pt-8 pb-16">
+    <div class=" hidden lg:block max-w-container big-screen mx-auto pt-8 pb-16">
       <div class="heading-1 text-center">Accreditation</div>
 
       <div class=" mx-auto py-16">
@@ -486,13 +489,52 @@
     </div>
   </div>
 
-  <button @click="openCommonDownloadForm" class="fixed z-50 top-1/2 hover:bg-yellow-500  btn btn-yellow rotate-90  text-center -right-16 ">Download Brochure </button>
+  <button @click="openCommonDownloadForm" class="hidden lg:fixed z-50 top-1/2 hover:bg-yellow-500  btn btn-yellow rotate-90  text-center -right-16 ">Download Brochure </button>
 
+  <?php
+
+  $downFormBgName;
+
+  switch ($currenUrl) {
+    case "treasury-management-software-dynamics":
+      $downFormBgName = 'treasury-management-system';
+      break;
+    case "contract-management-software-dynamics-365":
+      $downFormBgName = 'dynamics-365-contract-management';
+      break;
+    case "investment-portfolio-management-software-dynamics":
+      $downFormBgName = 'investment-management-software';
+      break;
+    case "dynamics-365-bid-management-software":
+      $downFormBgName = 'best-bid-management-software';
+      break;
+    case "dynamics-365-HR-payroll":
+      $downFormBgName = 'microsoft-dynamics-hr-management';
+      break;
+    case "property-management-software-dynamics-365":
+      $downFormBgName = 'button-image-1';
+      break;
+
+    default:
+      $downFormBgName = 'button-image-2';
+  }
+
+
+  $treasuryFormBG = base_url() . '/images/downloadbg/' . $downFormBgName . '.svg';
+
+
+
+  ?>
+  <style>
+    .bg-formDynamicBg {
+      background-image: url('<?php echo $treasuryFormBG; ?>');
+    }
+  </style>
   <template x-teleport="body">
     <!-- downloadBroucher -->
     <div x-show="downloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
       <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
-        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+        <div class="w-2/5  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
         <div class=" w-3/5 p-8">
 
@@ -541,8 +583,8 @@
 
   <template x-teleport="body">
     <div x-show="commonDownloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
-        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+      <div class=" bg-white   w-3/4  bg-formBg3 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
+        <div class="w-2/4  bg-commonDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
         <div class=" w-3/5 p-8">
 
@@ -798,6 +840,16 @@
           }
         }
       });
+
+      $('.owl-vertical').owlCarousel({
+        margin: 50,
+        responsive: {
+          0: {
+            items: 1
+          },
+
+        }
+      })
 
 
 

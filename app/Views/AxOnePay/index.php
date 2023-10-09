@@ -19,21 +19,17 @@ Microsoft Dynamics 365 HR and Payroll Management - AXOnePay
             <div class=" inner-banner ">
                 <div class=" first-div ">
                     <h1 class="h1">
-                        <span class="span ">AXOnePay</span><br>
-                        Experience simplified and faster Payroll Management with AXOnePay, leading HR & Payroll Solution on Microsoft Dynamics 365
+                        Experience simplified and faster Payroll Management with
+                        <span class="span ">AXOnePay</span>
+                        leading HR & Payroll Solution on<span class="span"> Microsoft Dynamics 365</span>
                     </h1>
                     <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
                     <div class="btn-div">
-                        <button class="btn btn-primary">Schedule a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
-
-                        <button class="btn btn-primary">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></button>
+                        <?= $this->include('/layouts/download') ?>
+                        <?= $this->include('/layouts/request-demo') ?>
                     </div>
 
                 </div>

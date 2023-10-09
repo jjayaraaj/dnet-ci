@@ -53,6 +53,8 @@ $fin1 = base_url() . '/images/fin/microsoft-dynamics-365-financial-services.svg'
 $fin2 = base_url() . '/images/fin/financial-services-erp.svg';
 $fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
 $formDownloadImg = base_url() . '/images/download-brochure-1.svg';
+$commonDownloadImg = base_url() . '/images/common-download-brochure-2.svg';
+$formBg3 = base_url() . '/images/form-background-image2.svg';
 
 
 
@@ -60,6 +62,14 @@ $formDownloadImg = base_url() . '/images/download-brochure-1.svg';
 ?>
 
 <style>
+    .bg-formBg3 {
+        background-image: url('<?php echo $formBg3; ?>');
+    }
+
+    .bg-commonDownloadImg {
+        background-image: url('<?php echo $commonDownloadImg; ?>');
+    }
+
     .bg-formDownloadImg {
         background-image: url('<?php echo $formDownloadImg; ?>');
     }
