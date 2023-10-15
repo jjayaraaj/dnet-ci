@@ -8,28 +8,30 @@
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-no-repeat bg-bottom lg:bg-cover bg-banner">
-    <div class="max-w-container mx-auto h-full big-screen">
-        <div class="banner-space"></div>
+    <div class=" mobile-header-transparent">
+        <div class="max-w-container mx-auto h-full big-screen">
+            <div class="banner-space"></div>
 
-        <div class="  w-full  md:h-[500px] ">
+            <div class="  w-full  md:h-[600px] ">
 
 
-            <!-- inner banner -->
-            <div class="header-1">
-                <div class=" header-2">
-                    <h1 class="header-3 ">
-                        <div>Accelerate your business velocity with</div> <span class="header-blue-text">Dynamic Netsoft</span>, <div>a Microsoft
-                            Dynamics 365 partner</div>
-                    </h1>
-                    <div class="header-sub-text">
-                        Level up your digital transformation process
+                <!-- inner banner -->
+                <div class="header-1">
+                    <div class=" header-2">
+                        <h1 class="header-3 ">
+                            <div>Accelerate your business velocity with</div> <span class="header-blue-text">Dynamic Netsoft</span>, <div>a Microsoft
+                                Dynamics 365 partner</div>
+                        </h1>
+                        <div class="header-sub-text">
+                            Level up your digital transformation process
+                        </div>
+
+                        <?= $this->include('/layouts/get-touch') ?>
+
                     </div>
-
-                    <?= $this->include('/layouts/get-touch') ?>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -115,25 +117,25 @@
                         <div class="title">RealEstatePro</div>
                     </div>
 
-                    <div class=" dynamics-strip -ml-12" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
+                    <div class=" dynamics-strip -ml-6" :class="solution === 2 ? 'active' : 'default'" @click="solution = 2">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/Contract-Management.svg" alt="">
                         </div>
                         <div class="title">Contract Management</div>
                     </div>
-                    <div class=" dynamics-strip" :class="solution === 3 ? 'active' : 'default'" @click="solution = 3">
+                    <div class=" dynamics-strip ml-2" :class="solution === 3 ? 'active' : 'default'" @click="solution = 3">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/bid-management.svg" alt="">
                         </div>
                         <div class="title">Bid Management</div>
                     </div>
-                    <div class=" dynamics-strip" :class="solution === 4 ? 'active' : 'default'" @click="solution = 4">
+                    <div class=" dynamics-strip ml-1" :class="solution === 4 ? 'active' : 'default'" @click="solution = 4">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/Treasury-Management.svg" alt="">
                         </div>
                         <div class="title">Treasury Management</div>
                     </div>
-                    <div class="dynamics-strip -m-12" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
+                    <div class="dynamics-strip -m-6" :class="solution === 5 ? 'active' : 'default'" @click="solution = 5">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/investment-solution.svg" alt="">
                         </div>
@@ -185,7 +187,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('property-management-software-dynamics-365')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -219,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div x-show="solution === 2" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
+                <div x-show="solution === 2" class=" bg-primary mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class=" text-white space-y-6">
 
                         <h4 class="display-3">Contract Management Solution</h4>
@@ -231,7 +233,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('contract-management-software-dynamics-365')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -264,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <div x-show="solution === 3" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
+                <div x-show="solution === 3" class=" bg-primary mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class=" text-white space-y-6">
 
                         <h4 class="display-3">Bid Management Solution</h4>
@@ -276,7 +278,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('dynamics-365-bid-management-software')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -309,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div x-show="solution === 4" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
+                <div x-show="solution === 4" class=" bg-primary mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class=" text-white space-y-6">
 
                         <h4 class="display-3">Treasury Control</h4>
@@ -321,7 +323,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('treasury-management-software-dynamics')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -355,7 +357,7 @@
                         </div>
                     </div>
                 </div>
-                <div x-show="solution === 5" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
+                <div x-show="solution === 5" class="bg-primary mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class=" text-white space-y-6">
 
                         <h4 class="display-3">Investment Portfolio Management</h4>
@@ -367,7 +369,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('investment-portfolio-management-software-dynamics')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -401,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-                <div x-show="solution === 6" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
+                <div x-show="solution === 6" class="bg-primary mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class=" text-white space-y-6">
 
                         <h4 class="display-3">Payroll Administration</h4>
@@ -413,7 +415,7 @@
 
                         <div class=" flex flex-col lg:flex-row gap-6 items-center">
                             <div>
-                                <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <button @click="openFormDownload('dynamics-365-HR-payroll')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
                                 </button>
@@ -438,12 +440,12 @@
 
 <!-- redefine -->
 
-<div class="bg-redefine bg-cover ">
+<div class="bg-redefine bg-cover lg:h-[450px] lg:flex lg:items-center">
     <div class="py-16  max-w-container big-screen space-y-6 lg:space-y-16">
         <div class=" px-6 lg:px-0 flex relative flex-col gap-2 text-center lg:text-left  w-fit">
             <div class="hidden lg:block lg:absolute -left-6 -top-6 "><img src="<?php echo base_url() ?>/images/home/open-tag.svg" alt=""></div>
             <h3 class=" heading-1">Redefine excellence with Dynamic Netsoft,</h3>
-            <h3 class="display-2 "><span class="font-medium">a worldwide</span> <span class="text-primary">Microsoft Dynamics 365 - ISV Partner</span>
+            <h3 class="display-2 "><span class="font-medium">a worldwide</span> <span class="text-primary leading-snug">Microsoft Dynamics 365 - ISV Partner</span>
             </h3>
             <div class="hidden lg:block lg:absolute -right-6 -bottom-6"><img src="<?php echo base_url() ?>/images/home/close-tag.svg" alt=""></div>
         </div>
@@ -623,7 +625,7 @@
 
                 <p>So, what are you waiting for?</p>
             </div>
-            <div class="flex justify-center">
+            <div class="flex ">
                 <button class="btn btn-primary">
                     Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -637,7 +639,7 @@
 <?= $this->endSection('partner') ?>
 
 <?= $this->section('blog') ?>
-<div class="max-w-container big-screen mx-auto py-16">
+<div class="max-w-container big-screen mx-auto py-16 hidden  ">
     <div class=" space-y-8">
         <div class=" text-3xl font-bold text-center">Recent Blog</div>
         <div class=" lg:grid grid-cols-3 gap-8 hidden ">

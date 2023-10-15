@@ -56,7 +56,13 @@ $routes->get('/dynamics-365-finance-operations-upgrade-services', 'Page::Service
 $routes->get('/about-us', 'Page::About');
 $routes->get('/become-a-partner', 'Page::Partner');
 $routes->get('/contact', 'Page::Contact');
-
+$routes->post('/common-download', 'Page::downloadBrochure');
+$routes->post('/brochure-download', 'Page::IndividualDownload');
+$routes->post('/demo-request', 'Page::DemoRequest');
+$routes->post('/contact-request', 'Page::ContactRequest');
+$routes->get('/thankyou', 'Page::Thankyou');
+$routes->get('/brochure-thankyou', 'Page::BrochureThankyou');
+$routes->get('/demo-thankyou', 'Page::DemoThankyou');
 $routes->set404Override(function () {
     return view('my_404');
 });

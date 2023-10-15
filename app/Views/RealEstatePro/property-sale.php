@@ -10,7 +10,7 @@
     <div class="max-w-container mx-auto h-full big-screen">
 
 
-        <div class="  w-full  h-[500px]">
+        <div class="  w-full h-full  lg:h-[500px]">
 
 
             <!-- inner banner -->
@@ -40,7 +40,7 @@
             <div class="img-section hidden md:flex justify-end">
                 <img src="<?php echo base_url() ?>/images/sale/property-management-for-sale.svg" alt="">
             </div>
-            <div class="content-section">
+            <div class="content-section pt-16 lg:pt-0">
                 <!-- <h2><span class="text-d-yellow">Annata 365</span></h2> -->
                 <div class="sub-content">
                     <p class="">
@@ -484,7 +484,7 @@
 <div class="bg-sale2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class="w-full lg:w-2/5 text-center lg:text-left px-6 lg:px-0 space-y-8">
                 <div>
                     <!-- <h3 class=" text-xl font-semibold">
                     </h3> -->

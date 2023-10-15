@@ -134,7 +134,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
                 <div class="desktop-content" x-show="feature=== 1">
                     <div class=" heading-1 hidden md:block ">Microsoft Dynamics 365 Implementation</div>
-                    <p class="text-white">With over a decade of experience, our Microsoft Dynamics 365 F&O implementation team has gained a trusted reputation for its unwavering reliability and service reliability in International markets. Our domain expertise encompasses a distinguished cadre of specialists proficient in project management, implementation, customization, data migration, upgrades, and comprehensive user adoption and training.</p>
+                    <p class="lg:text-white">With over a decade of experience, our Microsoft Dynamics 365 F&O implementation team has gained a trusted reputation for its unwavering reliability and service reliability in International markets. Our domain expertise encompasses a distinguished cadre of specialists proficient in project management, implementation, customization, data migration, upgrades, and comprehensive user adoption and training.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -163,7 +163,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
                 <div class=" desktop-content" x-show="feature=== 2">
                     <div class=" heading-1 hidden md:block ">Reengineering</div>
-                    <p class="text-white">At Dynamic Netsoft, our Microsoft Dynamics 365 F&O support team begins with the process definitions from scratch, employing careful analysis and planning to identify the best outcomes for organizational productivity. Whether it's optimizing operational functions, streamlining the supply chain, or enhancing Finance & Operations and HR, our expert consultants offer comprehensive guidance across the entire enterprise. We also go the extra mile by designing customer experience strategies that extend beyond the confines of the organization, empowering companies to become highly reliable and trusted business partners. </p>
+                    <p class="lg:text-white">At Dynamic Netsoft, our Microsoft Dynamics 365 F&O support team begins with the process definitions from scratch, employing careful analysis and planning to identify the best outcomes for organizational productivity. Whether it's optimizing operational functions, streamlining the supply chain, or enhancing Finance & Operations and HR, our expert consultants offer comprehensive guidance across the entire enterprise. We also go the extra mile by designing customer experience strategies that extend beyond the confines of the organization, empowering companies to become highly reliable and trusted business partners. </p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -192,7 +192,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
                 <div class="desktop-content" x-show="feature=== 3">
                     <div class=" heading-1 hidden md:block ">Business Process Management</div>
-                    <p class="text-white">Organizations often struggle with the daunting task of aligning processes to meet modern demands. Challenges such as limited resources, lack of benchmark templates, and outdated perspectives on legacy systems compound the complexity. Our Microsoft Dynamics 365 F&O Support team offers expertise in designing and implementing strategies like "Out to in" and "Value chain management" to address these requirements. </p>
+                    <p class="lg:text-white">Organizations often struggle with the daunting task of aligning processes to meet modern demands. Challenges such as limited resources, lack of benchmark templates, and outdated perspectives on legacy systems compound the complexity. Our Microsoft Dynamics 365 F&O Support team offers expertise in designing and implementing strategies like "Out to in" and "Value chain management" to address these requirements. </p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -221,7 +221,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
                 <div class="desktop-content" x-show="feature=== 4">
                     <div class=" heading-1 hidden md:block ">Outsourcing</div>
-                    <p class="text-white">We offer comprehensive consultation and hiring services, delivering specialized knowledge for ERP implementations, particularly in Microsoft Dynamics 365. Our meticulously chosen and experienced Microsoft Dynamics 365 F&O experts provide valuable support and operational capabilities. Whether it's operational functions, consultation, or customization, we have a diverse team of experts spanning various functions and technologies, ready to assist your organization in achieving its objectives. </p>
+                    <p class="lg:text-white">We offer comprehensive consultation and hiring services, delivering specialized knowledge for ERP implementations, particularly in Microsoft Dynamics 365. Our meticulously chosen and experienced Microsoft Dynamics 365 F&O experts provide valuable support and operational capabilities. Whether it's operational functions, consultation, or customization, we have a diverse team of experts spanning various functions and technologies, ready to assist your organization in achieving its objectives. </p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -253,7 +253,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <div class=" heading-1 hidden md:block ">
                         AMC
                     </div>
-                    <p class="text-white">Empowering organizations with reliable and competitive support for their ERP implementation, our AMC caters to those in need of extended assistance. Tailoring our services to customer requirements, we offer periodic contracts based on specific timeframes and task-oriented needs. It encompasses a wide array of functions, including third-party integration and customization, meeting the demands of classic implementations. Recognizing the needs of our global clients, operating across different time zones or those with critical enterprise functions, we provide the flexibility of 24/7 support to ensure uninterrupted assistance.</p>
+                    <p class="lg:text-white">Empowering organizations with reliable and competitive support for their ERP implementation, our AMC caters to those in need of extended assistance. Tailoring our services to customer requirements, we offer periodic contracts based on specific timeframes and task-oriented needs. It encompasses a wide array of functions, including third-party integration and customization, meeting the demands of classic implementations. Recognizing the needs of our global clients, operating across different time zones or those with critical enterprise functions, we provide the flexibility of 24/7 support to ensure uninterrupted assistance.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -281,8 +281,8 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
         <!-- <p class="text-center">Our Real Estate ERP features offer a multitude of benefits that empower businesses to thrive and succeed in the competitive industry:</p> -->
 
     </div>
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/service/support/help-desk.svg" alt="">
             </div>
@@ -294,7 +294,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/service/support/availability.svg" alt="">
             </div>
@@ -308,8 +308,8 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/service/support/urgent-issue.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Urgent Issue Resolution</div>
@@ -317,7 +317,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/service/support/flexible-payment.svg" alt="">
             </div>

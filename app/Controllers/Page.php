@@ -3,9 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\Benifits;
+use CodeIgniter\API\ResponseTrait;
+
 
 class Page extends BaseController
 {
+    use ResponseTrait;
 
     public function BidManagement()
     {
@@ -147,5 +150,68 @@ class Page extends BaseController
     public function My404()
     {
         return view('my_404');
+    }
+
+    public function downloadBrochure()
+    {
+
+
+        $this->request->getPost();
+
+
+        $to = 'jjayaraaj2@gmail.com';
+        $subject = $this->request->getVar('name');
+        $message = $this->request->getVar('commonDownloadFlag');
+
+        $email = \Config\Services::email();
+        $email->setTo($to);
+        $email->setFrom('enquiry@dnetsoft.com', 'Confirm Registration');
+
+        $email->setSubject($subject);
+        $email->setMessage($message);
+        if ($email->send()) {
+            echo 'Email successfully sent';
+        } else {
+            $data = $email->printDebugger(['headers']);
+
+            //return redirect()->route('/thankyou');
+
+            print_r($data);
+        }
+
+        return redirect()->to(base_url() . '/thankyou');
+    }
+
+    public function IndividualDownload()
+    {
+        $this->request->getPost();
+        return redirect()->to(base_url() . '/brochure-thankyou');
+    }
+
+    public function DemoRequest()
+    {
+        $this->request->getPost();
+        return redirect()->to(base_url() . '/demo-thankyou');
+    }
+
+    public function ContactRequest()
+    {
+        $this->request->getPost();
+        return view('Thankyou/contact-thankyou');
+    }
+
+    public function Thankyou()
+    {
+        return view('Thankyou/common-thankyou');
+    }
+
+    public function BrochureThankyou()
+    {
+        return view('Thankyou/brochure-thankyou');
+    }
+
+    public function DemoThankyou()
+    {
+        return view('Thankyou/demo-thankyou');
     }
 }

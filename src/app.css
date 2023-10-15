@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-opensans  lg:text-base antialiased;
+    @apply font-opensans text-sm  lg:text-base antialiased;
   }
 
   p {
@@ -100,7 +100,7 @@ nav a {
 
 /* components */
 .btn {
-  @apply py-2 px-4 rounded-full text-sm font-semibold items-center  flex gap-x-2;
+  @apply py-2 px-4 rounded-full text-xs lg:text-sm font-semibold items-center  flex gap-x-2;
 }
 
 .btn-primary {
@@ -159,7 +159,7 @@ nav a {
 }
 
 .owl-service .default {
-  @apply h-48   bg-blue-50  rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
+  @apply h-auto lg:h-48   bg-blue-50  rounded-tr-3xl rounded-br-3xl flex flex-col justify-between;
 }
 
 .solution .default:hover,
@@ -258,7 +258,7 @@ textarea {
 }
 
 .owl-dynamic-inner-2 {
-  @apply h-24 w-24 bg-gray-100 mx-auto p-5 -top-10 left-0 right-0 absolute border-t-8 rounded-full border-t-primary;
+  @apply h-24 w-24 bg-gray-100 mx-auto p-5 -top-10 left-0 right-0 absolute border-8  rounded-full border-t-primary;
 }
 
 .banner-space {
@@ -396,9 +396,9 @@ textarea {
 .feature {
   @apply md:w-5/6 px-6 md:px-0 mx-auto md:pt-16;
   .box {
-    @apply md:grid md:grid-cols-5 md:gap-8 pt-4 md:pt-0;
+    @apply md:grid md:grid-cols-5 md:gap-16 pt-4 md:pt-0;
     & .top-div {
-      @apply hidden  h-16 bg-primary rounded-tl-3xl md:flex items-center justify-center;
+      @apply hidden  h-16 bg-primary rounded-tl-[4em] md:flex items-center justify-center;
     }
 
     & .bottom-div {
@@ -411,12 +411,15 @@ textarea {
   @apply h-8;
 }
 
+.mobile-header-transparent {
+  @apply bg-white/80 lg:bg-transparent;
+}
 .inner-banner {
-  @apply mx-auto max-w-container big-screen  h-full flex items-center;
+  @apply mx-auto max-w-container big-screen  h-full flex items-center  py-6 lg:py-0;
 }
 
 .inner-banner .first-div {
-  @apply space-y-8 text-center md:text-left;
+  @apply space-y-8 text-center md:text-left flex flex-col items-center lg:items-start w-full lg:w-auto;
 }
 
 .inner-banner .h1 {
@@ -469,4 +472,21 @@ textarea {
 .customerPrev svg,
 .customerNext svg {
   @apply w-10 h-10 text-gray-400 hover:text-gray-200;
+}
+
+.servicePrev svg,
+.serviceNext svg {
+  @apply w-10 h-10 text-secondary-dark hover:text-primary;
+}
+
+input.error {
+  @apply border border-red-500;
+}
+
+#solution-error {
+  @apply absolute -bottom-0;
+}
+
+.error {
+  @apply text-red-600 text-xs pl-3;
 }

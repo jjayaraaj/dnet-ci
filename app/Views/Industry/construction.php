@@ -72,15 +72,32 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 <!--section 2-->
 <div>
-    <div class="max-w-container py-16">
-        <div class="space-y-3">
+    <div class="max-w-container py-16  ">
+        <div class="space-y-3 px-6 lg:px-0">
             <h3 class=" text-xl font-semibold text-center">Discover the Benefits of Microsoft ERP for the Construction Industry</h3>
             <p class=" md:w-1/2 text-center mx-auto">Microsoft’s ERP – ISV solutions for Construction provide robust strategic planning tool that offers numerous
                 benefits to drive your business toward remarkable growth. These advantages include:</p>
         </div>
-        <div>
+        <div class="px-6 lg:px-0">
             <div class="md:w-3/4 mx-auto ">
-                <div>
+                <div class=" relative">
+                    <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
+
+
+                        <button class="servicePrev relative -left-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <button class="serviceNext relative -right-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+
+
+                    </div>
                     <div class="h-24"></div>
                     <div class="owl-carousel owl-theme owl-dynamic">
 
@@ -98,7 +115,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
 
-                            <div class="bg-secondary-dark owl-dynamic-inner">
+                            <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
                                     <img src="<?php echo base_url() ?>/images/construction/superior-financial.svg" alt="">
 
@@ -122,7 +139,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                         <div class=" owl-dynamic-child ">
 
-                            <div class="bg-secondary-dark owl-dynamic-inner">
+                            <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
                                     <img src="<?php echo base_url() ?>/images/construction/centralized-data.svg" alt="">
 
@@ -148,7 +165,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         </div>
 
                         <div class=" owl-dynamic-child ">
-                            <div class="bg-secondary-dark owl-dynamic-inner">
+                            <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
                                     <img src="<?php echo base_url() ?>/images/construction/automated-workflows.svg" alt="">
 
@@ -171,7 +188,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
                         <div class=" owl-dynamic-child ">
-                            <div class="bg-secondary-dark owl-dynamic-inner">
+                            <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
                                     <img src="<?php echo base_url() ?>/images/construction/real-time-analytics.svg" alt="">
 
@@ -193,7 +210,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         </div>
 
                         <div class=" owl-dynamic-child ">
-                            <div class="bg-secondary-dark owl-dynamic-inner">
+                            <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
                                     <img src="<?php echo base_url() ?>/images/construction/scalability.svg" alt="">
 
@@ -215,7 +232,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 <div class="  bg-cons2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class="  w-full lg:w-2/5 space-y-8 text-center lg:text-left">
                 <div>
                     <h3 class=" text-xl font-semibold">Lay the Foundation of Success with
                     </h3>
@@ -281,7 +298,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

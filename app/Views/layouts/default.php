@@ -36,8 +36,8 @@
 
 
 
-  <nav x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all" :class="{ 'shadow-lg': atTop, ' text-white py-4': !atTop, 'bg-white  text-indigo-800': atTop }">
-    <div class="relative flex items-center justify-between px-5 md:p-0 "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
+  <nav x-cloak x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all " :class="{ 'shadow-lg': atTop, ' text-white py-4 ': !atTop, 'bg-white  text-indigo-800': atTop, 'bg-primary-light lg:bg-transparent':mobNav }">
+    <div class="relative flex items-center justify-between px-5 md:p-0  "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
       <div class="menu">
         <a href="/">Home
 
@@ -124,6 +124,7 @@
       </div>
 
 
+
       <div class=" hidden md:flex lg:ml-4 lg:flex lg:items-center  lg:pl-4">
         <a class="btn btn-primary" href="#">
           <span>Enquire Now </span>
@@ -155,46 +156,40 @@
 
 
     </div>
-    <div class="flex md:hidden h-screen bg-primary-light  w-full" x-show="mobNav">
+
+    <!-- mobile -->
+    <div class="flex md:hidden h-screen bg-primary-gradient  w-full" x-show="mobNav">
 
       <div class="px-6 py-2 w-full" x-data="{navMob: 0}">
         <ul role="list" class="divide-y divide-blue-400 w-full">
           <li class="py-4">
-            <a class=" font-semibold text-lg">Home</a>
+            <a href="<?php echo base_url() ?>/" class=" font-semibold text-lg">Home</a>
           </li>
           <li class="py-4 " @click="navMob !== 1 ? navMob = 1 : navMob = null">
             <div class="flex items-center justify-between">
               <a class=" font-semibold text-lg">Idustries</a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
+              </svg> -->
             </div>
 
             <div class=" bg-primary w-full h-36 overflow-y-auto px-3 py-5" x-show="navMob === 1">
               <ul class=" space-y-3">
                 <li class=" flex text-white gap-x-2 items-cente">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Real Estate</p>
+
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate" class="text-base">Real Estate</a>
                 </li>
                 <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Construction</p>
+
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp" class="text-base">Construction</a>
                 </li>
                 <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Retail</p>
+
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail" class="text-base">Retail</a>
                 </li>
                 <li class=" flex text-white gap-x-2 items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                  </svg>
-                  <p class="text-base">Financial Service</p>
+
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services" class="text-base">Financial Service</a>
                 </li>
               </ul>
             </div>
@@ -211,6 +206,9 @@
 
             <div class=" bg-primary w-full h-44 overflow-y-auto px-3 py-5" x-show="navMob === 2">
               <ul class=" space-y-3">
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a></li>
+                <li class="flex text-white gap-x-2 items-center "><a href="<?php echo base_url() ?>/property-leasing">Property Leasing</a></li>
+                <li class="flex text-white gap-x-2 items-center "><a href="<?php echo base_url() ?>/property-sale">Property Sale</a></li>
                 <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/dynamics-365-bid-management-software">Bid Management</a></li>
                 <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
                 <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
@@ -223,18 +221,36 @@
 
           </li>
 
-          <li class="py-4">
-            <a class=" font-semibold text-lg">Services</a>
-          </li>
-          <li class="py-4">
-            <a class=" font-semibold text-lg">About Us</a>
-          </li>
-          <li class="py-4">
-            <a class=" font-semibold text-lg">Blog</a>
+          <li class="py-4 " @click="navMob !== 3 ? navMob = 3 : navMob = null">
+            <div class="flex items-center justify-between">
+              <a class=" font-semibold text-lg">Services</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+
+            <div class=" bg-primary w-full h-36 overflow-y-auto px-3 py-5" x-show="navMob === 3">
+              <ul class=" space-y-3">
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services">Upgrade</a></li>
+                <li class="flex text-white gap-x-2 items-center"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a></li>
+              </ul>
+            </div>
+
           </li>
 
           <li class="py-4">
-            <a class=" font-semibold text-lg">Contact</a>
+            <a href="<?php echo base_url() ?>/" class=" font-semibold text-lg">Services</a>
+          </li>
+          <li class="py-4">
+            <a href="<?php echo base_url() ?>/about-us" class=" font-semibold text-lg">About Us</a>
+          </li>
+          <li class="py-4">
+            <a href="<?php echo base_url() ?>/" class=" font-semibold text-lg">Blog</a>
+          </li>
+
+          <li class="py-4">
+            <a href="<?php echo base_url() ?>/contact" class=" font-semibold text-lg">Contact</a>
           </li>
 
           <!-- More items... -->
@@ -254,7 +270,7 @@
 
   $currenUrl = uri_string();
 
-  if ($currenUrl !== 'contact') {
+  if ($currenUrl !== 'contacts' && $currenUrl !== 'thankyou' && $currenUrl !== 'brochure-thankyou') {
 
   ?>
 
@@ -372,40 +388,40 @@
       <div class=" max-w-container big-screen mx-auto h-full relative ">
 
         <div class="flex justify-end ">
-          <div class="  w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10 -mt-16">
+          <div class="  w-full lg:w-2/5 h-full bg-form-2 bg-cover rounded-3xl p-10  lg:-mt-16">
             <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
             <div class="h-5"></div>
-            <form class=" space-y-5">
+            <form class=" space-y-5" action="<?php echo base_url() ?>/demo-request" method="POST" id="footerDemo">
               <div>
-                <label for="username" class="sr-only">Name:</label>
-                <input type="text" id="username" name="username" placeholder="Name" required>
+
+                <input type="text" name="footerName" placeholder="Name" required>
               </div>
               <div>
-                <label for="username" class="sr-only">Company Name:</label>
-                <input type="text" id="username" name="username" placeholder="Company Name" required>
+
+                <input type="text" id="" name="footerCompany" placeholder="Company Name">
               </div>
               <div>
-                <label for="username" class="sr-only">Designation:</label>
-                <input type="text" id="username" name="username" placeholder="Designation" required>
+
+                <input type="text" id="" name="footerDesignation" placeholder="Designation">
               </div>
               <div>
-                <label for="username" class="sr-only">E-Mail ID:</label>
-                <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+
+                <input type="email" id="" name="footerEmail" placeholder="E-Mail ID" required>
               </div>
               <div>
-                <label for="username" class="sr-only">Phone Number:</label>
-                <input type="text" id="phone" name="username" placeholder="Phone Number" required>
+
+                <input type="text" id="footerPhone" name="footerPhone" placeholder="Phone Number">
               </div>
               <div>
-                <label for="username" class="sr-only">Which solution do you want?</label>
-                <input type="text" name="username" placeholder="Which solution do you want?" required>
+
+                <input type="text" name="footerSolution" placeholder="Which solution do you want?" required>
               </div>
               <div>
-                <label for="username" class="sr-only">Requirment</label>
-                <textarea rows="4"></textarea>
+
+                <textarea rows="4" name="footerMessage"></textarea>
               </div>
 
-              <div class=" text-center">
+              <div class=" text-center flex justify-center w-full">
                 <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg></button>
@@ -473,8 +489,8 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row justify-between items-center">
-        <div class=" text-sm text-white font-light">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
+      <div class="flex  flex-col-reverse lg:flex-row justify-between items-center py-6 lg:py-0 ">
+        <div class=" text-sm text-white font-light text-center lg:text-left ">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
         <div class=" flex flex-col space-y-4">
           <div class="text-xl text-white font-bold">CONNECT WITH US</div>
           <div class="flex justify-between">
@@ -489,7 +505,7 @@
     </div>
   </div>
 
-  <button @click="openCommonDownloadForm" class="hidden lg:fixed z-50 top-1/2 hover:bg-yellow-500  btn btn-yellow rotate-90  text-center -right-16 ">Download Brochure </button>
+  <button @click="openCommonDownloadForm" class="fixed z-50 lg:top-1/2  mx-auto flex justify-center hover:bg-yellow-500  btn btn-yellow lg:rotate-90  text-center lg:-right-16  ">Download Brochure </button>
 
   <?php
 
@@ -533,38 +549,39 @@
   <template x-teleport="body">
     <!-- downloadBroucher -->
     <div x-show="downloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
-        <div class="w-2/5  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
+      <div class="   w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
+        <div class="w-1/2  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-3/5 p-8">
+        <div class=" w-1/2 p-8">
 
 
           <div class="heading-1 text-center !text-primary">Download a Brochure</div>
           <div class="h-5"></div>
-          <form class=" space-y-5">
+          <form action="<?php echo base_url() ?>/brochure-download" method="POST" class=" space-y-5" id="brochureForm">
+            <input type="hidden" name="broDoc" id="broDoc">
             <div>
-              <label for="username" class="sr-only">Name:</label>
-              <input type="text" id="username" name="username" placeholder="Name" required>
+              <label for="broName" class="sr-only">Name:</label>
+              <input type="text" id="broName" name="broName" placeholder="Name" required>
             </div>
             <div>
-              <label for="username" class="sr-only">Company Name:</label>
-              <input type="text" id="username" name="username" placeholder="Company Name" required>
+              <label for="broCompany" class="sr-only">Company Name:</label>
+              <input type="text" id="broCompany" name="broCompany" placeholder="Company Name">
             </div>
             <div>
-              <label for="username" class="sr-only">Designation:</label>
-              <input type="text" id="username" name="username" placeholder="Designation" required>
+              <label for="broDesgination" class="sr-only">Designation:</label>
+              <input type="text" id="broDesgination" name="broDesgination" placeholder="Designation">
             </div>
             <div>
-              <label for="username" class="sr-only">E-Mail ID:</label>
-              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+              <label for="broEmail" class="sr-only">E-Mail ID:</label>
+              <input type="email" id="broEmail" name="broEmail" placeholder="E-Mail ID" required>
             </div>
             <div>
-              <label for="username" class="sr-only">Phone Number:</label>
-              <input type="text" id="phone2" name="phone2" placeholder="Phone Number" required>
+              <label for="phone2" class="sr-only">Phone Number:</label>
+              <input type="text" id="phone2" name="phone2" placeholder="Phone Number">
             </div>
 
 
-            <div class=" text-center">
+            <div class=" text-center flex justify-center">
               <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg></button>
@@ -581,132 +598,43 @@
 
   <!-- common download -->
 
-  <template x-teleport="body">
-    <div x-show="commonDownloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class=" bg-white   w-3/4  bg-formBg3 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
-        <div class="w-2/4  bg-commonDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
-        </div>
-        <div class=" w-3/5 p-8">
-
-
-          <div class="heading-1 text-center ">Download Brochure</div>
-          <div class="h-5"></div>
-          <form class=" space-y-5">
-            <div>
-              <label for="username" class="sr-only">Name:</label>
-              <input type="text" id="username" name="username" placeholder="Name" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Company Name:</label>
-              <input type="text" id="username" name="username" placeholder="Company Name" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Designation:</label>
-              <input type="text" id="username" name="username" placeholder="Designation" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">E-Mail ID:</label>
-              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
-            </div>
-            <div>
-              <label for="username" class="sr-only">Phone Number:</label>
-              <input type="text" id="phone4" name="phone4" placeholder="Phone Number" required>
-            </div>
-
-            <div class=" bg-white rounded-3xl p-6">
-              <div class=" font-semibold">Solution you are interested?</div>
-              <div class="flex gap-x-4 pt-3">
-                <div class="space-y-3">
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">Property Management</label>
-                  </div>
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">Bid Management</label>
-                  </div>
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">Treasury Management</label>
-                  </div>
-                </div>
-
-
-                <div class=" space-y-3">
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">Contract Management</label>
-                  </div>
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">Investment Portfolio
-                      Management</label>
-                  </div>
-                  <div class="flex items-center gap-x-2">
-
-                    <input type="radio" id="propMan" name="propMan" required>
-                    <label for="propMan" class="text-xs">AXOnePay</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class=" text-center">
-              <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg></button>
-            </div>
-          </form>
-
-
-
-
-        </div>
-      </div>
-    </div>
-  </template>
+  <?= $this->include('/layouts/common-download') ?>
 
   <!--demo-->
   <template x-teleport="body">
     <div x-show="demoDivOpen" x-transition id="demoDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class="   w-2/4  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
-        <div class="w-2/5  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+      <div class="   w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
+        <div class="w-1/2  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-3/5 p-8">
+        <div class=" w-1/2 p-8">
 
 
           <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
           <div class="h-5"></div>
-          <form class=" space-y-5">
+          <form class=" space-y-5" action="<?php echo base_url() ?>/demo-request" method="POST" id="demoFrom">
             <div>
-              <label for="username" class="sr-only">Name:</label>
-              <input type="text" id="username" name="username" placeholder="Name" required>
+
+              <input type="text" id="demoName" name="demoName" placeholder="Name" required>
             </div>
             <div>
-              <label for="username" class="sr-only">Company Name:</label>
-              <input type="text" id="username" name="username" placeholder="Company Name" required>
+
+              <input type="text" id="demoCompany" name="demoCompany" placeholder="Company Name">
             </div>
             <div>
-              <label for="username" class="sr-only">Designation:</label>
-              <input type="text" id="username" name="username" placeholder="Designation" required>
+
+              <input type="text" name="demoDesignation" placeholder="Designation">
             </div>
             <div>
-              <label for="username" class="sr-only">E-Mail ID:</label>
-              <input type="email" id="username" name="username" placeholder="E-Mail ID" required>
+
+              <input type="email" name="demoEmail" placeholder="E-Mail ID" required>
             </div>
             <div>
-              <label for="username" class="sr-only">Phone Number:</label>
-              <input type="text" id="phone3" name="username" placeholder="Phone Number" required>
+
+              <input type="text" name="demoPhone" id="demoPhone" placeholder="Phone Number" required>
             </div>
 
 
-            <div class=" text-center">
+            <div class=" text-center flex justify-center">
               <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg></button>
@@ -745,206 +673,10 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
   <script src="<?php echo base_url() ?>/js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
 
-  <script>
-    function intiateOwl() {
-      var checkWidth = $(window).width();
-
-      var successOwl = $("#success");
-
-      successOwl.owlCarousel({
-        items: 1,
-        nav: false,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
-        dots: false,
-        loop: true
-      });
-
-      $('.successNext').click(function() {
-        successOwl.trigger('next.owl.carousel');
-      });
-
-      $('.successPrev').click(function() {
-        successOwl.trigger('prev.owl.carousel');
-      });
-
-      $(".owl-client").owlCarousel({
-
-        margin: 50,
-        nav: false,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
-        dots: false,
-        loop: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          1000: {
-            items: 6,
-
-
-          }
-        }
-      });
-
-      $('.customerNext').click(function() {
-        $(".owl-client").trigger('next.owl.carousel');
-      });
-
-      $('.customerPrev').click(function() {
-        $(".owl-client").trigger('prev.owl.carousel');
-      });
-
-
-
-      $(".owl-dynamic").owlCarousel({
-
-        margin: 50,
-        dots: false,
-        responsive: {
-          0: {
-            items: 1
-          },
-          1000: {
-            items: 4,
-            nav: false,
-
-          }
-        }
-      });
-
-      $('.dynamicNext').click(function() {
-        $(".owl-dynamic").trigger('next.owl.carousel');
-      });
-
-      $('.dynamicPrev').click(function() {
-        $(".owl-dynamic").trigger('prev.owl.carousel');
-      });
-
-
-      $(".owl-service").owlCarousel({
-
-        margin: 50,
-        responsive: {
-          0: {
-            items: 1
-          },
-          1000: {
-            items: 4,
-            nav: true,
-
-          }
-        }
-      });
-
-      $('.owl-vertical').owlCarousel({
-        margin: 50,
-        responsive: {
-          0: {
-            items: 1
-          },
-
-        }
-      })
-
-
-
-    }
-
-
-    $(document).ready(function() {
-      intiateOwl();
-
-      //   if ($(window).width() > 765) {
-      //     intiateOwl();
-      //   } else {
-      //     $('.owl-carousel').addClass('off');
-      //   }
-      // });
-
-
-      // $(window).resize(function() {
-      //   if ($(window).width() > 765) {
-      //     intiateOwl();
-      //   } else {
-      //     stopCarousel();
-      //   }
-    });
-
-    function stopCarousel() {
-      var owl = $('.owl-carousel');
-      owl.trigger('destroy.owl.carousel');
-      owl.addClass('off');
-    }
-
-
-
-    const phoneInputField = document.querySelector("#phone");
-
-
-    intlTelInput(phoneInputField);
-    // intlTelInput(phoneDown2);
-
-
-
-
-
-
-
-    // $(downloadphoneInputField).intlTelInput();
-
-
-
-
-
-
-
-
-    const downloadDiv = document.getElementById("downloadDiv");
-
-    // console.log('ele height', downloadDiv.offsetHeight)
-
-    console.log("windoe")
-    document.addEventListener('alpine:init', () => {
-      // window.intlTelInput(phoneDown2, {
-      //   // initialCountry: 'gb',
-      //   // placeholderNumberType: 'MOBILE',
-      // });
-      console.log("alpine")
-      Alpine.data('app', () => ({
-
-
-        downloadDivOpen: false,
-        demoDivOpen: false,
-        commonDownloadDivOpen: false,
-
-        openCommonDownloadForm() {
-          const phoneDown4 = document.querySelector("#phone4");
-          intlTelInput(phoneDown4);
-          this.commonDownloadDivOpen = true;
-        },
-
-        openFormDownload(solution) {
-          const phoneDown2 = document.querySelector("#phone2");
-          intlTelInput(phoneDown2);
-          console.log(solution);
-          this.downloadDivOpen = true;
-
-
-        },
-        openFormDemoDiv(solution) {
-          const phoneDown3 = document.querySelector("#phone3");
-          intlTelInput(phoneDown3);
-          this.demoDivOpen = true;
-          console.log(solution);
-        }
-      }))
-    })
-  </script>
+  <script src="<?php echo base_url() ?>/js/app.js"></script>
 
 </body>
 

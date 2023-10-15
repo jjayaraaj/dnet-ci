@@ -6,34 +6,36 @@
 <?= $this->section("content") ?>
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class="max-w-container mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px] ">
 
 
-            <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8 text-center md:text-left">
-                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight">
-                        <span class="display-lg text-primary  ">RealEstatePro</span><br>
-                        an advanced <span class=" text-primary">Property Management software</span>
-                        on Microsoft Dynamics 365
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div">
+                        <h1 class="h1 flex flex-col">
+                            <span class="display-lg text-primary  ">RealEstatePro</span>
+                            an advanced <span class=" text-primary">Property Management software</span>
+                            on Microsoft Dynamics 365
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="flex  md:flex-row  gap-4 items-center">
-                        <?= $this->include('/layouts/download') ?>
-                        <?= $this->include('/layouts/request-demo') ?>
+                        <div class="flex  md:flex-row  gap-4 items-center">
+                            <?= $this->include('/layouts/download') ?>
+                            <?= $this->include('/layouts/request-demo') ?>
+
+                        </div>
 
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -53,13 +55,13 @@
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
 
 
-                <button class="dynamicPrev relative -left-16 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-secondary-dark">
+                <button class="dynamicPrev relative lg:-left-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-primary  lg:text-secondary-dark">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
                     </svg>
                 </button>
-                <button class="dynamicNext relative -right-16 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-secondary-dark">
+                <button class="dynamicNext relative lg:-right-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-primary  lg:text-secondary-dark">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
                     </svg>
 
@@ -83,7 +85,7 @@
 
                 <div class=" owl-dynamic-child ">
 
-                    <div class="bg-secondary-dark owl-dynamic-inner">
+                    <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
                             <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" alt="">
                         </div>
@@ -105,7 +107,7 @@
 
                 <div class=" owl-dynamic-child ">
 
-                    <div class="bg-secondary-dark owl-dynamic-inner">
+                    <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
                             <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" alt="">
                         </div>
@@ -127,7 +129,7 @@
 
 
                 <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary-dark owl-dynamic-inner">
+                    <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
                             <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" alt="">
                         </div>
@@ -147,7 +149,7 @@
                 </div>
 
                 <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary-dark owl-dynamic-inner">
+                    <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
                             <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" alt="">
                         </div>
@@ -178,15 +180,15 @@
 
 <!-- section 3 -->
 <div class=" bg-secondary pt-16 " x-data="{property: 1}">
-    <div class=" max-w-container space-y-8 big-screen">
-        <h2 class="heading-1 text-center w-4/6 mx-auto">
+    <div class=" max-w-container space-y-8 big-screen ">
+        <h2 class="heading-1 text-center w-full  lg:w-4/6 mx-auto px-6 lg:px-0 ">
             Discover business profitability with Real Estate Management Software on Microsoft Dynamics 365
         </h2>
-        <p class="text-center">World’s leading real estate enterprises entrust Dynamic Netsoft for smooth operations and to produce better business outcomes. Our world-class flagship product RealEstatePro on Microsoft Dynamics 365 Software provides end-to-end capabilities across the entire real estate value chain. Its Property Leasing and Sales Modules are purpose-built to optimize every facet of property management, from the easy data retrieval of vacant units to the seamless deal closures.</p>
+        <p class="text-center px-6 lg:px-0 ">World’s leading real estate enterprises entrust Dynamic Netsoft for smooth operations and to produce better business outcomes. Our world-class flagship product RealEstatePro on Microsoft Dynamics 365 Software provides end-to-end capabilities across the entire real estate value chain. Its Property Leasing and Sales Modules are purpose-built to optimize every facet of property management, from the easy data retrieval of vacant units to the seamless deal closures.</p>
 
         <!-- dynamic -->
-        <div class="flex">
-            <div class=" w-96  ">
+        <div class="flex items-end">
+            <div class="hidden lg:block w-96  ">
                 <img src="<?php echo base_url() ?>/images/realestatepro/Property-Leasing-Image.svg" x-show="property === 1">
                 <img src="<?php echo base_url() ?>/images/realestatepro/Property-Sales.svg" x-show="property === 2">
             </div>
@@ -209,7 +211,7 @@
                     </button>
                 </div>
 
-                <div class="bg-primary p-6 space-y-8" x-show="property === 1">
+                <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 1">
                     <p class="text-blue-50">Redefine your property leasing process with our Property Management Software on Dynamics, using an innovative and streamlined approach to deliver an unparalleled experience for your prospects. With an array of advanced tools and features that optimize every stage of the leasing process, our Microsoft Dynamics Property Management solution is the ideal choice for businesses seeking to enhance the prospect experience and drive sustained engagement and business conversion.</p>
 
                     <div class=" inline-flex gap-4 ">
@@ -231,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="bg-primary p-6 space-y-8" x-show="property === 2">
+                <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 2">
                     <p class="text-blue-50">Amidst the ever-changing landscape of real estate business models, our industry-leading property sales module on Microsoft Dynamics 365 stands ready to navigate your organization to accomplish sustained growth. Advanced analytics and reporting capabilities empower professionals to gain deep insights into the performance of their sales operations, allowing targeted optimization and enhanced efficiency. Its user-friendly interface and powerful capabilities make it a one-stop shop for all property sales needs, required to close deals faster and more efficiently.</p>
 
                     <div class=" inline-flex gap-4 ">
@@ -268,8 +270,8 @@
         feature-rich Real Estate Software solution on Dynamics 365
     </h3>
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/realestatepro/Process-automation.svg" alt="">
             </div>
@@ -279,7 +281,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/realestatepro/Property-hierarchy.svg" alt="">
             </div>
@@ -293,8 +295,8 @@
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/realestatepro/Secure-accurate.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Secure & accurate documentation</div>
@@ -302,7 +304,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Inquiry-management.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Inquiry management</div>
@@ -314,8 +316,8 @@
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Lead-management.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Lead management</div>
@@ -323,7 +325,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Utility-management.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Utility management</div>
@@ -335,8 +337,8 @@
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Pre-integrated.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Pre-integrated mobile apps</div>
@@ -344,7 +346,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/realestatepro/Fully-integrated.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Fully integrated listing portals</div>
@@ -364,7 +366,7 @@
 <div class="  bg-cloud bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class=" w-full lg:w-2/5 space-y-8 px-6 lg:px-0 text-center lg:text-left">
                 <div>
                     <h3 class=" text-xl font-semibold">Transform your operations with our
                     </h3>
@@ -408,7 +410,7 @@
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

@@ -73,14 +73,31 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 <!--section 2-->
 <div>
     <div class="max-w-container py-16">
-        <div class="space-y-3">
+        <div class="space-y-3 px-6 lg:px-0">
             <h3 class=" text-xl font-semibold text-center">Innovate, Integrate & Succeed: Explore Our Dynamic 365 ERP Implementation Services</h3>
             <p class=" md:w-1/2 text-center mx-auto">Dynamic Netsoft, a Dynamics 365 Implementation partner, delivers world-class solutions tailored to diverse industry verticals, particularly the Property & Construction sector. With over a decade of experience and Microsoft affiliation, Dynamic Netsoft boasts the distinction of offering six world-class ISV solutions:</p>
         </div>
-        <div>
-            <div class="md:w-3/4 mx-auto ">
-                <div>
+        <div class="">
 
+            <div class="md:w-3/4 mx-auto ">
+                <div class=" relative">
+                    <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
+
+
+                        <button class="servicePrev relative -left-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <button class="serviceNext relative -right-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+
+
+                    </div>
                     <div class="">
                         <div class="owl-carousel owl-theme owl-service">
                             <?php foreach ($benefits as $product) {
@@ -114,9 +131,9 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 <!-- section -3 -->
 <div class="  bg-implementation-partner  bg-cover">
-    <div class=" max-w-container space-y-8 py-16 big-screen">
+    <div class=" max-w-container space-y-8 lg:py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class=" w-full lg:w-2/5 space-y-8 p-6 lg:p-0 text-center lg:text-left">
                 <div>
                     <h3 class=" text-xl font-semibold">Supercharge your business with our
                     </h3>
@@ -262,7 +279,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
                 <div class="desktop-content" x-show="feature=== 1">
                     <div class=" heading-1 hidden md:block ">Requirement analysis</div>
-                    <p class="text-white">Through meticulous requirement analysis, our Microsoft Dynamics 365 Finance & Operations implementation team will assess your business needs and gather essential information to tailor the solution.</p>
+                    <p class="text-black lg:text-white">Through meticulous requirement analysis, our Microsoft Dynamics 365 Finance & Operations implementation team will assess your business needs and gather essential information to tailor the solution.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -291,7 +308,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
                 <div class=" desktop-content" x-show="feature=== 2">
                     <div class=" heading-1 hidden md:block ">Designing the modules by setup</div>
-                    <p class="text-white">Our expert team will design the modules, ensuring a seamless setup that aligns with your specific requirements. </p>
+                    <p class="text-black lg:text-white">Our expert team will design the modules, ensuring a seamless setup that aligns with your specific requirements. </p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -320,7 +337,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
                 <div class="desktop-content" x-show="feature=== 3">
                     <div class=" heading-1 hidden md:block ">Configuration</div>
-                    <p class="text-white">With careful attention to detail, our Dynamics 365 Finance & Operations implementation specialists will configure the system, optimizing its performance to meet your unique business processes.</p>
+                    <p class="text-black lg:text-white">With careful attention to detail, our Dynamics 365 Finance & Operations implementation specialists will configure the system, optimizing its performance to meet your unique business processes.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -349,7 +366,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
                 <div class="desktop-content" x-show="feature=== 4">
                     <div class=" heading-1 hidden md:block ">Development of reports</div>
-                    <p class="text-white">Our skilled developers will craft customized reports that provide valuable insights, enabling you to make data-driven decisions and drive business growth.</p>
+                    <p class="text-black lg:text-white">Our skilled developers will craft customized reports that provide valuable insights, enabling you to make data-driven decisions and drive business growth.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -381,7 +398,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <div class=" heading-1 hidden md:block ">
                         Required customizations
                     </div>
-                    <p class="text-white">Our Microsoft Dynamics 365 Implementation service team will implement necessary customizations, tailoring the solution to fit your organization's unique workflows and maximizing its efficiency.</p>
+                    <p class="text-black lg:text-white">Our Microsoft Dynamics 365 Implementation service team will implement necessary customizations, tailoring the solution to fit your organization's unique workflows and maximizing its efficiency.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -393,7 +410,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <div class=" heading-1 hidden md:block ">
                         End-User training
                     </div>
-                    <p class="text-white">End-user training programs led by our experienced trainers will equip your staff with the necessary knowledge and skills to effectively utilize the implemented solution.</p>
+                    <p class="text-black lg:text-white">End-user training programs led by our experienced trainers will equip your staff with the necessary knowledge and skills to effectively utilize the implemented solution.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -416,7 +433,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <div class=" heading-1 hidden md:block ">
                         Go Live with post-implementation support
                     </div>
-                    <p class="text-white">our dedicated Dynamics 365 Implementation & support team will help and provide guidance, ensuring a successful Go Live.</p>
+                    <p class="text-black lg:text-white">our dedicated Dynamics 365 Implementation & support team will help and provide guidance, ensuring a successful Go Live.</p>
 
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
@@ -617,7 +634,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

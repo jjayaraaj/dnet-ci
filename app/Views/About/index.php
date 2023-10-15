@@ -11,13 +11,13 @@
     <div class="max-w-container mx-auto h-full big-screen">
         <div class="banner-space"></div>
 
-        <div class="  w-full  h-[500px]">
+        <div class="  w-full  lg:h-[500px]">
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8">
-                    <h1 class="text-[2rem] font-bold max-w-3xl flex-1 ">
+            <div class=" inner-banner">
+                <div class=" first div">
+                    <h1 class="h1 flex flex-col">
                         <span class="display-lg text-primary  !leading-[5rem]">About Us
                     </h1>
 
@@ -32,9 +32,9 @@
 
 <!-- section-1 -->
 <div class="max-w-container pt-16">
-    <div class=" bg-secondary-dark p-10  w-4/5 rounded-tr-[3em]">
-        <div class="flex  w-full items-center gap-x-10">
-            <div class=" display-lg text-primary  !leading-[5rem] w-1/4">WHO WE ARE?</div>
+    <div class=" bg-secondary-dark p-10  lg:w-4/5 rounded-tr-[3em]">
+        <div class="lg:flex  w-full items-center gap-x-10">
+            <div class=" display-lg text-primary  !leading-[5rem] lg:w-1/4">WHO WE ARE?</div>
             <div class="flex-1 space-y-5">
                 <p>Dynamic Netsoft Technologies stands at the forefront of excellence as a leading Microsoft Dynamics 365 implementation and ERP consulting services firm. With a decade-long legacy, we've been persistent in our mission to refine business processes and facilitate operational automation through our specialized expertise and innovative solutions.</p>
                 <p>Presently, we are the most preferred partner for Property and construction enterprises, guiding them through a holistic digital transformation. Our global team of seasoned experts has consistently elevated process management, boosting productivity, and curbing operational expenses for organizations across the globe. Our top-tier Microsoft ISV solutions, meticulously designed for industry verticals, have been awarded and recognized for their ability to address the nuanced challenges posed by demanding customers.
@@ -49,14 +49,14 @@
 
 <!-- section-2 -->
 <div class="max-w-container pb-16">
-    <div class=" bg-secondary p-10  w-4/5 rounded-bl-[3em] ml-auto">
-        <div class="flex  w-full items-center gap-x-10">
-
+    <div class=" bg-secondary p-10  lg:w-4/5 rounded-bl-[3em] ml-auto">
+        <div class="lg:flex  w-full items-center gap-x-10">
+            <div class=" lg:hidden display-lg text-primary  !leading-[5rem] lg:w-1/4">WHAT WE DO?</div>
             <div class="flex-1 space-y-5">
                 <p>We are committed to enhancing the time-to-value of our clients, throughout the application life cycle. We are dedicated to technological advancements that streamline the entire application journey, ranging from installation, configuration, integration, deployment, utilization, and upgrades. Our comprehensive services, meticulously designed at Dynamic Netsoft, revolve around optimizing your solution's value, safeguarding investments, and elevating organizational productivity. Our service plans entail valuable benefits, such as access to software updates, including hotfixes, service packs, tax and regulatory updates, and major releases. Furthermore, we commit to ensuring the compatibility of our Vertical Solution with all Microsoft Dynamics AX releases, allowing our clients to align upgrades with their strategic business objectives effectively.
                 </p>
             </div>
-            <div class=" display-lg text-primary  !leading-[5rem] w-1/4">WHAT WE DO?</div>
+            <div class="hidden lg:block display-lg text-primary  !leading-[5rem] lg:w-1/4">WHAT WE DO?</div>
         </div>
     </div>
 </div>
@@ -68,7 +68,7 @@
 
         <!-- dynamic -->
         <div class="flex items-end">
-            <div class=" w-96  ">
+            <div class=" w-96 hidden lg:block  ">
                 <img src="<?php echo base_url() ?>/images/about/our-vision.svg" x-show="property === 1">
                 <img src="<?php echo base_url() ?>/images/about/our-mission.svg" x-show="property === 2">
             </div>
@@ -118,8 +118,8 @@
         Our Methodology
     </h3>
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/about/design-phase.svg" alt="">
             </div>
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/about/analysis-phase.svg" alt="">
             </div>
@@ -143,8 +143,8 @@
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/about/design-phase.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Design Phase</div>
@@ -152,7 +152,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/development-phase.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Development Phase</div>
@@ -164,8 +164,8 @@
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/deployment-phase.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Deployment Phase</div>
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/about/operation-phase.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Operation Phase</div>
@@ -199,7 +199,7 @@
         <p class="text-center py-6">Our journey at Dynamic Netsoft has been a series of deliberate and transformative phases, each marked by significant milestones and achievements.</p>
 
 
-        <div class="inner-section-box h-[300px] ">
+        <div class="inner-section-box lg:h-[300px] ">
             <div class="tab overflow-y-auto">
                 <div class="item" @click="feature = 1" :class="feature === 1 ? 'active' : ''">
                     <div class=" circle">
@@ -262,7 +262,7 @@
 
 
             </div>
-            <div class="content  h-[300px]">
+            <div class="content  lg:h-[300px]">
                 <!-- content 1  -->
 
                 <div class="mobile-tab " @click="feature = 1">
@@ -283,7 +283,7 @@
 
                 <div class="desktop-content" x-show="feature=== 1">
                     <div class=" heading-1 hidden md:block ">Phase 1: Inception</div>
-                    <p class="text-white">We commenced this voyage in 2011, with the opening of our R&D Centre in Chennai, India. This marked the inception of our ISV solutions, laying the foundation for what would become our hallmark of innovation.</p>
+                    <p class="lg:text-white">We commenced this voyage in 2011, with the opening of our R&D Centre in Chennai, India. This marked the inception of our ISV solutions, laying the foundation for what would become our hallmark of innovation.</p>
 
 
                 </div>
@@ -310,7 +310,7 @@
 
                 <div class=" desktop-content" x-show="feature=== 2">
                     <div class=" heading-1 hidden md:block ">Phase 2: Investment</div>
-                    <p class="text-white">Our horizons expanded as we ventured into Riyadh in 2013, extending our operations to the Middle East. During this phase, we welcomed key customers onboard, building vital relationships that continue to thrive.</p>
+                    <p class="lg:text-white">Our horizons expanded as we ventured into Riyadh in 2013, extending our operations to the Middle East. During this phase, we welcomed key customers onboard, building vital relationships that continue to thrive.</p>
 
 
                 </div>
@@ -337,7 +337,7 @@
 
                 <div class="desktop-content" x-show="feature=== 3">
                     <div class=" heading-1 hidden md:block ">Phase 3: Growth</div>
-                    <p class="text-white">We achieved coveted milestones, including Microsoft Gold certification and CfMD recognition for our ISV products in 2015. </p>
+                    <p class="lg:text-white">We achieved coveted milestones, including Microsoft Gold certification and CfMD recognition for our ISV products in 2015. </p>
 
 
                 </div>
@@ -364,7 +364,7 @@
 
                 <div class="desktop-content" x-show="feature=== 4">
                     <div class=" heading-1 hidden md:block ">Phase 4: Consolidation</div>
-                    <p class="text-white">A significant leap, as we obtained D365 certification and attained CSP T1 status in 2019. Our ISV products found a home on Microsoft App Source, making them more accessible to our global audience.</p>
+                    <p class="lg:text-white">A significant leap, as we obtained D365 certification and attained CSP T1 status in 2019. Our ISV products found a home on Microsoft App Source, making them more accessible to our global audience.</p>
 
 
                 </div>
@@ -394,7 +394,7 @@
                     <div class=" heading-1 hidden md:block ">
                         Phase 5: Expansion
                     </div>
-                    <p class="text-white">Our journey culminated in global recognition as a Microsoft One Commercial Partner in 2020. Our ISV products achieved MS co-sell readiness, reflecting our commitment to excellence and innovation.</p>
+                    <p class="lg:text-white">Our journey culminated in global recognition as a Microsoft One Commercial Partner in 2020. Our ISV products achieved MS co-sell readiness, reflecting our commitment to excellence and innovation.</p>
 
 
                 </div>
@@ -425,7 +425,7 @@
                     <div class=" heading-1 hidden md:block ">
                         Phase 6: Aspiration
                     </div>
-                    <p class="text-white">We continue to evolve, now pioneering the development of new SaaS products for the Property Sector, utilizing a subscription-based model. This phase represents our unwavering dedication to meeting evolving market demands and driving industry transformation.</p>
+                    <p class="lg:text-white">We continue to evolve, now pioneering the development of new SaaS products for the Property Sector, utilizing a subscription-based model. This phase represents our unwavering dedication to meeting evolving market demands and driving industry transformation.</p>
 
 
                 </div>
@@ -581,21 +581,21 @@
     <div class=" max-w-container space-y-16">
         <div class=" heading-1 text-center !text-white">Global Reach</div>
         <div class=" md:w-4/5 mx-auto">
-            <div class=" grid grid-cols-3">
+            <div class=" grid grid-cols-1 lg:grid-cols-3">
                 <div class=" border-r border-b border-white h-56 px-8 items-center">
                     <div class="flex flex-col justify-center h-full space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/india.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                India
+                            <div>
+                                <div class="display-3 text-white ">
+                                    India
+                                </div>
+                                <div class="text-white ">R&D Centre</div>
                             </div>
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
                 <div class=" border-r border-b border-white px-8 h-56">
@@ -604,14 +604,15 @@
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/united-states.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                United States
+                            <div>
+                                <div class="display-3 text-white ">
+                                    USA
+                                </div>
+                                <div class="text-white ">US & Canada</div>
                             </div>
+
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
                 <div class="   border-b h-56">
@@ -620,14 +621,14 @@
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/singapore.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                Singapore
+                            <div>
+                                <div class="display-3 text-white ">
+                                    Singapore
+                                </div>
+                                <div class="text-white ">SE Asia & ANZ</div>
                             </div>
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
                 <div class=" border-r  border-white h-56">
@@ -636,14 +637,14 @@
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/dubai-flag.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                Dubai
+                            <div>
+                                <div class="display-3 text-white ">
+                                    Dubai
+                                </div>
+                                <div class="text-white ">Europe, CIS & Levant</div>
                             </div>
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
                 <div class=" border-r  border-white h-56">
@@ -652,14 +653,14 @@
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/ghana.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                Ghana
+                            <div>
+                                <div class="display-3 text-white ">
+                                    Ghana
+                                </div>
+                                <div class="text-white ">Africa operations</div>
                             </div>
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
                 <div class="   h-56">
@@ -668,14 +669,14 @@
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" alt="">
                             </div>
-                            <div class="display-3 text-white ">
-                                Saudi Arabia
+                            <div>
+                                <div class="display-3 text-white ">
+                                    KSA
+                                </div>
+                                <div class="text-white ">Middle East</div>
                             </div>
                         </div>
-                        <div class="text-white ">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
-                            Phone: +9144 4923 7777
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -718,7 +718,7 @@ Investment Portfolio Management Software on Dynamics 365
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

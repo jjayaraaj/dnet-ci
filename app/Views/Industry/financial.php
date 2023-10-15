@@ -72,47 +72,69 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 <!-- section 1 ends -->
 
 <!-- section 1 -->
-<!-- <div class=" md:bg-primary-light md:py-16">
-    <div class=" max-w-container big-screen">
-        <div class=" inner-section-blue flex-row-reverse">
-            <div class="img-section hidden md:block">
-
-            </div>
-            <div class="content-section">
-                <h2 class=" !bg-transparent">Achieve Precision with Our ISV Solution for <span class="text-d-yellow">Financial Services</span></h2>
-                <div class="sub-content">
-                    <p class="">
-                        Tailored to the unique intricacies of financial management, our solution offers capabilities that give businesses real-time visibility into investment portfolios, instant insights, meticulous financial forecasting, and cash flow tracking. </p>
-                    <p>Distinguished by real-time monitoring, tailored risk assessment, and seamless integration, our Investment Portfolio Management software redefines the art of investment management. It extends its capabilities, revealing invaluable insights into Buy/Sell and Gain/Loss transactions.</p>
-                    <p>Our loan management software enhances efficiency, slashes costs, ensures compliance, and fortifies security. Place your trust in our professional and precise solution for unparalleled peace of mind in your business operations.</p>
-                    <div class="flex gap-x-4 pt-4">
-
-
-                        <div>
-                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg></button>
-                        </div>
-                    </div>
-
+<div class=" md:bg-secondary md:py-16">
+    <div class=" max-w-container big-screen space-y-6">
+        <div class=" text-center  text-2xl font-bold">Achieve Precision with Our ISV Solution for <span class="text-d-yellow">Financial Services</span></div>
+        <div class=" lg:w-3/4 mx-auto">
+            <p class=" text-center">
+                Tailored to the unique intricacies of financial management, our solution offers capabilities that give businesses real-time visibility into investment portfolios, instant insights, meticulous financial forecasting, and cash flow tracking. </p>
+        </div>
+        <div class=" flex gap-x-20">
+            <div class=" space-y-6">
+                <p>
+                    Distinguished by real-time monitoring, tailored risk assessment, and seamless integration, our Investment Portfolio Management software redefines the art of investment management. It extends its capabilities, revealing invaluable insights into Buy/Sell and Gain/Loss transactions.
+                </p>
+                <div class="flex">
+                    <a href="#" class="btn btn-yellow"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></a>
                 </div>
             </div>
+
+            <div class=" space-y-6">
+                <p>Our loan management software enhances efficiency, slashes costs, ensures compliance, and fortifies security. Place your trust in our professional and precise solution for unparalleled peace of mind in your business operations.</p>
+
+                <div class="flex">
+                    <a href="#" class="btn btn-yellow"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></a>
+                </div>
+            </div>
+
+
         </div>
     </div>
-</div> -->
+</div>
 <!-- section 1 ends -->
 
 <!--section 2-->
 <div>
     <div class="max-w-container py-16">
-        <div class="space-y-3">
+        <div class="space-y-3 px-6 lg:px-0">
             <h3 class=" text-xl font-semibold text-center">The Benefits of Financial Services ERP Yielding Precise Financial Management</h3>
             <!-- <p class=" md:w-1/2 text-center mx-auto">Microsoft’s ERP – ISV solutions for Construction provide robust strategic planning tool that offers numerous
                 benefits to drive your business toward remarkable growth. These advantages include:</p> -->
         </div>
         <div>
-            <div class="md:w-3/4 mx-auto ">
-                <div>
+            <div class="md:w-3/4 mx-auto px-6 lg:px-0 ">
+                <div class="relative">
+                    <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
+
+
+                        <button class="servicePrev relative -left-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <button class="serviceNext relative -right-[5%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-white">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+
+
+                    </div>
                     <div class="h-24"></div>
                     <div class="owl-carousel owl-theme owl-dynamic">
 
@@ -150,7 +172,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 <div class="  bg-fin2 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class=" w-full lg:w-2/5 space-y-8 px-6 lg:px-0 text-center lg:text-left">
                 <div>
                     <h3 class=" text-xl font-semibold">Enhance Financial Efficiency and Profits with the
                     </h3>
@@ -184,8 +206,8 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         <!-- <p class="text-center">The tangible benefits of our modern retail POS software are;</p> -->
     </div>
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/fin/investment-parameters.svg" alt="">
             </div>
@@ -195,7 +217,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box ">
                 <img src="<?php echo base_url() ?>/images/fin/risk-analysis.svg" alt="">
             </div>
@@ -209,8 +231,8 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box  "> <img src="<?php echo base_url() ?>/images/fin/document-management.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Document Management</div>
@@ -218,7 +240,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/key-performance-indicator.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Key Performance Indicator (KPI)</div>
@@ -230,8 +252,8 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/master-level-data-store.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Master Level Data-Store</div>
@@ -239,7 +261,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/designated-transaction-area.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Designated Transaction Area</div>
@@ -251,8 +273,8 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/periodic-activity-analysis.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Periodic Activity Analysis</div>
@@ -260,7 +282,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/periodic-market-price.svg" alt=""></div>
             <div class=" curve-div ">
                 <div class="title">Periodic Market-Price Revaluation</div>
@@ -272,8 +294,8 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
     </div>
 
 
-    <div class=" flex gap-10">
-        <div class=" w-1/2 flex">
+    <div class=" flex flex-col lg:flex-row gap-10 px-6 lg:px-0">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/easy-enquiries-management.svg" alt=""></div>
             <div class=" curve-div">
                 <div class="title">Easy Enquiries Management</div>
@@ -281,7 +303,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
             </div>
         </div>
 
-        <div class=" w-1/2 flex">
+        <div class=" w-full lg:w-1/2 flex">
             <div class="half-icon-box "><img src="<?php echo base_url() ?>/images/fin/open-platform.svg" alt=""></div>
             <div class=" curve-div !bg-secondary">
                 <div class="title">Open Platform for Integration</div>
@@ -342,7 +364,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

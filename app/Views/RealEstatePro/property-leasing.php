@@ -5,7 +5,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-leasing1">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-leasing1 bg-bottom">
     <div class="banner-space"></div>
     <div class="max-w-container mx-auto h-full big-screen">
 
@@ -14,9 +14,9 @@
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8">
-                    <h1 class="text-[2rem] font-bold max-w-3xl flex-1 flex flex-col leading-tight">
+            <div class=" inner-banner  ">
+                <div class=" first-div">
+                    <h1 class="h1 flex flex-col">
                         Achieve Streamlined Property Leasing
                         Processes with RealEstatePro’s
                         <span class="display-lg text-primary  "> Property Lease Management software on Dynamics</span>
@@ -42,7 +42,7 @@
             <div class="img-section hidden md:flex justify-end">
                 <img src="<?php echo base_url() ?>/images/leasing/property-lease-management-software-microsoft-dynamics.svg" alt="">
             </div>
-            <div class="content-section">
+            <div class="content-section pt-16 lg:pt-0">
                 <!-- <h2><span class="text-d-yellow">Annata 365</span></h2> -->
                 <div class="sub-content">
                     <p class="">
@@ -496,7 +496,7 @@
 <div class="  bg-leasing4 bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class=" w-full lg:w-2/5 space-y-8 px-6 lg:px-0 text-center lg:text-left">
                 <div>
                     <!-- <h3 class=" text-xl font-semibold">
                     </h3> -->

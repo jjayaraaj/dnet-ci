@@ -120,6 +120,7 @@ $formBg3 = base_url() . '/images/form-background-image2.svg';
 
     .bg-real1 {
         background-image: url('<?php echo $real1 ?>');
+
     }
 
     .bg-sale2 {
@@ -155,11 +156,11 @@ $formBg3 = base_url() . '/images/form-background-image2.svg';
     }
 
     .bg-leasing1 {
-        background-image: url('<?php echo $leasing4 ?>');
+        background-image: url('<?php echo $leasing1 ?>');
     }
 
     .bg-leasing4 {
-        background-image: url('<?php echo $leasing1 ?>');
+        background-image: url('<?php echo $leasing4 ?>');
     }
 
     .bg-propGoto1 {

@@ -56,48 +56,54 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 <!-- section2 ends -->
 
 <div class=" max-w-container pb-16">
-    <div class="flex justify-center gap-10">
-        <div class=" w-1/4 bg-secondary">
-            <div class="h-14 bg-primary-light flex justify-center items-center text-white">Features</div>
-            <ul class="p-6 space-y-3 list-disc ml-4">
-                <li>Deployment</li>
-                <li>Capabilities</li>
-                <li>Licensing</li>
-                <li>Integration capabilities</li>
-                <li>Customizations</li>
-                <li>Upgrade process</li>
-                <li>Testing and Analytics</li>
-                <li>Infrastructure</li>
-            </ul>
+    <div class="flex flex-col lg:flex-row justify-center gap-10 px-6 lg:px-0">
+        <div class=" lg:w-[20%] ">
+            <div class="h-14 bg-primary-light flex justify-center items-center rounded-tl-[2rem] rounded-tr-[2rem] text-white">Features</div>
+            <div class="bg-secondary rounded-bl-[2rem] rounded-br-[2rem]">
+                <ul class="p-6 space-y-3 list-disc ml-4 ">
+                    <li>Deployment</li>
+                    <li>Capabilities</li>
+                    <li>Licensing</li>
+                    <li>Integration capabilities</li>
+                    <li>Customizations</li>
+                    <li>Upgrade process</li>
+                    <li>Testing and Analytics</li>
+                    <li>Infrastructure</li>
+                </ul>
+            </div>
         </div>
 
         <div class="  bg-secondary">
-            <div class="h-14 bg-primary-light flex justify-center items-center text-white">Dynamics AX</div>
-            <ul class="p-6 space-y-3 list-disc ml-4">
-                <li>Desktop-based application</li>
-                <li>Limited modern and intelligent capabilities</li>
-                <li>Traditional models</li>
-                <li>Limited </li>
-                <li>Overlaying method for customizations</li>
-                <li>Complicated </li>
-                <li>Manual testing and limited analytics support</li>
-                <li>physical infrastructure</li>
-            </ul>
+            <div class="h-14 bg-primary-light flex justify-center items-center text-white rounded-tl-[2rem] rounded-tr-[2rem]">Dynamics AX</div>
+            <div class="bg-secondary rounded-bl-[2rem] rounded-br-[2rem]">
+                <ul class="p-6 space-y-3 list-disc ml-4">
+                    <li>Desktop-based application</li>
+                    <li>Limited modern and intelligent capabilities</li>
+                    <li>Traditional models</li>
+                    <li>Limited </li>
+                    <li>Overlaying method for customizations</li>
+                    <li>Complicated </li>
+                    <li>Manual testing and limited analytics support</li>
+                    <li>physical infrastructure</li>
+                </ul>
+            </div>
         </div>
 
 
         <div class="  bg-secondary">
-            <div class="h-14 bg-primary-light flex justify-center items-center text-white">Dynamics 365</div>
-            <ul class="p-6 space-y-3 list-disc ml-4">
-                <li>Web and cloud-based solution</li>
-                <li>wide range of modern and intelligent features</li>
-                <li>Subscription-based </li>
-                <li>Seamless integration with various applications </li>
-                <li>Extensions via LCS for customizations</li>
-                <li>Smaller and easy upgrades </li>
-                <li>Built-in testing tools and analytics support</li>
-                <li>Hosted in Azure</li>
-            </ul>
+            <div class="h-14 bg-primary-light flex justify-center items-center text-white rounded-tl-[2rem] rounded-tr-[2rem]">Dynamics 365</div>
+            <div class="bg-secondary rounded-bl-[2rem] rounded-br-[2rem]">
+                <ul class="p-6 space-y-3 list-disc ml-4">
+                    <li>Web and cloud-based solution</li>
+                    <li>wide range of modern and intelligent features</li>
+                    <li>Subscription-based </li>
+                    <li>Seamless integration with various applications </li>
+                    <li>Extensions via LCS for customizations</li>
+                    <li>Smaller and easy upgrades </li>
+                    <li>Built-in testing tools and analytics support</li>
+                    <li>Hosted in Azure</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -485,7 +491,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 <div class="  bg-upgrade-connect bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
-            <div class=" w-2/5 space-y-8">
+            <div class="w-full lg:w-2/5 space-y-8 px-6 lg:px-0 text-center lg:text-left">
                 <div>
                     <h3 class=" text-xl font-semibold">Unlock the Limitless Potential of Your Business with Our
                     </h3>
@@ -548,41 +554,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 
 <!-- succsess stories -->
-<div class=" bg-success bg-cover py-16">
-    <div class="max-w-container big-screen  ">
-
-        <div class="owl-carousel owl-theme w-full" id="success">
-
-
-
-            <div class="flex flex-col lg:flex-row justify-between px-16 w-5/6 mx-auto">
-                <div class=" space-y-10">
-                    <div class="heading-1">
-                        Success Stories
-                    </div>
-                    <div class=" space-y-1">
-                        <div class="display-2 text-primary">
-                            GRIDCo
-                        </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
-                    </div>
-                    <button class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
-                </div>
-                <div class="">
-                    <div class="h-60 w-60 bg-gray-200"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= $this->include('layouts/success') ?>
 
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>

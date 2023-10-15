@@ -14,9 +14,9 @@
 
 
             <!-- inner banner -->
-            <div class=" mx-auto max-w-container big-screen  h-full flex items-center ">
-                <div class=" space-y-8 text-center md:text-left">
-                    <h1 class="text-lg md:text-[2rem]  font-bold md:max-w-3xl flex-1 leading-tight flex flex-col">
+            <div class=" inner-banner">
+                <div class=" first-div">
+                    <h1 class="h1 flex flex-col">
                         Expedite operational success with Microsoft Dynamics 365
                         <span class="display-lg text-primary  ">Bid Management</span>
 
@@ -495,7 +495,7 @@
 
 
 <?= $this->section("faq") ?><div class="max-w-container mx-auto py-16">
-    <div class=" space-y-8 max-w-4xl mx-auto">
+    <div class=" space-y-8 max-w-4xl mx-auto px-6 lg:px-0">
         <div class=" heading-1 text-center">Frequently Asked Questions</div>
         <div class=" flex flex-col divide-y " x-data="{selected:1}">
             <div>
