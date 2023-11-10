@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -36,16 +36,16 @@
 
 
 
-  <nav x-cloak x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container big-screen mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all " :class="{ 'shadow-lg': atTop, ' text-white py-4 ': !atTop, 'bg-white  text-indigo-800': atTop, 'bg-primary-light lg:bg-transparent':mobNav }">
-    <div class="relative flex items-center justify-between px-5 md:p-0  "><img src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
-      <div class="menu">
-        <a href="/">Home
-
-        </a>
+  <nav x-cloak x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container   mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all " :class="{ 'shadow-lg': atTop, ' text-white py-4 ': !atTop, 'bg-white  text-indigo-800': atTop, 'bg-primary-light lg:bg-transparent':mobNav }">
+    <div class="relative flex items-center justify-between px-5 md:px-0 tv:w-[94em] mx-auto    ">
+      <img x-show="!mobNav" src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
+      <img x-show="mobNav" src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" class="w-1/2 md:w-80" alt="">
+      <div class="menu ">
+        <a href="/">Home </a>
         <div class=" relative group/item">
-          <a href="#" class="">
+          <a href="<?php echo base_url() ?>/" class="">
 
-            Industries <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
+            Industries <img src=" <?php echo base_url() ?>/images/down-arow.svg" alt="">
 
           </a>
           <div class="absolute   top-4 w-44 invisible  group-hover/item:visible">
@@ -63,9 +63,9 @@
         </div>
 
         <div class=" relative group/item">
-          <a href="#" class="">
+          <a href="<?php echo base_url() ?>/" class="">
 
-            Solution <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
+            Solution <img src=" <?php echo base_url() ?>/images/down-arow.svg" alt="">
 
           </a>
           <div class="absolute  invisible  top-4     group-hover/item:visible ">
@@ -99,7 +99,7 @@
         </div>
 
         <div class=" relative group/item">
-          <a href="#" class="">
+          <a href="<?php echo base_url() ?>/" class="">
 
             Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
 
@@ -117,7 +117,7 @@
 
           </div>
         </div>
-        <a href="#">Blog</a>
+        <a href="<?php echo base_url() ?>/">Blog</a>
         <a href="<?php echo base_url() ?>/about-us">About Us</a>
         <a href="<?php echo base_url() ?>/contact">Contact us</a>
 
@@ -126,17 +126,17 @@
 
 
       <div class=" hidden md:flex lg:ml-4 lg:flex lg:items-center  lg:pl-4">
-        <a class="btn btn-primary" href="#">
+        <button class="btn btn-primary" @click="openFormDemoDiv('<?= uri_string() ?>')">
           <span>Enquire Now </span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
 
-        </a>
+        </button>
       </div>
 
       <div class="flex items-center  lg:hidden">
-        <a class="bg-primary text-white text-xs px-2 py-2 rounded-3xl font-bold" href="#">
+        <a class=" text-white text-xs px-2 py-2 rounded-3xl font-bold" :class="mobNav? 'bg-d-yellow' : 'bg-primary'" href="<?php echo base_url() ?>/contact">
           <span>Enquire Now </span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -146,9 +146,14 @@
         <button type="button" class="-my-1 -mr-1 ml-2 h-8 w-8 flex items-center justify-center" @click="mobNav = !mobNav">
           <span class="sr-only">Open navigation</span>
 
-          <svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900 ">
+          <svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900" x-show="!mobNav">
             <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
           </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" x-show="mobNav" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+
         </button>
       </div>
 
@@ -167,10 +172,10 @@
           </li>
           <li class="py-4 " @click="navMob !== 1 ? navMob = 1 : navMob = null">
             <div class="flex items-center justify-between">
-              <a class=" font-semibold text-lg">Idustries</a>
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+              <a class=" font-semibold text-lg">Industries</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-4 h-4 font-bold">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg> -->
+              </svg>
             </div>
 
             <div class=" bg-primary w-full h-36 overflow-y-auto px-3 py-5" x-show="navMob === 1">
@@ -199,7 +204,7 @@
           <li class="py-4 " @click="navMob !== 2 ? navMob = 2 : navMob = null">
             <div class="flex items-center justify-between">
               <a class=" font-semibold text-lg">Solutions</a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </div>
@@ -224,7 +229,7 @@
           <li class="py-4 " @click="navMob !== 3 ? navMob = 3 : navMob = null">
             <div class="flex items-center justify-between">
               <a class=" font-semibold text-lg">Services</a>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 font-bold text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </div>
@@ -239,9 +244,7 @@
 
           </li>
 
-          <li class="py-4">
-            <a href="<?php echo base_url() ?>/" class=" font-semibold text-lg">Services</a>
-          </li>
+
           <li class="py-4">
             <a href="<?php echo base_url() ?>/about-us" class=" font-semibold text-lg">About Us</a>
           </li>
@@ -270,7 +273,7 @@
 
   $currenUrl = uri_string();
 
-  if ($currenUrl !== 'contacts' && $currenUrl !== 'thankyou' && $currenUrl !== 'brochure-thankyou') {
+  if ($currenUrl !== 'contacts' && $currenUrl !== 'thankyou' && $currenUrl !== 'brochure-thankyou' && $currenUrl !== 'privacy-policy') {
 
   ?>
 
@@ -413,8 +416,18 @@
                 <input type="text" id="footerPhone" name="footerPhone" placeholder="Phone Number">
               </div>
               <div>
-
-                <input type="text" name="footerSolution" placeholder="Which solution do you want?" required>
+                <select name="footerSolution" class="h-14">
+                  <option>Which solution do you want?</option>
+                  <option value="RealEstatePro">RealEstatePro</option>
+                  <option value="BidManagement">Bid Management</option>
+                  <option value="ContractManagement">Contract Management</option>
+                  <option value="AxOpnePay">AxOnePay - Payroll</option>
+                  <option value="InvestmentPortfolioManagement">Investment Portfolio Management</option>
+                  <option value="TreasuryManagement">Treasury Management</option>
+                  <option value="TreasuryManagement">Annata</option>
+                  <option value="TreasuryManagement">PropGoto</option>
+                </select>
+                <!-- <input type="text" name="footerSolution" placeholder="Which solution do you want?" required> -->
               </div>
               <div>
 
@@ -454,35 +467,35 @@
           <div class="space-y-4">
             <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
             <div class=" flex flex-col footer-link">
-              <a>About us</a>
-              <a>Contact us</a>
-              <a>Blog</a>
-              <a>Become a partner</a>
-              <a>Careers</a>
-              <a>Privacy policy</a>
-              <a>Events</a>
+              <a href="<?php echo base_url() ?>/about-us">About us</a>
+              <a href="<?php echo base_url() ?>/contact">Contact us</a>
+              <a href="<?php echo base_url() ?>/">Blog</a>
+              <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
+              <a href="<?php echo base_url() ?>/">Careers</a>
+              <a href="<?php echo base_url() ?>/privacy-policy">Privacy policy</a>
+              <a href="<?php echo base_url() ?>/">Events</a>
             </div>
           </div>
 
           <div class="space-y-4">
             <div class="text-base font-semibold text-white">SOLUTIONS</div>
             <div class=" flex flex-col footer-link">
-              <a>RealEstatePro</a>
-              <a>Contract Management</a>
-              <a> Bid Management</a>
-              <a> Treasury Management</a>
-              <a>Investment Portfolio Management</a>
-              <a>AXOnePay</a>
-              <a>Annata 365</a>
+              <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
+              <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
+              <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
+              <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
+              <a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a>
+              <a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AXOnePay</a>
+              <a href="<?php echo base_url() ?>/annata-365">Annata 365</a>
             </div>
           </div>
 
           <div class="space-y-4">
             <div class="text-base font-semibold text-white">SERVICES</div>
             <div class=" flex flex-col footer-link">
-              <a>ERP Implementation</a>
-              <a> Upgrade</a>
-              <a>Support</a>
+              <a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a>
+              <a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services"> Upgrade</a>
+              <a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a>
             </div>
           </div>
 
@@ -492,13 +505,13 @@
       <div class="flex  flex-col-reverse lg:flex-row justify-between items-center py-6 lg:py-0 ">
         <div class=" text-sm text-white font-light text-center lg:text-left ">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
         <div class=" flex flex-col space-y-4">
-          <div class="text-xl text-white font-bold">CONNECT WITH US</div>
-          <div class="flex justify-between">
-            <a href="#"><img src="<?php base_url() ?>/images/home/facebook.svg" alt=""></a>
-            <a href="#"><img src="<?php base_url() ?>/images/home/instagram.svg" alt=""></a>
-            <a href="#"><img src="<?php base_url() ?>/images/home/linkedin.svg" alt=""></a>
-            <a href="#"><img src="<?php base_url() ?>/images/home/twitter.svg" alt=""></a>
-            <a href="#"><img src="<?php base_url() ?>/images/home/youtube.svg" alt=""></a>
+          <div class="text-xl text-white font-bold pb-2 md:pb-0">CONNECT WITH US</div>
+          <div class="flex justify-between pb-3 md:pb-0">
+            <a target="_blank" href="https://www.facebook.com/DynamicNetSoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/facebook.svg" alt="Facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/dynamicnetsoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/instagram.svg" alt="Instagram"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/linkedin.svg" alt="Linkedin"></a>
+            <a target="_blank" href="https://twitter.com/dynamicnet_soft" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/twitter.svg" alt="Twitter"></a>
+            <a target="_blank" href="https://www.youtube.com/c/DynamicNetsoftChennai" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/youtube.svg" alt="Youtube"></a>
           </div>
         </div>
       </div>
@@ -506,12 +519,25 @@
   </div>
 
   <button @click="openCommonDownloadForm" class="fixed z-50 lg:top-1/2  mx-auto flex justify-center hover:bg-yellow-500  btn btn-yellow lg:rotate-90  text-center lg:-right-16  ">Download Brochure </button>
+  <div class="fixed lg:hidden bottom-0 z-50 flex items-center justify-between w-full bg-secondary">
+    <div class="px-4 py-2 bg-primary-gradient text-white rounded-tr-xl rounded-br-xl flex items-center gap-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M12 1.5a.75.75 0 01.75.75V7.5h-1.5V2.25A.75.75 0 0112 1.5zM11.25 7.5v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V7.5h3.75a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9a3 3 0 013-3h3.75z" />
+      </svg>
 
+      Download Brochure
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary">
+      <path fill-rule="evenodd" d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
+    </svg>
+
+  </div>
   <?php
 
   $downFormBgName;
 
   switch ($currenUrl) {
+
     case "treasury-management-software-dynamics":
       $downFormBgName = 'treasury-management-system';
       break;
@@ -531,8 +557,15 @@
       $downFormBgName = 'button-image-1';
       break;
 
+    case "microsoft-dynamics-365-for-real-estate";
+      $downFormBgName = 'button-image-1';
+      break;
+    case "microsoft-dynamics-365-construction-erp";
+      $downFormBgName = 'best-erp-for-construction';
+      break;
+
     default:
-      $downFormBgName = 'button-image-2';
+      $downFormBgName = 'download-brochure-1';
   }
 
 
@@ -544,20 +577,26 @@
   <style>
     .bg-formDynamicBg {
       background-image: url('<?php echo $treasuryFormBG; ?>');
+      background-position: top left;
+      background-size: cover;
+      background-repeat: no-repeat;
+
     }
   </style>
   <template x-teleport="body">
     <!-- downloadBroucher -->
     <div x-show="downloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class="   w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
-        <div class="w-1/2  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
+      <div class=" w-[90%]   md:w-[45%]  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
+        <div class="hidden md:block w-[45%]  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-1/2 p-8">
+        <div class=" w-full md:w-[55%] p-8">
 
 
           <div class="heading-1 text-center !text-primary">Download a Brochure</div>
           <div class="h-5"></div>
           <form action="<?php echo base_url() ?>/brochure-download" method="POST" class=" space-y-5" id="brochureForm">
+            <input type="hidden" id="broDownloadFlag" name="broDownloadFlag" value="" />
+            <input type="hidden" id="broHoney" name="broHoney">
             <input type="hidden" name="broDoc" id="broDoc">
             <div>
               <label for="broName" class="sr-only">Name:</label>
@@ -603,10 +642,10 @@
   <!--demo-->
   <template x-teleport="body">
     <div x-show="demoDivOpen" x-transition id="demoDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class="   w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
-        <div class="w-1/2  bg-formDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+      <div class=" w-[90%]   md:w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
+        <div class="hidden md:block w-1/2  bg-demoBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-1/2 p-8">
+        <div class=" w-full md:w-1/2 p-8">
 
 
           <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
@@ -630,7 +669,12 @@
             </div>
             <div>
 
-              <input type="text" name="demoPhone" id="demoPhone" placeholder="Phone Number" required>
+              <input type="text" name="demoPhone" id="demoPhone" placeholder="Phone Number">
+            </div>
+
+            <div>
+
+              <textarea rows="4" name="demoMessage"></textarea>
             </div>
 
 

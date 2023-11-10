@@ -9,7 +9,7 @@
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-no-repeat bg-bottom lg:bg-cover bg-banner">
     <div class=" mobile-header-transparent">
-        <div class="max-w-container mx-auto h-full big-screen">
+        <div class=" mx-auto h-full ">
             <div class="banner-space"></div>
 
             <div class="  w-full  md:h-[600px] ">
@@ -166,9 +166,14 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                             </svg>
+
+                            <svg x-show="solution !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                            </svg>
+
 
                         </div>
                     </div>
@@ -185,7 +190,7 @@
                             <p> Dynamic Netsoft has led the way in offering ERP and CRM solutions for leading Real Estate and Property businesses worldwide since its inception in 2011. Strategically fabricated with high-priority real estate components, our leading flagship Microsoft Dynamics 365 ISV solution, RealEstatePro, delivers value in automating business processes from commercial to Enterprise customers</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('property-management-software-dynamics-365')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -214,8 +219,12 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg x-show="solution !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                             </svg>
 
                         </div>
@@ -231,7 +240,7 @@
                             <p> Handling contracts and sub-contracts for construction projects can be complex and time intensive. Dynamic Netsoft’s Contract management ISV solutions on Microsoft Dynamics 365 platform manage all project sub-contract processes in a comprehensive and iterative way. With Customized functionalities to align all processes and transactions including milestone management, you can quickly produce complete analyses and reports on the progress of the entire sub-contracting process.</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('contract-management-software-dynamics-365')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -259,8 +268,12 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg x-show="solution !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                             </svg>
 
                         </div>
@@ -276,7 +289,7 @@
                             <p> Control your bidding, procurement, and tender processes with our specially curated Bid Management Software designed on Microsoft Dynamics 365 solution. Use adaptable templates, create precise, professional-looking bid estimates, and monitor projects to increase accountability and visibility.</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('dynamics-365-bid-management-software')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -304,8 +317,12 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg x-show="solution !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                             </svg>
 
                         </div>
@@ -321,7 +338,7 @@
                             <p>Empower your finance team with real-time insights into loan transactions, payables, forecasts, and outstanding through our leading bank-loan facilitation solutions. Dynamic Netsoft offers Dynamics 365 Finance & Operation Partner Services enabling a streamlined and secure process for all loan payment functions and resulting in reduced administration maintenance and costs. Manage your loan memorandum, contracts, disbursement, and renewal process with a click of a button.</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('treasury-management-software-dynamics')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -350,8 +367,12 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg x-show="solution !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                             </svg>
 
                         </div>
@@ -367,7 +388,7 @@
                             <p> IPM software offers a quick view of your financial portfolio, ensuring your investment holdings align with your current financial goals and strategies. It provides analysis and reports on market structure, market allocation, and partners’ distribution policies. It’s designed to maximize the efficiency and output of Dynamics 365 F&O users by effectively tracking all investment transactions. Features include Investment parameters, KPIs, risk analysis, and market-price valuations.</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('investment-portfolio-management-software-dynamics')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -396,8 +417,12 @@
                             </div>
                         </div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                            <svg x-show="solution === 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
                                 <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                            </svg>
+
+                            <svg x-show="solution !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                             </svg>
 
                         </div>
@@ -413,7 +438,7 @@
                             <p>AxOnePay exhibits flawless integration with Microsoft Dynamics 365 F&O ERP solution, facilitating a host of features in employee administration and automation. It’s a one-stop solution that manages the complete lifecycle of an employee compensation & benefits process. It’s designed to maximize the efficiency and output of Dynamics AX and Dynamics 365 HR function users and decision-makers.</p>
                         </div>
 
-                        <div class=" flex flex-col lg:flex-row gap-6 items-center">
+                        <div class=" flex  lg:flex-row gap-6 items-center">
                             <div>
                                 <button @click="openFormDownload('dynamics-365-HR-payroll')" class=" btn btn-yellow">Download Brochure<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -455,9 +480,9 @@
                 Specifically designed and pre-configured to streamline Real Estate
                 business operations to achieve enhanced productivity
             </div>
-            <div><button class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <div><a href="<?php echo base_url() ?>/contact" class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg></button></div>
+                    </svg></a></div>
         </div>
     </div>
 </div>
@@ -504,36 +529,44 @@
                 <div x-show="vertical === 1" class="space-y-8 text-center lg:text-left">
                     <div class="text-xl font-bold ">RealEstate</div>
                     <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
-                    <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
+                    <div class="flex">
+                        <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg></a>
+                    </div>
                 </div>
 
                 <!-- Construction -->
                 <div x-show="vertical === 2" class="space-y-8 text-center lg:text-left">
                     <div class="text-xl font-bold ">Construction</div>
                     <p class="  ">A comprehensive suite of products to enable bid and sub-contracting processes integrated with D365 project management capabilities to handle operational functions for the construction and project management. </p>
-                    <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
+                    <div class="flex">
+                        <a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg></a>
+                    </div>
                 </div>
 
                 <!-- retail -->
                 <div x-show="vertical === 3" class="space-y-8 text-center lg:text-left">
                     <div class="text-xl font-bold ">Retail</div>
                     <p class="  ">A cloud-based solution that links sales, service, finance, and operations teams to enable quicker adaptation and result-oriented performance to provide customers and partners with unified, personalized, and smooth purchasing experiences.</p>
-                    <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
+                    <div class="flex">
+                        <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg></a>
+                    </div>
                 </div>
 
                 <!-- Finance -->
                 <div x-show="vertical === 4" class="space-y-8 text-center lg:text-left">
                     <div class="text-xl font-bold ">Finance & Investment</div>
                     <p class="  ">Adopt cutting-edge functions and performance, complete analysis & insights with improved operational efficiency for the Finance & investment sector to mitigate financial complexities and minimize the overall cost.</p>
-                    <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></button>
+                    <div class="flex">
+                        <a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg></a>
+                    </div>
                 </div>
 
             </div>
@@ -548,48 +581,48 @@
                             <div class="text-xl font-bold ">RealEstate</div>
                             <p class="  ">Microsoft accredited and industry benchmark solutions to manage your real estate business with enhanced operational efficiency, improved customer experience, and structured property leasing and sales management</p>
                             <div class="flex justify-center">
-                                <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg></button>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Construction -->
                     <div>
-                        <div class="space-y-8">
+                        <div class="space-y-8 text-center lg:text-left">
                             <div class="text-xl font-bold ">Construction</div>
                             <p class="  ">A comprehensive suite of products to enable bid and sub-contracting processes integrated with D365 project management capabilities to handle operational functions for the construction and project management. </p>
                             <div class="flex justify-center">
-                                <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg></button>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- retail -->
                     <div>
-                        <div class="space-y-8">
+                        <div class="space-y-8 text-center lg:text-left">
                             <div class="text-xl font-bold ">Retail</div>
                             <p class="  ">A cloud-based solution that links sales, service, finance, and operations teams to enable quicker adaptation and result-oriented performance to provide customers and partners with unified, personalized, and smooth purchasing experiences.</p>
                             <div class="flex justify-center">
-                                <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg></button>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Finance -->
                     <div class="">
-                        <div class="space-y-8">
+                        <div class="space-y-8 text-center lg:text-left">
                             <div class="text-xl font-bold ">Finance & Investment</div>
                             <p class="  ">Adopt cutting-edge functions and performance, complete analysis & insights with improved operational efficiency for the Finance & investment sector to mitigate financial complexities and minimize the overall cost.</p>
                             <div class="flex justify-center">
-                                <button class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg></button>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
@@ -625,12 +658,12 @@
 
                 <p>So, what are you waiting for?</p>
             </div>
-            <div class="flex ">
-                <button class="btn btn-primary">
+            <div class="flex justify-center lg:justify-start">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
                     Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </div>

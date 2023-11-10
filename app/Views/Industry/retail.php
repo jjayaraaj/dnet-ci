@@ -8,32 +8,37 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-retail1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1 flex flex-col">
-                        Reshape the Future of Your Retail Business with Microsoft Dynamics 365 for
-                        <span class="span ">Retail Industry</span>
-                    </h1>
-                    <div class=" text-base md:text-lg font-semibold">
-                        Transform Your Business from the Shopfront to the Screen!!!
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1 flex flex-col">
+                            Reshape the Future of Your Retail Business with Microsoft Dynamics 365 for
+                            <span class="span ">Retail Industry</span>
+                        </h1>
+                        <div class=" text-base md:text-lg font-semibold">
+                            Transform Your Business from the Shopfront to the Screen!!!
+                        </div>
+
+                        <div class="btn-div">
+                            <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">Let's Connect<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </a>
+                            <?= $this->include('/layouts/request-demo') ?>
+                        </div>
+
                     </div>
-
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/download') ?>
-                        <?= $this->include('/layouts/request-demo') ?>
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -58,7 +63,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
 
                         <div>
-                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <button @click="openFormDemoDiv('<?= uri_string() ?>')" class=" btn btn-yellow">Request a Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg></button>
                         </div>
@@ -81,7 +86,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
         </div>
         <div>
             <div class="md:w-3/4 mx-auto px-6 lg:px-0">
-                <div class=" relative">
+                <div class=" relative px-6 md:px-0">
                     <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
 
 
@@ -106,6 +111,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/workflow-automation.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -117,6 +123,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/multi-location-inventory-tracker.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -129,6 +136,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/product-returns-management.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -140,6 +148,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/integrated-crm-personalize.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -154,6 +163,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/pricing-discounts-management.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -164,6 +174,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/procurement-supplier-management.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -174,6 +185,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/pos-integration.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -185,6 +197,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/retail/property-leasing-integration.svg" alt="">
                                 </div>
                                 <div class="h-10"></div>
@@ -219,7 +232,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
                 <!-- <p>A Vision for Innovation, to Build a Better Future!!!</p> -->
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
+                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact">
                         <span>Connect with Us </span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -386,11 +399,13 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 

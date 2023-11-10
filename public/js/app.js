@@ -96,7 +96,25 @@ function intiateOwl() {
     }
   });
 }
+function downloadTrigger(fileUrl) {
+  var downloadLink = document.createElement("a");
+  downloadLink.href = fileUrl.value;
+  downloadLink.setAttribute("download", fileUrl.value);
+  downloadLink.setAttribute("target", "_blank");
+  if (fileUrl.value !== "") {
+    downloadLink.click();
+  }
+}
 $(document).ready(function () {
+  var lastSegment = window.location.href.split("/").pop();
+  if (lastSegment == "thankyou") {
+    var fileUrl = document.getElementById("downloadInputUrl");
+    downloadTrigger(fileUrl);
+  }
+  if (lastSegment == "brochure-thankyou") {
+    var _fileUrl = document.getElementById("brodownloadInputUrl");
+    downloadTrigger(_fileUrl);
+  }
   intiateOwl();
   $("#brochureForm").validate({
     rules: {
@@ -161,16 +179,16 @@ $(document).ready(function () {
         required: true,
         email: true
       },
-      commonFormPhone4: {
-        required: true,
-        number: true
-      },
+      // commonFormPhone4: {
+      //   required: true,
+      //   number: true,
+      // },
       solution: "required"
     },
     messages: {
       commonFormName: "Please specify your name",
       commonFormEmail: "Please enter your email id",
-      phone4: "Please enter valid phone",
+      // phone4: "Please enter valid phone",
       solution: "Select one"
     },
     // errorElement: "div",
@@ -272,10 +290,13 @@ document.addEventListener("alpine:init", function () {
       },
       openFormDownload: function openFormDownload(solution) {
         var phoneDown2 = document.querySelector("#phone2");
+        var countyInput = document.querySelector("#broDownloadFlag");
         var docInput = document.querySelector("#broDoc");
         docInput.setAttribute("value", solution);
         intlTelInput(phoneDown2);
-        console.log(solution);
+        $(phoneDown2).on("countrychange", function (e) {
+          countyInput.value = iti.getSelectedCountryData().name;
+        });
         this.downloadDivOpen = true;
       },
       openFormDemoDiv: function openFormDemoDiv(solution) {

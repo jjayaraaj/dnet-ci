@@ -16,7 +16,7 @@ Thankyou
 
 <div class="max-w-container bgThankYou1">
     <div class=" flex h-screen items-center justify-center w-full">
-
+        <input type="hidden" name="brodownloadInputUrl" id="brodownloadInputUrl" value="<?php echo session()->get('downloadFile')  ?>">
         <div class=" space-y-6 text-center">
             <div class=" display-2 w-1/2 mx-auto leading-snug">
                 We appreciate your interest in the brochures. It will be on its way to your inbox

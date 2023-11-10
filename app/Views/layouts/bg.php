@@ -55,6 +55,11 @@ $fin3 = base_url() . '/images/fin/erp-software-for-financial-services.svg';
 $formDownloadImg = base_url() . '/images/download-brochure-1.svg';
 $commonDownloadImg = base_url() . '/images/common-download-brochure-2.svg';
 $formBg3 = base_url() . '/images/form-background-image2.svg';
+$global = base_url() . '/images/about/global-reach-bg.svg';
+$privacy = base_url() . '/images/dynamic-netsoft-privacy-policy.svg';
+$demoBg = base_url() . '/images/downloadbg/button-image-2.svg';
+$contactBg = base_url() . '/images/contact/contact-us.svg';
+
 
 
 
@@ -62,8 +67,24 @@ $formBg3 = base_url() . '/images/form-background-image2.svg';
 ?>
 
 <style>
+    .bg-contact {
+        background-image: url('<?php echo $contactBg; ?>');
+    }
+
+    .bg-privacy {
+        background-image: url('<?php echo $privacy; ?>');
+    }
+
+    .bg-global {
+        background-image: url('<?php echo $global; ?>');
+    }
+
     .bg-formBg3 {
         background-image: url('<?php echo $formBg3; ?>');
+    }
+
+    .bg-demoBg {
+        background-image: url('<?php echo $demoBg; ?>');
     }
 
     .bg-commonDownloadImg {

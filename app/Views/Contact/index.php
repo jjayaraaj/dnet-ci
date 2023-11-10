@@ -7,18 +7,18 @@
 <!--banner-->
 
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-about-banner">
-    <div class="max-w-container mx-auto h-full big-screen">
-        <div class="banner-space"></div>
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-contact" x-data="{contact: false}">
+    <div class="mx-auto h-full big-screen">
+        <div class="lg:banner-space bg-white fixed w-full left-0 top-0 lg:-top-0 h-14 " @scroll.window="contact = (window.pageYOffset < 5) ? false: true" :class="{ 'lg:h-[75px]': contact, 'lg:h-24': !contact }"></div>
 
-        <div class="  w-full  lg:h-[500px]">
-
+        <div class=" w-full lg:h-[500px]">
+            <div class="h-10 lg:hidden "></div>
 
             <!-- inner banner -->
-            <div class=" inner-banner">
-                <div class=" first div">
-                    <h1 class="h1 flex flex-col">
-                        <span class="display-lg text-primary  !leading-[5rem]">Contact Us
+            <div class=" inner-banner w-full justify-center lg:justify-start  text-center lg:text-left">
+                <div class=" first div  ">
+                    <h1 class="h1 flex lg:flex-col">
+                        <span class="display-lg text-white  !leading-[5rem]">Contact Us
                     </h1>
 
 
@@ -31,11 +31,11 @@
 <!--banner /-->
 
 <!-- section2 -->
-<section class="max-w-container py-16">
+<section class="max-w-container py-16 big-screen">
     <div class="lg:flex justify-between items-center">
         <div class="lg:w-1/3 lg:pl-28  space-y-6 text-center lg:text-left ">
             <div class="display-2 text-primary">Let’s Connect</div>
-            <div class="flex flex-col space-y-2">
+            <div class="flex flex-col space-y-2 items-center lg:items-start">
                 <a href="mailto:enquiry@dnetsoft.com" class=" inline-flex items-center gap-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-primary ">
                         <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -110,7 +110,7 @@
 
 <!--global-->
 <div class=" bg-secondary py-16">
-    <div class=" max-w-container space-y-16">
+    <div class=" max-w-container space-y-16 big-screen">
         <div class=" heading-1 text-center">Global Reach</div>
         <div class=" mx-auto">
             <div class=" grid grid-cols-1 lg:grid-cols-4">

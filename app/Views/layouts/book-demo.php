@@ -1,1 +1,1 @@
-<button class=" btn btn-yellow">Book a Demo</button>
+<button @click="openFormDemoDiv('<?= uri_string() ?>')" class=" btn btn-yellow">Book a Demo</button>

@@ -8,32 +8,34 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-cons1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[550px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1">
-                        Drive Cost Efficiency & Enhance Productivity with Microsoft Dynamics 365 – ISV solution for
-                        <span class="span ">Construction Verticals</span>
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1">
+                            Drive Cost Efficiency & Enhance Productivity with Microsoft Dynamics 365 – ISV solution for
+                            <span class="span ">Construction Verticals</span>
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/download') ?>
-                        <?= $this->include('/layouts/request-demo') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/download') ?>
+                            <?= $this->include('/layouts/request-demo') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -57,7 +59,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
                         <div>
-                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <button @click="openFormDownload('<?= uri_string() ?>')" class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg></button>
                         </div>
@@ -80,8 +82,8 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
         </div>
         <div class="px-6 lg:px-0">
             <div class="md:w-3/4 mx-auto ">
-                <div class=" relative">
-                    <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
+                <div class=" relative px-6 md:px-0">
+                    <div class="absolute top-[60%] z-40 flex justify-between w-full left-0 ">
 
 
                         <button class="servicePrev relative -left-[5%]">
@@ -105,6 +107,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/enhanced-project.svg" alt="">
 
                                 </div>
@@ -117,6 +120,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/superior-financial.svg" alt="">
 
                                 </div>
@@ -129,6 +133,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/efficient-resource.svg" alt="">
 
                                 </div>
@@ -141,6 +146,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/centralized-data.svg" alt="">
 
                                 </div>
@@ -156,6 +162,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/streamlined-bid.svg" alt="">
 
                                 </div>
@@ -167,6 +174,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/automated-workflows.svg" alt="">
 
                                 </div>
@@ -178,6 +186,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/enhanced-collaboration.svg" alt="">
 
                                 </div>
@@ -190,6 +199,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/real-time-analytics.svg" alt="">
 
                                 </div>
@@ -201,6 +211,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary-dark owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/compliance.svg" alt="">
 
                                 </div>
@@ -212,6 +223,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                         <div class=" owl-dynamic-child ">
                             <div class="bg-secondary owl-dynamic-inner">
                                 <div class=" owl-dynamic-inner-2 ">
+                                    <?= $this->include('layouts/half-circle') ?>
                                     <img src="<?php echo base_url() ?>/images/construction/scalability.svg" alt="">
 
                                 </div>
@@ -244,7 +256,7 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
                 <p>A Vision for Innovation, to Build a Better Future!!!</p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
+                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact">
                         <span>Connect with Us </span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -279,11 +291,13 @@ ERP for the Construction Industry on Microsoft Dynamics 365<?= $this->endSection
 
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 

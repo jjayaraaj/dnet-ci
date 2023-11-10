@@ -8,15 +8,18 @@ Investment Portfolio Management Software on Dynamics 365
 <?= $this->section("content") ?>
 
 <div class="max-w-container ">
-    <div class=" flex h-full items-center">
-        <div class=" w-1/2">
+    <div class=" flex flex-col md:flex-row h-full items-center">
+        <div class=" w-full md:w-1/2">
             <img src="<?php echo base_url() ?>/images/thankyou/mail.svg" alt="">
         </div>
-        <div class=" space-y-6">
-            <div class=" display-2 w-1/2 leading-snug">
+        <div class=" space-y-6 p-8 md:p-0 text-center md:text-left">
+            <div class=" display-2 w-full md:w-1/2 leading-snug">
+                <input type="hidden" name="downloadInputUrl" id="downloadInputUrl" value="<?php echo session()->get('downloadFile')  ?>">
                 Thank you for accessing the brochure. It will be received to your email shortly
             </div>
-            <div class=" flex">
+            <div class=" flex justify-center md:justify-start">
+
+
 
                 <?= $this->include('/layouts/back-home') ?>
             </div>

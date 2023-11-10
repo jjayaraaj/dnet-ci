@@ -6,28 +6,30 @@
 <?= $this->section("content") ?>
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-sale1">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class="  w-full h-full  lg:h-[500px]">
+            <div class="  w-full h-full  lg:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class="header-1 ">
-                <div class=" header-2">
-                    <h1 class="header-3">
-                        <span class="header-blue-text">Property Sales Management Solution on Dynamics 365 </span>
-                        <div class="leading-tight">Enhanced Operational Capabilities and Streamlined Processes for Business Efficiency</div>
-                    </h1>
-                    <!-- <div class=" text-lg font-semibold">
+                <!-- inner banner -->
+                <div class="header-1 ">
+                    <div class=" header-2">
+                        <h1 class="header-3">
+                            <span class="header-blue-text">Property Sales Management Solution on Dynamics 365 </span>
+                            <div class="leading-tight">Enhanced Operational Capabilities and Streamlined Processes for Business Efficiency</div>
+                        </h1>
+                        <!-- <div class=" text-lg font-semibold">
                     </div> -->
 
-                    <?= $this->include('/layouts/banner-action') ?>
+                        <?= $this->include('/layouts/banner-action') ?>
 
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -157,10 +159,13 @@
                         <div class=" heading-1 !text-white">Property Creation</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -172,7 +177,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Property Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -189,10 +194,13 @@
                         <div class=" heading-1 !text-white">Template Definition</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -204,7 +212,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Template Definition')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -221,8 +229,12 @@
                         <div class=" heading-1 !text-white">Property Information Management</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -240,7 +252,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Property Information Management')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -257,8 +269,12 @@
                         <div class=" heading-1 !text-white">Presales Management</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -274,7 +290,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Presales Management')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -292,10 +308,13 @@
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -313,7 +332,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Quotation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -332,8 +351,12 @@
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -355,7 +378,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Reservations Management')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -374,8 +397,12 @@
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -394,7 +421,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Sales Agreements')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -412,10 +439,13 @@
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -429,7 +459,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Change Orders')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -446,8 +476,12 @@
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -465,7 +499,7 @@
                     </ul>
 
                     <div>
-                        <?= $this->include('/layouts/book-demo') ?>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Agreement Execution Functions')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -494,13 +528,7 @@
                 <p> Our dedicated team is ready to assist and address any inquiries you may have. Contact us to discover how we can propel your digital transformation goals forward. Let’s embark on this journey together and get started on your success story! </p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
-                        <span>Connect with Us </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </a>
+                    <?= $this->include('/layouts/connect') ?>
                 </div>
             </div>
         </div>

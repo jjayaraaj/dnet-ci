@@ -8,7 +8,7 @@
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
     <div class=" mobile-header-transparent">
         <div class="banner-space"></div>
-        <div class="max-w-container mx-auto h-full big-screen">
+        <div class=" mx-auto h-full big-screen">
 
 
             <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px] ">
@@ -51,17 +51,17 @@
 
         <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry rapidly evolving and there is a dire need for a software solution that allows property owners and managers to do away with paper trails and streamline their business operations. RealEstatePro, our flagship Microsoft ISV product built on market-leading Microsoft Dynamics 365 Finance & Operations, is designed to address various real estate challenges such as:</p>
 
-        <div class="relative w-full">
+        <div class="relative w-full px-10">
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
 
 
                 <button class="dynamicPrev relative lg:-left-16 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-primary  lg:text-secondary-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-secondary-dark  lg:text-secondary-dark hover:text-primary rounded-full">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
                     </svg>
                 </button>
                 <button class="dynamicNext relative lg:-right-16 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-primary  lg:text-secondary-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10  text-secondary-dark  lg:text-secondary-dark hover:text-primary rounded-full">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
                     </svg>
 
@@ -76,6 +76,7 @@
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -87,6 +88,7 @@
 
                     <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -97,7 +99,8 @@
                 <div class=" owl-dynamic-child ">
 
                     <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
+                        <div class=" owl-dynamic-inner-2 ">\
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/time-consuming.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -109,6 +112,7 @@
 
                     <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -120,9 +124,10 @@
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-obtain.svg" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Inability to obtain precise information and analytics on financial transactions such as revenue-expense ratio, aging analysis, etc.</p>
                     </div>
                 </div>
@@ -131,6 +136,7 @@
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -141,6 +147,7 @@
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/lack-of-accuracy.svg" alt="">
                         </div>
                         <div class="h-10"></div>
@@ -151,9 +158,10 @@
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Flexibility in renewal and canceling of agreements, changing orders, creating billing schedules, raising invoices, etc.</p>
                     </div>
                 </div>
@@ -162,9 +170,10 @@
                 <div class=" owl-dynamic-child ">
                     <div class="bg-secondary-dark owl-dynamic-inner">
                         <div class=" owl-dynamic-inner-2 ">
+                            <?= $this->include('layouts/half-circle') ?>
                             <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-manage.svg" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-6"></div>
                         <p> Inability to manage the periodic rent appraisals based on business demands and changing market conditions</p>
                     </div>
                 </div>
@@ -215,15 +224,15 @@
                     <p class="text-blue-50">Redefine your property leasing process with our Property Management Software on Dynamics, using an innovative and streamlined approach to deliver an unparalleled experience for your prospects. With an array of advanced tools and features that optimize every stage of the leasing process, our Microsoft Dynamics Property Management solution is the ideal choice for businesses seeking to enhance the prospect experience and drive sustained engagement and business conversion.</p>
 
                     <div class=" inline-flex gap-4 ">
-                        <a class="btn btn-yellow" href="#">
+                        <button class="btn btn-yellow" href="#" @click="openFormDemoDiv('<?= uri_string() ?>')">
                             <span>Request a Demo</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
-                        </a>
+                        </button>
 
-                        <a class="btn btn-yellow" href="#">
+                        <a class="btn btn-yellow" href="<?php echo base_url() ?>/property-leasing">
                             <span>Learn More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -237,15 +246,15 @@
                     <p class="text-blue-50">Amidst the ever-changing landscape of real estate business models, our industry-leading property sales module on Microsoft Dynamics 365 stands ready to navigate your organization to accomplish sustained growth. Advanced analytics and reporting capabilities empower professionals to gain deep insights into the performance of their sales operations, allowing targeted optimization and enhanced efficiency. Its user-friendly interface and powerful capabilities make it a one-stop shop for all property sales needs, required to close deals faster and more efficiently.</p>
 
                     <div class=" inline-flex gap-4 ">
-                        <a class="btn btn-yellow" href="#">
+                        <button class="btn btn-yellow" @click="openFormDemoDiv('<?= uri_string() ?>')">
                             <span>Request a Demo</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
-                        </a>
+                        </button>
 
-                        <a class="btn btn-yellow" href="#">
+                        <a class="btn btn-yellow" href="<?php echo base_url() ?>/property-sale">
                             <span>Learn More</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -379,8 +388,8 @@
                     and scalable to support future growth</p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
-                        <span>Connect with Us </span>
+                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact">
+                        <span>Connect with Us</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>

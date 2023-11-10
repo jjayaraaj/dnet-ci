@@ -8,31 +8,34 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-support-banner  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1 flex flex-col">
-                        Shaping the Future of Your Business with Our
-                        <span class="span ">Microsoft Dynamics 365 F&O Support Services</span>
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1 flex flex-col">
+                            Shaping the Future of Your Business with Our
+                            <span class="span ">Microsoft Dynamics 365 F&O Support Services</span>
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/get-touch') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/get-touch') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -125,8 +128,12 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                         <div class=" heading-1 !text-white">Microsoft Dynamics 365 Implementation</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -137,7 +144,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <p class="lg:text-white">With over a decade of experience, our Microsoft Dynamics 365 F&O implementation team has gained a trusted reputation for its unwavering reliability and service reliability in International markets. Our domain expertise encompasses a distinguished cadre of specialists proficient in project management, implementation, customization, data migration, upgrades, and comprehensive user adoption and training.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -154,8 +161,12 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                         <div class=" heading-1 !text-white">Reengineering</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -166,7 +177,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <p class="lg:text-white">At Dynamic Netsoft, our Microsoft Dynamics 365 F&O support team begins with the process definitions from scratch, employing careful analysis and planning to identify the best outcomes for organizational productivity. Whether it's optimizing operational functions, streamlining the supply chain, or enhancing Finance & Operations and HR, our expert consultants offer comprehensive guidance across the entire enterprise. We also go the extra mile by designing customer experience strategies that extend beyond the confines of the organization, empowering companies to become highly reliable and trusted business partners. </p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -183,8 +194,12 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                         <div class=" heading-1 !text-white">Business Process Management</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -195,7 +210,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <p class="lg:text-white">Organizations often struggle with the daunting task of aligning processes to meet modern demands. Challenges such as limited resources, lack of benchmark templates, and outdated perspectives on legacy systems compound the complexity. Our Microsoft Dynamics 365 F&O Support team offers expertise in designing and implementing strategies like "Out to in" and "Value chain management" to address these requirements. </p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -212,8 +227,12 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                         <div class=" heading-1 !text-white">Outsourcing</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -224,7 +243,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <p class="lg:text-white">We offer comprehensive consultation and hiring services, delivering specialized knowledge for ERP implementations, particularly in Microsoft Dynamics 365. Our meticulously chosen and experienced Microsoft Dynamics 365 F&O experts provide valuable support and operational capabilities. Whether it's operational functions, consultation, or customization, we have a diverse team of experts spanning various functions and technologies, ready to assist your organization in achieving its objectives. </p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -242,8 +261,12 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -256,7 +279,7 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                     <p class="lg:text-white">Empowering organizations with reliable and competitive support for their ERP implementation, our AMC caters to those in need of extended assistance. Tailoring our services to customer requirements, we offer periodic contracts based on specific timeframes and task-oriented needs. It encompasses a wide array of functions, including third-party integration and customization, meeting the demands of classic implementations. Recognizing the needs of our global clients, operating across different time zones or those with critical enterprise functions, we provide the flexibility of 24/7 support to ensure uninterrupted assistance.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -362,11 +385,13 @@ Microsoft Dynamics 365 F&O Support Services<?= $this->endSection("title") ?>
                 <p>At Dynamic Netsoft, we thrive on tackling limitations head-on and uncovering boundless opportunities for every business we partner with. Join us today and step into a world where limitations no longer hold you back.</p>
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 

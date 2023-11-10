@@ -8,32 +8,37 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-fin1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1 flex flex-col">
-                        Amplify Your Financial Capabilities with Microsoft Dynamics 365
-                        <span class="span ">Financial Services</span>
-                    </h1>
-                    <div class=" text-base md:text-lg font-semibold md:w-2/3">
-                        Shape Your Financial Legacy with Our Precisely Engineered Software! Request a Free Demo Today!!!
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1 flex flex-col">
+                            Amplify Your Financial Capabilities with Microsoft Dynamics 365
+                            <span class="span ">Financial Services</span>
+                        </h1>
+                        <div class=" text-base md:text-lg font-semibold md:w-2/3">
+                            Shape Your Financial Legacy with Our Precisely Engineered Software! Request a Free Demo Today!!!
+                        </div>
+
+                        <div class="btn-div">
+                            <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">Let's Connect<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </a>
+                            <?= $this->include('/layouts/request-demo') ?>
+                        </div>
+
                     </div>
-
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/download') ?>
-                        <?= $this->include('/layouts/request-demo') ?>
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -57,11 +62,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                     <div class="flex gap-x-4 pt-4">
 
 
-                        <div>
-                            <button class=" btn btn-yellow">Download Brochure <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg></button>
-                        </div>
+
                     </div>
 
                 </div>
@@ -71,41 +72,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 </div>
 <!-- section 1 ends -->
 
-<!-- section 1 -->
-<div class=" md:bg-secondary md:py-16">
-    <div class=" max-w-container big-screen space-y-6">
-        <div class=" text-center  text-2xl font-bold">Achieve Precision with Our ISV Solution for <span class="text-d-yellow">Financial Services</span></div>
-        <div class=" lg:w-3/4 mx-auto">
-            <p class=" text-center">
-                Tailored to the unique intricacies of financial management, our solution offers capabilities that give businesses real-time visibility into investment portfolios, instant insights, meticulous financial forecasting, and cash flow tracking. </p>
-        </div>
-        <div class=" flex gap-x-20">
-            <div class=" space-y-6">
-                <p>
-                    Distinguished by real-time monitoring, tailored risk assessment, and seamless integration, our Investment Portfolio Management software redefines the art of investment management. It extends its capabilities, revealing invaluable insights into Buy/Sell and Gain/Loss transactions.
-                </p>
-                <div class="flex">
-                    <a href="#" class="btn btn-yellow"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></a>
-                </div>
-            </div>
 
-            <div class=" space-y-6">
-                <p>Our loan management software enhances efficiency, slashes costs, ensures compliance, and fortifies security. Place your trust in our professional and precise solution for unparalleled peace of mind in your business operations.</p>
-
-                <div class="flex">
-                    <a href="#" class="btn btn-yellow"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg></a>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-<!-- section 1 ends -->
 
 <!--section 2-->
 <div>
@@ -117,7 +84,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
         <div>
             <div class="md:w-3/4 mx-auto px-6 lg:px-0 ">
-                <div class="relative">
+                <div class="relative  px-6 md:px-0">
                     <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
 
 
@@ -145,6 +112,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                             <div class=" owl-dynamic-child ">
                                 <div class="bg-secondary-dark owl-dynamic-inner">
                                     <div class=" owl-dynamic-inner-2 ">
+                                        <?= $this->include('layouts/half-circle') ?>
                                         <img src="<?php echo base_url() ?>/images/fin/<?= $product->image ?>.svg" alt="">
                                     </div>
                                     <div class="h-10"></div>
@@ -166,6 +134,42 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 </div>
 <!--section 2 ends-->
 
+<!-- section 1 -->
+<div class=" md:bg-secondary-dark py-6 md:py-16 px-8 lg:px-0">
+    <div class=" max-w-container big-screen space-y-6">
+        <div class=" text-center  text-2xl font-bold">Achieve Precision with Our ISV Solution for <span class="text-primary">Financial Services</span></div>
+        <div class=" lg:w-3/4 mx-auto">
+            <p class=" text-center">
+                Tailored to the unique intricacies of financial management, our solution offers capabilities that give businesses real-time visibility into investment portfolios, instant insights, meticulous financial forecasting, and cash flow tracking. </p>
+        </div>
+        <div class=" flex flex-col md:flex-row gap-x-20 gap-y-5">
+            <div class=" space-y-6 text-center md:text-left">
+                <p>
+                    Distinguished by real-time monitoring, tailored risk assessment, and seamless integration, our Investment Portfolio Management software redefines the art of investment management. It extends its capabilities, revealing invaluable insights into Buy/Sell and Gain/Loss transactions.
+                </p>
+                <div class="flex ">
+                    <a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics" class="btn btn-primary"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class=" space-y-6 text-center md:text-left">
+                <p>Our loan management software enhances efficiency, slashes costs, ensures compliance, and fortifies security. Place your trust in our professional and precise solution for unparalleled peace of mind in your business operations.</p>
+
+                <div class="flex">
+                    <a href="<?php echo base_url() ?>/treasury-management-software-dynamics" class="btn btn-primary"> Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- section 1 ends -->
+
 
 
 <!-- section -3 -->
@@ -183,7 +187,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                 <!-- <p>A Vision for Innovation, to Build a Better Future!!!</p> -->
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
+                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact">
                         <span>Connect with Us </span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -345,11 +349,13 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 

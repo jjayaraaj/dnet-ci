@@ -8,31 +8,34 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-implementation-banner  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1">
-                        Experience Business Transformation with Dynamic Netsoft’s Microsoft Dynamics 365
-                        <span class="span ">Finance & Operations Implementation Services</span>
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1">
+                            Experience Business Transformation with Dynamic Netsoft’s Microsoft Dynamics 365
+                            <span class="span ">Finance & Operations Implementation Services</span>
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/get-touch') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/get-touch') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -108,8 +111,8 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                                     </div>
 
                                     <div>
-                                        <div class="  title !py-0 !h-auto !pt-3"><?= $product->heading ?></div>
-                                        <p class=" p-3 text-center"><?= $product->content ?></p>
+                                        <div class="  title !py-0 !h-auto !pt-3 "><?= $product->heading ?></div>
+                                        <p class=" p-3 text-center text-black"><?= $product->content ?></p>
                                     </div>
 
 
@@ -144,13 +147,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                 <p>Connect with our expert team today to start your transformation journey. </p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
-                        <span>Connect with Us </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </a>
+                    <?= $this->include('/layouts/connect') ?>
                 </div>
             </div>
         </div>
@@ -270,8 +267,12 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                         <div class=" heading-1 !text-white">Requirement analysis</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -282,7 +283,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">Through meticulous requirement analysis, our Microsoft Dynamics 365 Finance & Operations implementation team will assess your business needs and gather essential information to tailor the solution.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -299,8 +300,12 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                         <div class=" heading-1 !text-white">Designing the modules by setup</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -311,7 +316,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">Our expert team will design the modules, ensuring a seamless setup that aligns with your specific requirements. </p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -328,8 +333,12 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                         <div class=" heading-1 !text-white">Configuration</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -340,7 +349,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">With careful attention to detail, our Dynamics 365 Finance & Operations implementation specialists will configure the system, optimizing its performance to meet your unique business processes.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -357,8 +366,12 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                         <div class=" heading-1 !text-white">Development of reports</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -369,7 +382,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">Our skilled developers will craft customized reports that provide valuable insights, enabling you to make data-driven decisions and drive business growth.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -387,8 +400,12 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -401,10 +418,33 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">Our Microsoft Dynamics 365 Implementation service team will implement necessary customizations, tailoring the solution to fit your organization's unique workflows and maximizing its efficiency.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
+
+                <!-- content 6  -->
+                <div class="mobile-tab " @click="feature = 6">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            End-User training
+                        </div>
+                    </div>
+
+                    <svg x-show="feature=== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
 
                 <div class="desktop-content" x-show="feature=== 6">
                     <div class=" heading-1 hidden md:block ">
@@ -413,21 +453,68 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">End-user training programs led by our experienced trainers will equip your staff with the necessary knowledge and skills to effectively utilize the implemented solution.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
+
+                <!-- content 7  -->
+                <div class="mobile-tab " @click="feature = 7">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            Deploying the solution
+                        </div>
+                    </div>
+
+                    <svg x-show="feature=== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+
 
                 <div class="desktop-content" x-show="feature=== 7">
                     <div class=" heading-1 hidden md:block ">
                         Deploying the solution
                     </div>
-                    <p class="text-white">Leveraging their expertise, our team will deploy the solution across your organization, ensuring a smooth and efficient transition without disrupting your daily operations.</p>
+                    <p class="md:text-white ">Leveraging their expertise, our team will deploy the solution across your organization, ensuring a smooth and efficient transition without disrupting your daily operations.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
+
+                <!-- content 7  -->
+                <div class="mobile-tab " @click="feature = 8">
+                    <div class="left-container">
+                        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+                                <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+                            </svg>
+                        </div>
+                        <div class=" heading-1 !text-white">
+                            Go Live with post-implementation support
+                        </div>
+                    </div>
+
+                    <svg x-show="feature=== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
 
                 <div class="desktop-content" x-show="feature=== 8">
                     <div class=" heading-1 hidden md:block ">
@@ -436,7 +523,7 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
                     <p class="text-black lg:text-white">our dedicated Dynamics 365 Implementation & support team will help and provide guidance, ensuring a successful Go Live.</p>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -615,11 +702,13 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 

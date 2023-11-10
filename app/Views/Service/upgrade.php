@@ -8,31 +8,34 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-upgrade-banner  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1 flex flex-col">
-                        Embrace the Technological Resurgence with Dynamic Netsoft’s Dynamics 365
-                        <span class="span ">Finance & Operations Upgrade Services</span>
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1 flex flex-col">
+                            Embrace the Technological Resurgence with Dynamic Netsoft’s Dynamics 365
+                            <span class="span ">Finance & Operations Upgrade Services</span>
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/get-touch') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/get-touch') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -57,7 +60,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 <div class=" max-w-container pb-16">
     <div class="flex flex-col lg:flex-row justify-center gap-10 px-6 lg:px-0">
-        <div class=" lg:w-[20%] ">
+        <div class=" lg:w-[20%] pt-10 md:pt-0 ">
             <div class="h-14 bg-primary-light flex justify-center items-center rounded-tl-[2rem] rounded-tr-[2rem] text-white">Features</div>
             <div class="bg-secondary rounded-bl-[2rem] rounded-br-[2rem]">
                 <ul class="p-6 space-y-3 list-disc ml-4 ">
@@ -221,11 +224,13 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         </div>
                         <div class=" heading-1 !text-white"> Functional Enhancements and Embedded BI</div>
                     </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -235,7 +240,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         <li>Unlock new features and capabilities with our Microsoft Dynamics 365 Finance & Operations upgrade services.</li>
                         <li>Leverage embedded Business Intelligence (BI) tools.</li>
                     </ul>
-                    <button class=" btn btn-yellow">Book a Demo</button>
+                    <?= $this->include('/layouts/book-demo') ?>
                 </div>
 
 
@@ -250,8 +255,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         <div class=" heading-1 !text-white"> Improved Accessibility</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -264,7 +273,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         <li>Native HTML5 browser-based user interface.</li>
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -281,8 +290,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         <div class=" heading-1 !text-white"> Unification of ERP and CRM</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -296,7 +309,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -313,8 +326,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         <div class=" heading-1 !text-white"> Seamless Integration Opportunities</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -328,7 +345,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -346,8 +363,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -363,7 +384,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -381,8 +402,12 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -398,7 +423,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -415,10 +440,13 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -432,7 +460,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -449,10 +477,13 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -466,7 +497,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </ul>
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <?= $this->include('/layouts/book-demo') ?>
                     </div>
                 </div>
 
@@ -502,13 +533,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                 <p>Embrace the change to Reinvent Success! Partner with the best! Sign-up TODAY!</p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
-                        <span>Connect with Us </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </a>
+                    <?= $this->include('/layouts/connect') ?>
                 </div>
             </div>
         </div>
@@ -541,11 +566,13 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
 
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -611,7 +638,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
                 </div>
             </div>
 
-            <div>
+            <!-- <div>
                 <div class="faq" @click="selected !== 3 ? selected = 3 : selected = null">
                     <div class="icon ">
                         <div class="q">Q</div>
@@ -630,7 +657,7 @@ Microsoft Dynamics 365 F&O Upgrade Services - DNETSOFT<?= $this->endSection("tit
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div>
                 <div class="faq" @click="selected !== 4 ? selected = 4 : selected = null">

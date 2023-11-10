@@ -1,9 +1,9 @@
 <template x-teleport="body">
     <div x-show="commonDownloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-        <div class=" bg-white   w-[60%]  bg-formBg3 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
-            <div class="w-1/2  bg-commonDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
+        <div class=" bg-white   w-[90%] md:w-[60%]  bg-formBg3 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
+            <div class="w-1/2 hidden md:block  bg-commonDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
             </div>
-            <div class=" w-1/2 p-8 ">
+            <div class=" md:w-1/2 w-full p-8 ">
 
 
                 <div class="heading-1 text-center ">Download Brochure</div>
@@ -11,6 +11,7 @@
 
                 <form class="space-y-3" action="<?php echo base_url() ?>/common-download" method="POST" id="commonDownloadForm">
                     <input type="hidden" id="commonDownloadFlag" name="commonDownloadFlag" x-model="commonFormData.commonDownloadFlag" value="" />
+                    <input type="hidden" id="commonHoney" name="commonHoney">
                     <div>
                         <label for="name" class="sr-only">Name:</label>
                         <input type="text" id="name" name="commonFormName" x-model="commonFormData.name.value" placeholder="Name" data-error="#errNm1">
@@ -43,17 +44,17 @@
                             <div class="space-y-3">
                                 <div class="flex items-center gap-x-2">
 
-                                    <input type="radio" id="propMan1" name="solution" value="Property Management">
+                                    <input type="radio" id="propMan1" name="solution" value="Property-Management">
                                     <label for="propMan1" class="text-xs">Property Management</label>
                                 </div>
                                 <div class="flex items-center gap-x-2">
 
-                                    <input type="radio" id="propMan2" name="solution" value="Bid Management">
+                                    <input type="radio" id="propMan2" name="solution" value="Bid-Management">
                                     <label for="propMan2" class="text-xs">Bid Management</label>
                                 </div>
                                 <div class="flex items-center gap-x-2">
 
-                                    <input type="radio" id="propMan3" name="solution" value="Treasury Management">
+                                    <input type="radio" id="propMan3" name="solution" value="Treasury-Management">
                                     <label for="propMan3" class="text-xs">Treasury Management</label>
                                 </div>
                             </div>
@@ -63,13 +64,12 @@
 
                                 <div class="flex items-center gap-x-2">
 
-                                    <input type="radio" id="propMan4" name="solution" value="Contract Management">
+                                    <input type="radio" id="propMan4" name="solution" value="Contract-Management">
                                     <label for="propMan4" class="text-xs">Contract Management</label>
                                 </div>
                                 <div class="flex items-center gap-x-2">
 
-                                    <input type="radio" id="propMan5" name="solution" value="Investment Portfolio
-                                    Management">
+                                    <input type="radio" id="propMan5" name="solution" value="Investment-Portfolio-Management">
                                     <label for="propMan5" class="text-xs">Investment Portfolio
                                         Management</label>
                                 </div>

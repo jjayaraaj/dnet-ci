@@ -8,31 +8,33 @@ Annata 365
 <?= $this->section("content") ?>
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-annata1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+        <div class="banner-space"></div>
+        <div class="mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1">
-                        <span class="span ">Annata 365</span><br>
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1">
+                            <span class="span ">Annata 365</span><br>
 
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/request-demo') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/request-demo') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>

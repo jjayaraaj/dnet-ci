@@ -8,7 +8,7 @@
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-about-banner">
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mx-auto h-full big-screen">
         <div class="banner-space"></div>
 
         <div class="  w-full  lg:h-[500px]">
@@ -74,7 +74,7 @@
             </div>
             <div class=" flex-1 space-y-8">
                 <div class=" inline-flex gap-4 pl-8">
-                    <button class="btn " :class="property === 1 ? 'property-active' : 'btn-primary'" @click="property = 1">
+                    <button class="btn " :class="property === 1 ? 'property-active' : 'btn-white'" @click="property = 1">
                         <h4>Our Vision</h4>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -82,7 +82,7 @@
 
                     </button>
 
-                    <button class="btn btn-primary" @click="property = 2" :class="property === 2 ? 'property-active' : 'btn-primary'">
+                    <button class="btn btn-white" @click="property = 2" :class="property === 2 ? 'property-active' : 'btn-primary'">
                         <h4>Our Mission</h4>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -434,7 +434,7 @@
 
                 <!-- content 7  -->
 
-                <div class="mobile-tab " @click="feature = 7">
+                <!-- <div class="mobile-tab " @click="feature = 7">
                     <div class="left-container">
                         <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
                                 <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
@@ -468,7 +468,7 @@
                     <div>
                         <button class=" btn btn-yellow">Book a Demo</button>
                     </div>
-                </div>
+                </div> -->
 
 
                 <!-- content 8  -->
@@ -565,11 +565,13 @@
                     <li><b>User-Centric Pioneers:</b> Leading the way in enhancing customer adoption and end-user productivity.</li>
                 </ul>
             </div>
-            <button class="btn btn-primary">
-                Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <div class="flex">
+                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                    Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -578,7 +580,7 @@
 
 <!--global-->
 <div class=" bg-primary py-16">
-    <div class=" max-w-container space-y-16">
+    <div class=" max-w-container space-y-16 bg-global bg-contain bg-no-repeat bg-center">
         <div class=" heading-1 text-center !text-white">Global Reach</div>
         <div class=" md:w-4/5 mx-auto">
             <div class=" grid grid-cols-1 lg:grid-cols-3">

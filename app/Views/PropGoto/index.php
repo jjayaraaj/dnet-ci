@@ -7,33 +7,36 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
 <?= $this->section("content") ?>
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-propGoto1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+
+        <div class="banner-space"></div>
+        <div class="mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class="header-1 ">
-                <div class=" header-2">
-                    <h1 class="header-3">
-                        <span class="header-blue-text">PropGOTO</span>
-                    </h1>
+                <!-- inner banner -->
+                <div class="header-1 ">
+                    <div class=" header-2">
+                        <h1 class="header-3">
+                            <span class="header-blue-text">PropGOTO</span>
+                        </h1>
 
-                    <div class=" text-sm lg:text-lg font-semibold md:w-2/3">
-                        Fast-paced demands of business, time, and budget constraints often leave companies in a state of despair whilst choosing enterprise solutions. Software as service (SaaS) solutions often serve as an alternative to such situations. Centrally hosted, cloud-based, convenient licensing and delivery model on a subscription basis provides customers a distinct advantage in affordability, speed of service deployment and benefits realization.
+                        <div class=" text-sm lg:text-lg font-semibold md:w-2/3">
+                            Fast-paced demands of business, time, and budget constraints often leave companies in a state of despair whilst choosing enterprise solutions. Software as service (SaaS) solutions often serve as an alternative to such situations. Centrally hosted, cloud-based, convenient licensing and delivery model on a subscription basis provides customers a distinct advantage in affordability, speed of service deployment and benefits realization.
+                        </div>
+
+                        <div class="btn-div flex justify-center lg:justify-start">
+                            <a href="https://propgoto.com/" target="_blank" class="btn btn-primary">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></a>
+                        </div>
+
                     </div>
-
-                    <div class="btn-div flex justify-center lg:justify-start">
-                        <a href="#" class="btn btn-primary">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></a>
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -67,7 +70,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
         <div class=" inner-section-blue">
 
             <div class="content-section">
-                <h2 class="  lg:!bg-transparent text-black lg:text-white ">Biz Apps: (Last-mile solutions)<span class="text-d-yellow">Annata 365</span></h2>
+                <h2 class="  lg:!bg-transparent text-black lg:text-white ">Biz Apps: (Last-mile solutions)</h2>
                 <div class="sub-content">
                     <p class="">
                         Biz Apps from PropGOTO are designed to manage processes across the length and breadth of property operations. Designed with one thing in mind – consumer ease. The Apps are sleek, user- friendly with potential to integrate seamlessly with RealEstate Pro – flagship PMS Microsoft Dynamics 365 ISV solution for property management.
@@ -75,7 +78,7 @@ Experience Convenient Treasury Management System on Dynamics 365 <?= $this->endS
                     <p>The Apps can also be integrated as last-mile solutions with 3 rd party PMS/ERP solution providing flexibility and scalability for customers. This gives customers much needed. Advantage in reducing investment costs and time for upscaling to user excellence driven by anytime, anywhere access to business needs.
                     </p>
                     <div class="flex">
-                        <a href="#" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <a href="https://propgoto.com/apps" target="_blank" class="btn btn-yellow">Learn More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg></a>
                     </div>

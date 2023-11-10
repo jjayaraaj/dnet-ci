@@ -8,33 +8,36 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 <?= $this->section("content") ?>
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-contract1  ">
-    <div class="banner-space"></div>
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class=" mobile-header-transparent">
+
+        <div class="banner-space"></div>
+        <div class=" mx-auto h-full big-screen">
 
 
-        <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
+            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px]">
 
 
-            <!-- inner banner -->
-            <div class=" inner-banner ">
-                <div class=" first-div ">
-                    <h1 class="h1 flex flex-col">
-                        Better manage Projects with Microsoft Dynamics 365
-                        <span class="span ">Contract Management</span>
+                <!-- inner banner -->
+                <div class=" inner-banner ">
+                    <div class=" first-div ">
+                        <h1 class="h1 flex flex-col">
+                            Better manage Projects with Microsoft Dynamics 365
+                            <span class="span ">Contract Management Software</span>
 
-                    </h1>
-                    <!-- <div class=" text-base md:text-lg font-semibold">
+                        </h1>
+                        <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
                     </div> -->
 
-                    <div class="btn-div">
-                        <?= $this->include('/layouts/download') ?>
-                        <?= $this->include('/layouts/request-demo') ?>
+                        <div class="btn-div">
+                            <?= $this->include('/layouts/download') ?>
+                            <?= $this->include('/layouts/request-demo') ?>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </header>
@@ -164,8 +167,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         <div class=" heading-1 !text-white">Contract Order</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -183,7 +190,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Contract Order')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -200,8 +207,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         <div class=" heading-1 !text-white">Budget Control</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -216,7 +227,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -233,8 +244,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         <div class=" heading-1 !text-white">Submittals/Deliverables Management</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -243,16 +258,14 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                 <div class="desktop-content" x-show="feature=== 3">
                     <div class=" heading-1 hidden md:block ">Submittals/Deliverables Management</div>
                     <ul>
-                        <li>Dynamics 365 Contract Management software enables efficient contract execution tracking in project management.</li>
-                        <li>Solution provides integrated and convenient features for letters of award to contractors.</li>
-                        <li>Manage payment terms flexibility, including quantity-based or milestone-based options, with linked deliverables/submittals.</li>
-                        <li>Create contract order activities accurately and monitor contractor work progress.</li>
-                        <li>Execute work orders/contract orders with diverse options such as labor, material, or both for holistic project control.</li>
+                        <li>Our benchmark Contract Management Software helps manage efficiently the creation and tracking of deliverables by contractors.</li>
+                        <li>Solution helps control payments based on the status of deliverables, ensuring financial management and accountability.</li>
+                        <li>Create and track submittals to customers, facilitating efficient collaboration and communication with key stakeholders. </li>
 
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -269,8 +282,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         <div class=" heading-1 !text-white">Request for Inspection (RFI) Tracking</div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -285,7 +302,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -303,8 +320,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -324,7 +345,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -343,8 +364,12 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
+                    </svg>
+
+                    <svg x-show="feature !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                     </svg>
 
 
@@ -364,7 +389,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -383,10 +408,13 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                         </div>
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <svg x-show="feature=== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                     </svg>
 
+                    <svg x-show="feature !== 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>
 
                 </div>
 
@@ -401,7 +429,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                     </ul>
 
                     <div>
-                        <button class=" btn btn-yellow">Book a Demo</button>
+                        <button @click="openFormDemoDiv('<?= uri_string() ?>/Bid Creation')" class=" btn btn-yellow">Book a Demo</button>
                     </div>
                 </div>
 
@@ -431,13 +459,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
                 <p>The complete Contract Management Solution for your Business</p>
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="#">
-                        <span>Connect with Us </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </a>
+                    <?= $this->include('/layouts/connect') ?>
                 </div>
             </div>
         </div>
@@ -455,7 +477,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
 
     </div>
     <div class="feature">
-        <div class="box">
+        <div class="box ">
             <div class="">
                 <div class="top-div">
                     <img src="<?php echo base_url() ?>/images/contract/advanced-project-management-system.svg" alt="">

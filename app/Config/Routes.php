@@ -63,6 +63,7 @@ $routes->post('/contact-request', 'Page::ContactRequest');
 $routes->get('/thankyou', 'Page::Thankyou');
 $routes->get('/brochure-thankyou', 'Page::BrochureThankyou');
 $routes->get('/demo-thankyou', 'Page::DemoThankyou');
+$routes->get('/privacy-policy', 'Page::PrivacyPolicy');
 $routes->set404Override(function () {
     return view('my_404');
 });
