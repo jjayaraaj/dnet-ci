@@ -34,6 +34,59 @@
 
 <body x-data="app">
 
+  <?php $currenUrl = uri_string(); ?>
+
+  <?php
+
+  function activeMenu($currenUrl)
+  {
+    if (
+      $currenUrl === 'microsoft-dynamics-365-construction-erp'
+      || $currenUrl === 'microsoft-dynamics-365-for-real-estate'
+      || $currenUrl === 'microsoft-dynamics-365-for-retail'
+      || $currenUrl === 'microsoft-dynamics-365-financial-services'
+    ) {
+      return 'active';
+    } else {
+      return '';
+    }
+  };
+
+  function activeSolution($currenUrl)
+  {
+    if (
+      $currenUrl === 'property-management-software-dynamics-365'
+      || $currenUrl === 'property-leasing'
+      || $currenUrl === 'property-sale'
+      || $currenUrl === 'dynamics-365-bid-management-software'
+      || $currenUrl === 'contract-management-software-dynamics-365'
+      || $currenUrl === 'dynamics-365-HR-payroll'
+      || $currenUrl === 'investment-portfolio-management-software-dynamics'
+      || $currenUrl === 'treasury-management-software-dynamics'
+      || $currenUrl === 'annata-365'
+      || $currenUrl === 'propgoto'
+    ) {
+      return 'active';
+    } else {
+      return '';
+    }
+  };
+
+  function activeService($currenUrl)
+  {
+    if (
+      $currenUrl === 'microsoft-dynamics-365-implementation'
+      || $currenUrl === 'dynamics-365-finance-operations-upgrade-services'
+      || $currenUrl === 'microsoft-dynamics-365-support'
+
+    ) {
+      return 'active';
+    } else {
+      return '';
+    }
+  };
+  ?>
+
 
 
   <nav x-cloak x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container   mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all " :class="{ 'shadow-lg': atTop, ' text-white py-4 ': !atTop, 'bg-white  text-indigo-800': atTop, 'bg-primary-light lg:bg-transparent':mobNav }">
@@ -41,9 +94,9 @@
       <img x-show="!mobNav" src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
       <img x-show="mobNav" src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" class="w-1/2 md:w-80" alt="">
       <div class="menu ">
-        <a href="/">Home </a>
+        <a href="/" class="<?= $currenUrl === '/' ? 'active' : '' ?>">Home </a>
         <div class=" relative group/item">
-          <a href="<?php echo base_url() ?>/" class="">
+          <a href="<?php echo base_url() ?>/" class="<?= activeMenu($currenUrl) ?>">
 
             Industries <img src=" <?php echo base_url() ?>/images/down-arow.svg" alt="">
 
@@ -52,10 +105,10 @@
             <div class="h-4"></div>
             <div class="bg-white rounded-b-2xl shadow">
               <ul class="sub-menu">
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate">Real Estate</a></li>
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp">Construction</a></li>
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail">Retail</a></li>
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services">Financial Service</a></li>
+                <li class="p-2 <?= $currenUrl === 'microsoft-dynamics-365-for-real-estate' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-real-estate">Real Estate</a></li>
+                <li class="p-2 <?= $currenUrl === 'microsoft-dynamics-365-construction-erp' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-construction-erp">Construction</a></li>
+                <li class="p-2 <?= $currenUrl === 'microsoft-dynamics-365-for-retail' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-for-retail">Retail</a></li>
+                <li class="p-2 <?= $currenUrl === 'microsoft-dynamics-365-financial-services' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-financial-services">Financial Service</a></li>
               </ul>
             </div>
 
@@ -63,7 +116,7 @@
         </div>
 
         <div class=" relative group/item">
-          <a href="<?php echo base_url() ?>/" class="">
+          <a href="<?php echo base_url() ?>/" class="<?= activeSolution($currenUrl) ?>">
 
             Solution <img src=" <?php echo base_url() ?>/images/down-arow.svg" alt="">
 
@@ -72,25 +125,25 @@
             <div class="h-4"></div>
             <div class="bg-white rounded-2xl ">
               <ul class="sub-menu">
-                <li class="relative group/sub "><a class="inline-flex " href="<?php echo base_url() ?>/property-management-software-dynamics-365">
+                <li class="relative group/sub  <?= $currenUrl === 'property-management-software-dynamics-365' ? 'active' : '' ?>"><a class="inline-flex " href="<?php echo base_url() ?>/property-management-software-dynamics-365">
                     <div class="w-40">RealEstatePro</div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                   </a>
                   <div class=" absolute z-20 bg-white  -right-20 border border-gray-50 invisible  group-hover/sub:visible  shadow-xl rounded-2xl w-44">
                     <ul class=" divide-y  divide-gray-100 ">
-                      <li class="p-2"><a href="<?php echo base_url() ?>/property-leasing">Property Leasing</a></li>
-                      <li class="p-2"><a href="<?php echo base_url() ?>/property-sale">Property Sale</a></li>
+                      <li class="p-2 <?= $currenUrl === 'property-leasing' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/property-leasing">Property Leasing</a></li>
+                      <li class="p-2 <?= $currenUrl === 'property-sale' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/property-sale">Property Sale</a></li>
                     </ul>
                   </div>
                 </li>
-                <li class=""><a href="<?php echo base_url() ?>/dynamics-365-bid-management-software">Bid Management</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/treasury-management-software-dynamics">Treasury Management</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/annata-365">Annata</a></li>
-                <li class=""><a href="<?php echo base_url() ?>/propgoto">PropGoto</a></li>
+                <li class="<?= $currenUrl === 'dynamics-365-bid-management-software' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/dynamics-365-bid-management-software">Bid Management</a></li>
+                <li class="<?= $currenUrl === 'contract-management-software-dynamics-365' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a></li>
+                <li class="<?= $currenUrl === 'dynamics-365-HR-payroll' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AxOnePay - Payroll</a></li>
+                <li class="<?= $currenUrl === 'investment-portfolio-management-software-dynamics' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a></li>
+                <li class="<?= $currenUrl === 'treasury-management-software-dynamics' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/treasury-management-software-dynamics">Treasury Management</a></li>
+                <li class="<?= $currenUrl === 'annata-365' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/annata-365">Annata</a></li>
+                <li class="<?= $currenUrl === 'propgoto' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/propgoto">PropGoto</a></li>
 
               </ul>
             </div>
@@ -99,7 +152,7 @@
         </div>
 
         <div class=" relative group/item">
-          <a href="<?php echo base_url() ?>/" class="">
+          <a href="<?php echo base_url() ?>/" class="<?= activeService($currenUrl) ?>">
 
             Services <img src="<?php echo base_url() ?>/images/down-arow.svg" alt="">
 
@@ -108,18 +161,18 @@
             <div class="h-4"></div>
             <div class="bg-white rounded-b-2xl shadow">
               <ul class="sub-menu">
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a></li>
-                <li class="p-2"><a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services">Upgrade</a></li>
+                <li class="p-2  <?= $currenUrl === 'microsoft-dynamics-365-implementation' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a></li>
+                <li class="p-2  <?= $currenUrl === 'dynamics-365-finance-operations-upgrade-services' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services">Upgrade</a></li>
 
-                <li class="p-2"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a></li>
+                <li class="p-2  <?= $currenUrl === 'microsoft-dynamics-365-support' ? 'active' : '' ?>"><a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a></li>
               </ul>
             </div>
 
           </div>
         </div>
         <a href="<?php echo base_url() ?>/">Blog</a>
-        <a href="<?php echo base_url() ?>/about-us">About Us</a>
-        <a href="<?php echo base_url() ?>/contact">Contact us</a>
+        <a href="<?php echo base_url() ?>/about-us" class="<?= $currenUrl === 'about-us' ? 'active' : '' ?>">About Us</a>
+        <a href="<?php echo base_url() ?>/contact-us" class="<?= $currenUrl === 'contact-us' ? 'active' : '' ?>">Contact Us</a>
 
       </div>
 
@@ -136,7 +189,7 @@
       </div>
 
       <div class="flex items-center  lg:hidden">
-        <a class=" text-white text-xs px-2 py-2 rounded-3xl font-bold" :class="mobNav? 'bg-d-yellow' : 'bg-primary'" href="<?php echo base_url() ?>/contact">
+        <a class=" text-white text-xs px-2 py-2 rounded-3xl font-bold" :class="mobNav? 'bg-d-yellow' : 'bg-primary'" href="<?php echo base_url() ?>/contact-us">
           <span>Enquire Now </span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -253,7 +306,7 @@
           </li>
 
           <li class="py-4">
-            <a href="<?php echo base_url() ?>/contact" class=" font-semibold text-lg">Contact</a>
+            <a href="<?php echo base_url() ?>/contact-us" class=" font-semibold text-lg">Contact</a>
           </li>
 
           <!-- More items... -->
@@ -271,9 +324,9 @@
 
   <?php
 
-  $currenUrl = uri_string();
 
-  if ($currenUrl !== 'contacts' && $currenUrl !== 'thankyou' && $currenUrl !== 'brochure-thankyou' && $currenUrl !== 'privacy-policy') {
+
+  if ($currenUrl !== 'contact-us' && $currenUrl !== 'thankyou' && $currenUrl !== 'brochure-thankyou' && $currenUrl !== 'privacy-policy') {
 
   ?>
 
@@ -468,7 +521,7 @@
             <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
             <div class=" flex flex-col footer-link">
               <a href="<?php echo base_url() ?>/about-us">About us</a>
-              <a href="<?php echo base_url() ?>/contact">Contact us</a>
+              <a href="<?php echo base_url() ?>/contact-us">Contact us</a>
               <a href="<?php echo base_url() ?>/">Blog</a>
               <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
               <a href="<?php echo base_url() ?>/">Careers</a>
@@ -520,7 +573,7 @@
 
   <button @click="openCommonDownloadForm" class="fixed z-50 lg:top-1/2  mx-auto flex justify-center hover:bg-yellow-500  btn btn-yellow lg:rotate-90  text-center lg:-right-16  ">Download Brochure </button>
   <div class="fixed lg:hidden bottom-0 z-50 flex items-center justify-between w-full bg-secondary">
-    <div class="px-4 py-2 bg-primary-gradient text-white rounded-tr-xl rounded-br-xl flex items-center gap-x-2">
+    <div class="px-4 py-2 bg-primary-gradient text-white rounded-tr-xl rounded-br-xl flex items-center gap-x-2" @click="openCommonDownloadForm">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
         <path d="M12 1.5a.75.75 0 01.75.75V7.5h-1.5V2.25A.75.75 0 0112 1.5zM11.25 7.5v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V7.5h3.75a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9a3 3 0 013-3h3.75z" />
       </svg>

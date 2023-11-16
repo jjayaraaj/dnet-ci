@@ -40,7 +40,7 @@
 <!-- services -->
 <div class="px-8 md:px-0">
     <div class=" py-16 max-w-container mx-auto big-screen">
-        <div class="  md:w-5/6  mx-auto grid grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-4">
+        <div class="  md:w-5/6  mx-auto grid grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-4 ">
             <div class="service">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
@@ -64,7 +64,8 @@
                     ISV Solutions</div>
             </div>
 
-            <div class="service">
+
+            <div class="service ml-24 md:ml-0">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/10-Industries.svg" alt="">
                 </div>
@@ -72,7 +73,7 @@
                     Industries</div>
             </div>
 
-            <div class="service">
+            <div class="service ml-24 md:ml-0">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/worldwide-operations.svg" alt="">
                 </div>
@@ -93,7 +94,7 @@
 
 
         <div class=" lg:flex gap-16 items-center">
-            <div class=" w-2/3 lg:flex -ml-24 hidden ">
+            <div class=" w-2/3 lg:flex ml-2 hidden ">
                 <div class=" relative  ">
                     <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
                         <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">

@@ -81,8 +81,6 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
     <div class="max-w-container py-16">
         <div class="space-y-3 px-6 lg:px-0">
             <h3 class=" text-xl font-semibold text-center">The Features of Microsoft Dynamics 365 for Retail that Connect Your Customers with Your Brand</h3>
-            <!-- <p class=" md:w-1/2 text-center mx-auto">Microsoft’s ERP – ISV solutions for Construction provide robust strategic planning tool that offers numerous
-                benefits to drive your business toward remarkable growth. These advantages include:</p> -->
         </div>
         <div>
             <div class="md:w-3/4 mx-auto px-6 lg:px-0">
@@ -105,7 +103,7 @@ Microsoft Dynamics 365 POS for the Retail Industry<?= $this->endSection("title")
 
                     </div>
                     <div class="h-24"></div>
-                    <div class="owl-carousel owl-theme owl-dynamic">
+                    <div class="owl-carousel owl-theme owl-dynamic retail-owl">
 
                         <div class=" owl-dynamic-child ">
 

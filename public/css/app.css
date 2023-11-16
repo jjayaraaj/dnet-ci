@@ -616,17 +616,17 @@ p{
 .-right-20{
   right: -5rem;
 }
+.bottom-0{
+  bottom: 0px;
+}
+.top-\[70\%\]{
+  top: 70%;
+}
 .left-\[5\%\]{
   left: 5%;
 }
 .right-\[5\%\]{
   right: 5%;
-}
-.top-\[70\%\]{
-  top: 70%;
-}
-.bottom-0{
-  bottom: 0px;
 }
 .z-40{
   z-index: 40;
@@ -665,14 +665,17 @@ p{
 .ml-auto{
   margin-left: auto;
 }
+.ml-24{
+  margin-left: 6rem;
+}
+.ml-2{
+  margin-left: 0.5rem;
+}
 .-ml-24{
   margin-left: -6rem;
 }
 .-ml-6{
   margin-left: -1.5rem;
-}
-.ml-2{
-  margin-left: 0.5rem;
 }
 .ml-1{
   margin-left: 0.25rem;
@@ -782,6 +785,9 @@ p{
 .h-\[400px\]{
   height: 400px;
 }
+.\!h-64{
+  height: 16rem !important;
+}
 .\!h-auto{
   height: auto !important;
 }
@@ -867,9 +873,6 @@ p{
 .w-60{
   width: 15rem;
 }
-.w-auto{
-  width: auto;
-}
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -951,9 +954,6 @@ p{
 }
 .gap-8{
   gap: 2rem;
-}
-.gap-20{
-  gap: 5rem;
 }
 .gap-x-6{
   -moz-column-gap: 1.5rem;
@@ -1084,6 +1084,12 @@ p{
 .rounded-bl-3xl{
   border-bottom-left-radius: 1.5rem;
 }
+.rounded-tr-xl{
+  border-top-right-radius: 0.75rem;
+}
+.rounded-br-xl{
+  border-bottom-right-radius: 0.75rem;
+}
 .rounded-tl-\[2rem\]{
   border-top-left-radius: 2rem;
 }
@@ -1095,12 +1101,6 @@ p{
 }
 .rounded-br-\[2rem\]{
   border-bottom-right-radius: 2rem;
-}
-.rounded-tr-xl{
-  border-top-right-radius: 0.75rem;
-}
-.rounded-br-xl{
-  border-bottom-right-radius: 0.75rem;
 }
 .border{
   border-width: 1px;
@@ -1276,6 +1276,10 @@ p{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1283,10 +1287,6 @@ p{
 .\!py-0{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-}
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .pt-16{
   padding-top: 4rem;
@@ -1732,8 +1732,15 @@ nav a{
 }
 
 .sub-menu li a{
+  border-width: 0px !important;
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
+}
+
+.sub-menu li.active{
+  border-width: 0px !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 249 253 / var(--tw-bg-opacity));
 }
 
 .heading-1{
@@ -2020,6 +2027,13 @@ nav a{
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.menu a:hover,
+.menu .active{
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(14 97 157 / var(--tw-border-opacity));
 }
 
 .service{
@@ -2333,7 +2347,7 @@ textarea{
 .owl-dynamic-child{
   position: relative;
   display: flex;
-  height: 15rem;
+  height: 20rem;
   flex-direction: column;
   justify-content: flex-end;
   border-bottom-width: 8px;
@@ -2343,10 +2357,18 @@ textarea{
 
 .owl-dynamic-inner{
   position: relative;
-  height: 11rem;
+  height: 15rem;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   padding: 2rem;
+}
+
+.retail-owl .owl-dynamic-child{
+  height: 16rem !important;
+}
+
+.retail-owl .owl-dynamic-inner{
+  height: 12rem !important;
 }
 
 .owl-dynamic-inner-2{
@@ -3636,6 +3658,10 @@ input.error{
 
 @media (min-width: 768px){
 
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
   .md\:-mt-0{
     margin-top: -0px;
   }
@@ -3734,10 +3760,6 @@ input.error{
 
   .md\:justify-start{
     justify-content: flex-start;
-  }
-
-  .md\:justify-center{
-    justify-content: center;
   }
 
   .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -3866,12 +3888,12 @@ input.error{
     right: -4rem;
   }
 
-  .lg\:-left-16{
-    left: -4rem;
-  }
-
   .lg\:top-\[50\%\]{
     top: 50%;
+  }
+
+  .lg\:-left-16{
+    left: -4rem;
   }
 
   .lg\:mx-0{
@@ -4097,14 +4119,14 @@ input.error{
     padding-bottom: 0px;
   }
 
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:pl-28{
@@ -4127,14 +4149,14 @@ input.error{
     text-align: left;
   }
 
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:font-normal{

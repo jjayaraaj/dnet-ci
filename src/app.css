@@ -68,7 +68,11 @@ nav a {
 }
 
 .sub-menu li a {
-  @apply !text-sm;
+  @apply !text-sm !border-0;
+}
+
+.sub-menu li.active {
+  @apply bg-secondary !border-0;
 }
 
 .heading-1 {
@@ -122,6 +126,11 @@ nav a {
 
 .menu a {
   @apply text-base text-black font-medium inline-flex items-center justify-center gap-2;
+}
+
+.menu a:hover,
+.menu .active {
+  @apply border-b-2 border-primary;
 }
 
 .service {
@@ -254,11 +263,19 @@ textarea {
 }
 
 .owl-dynamic-child {
-  @apply h-60 flex flex-col  justify-end border-b-8  border-b-primary relative;
+  @apply h-80 flex flex-col  justify-end border-b-8  border-b-primary relative;
 }
 
 .owl-dynamic-inner {
-  @apply h-44 relative p-8 rounded-t-3xl;
+  @apply h-60 relative p-8 rounded-t-3xl;
+}
+
+.retail-owl .owl-dynamic-child {
+  @apply !h-64;
+}
+
+.retail-owl .owl-dynamic-inner {
+  @apply !h-48;
 }
 
 .owl-dynamic-inner-2 {

@@ -102,10 +102,10 @@ Microsoft Dynamics 365 Implementation for Finance and Operations<?= $this->endSe
 
                     </div>
                     <div class="">
-                        <div class="owl-carousel owl-theme owl-service">
+                        <div class="owl-carousel owl-theme owl-service implementationOwl">
                             <?php foreach ($benefits as $product) {
                             ?>
-                                <div class=" default !h-auto ">
+                                <div class=" default !h-64 ">
                                     <div class=" image ">
                                         <img src="<?php echo base_url() ?>/images/service/implementation/<?php echo $product->image ?>.svg" alt="">
                                     </div>
