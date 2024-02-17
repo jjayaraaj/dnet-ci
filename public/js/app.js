@@ -220,6 +220,8 @@ function stopCarousel() {
   owl.addClass("off");
 }
 var phoneInputField = document.querySelector("#footerPhone");
+
+//change it later
 intlTelInput(phoneInputField);
 var downloadDiv = document.getElementById("downloadDiv");
 var countryData = window.intlTelInputGlobals.getCountryData();

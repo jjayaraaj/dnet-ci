@@ -172,6 +172,8 @@ class Page extends BaseController
   {
 
 
+
+
     $this->request->getPost();
 
     $honey = $this->request->getVar('commonHoney');
@@ -320,7 +322,9 @@ We look forward to the opportunity to serve your needs and answer any questions 
       //echo 'Email successfully sent';
 
       $this->session->set('downloadFile', $downloadFile);
-      return redirect()->to(base_url() . '/thankyou');
+
+      echo session()->get('downloadFile');
+      return redirect()->to(base_url() . '/brochure-thankyou');
     } else {
       $data = $email->printDebugger(['headers']);
 
@@ -337,9 +341,20 @@ We look forward to the opportunity to serve your needs and answer any questions 
     // return redirect()->to(base_url() . '/thankyou');
   }
 
+  public function TestDown()
+  {
+    echo "ts";
+
+    return false;
+  }
+
   public function IndividualDownload()
   {
+
+
     $this->request->getPost();
+
+
 
 
     $honey = $this->request->getVar('broHoney');
@@ -408,7 +423,7 @@ We look forward to the opportunity to serve your needs and answer any questions 
 
   <!-- Header Section -->
   <header style="background-color: #f2f2f2; padding: 20px;">
-    <img src="https://dnetsoft.com/wp-content/themes/dnetsoft/images/dnet-logo.svg" alt="Logo" style="display: block; max-width: 100%;">
+    <img src="https://dnetsoft.com/images/dnet-logo.svg" alt="Logo" style="display: block; max-width: 100%;">
   </header>
 
   <!-- Body Section -->
@@ -494,6 +509,7 @@ We look forward to the opportunity to serve your needs and answer any questions 
       echo 'Email successfully sent';
 
       $this->session->set('downloadFile', $downloadFile);
+      // echo session()->get('downloadFile');
       return redirect()->to(base_url() . '/brochure-thankyou');
     } else {
       // $data = $email->printDebugger(['headers']);
@@ -501,6 +517,8 @@ We look forward to the opportunity to serve your needs and answer any questions 
 
 
       // echo $this->session->get('downloadFile');
+
+      //echo session()->get('downloadFile');
       return redirect()->to(base_url() . '/not-found');
 
 
@@ -515,12 +533,301 @@ We look forward to the opportunity to serve your needs and answer any questions 
   public function DemoRequest()
   {
     $this->request->getPost();
-    return redirect()->to(base_url() . '/demo-thankyou');
+
+    $honey = $this->request->getVar('demoHoney');
+
+    if (!empty($honey)) {
+      // print_r($honey);
+      return false;
+    }
+
+    $to = 'enquiry@dnetsoft.com';
+    $subject = 'Schedule a Demo Request for DnestSoft from ' . $this->request->getVar('demoName');
+    // $message = $this->request->getVar('commonDownloadFlag');
+
+    $email = \Config\Services::email();
+    $email->setTo($to);
+    $email->setFrom('enquiry@dnetsoft.com', 'Demo Form Request');
+    $email->setBCC('enquiry@dnetsoft.com');
+
+    $email->setSubject($subject);
+
+    $emailTemplate = '<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Email Template</title>
+    </head>
+    
+    <body style="margin: 0; padding: 0;">
+    
+      <!-- Header Section -->
+      <header style="background-color: #f2f2f2; padding: 20px;">
+        <img src="https://dnetsoft.com/images/dnet-logo.svg" alt="Logo" style="display: block; max-width: 100%;">
+      </header>
+    
+      <!-- Body Section -->
+      <section style="padding: 40px;">
+      <h1 style="margin-top: 0;">Hi Customer,</h1>
+    
+
+    
+    
+      <h1 style="margin-top: 10px;">Submitted Details</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Entered Details</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>' .  $this->request->getVar('demoName') . '</td>
+        </tr>
+        <tr>
+          <td>Email ID</td>
+          <td>' .  $this->request->getVar('demoEmail') . '</td>
+        </tr>
+        <tr>
+          <td>Company Name</td>
+          <td>' .  $this->request->getVar('demoCompany') . '</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>' . $this->request->getVar('demoPhone') . '</td>
+        </tr>
+        <tr>
+        <td>Solution</td>
+        <td>' . $this->request->getVar('demoSolution') . '</td>
+      </tr>
+
+        <tr>
+          <td>Desigination</td>
+          <td><a href="#"></a>' . $this->request->getVar('demoDesignation') . ' </a></td>
+        </tr>
+
+        <tr>
+        <td>Additional Message</td>
+        <td><a href="#"></a>' . $this->request->getVar('demoMessage') . ' </a></td>
+      </tr>
+       
+      </table>
+    
+     
+        <br><br>
+        <p>
+        Regards,
+        Dynamics Netsoft Team
+        
+        <br><br>
+        For more information, please contact us at: enquiry@dnetsoft.com
+          
+           
+        </p>
+        
+      </section>
+    
+      <!-- Footer Section -->
+      <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+        <p style="margin: 0;">
+          &copy; 2023 Dynamic Netsoft Technologies. All rights reserved.
+        </p>
+      </footer>
+    
+    </body>
+    
+    </html>
+    ';
+
+    $email->setMessage($emailTemplate);
+
+
+
+    if ($email->send()) {
+      echo 'Email successfully sent';
+
+      return redirect()->to(base_url() . '/demo-thankyou');
+    } else {
+
+      return redirect()->to(base_url() . '/not-found');
+
+
+      // print_r($data);
+    }
+
+
+
+
+
+
+
+    //return redirect()->to(base_url() . '/demo-thankyou');
   }
 
   public function ContactRequest()
   {
+
+    // $client = \Config\Services::curlrequest();
+
+    // $data = [
+    //   'key1' => 'value1',
+    //   'key2' => 'value2',
+    //   // ... more data
+    // ];
+
+    // try {
+    //   $response = $client->post('http://localhost:3000/api', [
+    //     'form_params' => $data,
+    //     'headers' => [
+    //       'Content-Type' => 'application/x-www-form-urlencoded',
+    //       // Add any additional headers required by the API
+    //     ]
+    //   ]);
+
+    //   if ($response->getStatusCode() == 200) {
+    //     // For JSON responses
+    //     $body = json_decode((string) $response->getBody(), true);
+
+    //     echo $body;
+
+    //     return;
+    //     // For other response types
+    //     // $body = (string) $response->getBody();
+
+    //     // Process the response body
+    //   } else {
+    //     $error = (string) $response->getBody();
+
+    //     echo $error;
+
+    //     return;
+    //     // Process the error
+    //   }
+    // } catch (\Exception $e) {
+    //   echo $e->getMessage();
+    // }
+
     $this->request->getPost();
+
+    $honey = $this->request->getVar('contactHoney');
+
+    if (!empty($honey)) {
+      // print_r($honey);
+      return false;
+    }
+
+    $to = 'enquiry@dnetsoft.com';
+    $subject = 'Enquiry Request for DnestSoft from ' . $this->request->getVar('contactName');
+    // $message = $this->request->getVar('commonDownloadFlag');
+
+    $email = \Config\Services::email();
+    $email->setTo($to);
+    $email->setFrom('enquiry@dnetsoft.com', 'Contact Form Request');
+    $email->setBCC('enquiry@dnetsoft.com');
+    $email->setSubject($subject);
+
+    $emailTemplate = '<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Email Template</title>
+    </head>
+    
+    <body style="margin: 0; padding: 0;">
+    
+      <!-- Header Section -->
+      <header style="background-color: #f2f2f2; padding: 20px;">
+        <img src="https://dnetsoft.com/images/dnet-logo.svg" alt="Logo" style="display: block; max-width: 100%;">
+      </header>
+    
+      <!-- Body Section -->
+      <section style="padding: 40px;">
+      <h1 style="margin-top: 0;">Hi Customer,</h1>
+    
+
+    
+    
+      <h1 style="margin-top: 10px;">Submitted Details</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Entered Details</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>' .  $this->request->getVar('contactName') . '</td>
+        </tr>
+        <tr>
+          <td>Email ID</td>
+          <td>' .  $this->request->getVar('contactEmail') . '</td>
+        </tr>
+        <tr>
+          <td>Company Name</td>
+          <td>' .  $this->request->getVar('contactCompany') . '</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>' . $this->request->getVar('contactPhone') . '</td>
+        </tr>
+        <tr>
+          <td>Desigination</td>
+          <td><a href="#"></a>' . $this->request->getVar('contactDesignation') . ' </a></td>
+        </tr>
+       
+      </table>
+    
+     
+        <br><br>
+        <p>
+        Regards,
+        Dynamics Netsoft Team
+        
+        <br><br>
+        For more information, please contact us at: enquiry@dnetsoft.com
+          
+           
+        </p>
+        
+      </section>
+    
+      <!-- Footer Section -->
+      <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+        <p style="margin: 0;">
+          &copy; 2023 Dynamic Netsoft Technologies. All rights reserved.
+        </p>
+      </footer>
+    
+    </body>
+    
+    </html>
+    ';
+
+    $email->setMessage($emailTemplate);
+
+
+
+    if ($email->send()) {
+      echo 'Email successfully sent';
+
+      return redirect()->to(base_url() . '/contact-thankyou');
+    } else {
+
+      return redirect()->to(base_url() . '/not-found');
+
+
+      // print_r($data);
+    }
+
+
+
+    // return view('Thankyou/contact-thankyou');
+  }
+
+  public function ContactThankyou()
+  {
     return view('Thankyou/contact-thankyou');
   }
 
@@ -538,4 +845,13 @@ We look forward to the opportunity to serve your needs and answer any questions 
   {
     return view('Thankyou/demo-thankyou');
   }
+
+  // public function show404()
+  // {
+  //   // Set the status code to 404
+  //   $this->response->setStatusCode(404);
+
+  //   // Load your custom 404 view
+  //   return view('my_404');
+  // }
 }

@@ -449,7 +449,7 @@ Contract Management Software on Dynamics 365 | DNETSOFT
         <div class="flex">
             <div class=" md:w-2/5 space-y-8 text-center md:text-left px-16 ">
                 <div>
-                    <h3 class=" text-xl font-semibold">Ensure Compliance and Mitigate Risk with DNETSOFT’s
+                    <h3 class=" text-xl font-semibold">Ensure Compliance and Mitigate Risk with Dynamic Netsoft's
 
                     </h3>
                     <div class=" text-3xl font-bold text-primary">

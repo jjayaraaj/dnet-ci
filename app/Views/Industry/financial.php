@@ -28,7 +28,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                         </div>
 
                         <div class="btn-div">
-                            <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">Let's Connect<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <a href="<?php echo base_url() ?>/contact-us" class="btn btn-primary">Let's Connect<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
                             </a>
@@ -84,7 +84,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
         </div>
         <div>
             <div class="md:w-3/4 mx-auto px-6 lg:px-0 ">
-                <div class="relative  px-6 md:px-0">
+                <div class="relative  px-6 md:px-0 ">
                     <div class="absolute top-[50%] z-40 flex justify-between w-full left-0 ">
 
 
@@ -102,15 +102,15 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
 
                     </div>
-                    <div class="h-24"></div>
-                    <div class="owl-carousel owl-theme owl-dynamic">
+
+                    <div class="owl-carousel owl-theme owl-dynamic financial">
 
 
 
                         <?php foreach ($benefits as $product) {
                         ?>
                             <div class=" owl-dynamic-child ">
-                                <div class="bg-secondary-dark owl-dynamic-inner">
+                                <div class="bg-secondary-dark owl-dynamic-inner !h-44">
                                     <div class=" owl-dynamic-inner-2 ">
                                         <?= $this->include('layouts/half-circle') ?>
                                         <img src="<?php echo base_url() ?>/images/fin/<?= $product->image ?>.svg" alt="">
@@ -187,7 +187,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
                 <!-- <p>A Vision for Innovation, to Build a Better Future!!!</p> -->
 
                 <div class=" inline-flex">
-                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact">
+                    <a class="btn btn-primary" href="<?php echo base_url() ?>/contact-us">
                         <span>Connect with Us </span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -350,7 +350,7 @@ Microsoft Dynamics 365 for financial services<?= $this->endSection("title") ?>
 
             </div>
             <div class="flex">
-                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                <a href="<?php echo base_url() ?>/contact-us" class="btn btn-primary">
                     Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>

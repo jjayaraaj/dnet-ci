@@ -41,11 +41,12 @@
 <div class="px-8 md:px-0">
     <div class=" py-16 max-w-container mx-auto big-screen">
         <div class="  md:w-5/6  mx-auto grid grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-4 ">
-            <div class="service">
+            <div class="service ">
                 <div class="circle">
-                    <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/10-Industries.svg" alt="">
                 </div>
-                <div class="title">Industry<br>Pioneers</div>
+                <div class="title">10+<br>
+                    Industries<br><span class="text-white md:hidden">s</span></div>
             </div>
 
             <div class="service">
@@ -56,6 +57,7 @@
                     Worldwide</div>
             </div>
 
+
             <div class="service">
                 <div class="circle">
                     <img src="<?php echo base_url() ?>/images/6-ISV-solutions.svg" alt="">
@@ -64,14 +66,16 @@
                     ISV Solutions</div>
             </div>
 
-
             <div class="service ml-24 md:ml-0">
                 <div class="circle">
-                    <img src="<?php echo base_url() ?>/images/10-Industries.svg" alt="">
+                    <img src="<?php echo base_url() ?>/images/industry-pioneers.svg" alt="">
                 </div>
-                <div class="title">10+<br>
-                    Industries</div>
+                <div class="title">Industry<br>Pioneers</div>
             </div>
+
+
+
+
 
             <div class="service ml-24 md:ml-0">
                 <div class="circle">
@@ -93,10 +97,10 @@
         <h2 class=" heading-1 text-center">Microsoft Dynamics 365 ISV solutions popular among our clients</h2>
 
 
-        <div class=" lg:flex gap-16 items-center">
-            <div class=" w-2/3 lg:flex ml-2 hidden ">
+        <div class=" lg:flex gap-8 items-center">
+            <div class="lg:w-[55%] 2xl:w-2/3  lg:flex ml-2 hidden ">
                 <div class=" relative  ">
-                    <div class=" h-[30rem] w-[30rem] bg-primary-gradient rounded-full p-14">
+                    <div class="lg:h-[22rem] lg:w-[22rem] xl:h-[26rem] xl:w-[26rem] 2xl:h-[28rem] 2xl:w-[28rem] bg-primary-gradient rounded-full lg:p-12 xl:p-14">
                         <div class=" rounded-full w-full h-full bg-white overflow-hidden flex items-center p-4">
                             <img src="<?php echo base_url() ?>/images/home/microsoft-dynamics-partner.svg" class=" object-cover rounded-full" x-show="solution===1" alt="">
                             <img src="<?php echo base_url() ?>/images/home/dynamics-365-partner.svg" class=" object-cover rounded-full" x-show="solution===2" alt="">
@@ -110,7 +114,7 @@
 
                 </div>
 
-                <div class="relative  flex flex-col space-y-5 -left-14 ">
+                <div class="relative  flex flex-col space-y-5 lg:-left-12 xl:-left-14 ">
                     <div class=" dynamics-strip  -ml-24" :class="solution === 1 ? 'active' : 'default'" @click="solution = 1">
                         <div class="circle">
                             <img src="<?php echo base_url() ?>/images/icons/RealEstatePro.svg" alt="">
@@ -156,7 +160,7 @@
             </div>
 
 
-            <div x-cloak class=" space-y-4 lg:space-y-4  lg:w-1/2 lg:bg-primary md:h-[500px] md:flex md:items-center  lg:mx-0  lg:py-10  lg:px-20  lg:rounded-none lg:rounded-tl-[3.5rem]  lg:border-l-8 lg:border-l-slate-300 tv:rounded-[3.5em]">
+            <div x-cloak class=" space-y-4 lg:space-y-4 xl:w-[40%]  2xl:w-1/2   lg:bg-primary md:h-[500px] md:flex md:items-center  lg:mx-0  lg:py-10  lg:px-10 2xl:px-20  lg:rounded-none lg:rounded-tl-[3.5rem]  lg:border-l-8 lg:border-l-slate-300 tv:rounded-[3.5em]">
 
                 <div class=" lg:hidden px-6 hover:curso" @click="solution = 1">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
@@ -214,7 +218,7 @@
                 <div class=" lg:hidden px-6" @click="solution = 2">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
                         <div class="flex items-center gap-x-2">
-                            <img src="<?php echo base_url() ?>/images/home/realestatepro.svg" class=" w-7 h-7" alt="">
+                            <img src="<?php echo base_url() ?>/images/icons/Contract-Management.svg" class=" w-7 h-7" alt="">
                             <div class="">
                                 <div class="text-base font-semibold">Contract Management Solution</div>
                             </div>
@@ -263,7 +267,7 @@
                 <div class=" lg:hidden px-6" @click="solution = 3" class="bg-primary-gradient mx-6 my-2 lg:my-0 lg:mx-0 rounded-2xl lg:rounded-none lg:bg-transparent p-6 lg:p-0">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
                         <div class="flex items-center gap-x-2">
-                            <img src="<?php echo base_url() ?>/images/home/realestatepro.svg" class=" w-7 h-7" alt="">
+                            <img src="<?php echo base_url() ?>/images/icons/bid-management.svg" class=" w-7 h-7" alt="">
                             <div class="">
                                 <div class="text-base font-semibold">Bid Management Solution</div>
                             </div>
@@ -312,7 +316,7 @@
                 <div class=" lg:hidden px-6" @click="solution = 4">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
                         <div class="flex items-center gap-x-2">
-                            <img src="<?php echo base_url() ?>/images/home/realestatepro.svg" class=" w-7 h-7" alt="">
+                            <img src="<?php echo base_url() ?>/images/icons/Treasury-Management.svg" class=" w-7 h-7" alt="">
                             <div class="">
                                 <div class="text-base font-semibold">Treasury Control</div>
                             </div>
@@ -362,7 +366,7 @@
                 <div class=" lg:hidden px-6" @click="solution = 5">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
                         <div class="flex items-center gap-x-2">
-                            <img src="<?php echo base_url() ?>/images/home/realestatepro.svg" class=" w-7 h-7" alt="">
+                            <img src="<?php echo base_url() ?>/images/icons/investment-solution.svg" class=" w-7 h-7" alt="">
                             <div class="">
                                 <div class="text-base font-semibold">Investment Portfolio Management</div>
                             </div>
@@ -412,7 +416,7 @@
                 <div class=" lg:hidden px-6" @click="solution = 6">
                     <div class="bg-secondary-dark rounded-3xl px-6 py-2  flex items-center justify-between">
                         <div class="flex items-center gap-x-2">
-                            <img src="<?php echo base_url() ?>/images/home/realestatepro.svg" class=" w-7 h-7" alt="">
+                            <img src="<?php echo base_url() ?>/images/icons/AXOnePay.svg" class=" w-7 h-7" alt="">
                             <div class="">
                                 <div class="text-base font-semibold">Payroll Administration</div>
                             </div>
@@ -481,7 +485,7 @@
                 Specifically designed and pre-configured to streamline Real Estate
                 business operations to achieve enhanced productivity
             </div>
-            <div><a href="<?php echo base_url() ?>/contact" class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <div><a href="<?php echo base_url() ?>/contact-us" class="btn btn-primary">Connect with Us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg></a></div>
         </div>
@@ -660,7 +664,7 @@
                 <p>So, what are you waiting for?</p>
             </div>
             <div class="flex justify-center lg:justify-start">
-                <a href="<?php echo base_url() ?>/contact" class="btn btn-primary">
+                <a href="<?php echo base_url() ?>/contact-us" class="btn btn-primary">
                     Talk to Our Expert <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
@@ -755,7 +759,7 @@
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">How is DNETSOFT the right Microsoft Dynamic 365 Finance & Operations partner for me?</div>
+                        <div class="question">How is Dynamic Netsoft the right Microsoft Dynamic 365 Finance & Operations partner for me?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 3 ? 'rotate-180' : ''">
@@ -806,7 +810,7 @@
                     <div class="icon ">
                         <div class="q">Q</div>
 
-                        <div class="question">Which Industries DNETSOFT Microsoft Dynamics 365 ISV Solutions are most suited for?</div>
+                        <div class="question">Which Industries Dynamic Netsoft Microsoft Dynamics 365 ISV Solutions are most suited for?</div>
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" :class="selected == 5 ? 'rotate-180' : ''">
@@ -816,7 +820,7 @@
                 </div>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-700 " x-ref="container5" x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
                     <div class="pl-12 pb-8 space-y-2">
-                        <p class="">As an MS D365 F&O partner, DNETSOFT has designed industry-specific ISV solutions on Microsoft Dynamics 365 for industries like</p>
+                        <p class="">As an MS D365 F&O partner, Dynamic Netsoft has designed industry-specific ISV solutions on Microsoft Dynamics 365 for industries like</p>
                         <ul class="list-disc pl-8">
                             <li>Real Estate</li>
                             <li>Construction</li>

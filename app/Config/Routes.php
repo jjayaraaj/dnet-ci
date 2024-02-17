@@ -57,16 +57,21 @@ $routes->get('/about-us', 'Page::About');
 $routes->get('/become-a-partner', 'Page::Partner');
 $routes->get('/contact-us', 'Page::Contact');
 $routes->post('/common-download', 'Page::downloadBrochure');
-$routes->post('/brochure-download', 'Page::IndividualDownload');
+// $routes->post('/brochure-download', 'Page::IndividualDownload');
+$routes->post('/brochure', 'Page::IndividualDownload');
 $routes->post('/demo-request', 'Page::DemoRequest');
 $routes->post('/contact-request', 'Page::ContactRequest');
 $routes->get('/thankyou', 'Page::Thankyou');
 $routes->get('/brochure-thankyou', 'Page::BrochureThankyou');
+$routes->get('/contact-thankyou', 'Page::ContactThankyou');
 $routes->get('/demo-thankyou', 'Page::DemoThankyou');
 $routes->get('/privacy-policy', 'Page::PrivacyPolicy');
-$routes->set404Override(function () {
-    return view('my_404');
-});
+// $routes->set404Override(function () {
+
+//     return view('my_404');
+// });
+
+$routes->set404Override('App\Controllers\ErrorController::show404');
 
 
 

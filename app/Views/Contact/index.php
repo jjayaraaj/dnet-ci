@@ -62,6 +62,8 @@
             <div class=" lg:-mt-96 bg-gray-100 w-full bg-form-2 bg-cover rounded-3xl px-6 py-4 space-y-4 ">
 
                 <form class=" space-y-5 p-8" action="<?php echo base_url() ?>/contact-request" method="POST" id="contactForm">
+
+                    <input type="hidden" name="contactHoney">
                     <div>
 
                         <input type="text" name="contactName" placeholder="Name" required>
@@ -94,6 +96,8 @@
                             </svg></button>
                     </div>
                 </form>
+
+                <input type="hidden" id="footerPhone">
 
 
             </div>

@@ -1,5 +1,95 @@
-<!doctype html>
+<!--<!doctype html>-->
 <html class="no-js" lang="en">
+<?php $currenUrl = uri_string(); ?>
+
+<?php
+
+$ogTitle = "";
+$ogDesc = "";
+$ogWeb = "";
+switch ($currenUrl) {
+
+  case "microsoft-dynamics-365-for-real-estate";
+    $ogTitle = "Microsoft Dynamics 365 for Real Estate Management";
+    $ogDesc = "Struggling with property management? Try Microsoft Dynamics 365 for real estate management to streamline operations, enhance efficiency & gain productivity.";
+    $ogWeb = "https://dnetsoft.com/microsoft-dynamics-365-for-real-estate";
+    break;
+
+  case "microsoft-dynamics-365-construction-erp";
+    $ogTitle = "ERP for the Construction Industry on Microsoft Dynamics 365";
+    $ogDesc = "Looking for a comprehensive ERP system for your construction business? Experience versatility with our ERP on Microsoft Dynamics 365 for construction industries.";
+    $ogWeb = "https://dnetsoft.com/microsoft-dynamics-365-construction-erp";
+    break;
+
+  case "microsoft-dynamics-365-for-retail";
+    $ogTitle = "Microsoft Dynamics 365 POS for the Retail Industry";
+    $ogDesc = "Overwhelmed by retail disparities? Bridge the gaps and enrich your brand value with Microsoft Dynamics 365 retail POS. Achieve a cohesive retail experience.";
+    $ogWeb = "https://dnetsoft.com/microsoft-dynamics-365-for-retail";
+    break;
+
+  case "microsoft-dynamics-365-financial-services";
+    $ogTitle = "Microsoft Dynamics 365 for Financial Services";
+    $ogDesc = "Struggling with financial visibility & complexity? Discover how Microsoft Dynamics 365 for financial services empower you to gain control and maximize profitability";
+    $ogWeb = "https://dnetsoft.com/microsoft-dynamics-365-financial-services";
+    break;
+
+
+  case "property-management-software-dynamics-365";
+    $ogTitle = "All-in-One Property Management Software on Dynamics 365";
+    $ogDesc = "Lagging behind your tech-advanced competitors? Gain insights to manage your property portfolio with Microsoft Dynamics 365 Property Management solution.";
+    $ogWeb = "https://dnetsoft.com/property-management-software-dynamics-365";
+    break;
+
+  case "property-leasing";
+    $ogTitle = "Property Leasing Management Solution on Microsoft Dynamics 365";
+    $ogDesc = "Tired of managing property leases manually? Simplify workflows, enhance efficiency, and boost productivity with property lease management software on Dynamics.";
+    $ogWeb = "https://dnetsoft.com/property-leasing";
+    break;
+
+  case "property-sale";
+    $ogTitle = "Microsoft Dynamics 365 Solution for Property Sales Management";
+    $ogDesc = "Seeking to optimize your real estate sales strategy? Unleash the potential of Dynamics 365 for property sales management – Make your vision a reality!";
+    $ogWeb = "https://dnetsoft.com/property-sale";
+    break;
+
+  case "dynamics-365-bid-management-software";
+    $ogTitle = "A Leading Bid Management Software on Microsoft Dynamics 365";
+    $ogDesc = "Tired of misjudged estimates and over-optimistic delivery projections? Choose the best Dynamics 365 Bid Management Software. Win lucrative contracts confidently!";
+    $ogWeb = "https://dnetsoft.com/dynamics-365-bid-management-software";
+    break;
+
+  case "contract-management-software-dynamics-365";
+    $ogTitle = "Contract Management Software on Dynamics 365 | DNETSOFT";
+    $ogDesc = "Struggling with contract chaos? Uncover strategic solutions with Microsoft Dynamics 365 Contract Management. Optimize your construction and engineering projects.";
+    $ogWeb = "https://dnetsoft.com/contract-management-software-dynamics-365";
+    break;
+
+  case "dynamics-365-HR-payroll";
+    $ogTitle = "Microsoft Dynamics 365 HR and Payroll Management - AXOnePay";
+    $ogDesc = "Simplify your payroll process & enhance employee service capabilities with our Microsoft Dynamics 365 Payroll Solution.";
+    $ogWeb = "https://dnetsoft.com/dynamics-365-HR-payroll";
+    break;
+
+  case "investment-portfolio-management-software-dynamics";
+    $ogTitle = "Investment Portfolio Management Software on Dynamics 365";
+    $ogDesc = "Juggling with multiple investment systems? Manage all your investments on a single platform with Dynamic Netsoft’s Investment Portfolio Management Software.";
+    $ogWeb = "https://dnetsoft.com/investment-portfolio-management-software-dynamics";
+    break;
+
+  case "treasury-management-software-dynamics";
+    $ogTitle = "Experience Convenient Treasury Management System on Dynamics 365";
+    $ogDesc = "Do loan management complexities leave you feeling drained? Simplify the process and optimize shareholder value with our Treasury Management system on Dynamics 365.";
+    $ogWeb = "https://dnetsoft.com/treasury-management-software-dynamics";
+    break;
+
+  default:
+    $ogTitle = "Microsoft Dynamics Partner | D365 F&O - Dynamics NetSoft";
+    $ogDesc = "Stuck with multiple legacy systems? Evolve with Dynamic Netsoft, a Microsoft Dynamics 365 Gold partner offering ERP & CRM solutions for Property & Construction industries.";
+    $ogWeb = "https://dnetsoft.com/";
+}
+
+?>
+
 
 <head>
   <meta charset="utf-8">
@@ -7,9 +97,10 @@
   <meta name="description" content="<?= $this->renderSection('description') ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
+  <meta property="og:title" content="<?= $ogTitle ?>" />
+  <meta property="og:description" content="<?= $ogDesc ?>" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?= $ogWeb ?>" />
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
@@ -26,15 +117,114 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+  <?php
+  if ($currenUrl == '/') {
+  ?>
+    <link rel="canonical" href="<?php echo  base_url() . $currenUrl ?>" />
+  <?php
+  } else {
+  ?>
+    <link rel="canonical" href="<?php echo  base_url() . '/' . $currenUrl ?>" />
+  <?php
+  }
+  ?>
+
+
   <meta name="theme-color" content="#fafafa">
 
   <?= $this->include('/layouts/bg.php') ?>
 
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/564c4c4fc4f9dae5635fe3b7/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNCQHF');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <?php
+  if ($currenUrl == '/') {
+  ?>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Dynamic Netsoft Technologies",
+        "url": "https://dnetsoft.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://dnetsoft.com/search?q=){search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dynamic Netsoft Technologies",
+        "url": "https://dnetsoft.com/",
+        "logo": "https://dnetsoft.com/images/dnet-logo.svg",
+        "alternateName": "Dynamic Netsoft",
+        "sameAs": [
+          "https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/",
+          "https://www.facebook.com/DynamicNetSoft/",
+          "https://www.instagram.com/dynamicnetsoft/",
+          "https://twitter.com/dynamicnet_soft",
+          "https://www.youtube.com/c/DynamicNetsoftChennai"
+        ],
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+9144 4923 7777",
+          "contactType": "sales",
+          "email": "enquiry@dnetsoft.com",
+          "areaServed": "IN",
+          "availableLanguage": "en"
+        }]
+      }
+    </script>
+
+  <?php
+  }
+  ?>
 </head>
 
 <body x-data="app">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNCQHF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <?php $currenUrl = uri_string(); ?>
+
 
   <?php
 
@@ -90,11 +280,11 @@
 
 
   <nav x-cloak x-data="{atTop: false, mobNav: false}" aria-label="Global" @scroll.window="atTop = (window.pageYOffset < 50) ? false: true" class="max-w-container   mx-auto left-0 right-0 sticky-nav fixed z-50 transition-all " :class="{ 'shadow-lg': atTop, ' text-white py-4 ': !atTop, 'bg-white  text-indigo-800': atTop, 'bg-primary-light lg:bg-transparent':mobNav }">
-    <div class="relative flex items-center justify-between px-5 md:px-0 tv:w-[94em] mx-auto    ">
-      <img x-show="!mobNav" src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2 md:w-80" alt="">
-      <img x-show="mobNav" src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" class="w-1/2 md:w-80" alt="">
+    <div class="relative flex items-center justify-between px-5 md:px-0    xl:bg-transparent tv:w-[94em] mx-auto    ">
+      <a href="<?php echo base_url() ?>"> <img x-show="!mobNav" src="<?php echo base_url() ?>/images/dnet-logo.svg" class="w-1/2  lg:w-52 xl:w-60 2xl:w-72" alt=""></a>
+      <a href="<?php echo base_url() ?>"><img x-show="mobNav" src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" class="w-1/2 md:w-80" alt=""></a>
       <div class="menu ">
-        <a href="/" class="<?= $currenUrl === '/' ? 'active' : '' ?>">Home </a>
+        <a href="<?php echo base_url() ?>/" class="<?= $currenUrl === '/' ? 'active' : '' ?>">Home </a>
         <div class=" relative group/item">
           <a href="<?php echo base_url() ?>/" class="<?= activeMenu($currenUrl) ?>">
 
@@ -121,7 +311,7 @@
             Solution <img src=" <?php echo base_url() ?>/images/down-arow.svg" alt="">
 
           </a>
-          <div class="absolute  invisible  top-4     group-hover/item:visible ">
+          <div class="absolute  invisible  top-4  group-hover/item:visible ">
             <div class="h-4"></div>
             <div class="bg-white rounded-2xl ">
               <ul class="sub-menu">
@@ -170,7 +360,7 @@
 
           </div>
         </div>
-        <a href="<?php echo base_url() ?>/">Blog</a>
+        <a href="<?php echo base_url() ?>/blog" target="_blank">Blog</a>
         <a href="<?php echo base_url() ?>/about-us" class="<?= $currenUrl === 'about-us' ? 'active' : '' ?>">About Us</a>
         <a href="<?php echo base_url() ?>/contact-us" class="<?= $currenUrl === 'contact-us' ? 'active' : '' ?>">Contact Us</a>
 
@@ -178,7 +368,7 @@
 
 
 
-      <div class=" hidden md:flex lg:ml-4 lg:flex lg:items-center  lg:pl-4">
+      <div class=" hidden md:flex lg:ml-2 xl:ml-4 lg:flex lg:items-center  lg:pl-2 xl:pl-4">
         <button class="btn btn-primary" @click="openFormDemoDiv('<?= uri_string() ?>')">
           <span>Enquire Now </span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
@@ -189,7 +379,7 @@
       </div>
 
       <div class="flex items-center  lg:hidden">
-        <a class=" text-white text-xs px-2 py-2 rounded-3xl font-bold" :class="mobNav? 'bg-d-yellow' : 'bg-primary'" href="<?php echo base_url() ?>/contact-us">
+        <a class=" text-white text-xs px-2 py-2 rounded-3xl font-bold w-[100px] text-center" :class="mobNav? 'bg-d-yellow text-black' : 'bg-primary'" href="<?php echo base_url() ?>/contact-us">
           <span>Enquire Now </span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 hidden md:block">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -302,11 +492,11 @@
             <a href="<?php echo base_url() ?>/about-us" class=" font-semibold text-lg">About Us</a>
           </li>
           <li class="py-4">
-            <a href="<?php echo base_url() ?>/" class=" font-semibold text-lg">Blog</a>
+            <a href="<?php echo base_url() ?>/blog" target="_blank" class=" font-semibold text-lg">Blog</a>
           </li>
 
           <li class="py-4">
-            <a href="<?php echo base_url() ?>/contact-us" class=" font-semibold text-lg">Contact</a>
+            <a href="<?php echo base_url() ?>/contact-us" class=" font-semibold text-lg">Contact Us</a>
           </li>
 
           <!-- More items... -->
@@ -350,7 +540,7 @@
 
 
         </div>
-        <div class="heading-1 text-center">Our Customers</div>
+        <div class="heading-1 text-center">Our Global Customers</div>
         <div class="owl-client owl-carousel  owl-theme ">
           <div class="item ">
             <img src="<?php echo base_url() ?>/images/client/al-rajhi.svg" alt="">
@@ -448,50 +638,7 @@
             <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
             <div class="h-5"></div>
             <form class=" space-y-5" action="<?php echo base_url() ?>/demo-request" method="POST" id="footerDemo">
-              <div>
-
-                <input type="text" name="footerName" placeholder="Name" required>
-              </div>
-              <div>
-
-                <input type="text" id="" name="footerCompany" placeholder="Company Name">
-              </div>
-              <div>
-
-                <input type="text" id="" name="footerDesignation" placeholder="Designation">
-              </div>
-              <div>
-
-                <input type="email" id="" name="footerEmail" placeholder="E-Mail ID" required>
-              </div>
-              <div>
-
-                <input type="text" id="footerPhone" name="footerPhone" placeholder="Phone Number">
-              </div>
-              <div>
-                <select name="footerSolution" class="h-14">
-                  <option>Which solution do you want?</option>
-                  <option value="RealEstatePro">RealEstatePro</option>
-                  <option value="BidManagement">Bid Management</option>
-                  <option value="ContractManagement">Contract Management</option>
-                  <option value="AxOpnePay">AxOnePay - Payroll</option>
-                  <option value="InvestmentPortfolioManagement">Investment Portfolio Management</option>
-                  <option value="TreasuryManagement">Treasury Management</option>
-                  <option value="TreasuryManagement">Annata</option>
-                  <option value="TreasuryManagement">PropGoto</option>
-                </select>
-                <!-- <input type="text" name="footerSolution" placeholder="Which solution do you want?" required> -->
-              </div>
-              <div>
-
-                <textarea rows="4" name="footerMessage"></textarea>
-              </div>
-
-              <div class=" text-center flex justify-center w-full">
-                <button class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg></button>
-              </div>
+              <?= $this->include('/layouts/schedule-demo') ?>
             </form>
 
           </div>
@@ -514,7 +661,7 @@
     <div class="max-w-container big-screen mx-auto py-16 space-y-6">
       <div class=" lg:flex justify-between w-full hidden ">
         <div class=" w-1/3">
-          <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt="">
+          <a href="<?php echo base_url() ?>"> <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt=""></a>
         </div>
         <div class="flex-1 flex justify-evenly">
           <div class="space-y-4">
@@ -522,7 +669,7 @@
             <div class=" flex flex-col footer-link">
               <a href="<?php echo base_url() ?>/about-us">About us</a>
               <a href="<?php echo base_url() ?>/contact-us">Contact us</a>
-              <a href="<?php echo base_url() ?>/">Blog</a>
+              <a href="<?php echo base_url() ?>/blog" target="_blank">Blog</a>
               <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
               <a href="<?php echo base_url() ?>/">Careers</a>
               <a href="<?php echo base_url() ?>/privacy-policy">Privacy policy</a>
@@ -580,9 +727,9 @@
 
       Download Brochure
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-primary">
       <path fill-rule="evenodd" d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clip-rule="evenodd" />
-    </svg>
+    </svg> -->
 
   </div>
   <?php
@@ -647,13 +794,13 @@
 
           <div class="heading-1 text-center !text-primary">Download a Brochure</div>
           <div class="h-5"></div>
-          <form action="<?php echo base_url() ?>/brochure-download" method="POST" class=" space-y-5" id="brochureForm">
+          <form action="<?php echo base_url() ?>/brochure" method="POST" class="space-y-5" id="brochureForm">
             <input type="hidden" id="broDownloadFlag" name="broDownloadFlag" value="" />
             <input type="hidden" id="broHoney" name="broHoney">
             <input type="hidden" name="broDoc" id="broDoc">
             <div>
               <label for="broName" class="sr-only">Name:</label>
-              <input type="text" id="broName" name="broName" placeholder="Name" required>
+              <input type="text" id="broName" name="broName" placeholder="Name">
             </div>
             <div>
               <label for="broCompany" class="sr-only">Company Name:</label>
@@ -665,7 +812,7 @@
             </div>
             <div>
               <label for="broEmail" class="sr-only">E-Mail ID:</label>
-              <input type="email" id="broEmail" name="broEmail" placeholder="E-Mail ID" required>
+              <input type="email" id="broEmail" name="broEmail" placeholder="E-Mail ID">
             </div>
             <div>
               <label for="phone2" class="sr-only">Phone Number:</label>
@@ -704,6 +851,7 @@
           <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
           <div class="h-5"></div>
           <form class=" space-y-5" action="<?php echo base_url() ?>/demo-request" method="POST" id="demoFrom">
+            <input type="hidden" id="demoHoney" name="demoHoney">
             <div>
 
               <input type="text" id="demoName" name="demoName" placeholder="Name" required>

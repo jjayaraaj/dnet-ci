@@ -63,7 +63,7 @@
                         <div class="display-2 text-primary">
                             DAL Group
                         </div>
-                        <div class="text-xl lg:text-3xl">DAL Group is a private Sudanese
+                        <div class="text-xl lg:text-3xl md:w-3/4">DAL Group is a private Sudanese
                             conglomerate:</div>
                         <p>The largest private company in the country.</p>
                     </div>
@@ -77,37 +77,40 @@
                 </div>
                 <div class="">
                     <div class=" w-60 bg-gray-200 border-r-8 border-t-8  border-white ">
-                        <img src="<?php echo base_url() ?>/images/home/gridco.svg" alt="">
+                        <img src="<?php echo base_url() ?>/images/home/dalgroup.svg" alt="">
                     </div>
                 </div>
             </div>
 
 
             <!-- 3 -->
-            <!-- <div class="flex flex-col items-center lg:flex-row lg:justify-between px-16 w-5/6 mx-auto space-y-10 lg:space-y-0">
+            <div class="flex flex-col items-center lg:flex-row lg:justify-between px-4 lg:px-16 w-5/6 mx-auto space-y-10 lg:space-y-0">
                 <div class=" space-y-10 text-center lg:text-left">
-                    <div class="heading-1">
+                    <div class=" text-3xl font-bold lg:font-normal lg:heading-1">
                         Success Stories
                     </div>
                     <div class=" space-y-1">
                         <div class="display-2 text-primary">
-                            GRIDCo
+                            Gigamon
                         </div>
-                        <div class=" text-3xl font-semibold">Ghana Grid Company:</div>
-                        <p>Electricity transmission company in Ghana</p>
+                        <div class="text-xl lg:text-3xl md:w-3/4"> Gigamon is a privately held network
+                            visibility</div>
+                        <p> and traffic monitoring technology vendor</p>
                     </div>
                     <div class="flex justify-center lg:block">
-                        <a href="<?php echo base_url() ?>/pdf/CaseStudyGridco.pdf" class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg></a>
+                        <div class="flex">
+                            <a href="<?php echo base_url() ?>/pdf/Case-Study-Gigamon.pdf" class="btn btn-primary">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg></a>
+                        </div>
                     </div>
                 </div>
                 <div class="">
                     <div class=" w-60 bg-gray-200 border-r-8 border-t-8  border-white ">
-                        <img src="<?php echo base_url() ?>/images/home/gridco.svg" alt="">
+                        <img src="<?php echo base_url() ?>/images/home/gigamon.svg" alt="">
                     </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
     </div>

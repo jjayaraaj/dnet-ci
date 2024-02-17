@@ -236,6 +236,7 @@ function stopCarousel() {
 
 const phoneInputField = document.querySelector("#footerPhone");
 
+//change it later
 intlTelInput(phoneInputField);
 
 const downloadDiv = document.getElementById("downloadDiv");
