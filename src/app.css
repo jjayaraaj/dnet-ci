@@ -229,13 +229,12 @@ nav a {
 
 input[type="text"],
 input[type="email"],
-select,
-textarea {
+select {
   @apply bg-white text-base px-6 py-4 h-12 w-full rounded-full;
 }
 
 textarea {
-  @apply h-full rounded-3xl;
+  @apply bg-white text-base px-6 py-4  w-full rounded-3xl;
 }
 
 .footer-link {

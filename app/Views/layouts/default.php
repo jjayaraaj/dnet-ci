@@ -171,51 +171,15 @@ switch ($currenUrl) {
   <!-- End Google Tag Manager -->
 
   <?php
-  if ($currenUrl == '/') {
+  // if ($currenUrl == '/') {
   ?>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Dynamic Netsoft Technologies",
-        "url": "https://dnetsoft.com/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://dnetsoft.com/search?q=){search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
+  <?= $this->renderSection("schema") ?>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Dynamic Netsoft Technologies",
-        "url": "https://dnetsoft.com/",
-        "logo": "https://dnetsoft.com/images/dnet-logo.svg",
-        "alternateName": "Dynamic Netsoft",
-        "sameAs": [
-          "https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/",
-          "https://www.facebook.com/DynamicNetSoft/",
-          "https://www.instagram.com/dynamicnetsoft/",
-          "https://twitter.com/dynamicnet_soft",
-          "https://www.youtube.com/c/DynamicNetsoftChennai"
-        ],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+9144 4923 7777",
-          "contactType": "sales",
-          "email": "enquiry@dnetsoft.com",
-          "areaServed": "IN",
-          "availableLanguage": "en"
-        }]
-      }
-    </script>
+
 
   <?php
-  }
+  //}
   ?>
 </head>
 
@@ -786,11 +750,16 @@ switch ($currenUrl) {
   <template x-teleport="body">
     <!-- downloadBroucher -->
     <div x-show="downloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class=" w-[90%]   md:w-[45%]  bg-form-2 bg-cover rounded-3xl flex" @click.outside="downloadDivOpen = false">
+      <div class=" w-[90%]   md:w-[45%]  bg-form-2 bg-cover rounded-3xl flex">
         <div class="hidden md:block w-[45%]  bg-formDynamicBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-full md:w-[55%] p-8">
+        <div class=" w-full md:w-[55%] p-8 relative">
+          <div class="absolute top-2 right-2 cursor-pointer" @click="downloadDivOpen = false">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
 
+          </div>
 
           <div class="heading-1 text-center !text-primary">Download a Brochure</div>
           <div class="h-5"></div>
@@ -807,8 +776,8 @@ switch ($currenUrl) {
               <input type="text" id="broCompany" name="broCompany" placeholder="Company Name">
             </div>
             <div>
-              <label for="broDesgination" class="sr-only">Designation:</label>
-              <input type="text" id="broDesgination" name="broDesgination" placeholder="Designation">
+              <label for="broDesgination" class="sr-only">Country:</label>
+              <input type="text" id="broDesgination" name="broDesgination" placeholder="Country">
             </div>
             <div>
               <label for="broEmail" class="sr-only">E-Mail ID:</label>
@@ -842,10 +811,16 @@ switch ($currenUrl) {
   <!--demo-->
   <template x-teleport="body">
     <div x-show="demoDivOpen" x-transition id="demoDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-      <div class=" w-[90%]   md:w-3/5  bg-form-2 bg-cover rounded-3xl flex" @click.outside="demoDivOpen = false">
+      <div class=" w-[90%]   md:w-3/5  bg-form-2 bg-cover rounded-3xl flex">
         <div class="hidden md:block w-1/2  bg-demoBg bg-cover rounded-tl-3xl rounded-bl-3xl">
         </div>
-        <div class=" w-full md:w-1/2 p-8">
+        <div class=" w-full md:w-1/2 p-8 relative">
+          <div class="absolute top-2 right-2 cursor-pointer" @click="demoDivOpen = false">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+
+          </div>
 
 
           <div class="heading-1 text-center !text-primary">Schedule a Demo</div>
@@ -862,7 +837,7 @@ switch ($currenUrl) {
             </div>
             <div>
 
-              <input type="text" name="demoDesignation" placeholder="Designation">
+              <input type="text" name="demoDesignation" placeholder="Country">
             </div>
             <div>
 

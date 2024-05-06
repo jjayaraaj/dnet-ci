@@ -9,7 +9,7 @@
 </div>
 <div>
 
-    <input type="text" id="" name="demoDesignation" placeholder="Designation">
+    <input type="text" id="" name="demoDesignation" placeholder="Country">
 </div>
 <div>
 
@@ -35,7 +35,7 @@
 </div>
 <div>
 
-    <textarea rows="4" name="demoMessage"></textarea>
+    <textarea rows="5" class="!h-20" name="demoMessage"></textarea>
 </div>
 
 <div class=" text-center flex justify-center w-full">

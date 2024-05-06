@@ -219,10 +219,12 @@ function stopCarousel() {
   owl.trigger("destroy.owl.carousel");
   owl.addClass("off");
 }
-var phoneInputField = document.querySelector("#footerPhone");
 
-//change it later
-intlTelInput(phoneInputField);
+// const phoneInputField = document.querySelector("#footerPhone");
+
+// //change it later
+// intlTelInput(phoneInputField);
+
 var downloadDiv = document.getElementById("downloadDiv");
 var countryData = window.intlTelInputGlobals.getCountryData();
 
@@ -282,10 +284,12 @@ document.addEventListener("alpine:init", function () {
         var commonInput = document.querySelector("#commonDownloadFlag");
         var phoneDown4 = document.querySelector("#phone4");
         var flagInput = document.querySelector("#commonDownloadForm");
-        var iti = intlTelInput(phoneDown4);
-        $(phoneDown4).on("countrychange", function (e) {
-          commonInput.value = iti.getSelectedCountryData().name;
-        });
+
+        // const iti = intlTelInput(phoneDown4);
+
+        // $(phoneDown4).on("countrychange", function (e) {
+        //   commonInput.value = iti.getSelectedCountryData().name;
+        // });
 
         // intlTelInput(phoneDown4);
         this.commonDownloadDivOpen = true;
@@ -295,15 +299,18 @@ document.addEventListener("alpine:init", function () {
         var countyInput = document.querySelector("#broDownloadFlag");
         var docInput = document.querySelector("#broDoc");
         docInput.setAttribute("value", solution);
-        intlTelInput(phoneDown2);
-        $(phoneDown2).on("countrychange", function (e) {
-          countyInput.value = iti.getSelectedCountryData().name;
-        });
+
+        // intlTelInput(phoneDown2);
+
+        // $(phoneDown2).on("countrychange", function (e) {
+        //   countyInput.value = iti.getSelectedCountryData().name;
+        // });
+
         this.downloadDivOpen = true;
       },
       openFormDemoDiv: function openFormDemoDiv(solution) {
-        var phoneDown = document.querySelector("#demoPhone");
-        intlTelInput(phoneDown);
+        // const phoneDown = document.querySelector("#demoPhone");
+        // intlTelInput(phoneDown);
         this.demoDivOpen = true;
         console.log(solution);
       }

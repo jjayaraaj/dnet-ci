@@ -11,7 +11,7 @@
     <div class="mx-auto h-full big-screen">
         <div class="lg:banner-space bg-white fixed w-full left-0 top-0 lg:-top-0 h-14 " @scroll.window="contact = (window.pageYOffset < 5) ? false: true" :class="{ 'lg:h-[75px]': contact, 'lg:h-24': !contact }"></div>
 
-        <div class=" w-full lg:h-[500px]">
+        <div class=" w-full lg:h-[700px]">
             <div class="h-10 lg:hidden "></div>
 
             <!-- inner banner -->
@@ -59,7 +59,7 @@
         </div>
 
         <div class="relative lg:w-1/3 z-40">
-            <div class=" lg:-mt-96 bg-gray-100 w-full bg-form-2 bg-cover rounded-3xl px-6 py-4 space-y-4 ">
+            <div class=" lg:-mt-[600px] bg-gray-100 w-full bg-form-2 bg-cover rounded-3xl px-6 py-4 space-y-4 ">
 
                 <form class=" space-y-5 p-8" action="<?php echo base_url() ?>/contact-request" method="POST" id="contactForm">
 
@@ -82,7 +82,7 @@
                     </div>
                     <div>
 
-                        <input type="text" id="contactPhone" name="contactPhone" placeholder="Phone Number">
+                        <input type="text" id="footerPhone" name="contactPhone" placeholder="Phone Number">
                     </div>
 
                     <div>
@@ -97,7 +97,7 @@
                     </div>
                 </form>
 
-                <input type="hidden" id="footerPhone">
+
 
 
             </div>
@@ -117,9 +117,9 @@
     <div class=" max-w-container space-y-16 big-screen">
         <div class=" heading-1 text-center">Global Reach</div>
         <div class=" mx-auto">
-            <div class=" grid grid-cols-1 lg:grid-cols-4">
+            <div class=" grid grid-cols-1 lg:grid-cols-4 ">
                 <div class=" h-56 px-8 items-center">
-                    <div class="flex flex-col justify-center h-full space-y-3">
+                    <div class="flex flex-col justify-start h-full space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/india.svg" alt="">
@@ -129,13 +129,13 @@
                             </div>
                         </div>
                         <div class="">
-                            10, 2nd street, RBI Colony, Thiruvanmiyur, Chennai – 600041, India.
+                            The Miracle, No. 5, 1st Street, Sowdeswari Nagar, Okkiyam Thoraipakkam, <br>Chennai – 600097, India.<br>
                             Phone: +9144 4923 7777
                         </div>
                     </div>
                 </div>
                 <div class="  px-8 h-56">
-                    <div class="flex flex-col justify-center h-full space-y-3">
+                    <div class="flex flex-col justify-start h-full space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/united-states.svg" alt="">
@@ -145,14 +145,34 @@
                             </div>
                         </div>
                         <div class="">
-                            1201 North Market Street, Suite 11, Wilmington, DE 19801
-                            Phone: + 1 (302) 202-9223
-                            Fax: +1 (302) 202-9225
+                            1201 North Market Street, Suite 11, <br>Wilmington, DE 19801<br>
+                            Phone: + 1 (302) 202-9223<br>
+                            Fax: +1 (302) 202-9225<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="  px-8 h-56">
+                    <div class="flex flex-col justify-start h-full space-y-3">
+                        <div class="flex items-center gap-x-3">
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/united-states.svg" alt="">
+                            </div>
+                            <div class="display-3 ">
+                                United States
+                            </div>
+                        </div>
+                        <div class="">
+                            551 South I-35,
+
+                            Suite 313 Round Rock, <br>TX 78664-2820, USA<br>
+                            Phone: +1 (512) 485-1125
+
                         </div>
                     </div>
                 </div>
                 <div class="    h-56">
-                    <div class="flex flex-col justify-center h-full px-8 space-y-3">
+                    <div class="flex flex-col justify-start h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/singapore.svg" alt="">
@@ -162,12 +182,12 @@
                             </div>
                         </div>
                         <div class="">
-                            10, Anson Road, #27-15 International Plaza, Singapore, 079903
+                            10, Anson Road, <br>#27-15 International Plaza, <br>Singapore, 079903
                         </div>
                     </div>
                 </div>
                 <div class="   h-56">
-                    <div class="flex flex-col justify-center h-full px-8 space-y-3">
+                    <div class="flex flex-col justify-start h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/dubai-flag.svg" alt="">
@@ -177,13 +197,31 @@
                             </div>
                         </div>
                         <div class="">
-                            SAIF Zone – R2-2622 PO Box 123695 Sharjah – U.A.E
-                            Phone: +971 43216563
+                            SAIF Zone – R2-2622 PO Box 123695 <br>Sharjah – U.A.E
+                            <br> Phone: +971 43216563
                         </div>
                     </div>
                 </div>
+
+                <div class="   h-56">
+                    <div class="flex flex-col justify-start h-full px-8 space-y-3">
+                        <div class="flex items-center gap-x-3">
+                            <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" alt="">
+                            </div>
+                            <div class="display-3 ">
+                                Saudi Arabia
+                            </div>
+                        </div>
+                        <div class="">
+                            PO Box 90706, Riyadh – 11623<br> Kingdom of Saudi Arabia.
+                            <br> Phone: +966 11 2926043
+                        </div>
+                    </div>
+                </div>
+
                 <div class="  h-56">
-                    <div class="flex flex-col justify-center h-full px-8 space-y-3">
+                    <div class="flex flex-col justify-start h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/ghana.svg" alt="">
@@ -194,22 +232,6 @@
                         </div>
                         <div class="">
                             Africa operations
-                        </div>
-                    </div>
-                </div>
-                <div class="   h-56">
-                    <div class="flex flex-col justify-center h-full px-8 space-y-3">
-                        <div class="flex items-center gap-x-3">
-                            <div class="h-16 w-20 ">
-                                <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" alt="">
-                            </div>
-                            <div class="display-3 ">
-                                Saudi Arabia
-                            </div>
-                        </div>
-                        <div class="">
-                            PO Box 90706, Riyadh – 11623 Kingdom of Saudi Arabia.
-                            Phone: +966 11 2926043
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,74 @@
 
 <?= $this->section("title") ?> Microsoft Dynamics Partner | D365 F&O - Dynamics NetSoft <?= $this->endSection("title") ?>
 <?= $this->section("description") ?>Stuck with multiple legacy systems? Evolve with Dynamic Netsoft, a Microsoft Dynamics 365 Gold partner offering ERP & CRM solutions for Property & Construction industries.<?= $this->endSection("description") ?>
+
+
+<?= $this->section("schema") ?>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Dynamic Netsoft Technologies",
+        "url": "https://dnetsoft.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://dnetsoft.com/search?q=){search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dynamic Netsoft Technologies",
+        "alternateName": "Dynamic Netsoft",
+        "url": "https://dnetsoft.com/",
+        "logo": "https://dnetsoft.com/images/dnet-logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+918925441117",
+            "contactType": "sales",
+            "areaServed": ["US", "GB", "CA", "AU", "BH", "IN", "KW", "MY", "OM", "QA", "SA", "SG", "AE", "YE"],
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/DynamicNetSoft/",
+            "https://twitter.com/dynamicnet_soft",
+            "https://www.instagram.com/dynamicnetsoft/",
+            "https://www.youtube.com/c/DynamicNetsoftChennai",
+            "https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/"
+        ]
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Property Leasing",
+            "item": "https://dnetsoft.com/property-leasing"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Property Sales",
+            "item": "https://dnetsoft.com/property-sale"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contract Management",
+            "item": "https://dnetsoft.com/contract-management-software-dynamics-365"
+        }]
+    }
+</script>
+<?= $this->endSection("schema") ?>
+
 <?= $this->section("content") ?>
+
 
 <!--banner-->
 

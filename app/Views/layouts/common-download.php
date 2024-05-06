@@ -1,10 +1,15 @@
 <template x-teleport="body">
     <div x-show="commonDownloadDivOpen" x-transition id="downloadDiv" class="fixed h-screen  w-screen top-0 left-0 bg-slate-600 z-[9999] bg-opacity-80 flex items-center justify-center">
-        <div class=" bg-white   w-[90%] md:w-[60%]  bg-formBg3 bg-cover rounded-3xl flex" @click.outside="commonDownloadDivOpen = false">
+        <div class=" bg-white   w-[90%] md:w-[60%]  bg-formBg3 bg-cover rounded-3xl flex">
             <div class="w-1/2 hidden md:block  bg-commonDownloadImg bg-cover rounded-tl-3xl rounded-bl-3xl">
             </div>
-            <div class=" md:w-1/2 w-full p-8 ">
+            <div class=" md:w-1/2 w-full p-8 relative">
+                <div class="absolute top-2 right-2 cursor-pointer" @click="commonDownloadDivOpen = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
 
+                </div>
 
                 <div class="heading-1 text-center ">Download Brochure</div>
                 <div class="h-5"></div>
@@ -26,8 +31,8 @@
                         <div x-show="commonFormData.company.error" class="text-sm text-red-500">Enter name</div>
                     </div>
                     <div>
-                        <label for="designation" class="sr-only">Designation:</label>
-                        <input type="text" id="designation" name="commonFormDesignation" x-model="commonFormData.designation" placeholder="Designation">
+                        <label for="designation" class="sr-only">Country:</label>
+                        <input type="text" id="designation" name="commonFormDesignation" x-model="commonFormData.designation" placeholder="Country">
                     </div>
                     <div>
                         <label for="email" class="sr-only">E-Mail ID:</label>

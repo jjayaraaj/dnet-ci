@@ -2,6 +2,135 @@
 
 <?= $this->section("title") ?> All-in-One Property Management Software on Dynamics 365 <?= $this->endSection("title") ?>
 <?= $this->section("description") ?>Lagging behind your tech-advanced competitors? Gain insights to manage your property portfolio with Microsoft Dynamics 365 Property Management solution. <?= $this->endSection("description") ?>
+<?= $this->section("schema") ?>
+<script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "product",
+        "name": "RealEstatePRO - Property Management Software ",
+        "brand": " Dynamic Netsoft ",
+        "image": " https://dnetsoft.com/images/dnet-logo.svg ",
+        "sku": "IF",
+        "mpn": "IF",
+        "description": "RealEstatePro is our advanced property management software on Microsoft dynamics 365. Discover your real estate business profitability with Microsoft dynamics 365 property management software. ",
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "100 ",
+            "highPrice": "10000 ",
+            "priceCurrency": "USD ",
+            "offerCount": "10"
+        },
+        "aggregateRating": {
+            "@type": "aggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "995 ",
+            "bestRating": "5 "
+        }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Property Leasing",
+            "item": "https://dnetsoft.com/property-leasing"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Property Sales",
+            "item": "https://dnetsoft.com/property-sale"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contract Management",
+            "item": "https://dnetsoft.com/contract-management-software-dynamics-365"
+        }]
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Why choose Dynamic Netsoft as your digital partner?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dynamic Netsoft is a leading Microsoft Dynamics 365 partner and a global ISV, providing vertical-specific solutions built on the Microsoft ecosystem. We are a team of passionate and dedicated professionals working towards a single goal – your business growth."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Why should I opt for Microsoft Dynamics 365?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You should choose Microsoft Dynamics 365 Partners for the following reasons;
+
+                1. Leader in ERP Software solutions
+                2. Benchmark features
+                3. Cloud - based products
+                4. Centralized platform
+                5. Business Analytics
+                6. Sure - step implementation methodology
+                7. Advanced data security
+                8. Real - time business insights
+                9. World - class support "
+            }
+        }, {
+            "@type": "Question",
+            "name": "Is Microsoft Dynamics 365 an ERP or CRM?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Microsoft Dynamics 365 is a cloud-based applications platform that includes both ERP and CRM components along with Business Analytics and pre-configured tools and reports for business users."
+            }
+        }, {
+            "@type": "Question",
+            "name": "How is Dynamic Netsoft the right Microsoft Dynamic 365 Finance & Operations partner for me?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dynamic Netsoft is a leading Microsoft ISV & Dynamics 365 F&O ERP implementation partner. Digital & business transformation experts for the Property & Construction vertical with global experience and success in delivering business value to more than 100 companies. Incredible track record of implementation success across other major Industry verticals."
+            }
+        }, {
+            "@type": "Question",
+            "name": "What type of services does Dynamic NetSoft Technologies offer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As a Dynamic 365 partner, we offer the following services.
+
+                1. ERP Implementation– expert design,
+                configuration,
+                and deployment of world - class Microsoft ERP
+                for customer requirements across Industry verticals.Provide customized workflows,
+                reports,
+                and analytics to best suit end - user needs and business benefits.
+                2. CRM / SaaS solutions - World - class SaaS products
+                for the Property segment with benchmark features and easy - to - use Mobile / Web Apps
+                for device - driven experience from anywhere,
+                anytime.
+                3. Migration - upgrade to Cloud and the latest version,
+                Dynamics AX to Dynamics 365 ERP implementation services.
+                "
+            }
+        }, {
+            "@type": "Question",
+            "name": "Which Industries Dynamic Netsoft Microsoft Dynamics 365 ISV Solutions are most suited for?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As an MS D365 F&O partner, Dynamic Netsoft has designed industry-specific ISV solutions on Microsoft Dynamics 365 for industries like: 
+
+                1. Real Estate
+                2. Construction
+                3. Banking & Investment
+                4. HR & Payroll "
+            }
+        }]
+    }
+</script>
+<?= $this->endSection("schema") ?>
 
 <?= $this->section("content") ?>
 
@@ -44,12 +173,30 @@
 <!-- section1 -->
 <div class=" max-w-container md:py-16 md:space-y-4">
     <div class="  mx-auto md:text-center py-8 md:py-0 bg-primary rounded-b-3xl md:rounded-none md:bg-transparent  ">
-        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve challenges in real estate operations with Microsoft Dynamics 365 Property management solution!</h2>
+        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve Challenges in Real Estate Operations with Property Management Software on Microsoft Dynamics 365!</h2>
     </div>
 
     <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center relative">
 
-        <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry rapidly evolving and there is a dire need for a software solution that allows property owners and managers to do away with paper trails and streamline their business operations. RealEstatePro, our flagship Microsoft ISV product built on market-leading Microsoft Dynamics 365 Finance & Operations, is designed to address various real estate challenges such as:</p>
+        <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry is rapidly evolving and there is a dire need for a software solution
+            that allows property owners and managers to do away with paper trails and streamline their
+            business operations. Whether you are a property management organization, a housing
+            association, or a home builder, the volume of repetitive tasks, never-ending paperwork, and
+            scattered documents is overwhelming, consuming a significant amount of your time and
+            energy, and reducing your overall efficiency. A real estate management software that
+            handles this redundant yet crucial aspect of the operations could be a game changer for
+            your business. <br><br>Dynamic Netsoft Technologies has strategically invested in RealEstatePro, our premier
+            product as a Microsoft Independent Software Vendor (ISV), shifting the conventional
+            practices to a more progressive and advanced approach. This property management
+            software on Dynamics is a comprehensive tool, equipped with pre-built features, tailored
+            specifically for the real estate sector that enhances efficiency, improves collaboration, and
+            ultimately increases profitability. Property Management Software on D365 is specially
+            designed on the robust platform of Microsoft Dynamics 365 Finance &amp; Operations. Dynamics
+            365 Property Management Software streamlines business operations and provides a
+            centralized platform to access all the information and tools in one place. The seamless
+            integration of this Property Management software with Microsoft Dynamics 365 F &amp; O
+            enhances CRM and ERP cloud functionality and opens the door to a more efficient way of
+            handling a spectrum of real estate challenges such as;</p>
 
         <div class="relative w-full px-10">
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
@@ -191,9 +338,23 @@
 <div class=" bg-secondary pt-16 " x-data="{property: 1}">
     <div class=" max-w-container space-y-8 big-screen ">
         <h2 class="heading-1 text-center w-full  lg:w-4/6 mx-auto px-6 lg:px-0 ">
-            Discover business profitability with Real Estate Management Software on Microsoft Dynamics 365
+            Discover Business Profitability with Microsoft Dynamics 365 Property Management Software
         </h2>
-        <p class="text-center px-6 lg:px-0 ">World’s leading real estate enterprises entrust Dynamic Netsoft for smooth operations and to produce better business outcomes. Our world-class flagship product RealEstatePro on Microsoft Dynamics 365 Software provides end-to-end capabilities across the entire real estate value chain. Its Property Leasing and Sales Modules are purpose-built to optimize every facet of property management, from the easy data retrieval of vacant units to the seamless deal closures.</p>
+        <p class="text-center px-6 lg:px-0 ">The world’s leading real estate enterprises entrust Dynamic Netsoft for smooth operations
+            and to produce better business outcomes. Our world-class flagship product RealEstatePro
+            on Microsoft Dynamics 365 Software provides end-to-end capabilities across the entire real
+            estate value chain. Microsoft Dynamics 365 Property Management Software provides an
+            integrated platform that allows a comprehensive view of all your crucial data and client
+            information. Property Management Solution on Dynamics is a comprehensive tool designed
+            to enable the collaboration between property management and sales teams to increase
+            productivity, efficiency, and customer satisfaction. <br><br>Property Management Solution on D365 provides a secure storage system for all your
+            paperless documents with easy and quick retrievability. Real estate management software
+            automates and streamlines planning, costing, execution, and maintenance processes. Our
+
+            customer-centric approach is designed to customize our Property Management Solution to
+            your organization’s unique needs. The Property Leasing and Sales Modules of our Property
+            Management Software on Dynamics are purpose-built to optimize every facet of property
+            management, from the easy data retrieval of vacant units to the seamless deal closures.</p>
 
         <!-- dynamic -->
         <div class="flex items-end">

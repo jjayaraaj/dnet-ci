@@ -234,10 +234,10 @@ function stopCarousel() {
   owl.addClass("off");
 }
 
-const phoneInputField = document.querySelector("#footerPhone");
+// const phoneInputField = document.querySelector("#footerPhone");
 
-//change it later
-intlTelInput(phoneInputField);
+// //change it later
+// intlTelInput(phoneInputField);
 
 const downloadDiv = document.getElementById("downloadDiv");
 
@@ -303,11 +303,11 @@ document.addEventListener("alpine:init", () => {
       const phoneDown4 = document.querySelector("#phone4");
       const flagInput = document.querySelector("#commonDownloadForm");
 
-      const iti = intlTelInput(phoneDown4);
+      // const iti = intlTelInput(phoneDown4);
 
-      $(phoneDown4).on("countrychange", function (e) {
-        commonInput.value = iti.getSelectedCountryData().name;
-      });
+      // $(phoneDown4).on("countrychange", function (e) {
+      //   commonInput.value = iti.getSelectedCountryData().name;
+      // });
 
       // intlTelInput(phoneDown4);
       this.commonDownloadDivOpen = true;
@@ -319,17 +319,17 @@ document.addEventListener("alpine:init", () => {
       const docInput = document.querySelector("#broDoc");
       docInput.setAttribute("value", solution);
 
-      intlTelInput(phoneDown2);
+      // intlTelInput(phoneDown2);
 
-      $(phoneDown2).on("countrychange", function (e) {
-        countyInput.value = iti.getSelectedCountryData().name;
-      });
+      // $(phoneDown2).on("countrychange", function (e) {
+      //   countyInput.value = iti.getSelectedCountryData().name;
+      // });
 
       this.downloadDivOpen = true;
     },
     openFormDemoDiv(solution) {
-      const phoneDown = document.querySelector("#demoPhone");
-      intlTelInput(phoneDown);
+      // const phoneDown = document.querySelector("#demoPhone");
+      // intlTelInput(phoneDown);
       this.demoDivOpen = true;
       console.log(solution);
     },

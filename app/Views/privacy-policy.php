@@ -9,10 +9,10 @@ Privacy Policy<?= $this->endSection("title") ?>
 
 
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-cover bg-privacy">
-    <div class="max-w-container mx-auto h-full big-screen">
+    <div class="max-w-container mx-auto  big-screen">
         <div class="banner-space"></div>
 
-        <div class="  w-full  lg:h-[500px]">
+        <div class="  w-full  lg:h-[400px]">
 
 
             <!-- inner banner -->
@@ -32,7 +32,7 @@ Privacy Policy<?= $this->endSection("title") ?>
 <!--banner /-->
 
 <div class=" bg-secondary py-16 px-10">
-    <div class="max-w-container mx-auto h-full big-screen space-y-10">
+    <div class="max-w-container mx-auto  big-screen space-y-10">
         <div>
             <div class=" space-y-4">
                 <h3 class="text-xl font-bold">Dynamic Netsoft Technologies Privacy Policy</h3>
