@@ -277,6 +277,10 @@ We look forward to the opportunity to serve your needs and answer any questions 
       <td>' .  $this->request->getVar('commonFormEmail') . '</td>
     </tr>
     <tr>
+    <td>Country</td>
+    <td>' .  $this->request->getVar('commonFormDesignation') . '</td>
+  </tr>
+    <tr>
       <td>Company Name</td>
       <td>' .  $this->request->getVar('commonFormCompany') . '</td>
     </tr>
@@ -461,6 +465,10 @@ We look forward to the opportunity to serve your needs and answer any questions 
       <td>' .  $this->request->getVar('broEmail') . '</td>
     </tr>
     <tr>
+    <td>Country</td>
+    <td>' .  $this->request->getVar('broDesgination') . '</td>
+  </tr>
+    <tr>
       <td>Company Name</td>
       <td>' .  $this->request->getVar('broCompany') . '</td>
     </tr>
@@ -590,6 +598,10 @@ We look forward to the opportunity to serve your needs and answer any questions 
           <td>' .  $this->request->getVar('demoEmail') . '</td>
         </tr>
         <tr>
+        <td>Country</td>
+        <td>' .  $this->request->getVar('demoDesignation') . '</td>
+      </tr>
+        <tr>
           <td>Company Name</td>
           <td>' .  $this->request->getVar('demoCompany') . '</td>
         </tr>
@@ -603,7 +615,7 @@ We look forward to the opportunity to serve your needs and answer any questions 
       </tr>
 
         <tr>
-          <td>Desigination</td>
+          <td>Country</td>
           <td><a href="#"></a>' . $this->request->getVar('demoDesignation') . ' </a></td>
         </tr>
 
@@ -773,7 +785,7 @@ We look forward to the opportunity to serve your needs and answer any questions 
           <td>' . $this->request->getVar('contactPhone') . '</td>
         </tr>
         <tr>
-          <td>Desigination</td>
+          <td>Country</td>
           <td><a href="#"></a>' . $this->request->getVar('contactDesignation') . ' </a></td>
         </tr>
        
