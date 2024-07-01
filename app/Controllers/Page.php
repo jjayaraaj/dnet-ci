@@ -788,6 +788,11 @@ We look forward to the opportunity to serve your needs and answer any questions 
           <td>Country</td>
           <td><a href="#"></a>' . $this->request->getVar('contactDesignation') . ' </a></td>
         </tr>
+        <tr>
+        <td>Message</td>
+        <td><a href="#"></a>' . $this->request->getVar('contactMessage') . ' </a></td>
+      </tr>
+        
        
       </table>
     

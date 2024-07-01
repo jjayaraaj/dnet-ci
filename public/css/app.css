@@ -891,6 +891,9 @@ p{
 .flex-1{
   flex: 1 1 0%;
 }
+.flex-grow{
+  flex-grow: 1;
+}
 .grow{
   flex-grow: 1;
 }
@@ -933,6 +936,9 @@ p{
 }
 .items-center{
   align-items: center;
+}
+.items-stretch{
+  align-items: stretch;
 }
 .justify-start{
   justify-content: flex-start;

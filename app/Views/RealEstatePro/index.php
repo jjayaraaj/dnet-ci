@@ -178,25 +178,32 @@
 
     <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center relative">
 
-        <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0">The Real Estate industry is rapidly evolving and there is a dire need for a software solution
-            that allows property owners and managers to do away with paper trails and streamline their
-            business operations. Whether you are a property management organization, a housing
-            association, or a home builder, the volume of repetitive tasks, never-ending paperwork, and
-            scattered documents is overwhelming, consuming a significant amount of your time and
-            energy, and reducing your overall efficiency. A real estate management software that
-            handles this redundant yet crucial aspect of the operations could be a game changer for
-            your business. <br><br>Dynamic Netsoft Technologies has strategically invested in RealEstatePro, our premier
-            product as a Microsoft Independent Software Vendor (ISV), shifting the conventional
-            practices to a more progressive and advanced approach. This property management
-            software on Dynamics is a comprehensive tool, equipped with pre-built features, tailored
-            specifically for the real estate sector that enhances efficiency, improves collaboration, and
-            ultimately increases profitability. Property Management Software on D365 is specially
-            designed on the robust platform of Microsoft Dynamics 365 Finance &amp; Operations. Dynamics
-            365 Property Management Software streamlines business operations and provides a
-            centralized platform to access all the information and tools in one place. The seamless
-            integration of this Property Management software with Microsoft Dynamics 365 F &amp; O
-            enhances CRM and ERP cloud functionality and opens the door to a more efficient way of
-            handling a spectrum of real estate challenges such as;</p>
+        <div class=" md:flex  items-stretch">
+            <p class="bg-secondary md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0 md:text-left ">The Real Estate industry is rapidly evolving and there is a dire need for a software solution
+                that allows property owners and managers to do away with paper trails and streamline their
+                business operations. Whether you are a property management organization, a housing
+                association, or a home builder, the volume of repetitive tasks, never-ending paperwork, and
+                scattered documents is overwhelming, consuming a significant amount of your time and
+                energy, and reducing your overall efficiency. A real estate management software that
+                handles this redundant yet crucial aspect of the operations could be a game changer for
+                your business. <br><br>Dynamic Netsoft Technologies has strategically invested in RealEstatePro, our premier
+                product as a Microsoft Independent Software Vendor (ISV), shifting the conventional
+                practices to a more progressive and advanced approach. This property management
+                software on Dynamics is a comprehensive tool, equipped with pre-built features, tailored
+                specifically for the real estate sector that enhances efficiency, improves collaboration, and
+                ultimately increases profitability. Property Management Software on D365 is specially
+                designed on the robust platform of Microsoft Dynamics 365 Finance &amp; Operations. Dynamics
+                365 Property Management Software streamlines business operations and provides a
+                centralized platform to access all the information and tools in one place. The seamless
+                integration of this Property Management software with Microsoft Dynamics 365 F &amp; O
+                enhances CRM and ERP cloud functionality and opens the door to a more efficient way of
+                handling a spectrum of real estate challenges such as;</p>
+            <div class=" bg-black flex items-center">
+                <iframe width="560" height="315" src=https://www.youtube.com/embed/gKMCUgV76yQ?si=Sp__JnLULCI4PvoG title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
 
         <div class="relative w-full px-10">
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
