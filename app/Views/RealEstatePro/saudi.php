@@ -148,7 +148,7 @@
                     <div class=" first-div">
                         <h1 class="h1 flex flex-col">
                             <span class="display-lg text-primary  ">RealEstatePro</span>
-                            an advanced <span class=" text-primary">Advanced Property Management</span> Software in UAE
+                            an advanced <span class=" text-primary">Advanced Property Management</span> Software in Saudi Arabia
 
                         </h1>
                         <!-- <div class=" text-base md:text-lg font-semibold">
@@ -173,20 +173,17 @@
 <!-- section1 -->
 <div class=" max-w-container md:py-16 md:space-y-4">
     <div class="  mx-auto md:text-center py-8 md:py-0 bg-primary rounded-b-3xl md:rounded-none md:bg-transparent  ">
-        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve and Streamline Challenges in Real Estate Operations with our Property Management Software in UAE</h2>
+        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Streamline Challenges in Real Estate Operations with our Property Management Software in Saudi Arabia</h2>
     </div>
 
     <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center relative">
 
-        <p class="bg-secondary  md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0 md:text-left ">The real estate market in the UAE, especially Dubai is rapidly scaling up with a focus on ultra-luxury residential and commercial projects. These ambitious real estate investments pave the way for property management services, which will need high-end solutions to streamline business operations.
+        <p class="bg-secondary  md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0 md:text-left ">With the launch of its Vision 2030 Initiatives, Saudi Arabia is all set to experience exponential growth in infrastructure, both commercial and residential. The increasing demand for professionally maintained properties requires efficient property management, opening up the need for real estate software in Saudi Arabia.
         </p>
-
-        <p>Conventional property management entails endless paper trails and repetitive tasks that drain your resources. Dynamic Netsoft Technologies’s flagship product <strong>RealEstatePro</strong> , the best property management software in UAE shifts the narrative with an agile approach that automates your everyday operations on a centralized platform.
+        <p>Real Estate industry is a manual effort consuming industry in the earlier days and is now transformed into a finely tuned automated process with Dynamic Netsoft Technologies’ flagship product RealEstatePro. Powered by Microsoft Dynamics 365, it is the best property management software in KSA, that creates sustainable scalability for the modern property manager.
         </p>
-        <p>
-            RealEstatePro is a property management software built on Dynamics 365, Microsoft’s game-changing cloud-based application platform, that comes pre-integrated with all the Microsoft products that you will need for office operations. Its comprehensive tools and features are tailor-made by our experts to provide end-to-end solutions for the property management industry in Dubai. The seamless integration of this Property Management software with Microsoft Dynamics 365 F&O enhances ERP and CRM cloud functionality and opens the door to a more efficient way of handling a spectrum of real estate challenges.
+        <p>RealEstatePro is a sophisticated property management software for Saudi Arabia developed on Microsoft Dynamics 365, a transformative cloud-based application platform. Our expert technical team partnered with pioneers in real estate has meticulously designed its extensive tools and features to deliver a complete solution for property management in KSA. By seamlessly integrating with Microsoft Dynamics 36 Finance and Operations (F&O), this software enhances both CRM and ERP cloud capabilities, providing a streamlined approach to addressing a wide range of real estate challenges.
         </p>
-
 
 
 
@@ -350,11 +347,15 @@
     <div class=" max-w-container space-y-8 big-screen ">
         <h2 class="heading-1 text-center w-full  lg:w-4/6 mx-auto px-6 lg:px-0 ">
             Discover Business Profitability with Microsoft Dynamics 365 Property Management Software </h2>
-        <p class="text-center px-6 lg:px-0 ">In 2023, Dubai’s real estate and construction market contributed to 14.4% of it’s total GDP. Sales transactions in the industry went up by 56%, compared to the previous year, owing to the increased adoption of property management software in the UAE.
+        <p class="text-center px-6 lg:px-0 ">Saudi Arabia has one of the highest technology adoption rates in the Middle East. The demographic of investors and users of the real estate industry, predominantly in their 30s are driving the demand for digital solutions. 75% of property management firms cited cost control and efficiency and 60% of them cited data protection and privacy as the top most priorities to consider technology solutions for property management in Saudi Arabia.
         </p>
-        <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.</p>
-        <p>It is expected that at least 80% of real estate and property management firms will move from manual operations to SaaS Systems to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
+        <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.
         </p>
+        <p>Reduced deployment time and downtime incidents and improved financial accountability have brought about an 83% reduction in manual processes and improved stakeholder communication by 72%. More than 84% of the real estate industry in KSA reported enhanced lease management through access to accurate real-time data.
+        </p>
+        <p>It is expected that at least 65% of real estate and property management firms in Saudi Arabia will move from manual operations to SaaS Systems by 2025 to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
+        </p>
+
         <!-- dynamic -->
         <div class="flex items-end">
             <div class="hidden lg:block w-96  ">
@@ -381,7 +382,8 @@
                 </div>
 
                 <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 1">
-                    <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for UAE seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.</p>
+                    <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for KSA seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.
+                    </p>
 
                     <div class=" inline-flex gap-4 ">
                         <button class="btn btn-yellow" href="#" @click="openFormDemoDiv('<?= uri_string() ?>')">
@@ -403,7 +405,8 @@
                 </div>
 
                 <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 2">
-                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for UAE, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in Dubai.
+                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for Saudi Arabia, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in Dubai.
+
                     </p>
 
                     <div class=" inline-flex gap-4 ">
@@ -436,8 +439,7 @@
 <!-- section 4 -->
 <div class=" max-w-container space-y-8 py-16 big-screen">
     <h3 class="heading-1 text-center w-4/6 mx-auto">
-        Create an intelligent, efficient, and digitally connected workplace with the most feature-rich property management solution in the UAE
-    </h3>
+        Create an intelligent, efficient, and digitally connected workplace with the most feature-rich property management solution in the Saudi Arabia </h3>
 
     <div class=" dubai-module">
         <div class="dubai-module-main">

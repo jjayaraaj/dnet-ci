@@ -533,3 +533,19 @@ input.error {
 .owl-dubai-inner {
   @apply h-60 relative p-8 rounded-t-3xl;
 }
+
+.dubai-module {
+  @apply flex flex-col lg:flex-row gap-10 px-6 lg:px-0;
+}
+
+.dubai-module-main {
+  @apply w-full lg:w-1/2 flex;
+}
+
+.dubai-module-main .half-icon-box {
+  @apply rounded-xl;
+}
+
+.dubai-module-main .curve-div {
+  @apply rounded-xl;
+}
