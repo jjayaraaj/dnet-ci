@@ -18,4 +18,9 @@ class RealEstatePro extends BaseController
     {
         return view('RealEstatePro/property-sale');
     }
+
+    public function dubai()
+    {
+        return view('RealEstatePro/dubai');
+    }
 }

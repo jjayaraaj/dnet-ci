@@ -522,3 +522,14 @@ input.error {
 .error {
   @apply text-red-600 text-xs pl-3;
 }
+
+.owl-dubai {
+}
+
+.owl-dubai-child {
+  @apply h-80 flex flex-col  justify-end border-b-8  border-b-primary relative;
+}
+
+.owl-dubai-inner {
+  @apply h-60 relative p-8 rounded-t-3xl;
+}

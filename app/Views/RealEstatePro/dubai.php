@@ -148,8 +148,8 @@
                     <div class=" first-div">
                         <h1 class="h1 flex flex-col">
                             <span class="display-lg text-primary  ">RealEstatePro</span>
-                            an advanced <span class=" text-primary">Property Management software</span>
-                            on Microsoft Dynamics 365
+                            an advanced <span class=" text-primary">Advanced Property Management</span> Software in UAE
+
                         </h1>
                         <!-- <div class=" text-base md:text-lg font-semibold">
                         Level up your digital transformation process
@@ -173,39 +173,21 @@
 <!-- section1 -->
 <div class=" max-w-container md:py-16 md:space-y-4">
     <div class="  mx-auto md:text-center py-8 md:py-0 bg-primary rounded-b-3xl md:rounded-none md:bg-transparent  ">
-        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve Challenges in Real Estate Operations with Property Management Software on Microsoft Dynamics 365!</h2>
+        <h2 class=" heading-1 px-6 md:px-0 md:w-3/4 mx-auto !text-white md:!text-black">Resolve and Streamline Challenges in Real Estate Operations with our Property Management Software in UAE</h2>
     </div>
 
     <div class="px-6 md:px-0 md:w-4/5 mx-auto md:text-center relative">
 
-        <div class=" flex flex-col md:grid grid-cols-2 gap-x-6 space-y-6 items-center">
-            <div class=" col-span-1">
-                <p class="bg-secondary  md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0 md:text-left ">The Real Estate industry is rapidly evolving and there is a dire need for a software solution
-                    that allows property owners and managers to do away with paper trails and streamline their
-                    business operations. Whether you are a property management organization, a housing
-                    association, or a home builder, the volume of repetitive tasks, never-ending paperwork, and
-                    scattered documents is overwhelming, consuming a significant amount of your time and
-                    energy, and reducing your overall efficiency. A real estate management software that
-                    handles this redundant yet crucial aspect of the operations could be a game changer for
-                    your business. Dynamic Netsoft Technologies has strategically invested in RealEstatePro, our premier
-                    product as a Microsoft Independent Software Vendor (ISV), shifting the conventional
-                    practices to a more progressive and advanced approach. </p>
-            </div>
-            <div class=" col-span-1 order-2 md:order-1 "> <iframe class=" w-full" width="560" height="315" src=https://www.youtube.com/embed/gKMCUgV76yQ?si=Sp__JnLULCI4PvoG title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class=" col-span-2 order-1 md:order-2">
-                <p>This property management
-                    software on Dynamics is a comprehensive tool, equipped with pre-built features, tailored
-                    specifically for the real estate sector that enhances efficiency, improves collaboration, and
-                    ultimately increases profitability. Property Management Software on D365 is specially
-                    designed on the robust platform of Microsoft Dynamics 365 Finance &amp; Operations. Dynamics
-                    365 Property Management Software streamlines business operations and provides a
-                    centralized platform to access all the information and tools in one place. The seamless
-                    integration of this Property Management software with Microsoft Dynamics 365 F &amp; O
-                    enhances CRM and ERP cloud functionality and opens the door to a more efficient way of
-                    handling a spectrum of real estate challenges such as;</p>
-            </div>
-        </div>
+        <p class="bg-secondary  md:bg-transparent p-4 rounded-2xl -mt-5 md:-mt-0 md:text-left ">The real estate market in the UAE, especially Dubai is rapidly scaling up with a focus on ultra-luxury residential and commercial projects. These ambitious real estate investments pave the way for property management services, which will need high-end solutions to streamline business operations.
+        </p>
+
+        <p>Conventional property management entails endless paper trails and repetitive tasks that drain your resources. Dynamic Netsoft Technologies’s flagship product <strong>RealEstatePro</strong> , the best property management software in UAE shifts the narrative with an agile approach that automates your everyday operations on a centralized platform.
+        </p>
+        <p>
+            RealEstatePro is a property management software built on Dynamics 365, Microsoft’s game-changing cloud-based application platform, that comes pre-integrated with all the Microsoft products that you will need for office operations. Its comprehensive tools and features are tailor-made by our experts to provide end-to-end solutions for the property management industry in Dubai. The seamless integration of this Property Management software with Microsoft Dynamics 365 F&O enhances ERP and CRM cloud functionality and opens the door to a more efficient way of handling a spectrum of real estate challenges.
+        </p>
+
+
 
 
 
@@ -230,117 +212,135 @@
             <div class="h-10"></div>
             <div class="owl-carousel owl-theme owl-dynamic ">
 
-                <div class=" owl-dynamic-child ">
+                <div class=" owl-dubai-child ">
 
-                    <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" alt="">
+                    <div class="bg-secondary-dark owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p>Difficulty in tracking property information, vacancy/occupancy data</p>
+                        <p>Easy tracking of property information, vacancies, and occupancy data</p>
                     </div>
                 </div>
 
-                <div class=" owl-dynamic-child ">
+                <div class=" owl-dubai-child ">
 
-                    <div class="bg-secondary owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" alt="">
+                    <div class="bg-secondary owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p>Absence of structured and organized workflow for business operations</p>
+                        <p>Secure storage of paperless documents with easy and quick retrievability
+                        </p>
                     </div>
                 </div>
 
-                <div class=" owl-dynamic-child ">
 
-                    <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">\
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/time-consuming.svg" alt="">
+                <div class=" owl-dubai-child ">
+
+                    <div class="bg-secondary-dark owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p>Time-consuming manual processes for quotation generation, invoicing, and agreement execution</p>
+                        <p> Structured and organized workflows for business operations
+                        </p>
                     </div>
                 </div>
 
-                <div class=" owl-dynamic-child ">
+                <div class=" owl-dubai-child ">
 
-                    <div class="bg-secondary owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" alt="">
+                    <div class="bg-secondary owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p>Provide timely and accurate information on your prospects for faster business decision-making</p>
+                        <p> Automated generation of quotes, invoices, and agreement executions
+                        </p>
                     </div>
                 </div>
 
 
-                <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-obtain.svg" alt="">
-                        </div>
-                        <div class="h-5"></div>
-                        <p> Inability to obtain precise information and analytics on financial transactions such as revenue-expense ratio, aging analysis, etc.</p>
-                    </div>
-                </div>
+                <div class=" owl-dubai-child ">
 
+                    <div class="bg-secondary-dark owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
 
-                <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p> Automated process in reservation management for properties</p>
+                        <p> Faster decision-making with timely and accurate data on prospects
+                        </p>
                     </div>
                 </div>
 
-                <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/lack-of-accuracy.svg" alt="">
+                <div class=" owl-dubai-child ">
+
+                    <div class="bg-secondary owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
-                        <p> Lack of accuracy and updates in routine business transactions</p>
+                        <p> Precise financial analytics for revenue-expense ratios, aging analysis, etc.
+                        </p>
                     </div>
                 </div>
 
-                <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" alt="">
+                <div class=" owl-dubai-child ">
+
+                    <div class="bg-secondary-dark owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-5"></div>
-                        <p> Flexibility in renewal and canceling of agreements, changing orders, creating billing schedules, raising invoices, etc.</p>
+                        <div class="h-10"></div>
+                        <p>Flexible renewals and cancellations with automated billing updates
+
+                        </p>
                     </div>
                 </div>
 
+                <div class=" owl-dubai-child ">
 
-                <div class=" owl-dynamic-child ">
-                    <div class="bg-secondary-dark owl-dynamic-inner">
-                        <div class=" owl-dynamic-inner-2 ">
-                            <?= $this->include('layouts/half-circle') ?>
-                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-manage.svg" alt="">
+                    <div class="bg-secondary owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-6"></div>
-                        <p> Inability to manage the periodic rent appraisals based on business demands and changing market conditions</p>
+                        <div class="h-10"></div>
+                        <p> Adapt to changing market conditions and rental value fluctuations
+                        </p>
                     </div>
                 </div>
+
+                <div class=" owl-dubai-child ">
+
+                    <div class="bg-secondary-dark owl-dubai-inner">
+                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                        </div>
+                        <div class="h-10"></div>
+                        <p>Mobile app for facility management and maintenance operations
+
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+
 
             </div>
         </div>
     </div>
 
-    <div class="text-xl font-semibold text-center w-4/5 mx-auto">Faster and efficient business turn-around with RealEstatePro, our property management solution on D365!</div>
 
 </div>
 <!-- section1 ends -->
@@ -349,24 +349,12 @@
 <div class=" bg-secondary pt-16 " x-data="{property: 1}">
     <div class=" max-w-container space-y-8 big-screen ">
         <h2 class="heading-1 text-center w-full  lg:w-4/6 mx-auto px-6 lg:px-0 ">
-            Discover Business Profitability with Microsoft Dynamics 365 Property Management Software
-        </h2>
-        <p class="text-center px-6 lg:px-0 ">The world’s leading real estate enterprises entrust Dynamic Netsoft for smooth operations
-            and to produce better business outcomes. Our world-class flagship product RealEstatePro
-            on Microsoft Dynamics 365 Software provides end-to-end capabilities across the entire real
-            estate value chain. Microsoft Dynamics 365 Property Management Software provides an
-            integrated platform that allows a comprehensive view of all your crucial data and client
-            information. Property Management Solution on Dynamics is a comprehensive tool designed
-            to enable the collaboration between property management and sales teams to increase
-            productivity, efficiency, and customer satisfaction. <br><br>Property Management Solution on D365 provides a secure storage system for all your
-            paperless documents with easy and quick retrievability. Real estate management software
-            automates and streamlines planning, costing, execution, and maintenance processes. Our
-
-            customer-centric approach is designed to customize our Property Management Solution to
-            your organization’s unique needs. The Property Leasing and Sales Modules of our Property
-            Management Software on Dynamics are purpose-built to optimize every facet of property
-            management, from the easy data retrieval of vacant units to the seamless deal closures.</p>
-
+            Discover Business Profitability with Microsoft Dynamics 365 Property Management Software </h2>
+        <p class="text-center px-6 lg:px-0 ">In 2023, Dubai’s real estate and construction market contributed to 14.4% of it’s total GDP. Sales transactions in the industry went up by 56%, compared to the previous year, owing to the increased adoption of property management software in the UAE.
+        </p>
+        <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.</p>
+        <p>It is expected that at least 80% of real estate and property management firms will move from manual operations to SaaS Systems to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
+        </p>
         <!-- dynamic -->
         <div class="flex items-end">
             <div class="hidden lg:block w-96  ">
