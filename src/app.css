@@ -530,8 +530,16 @@ input.error {
   @apply h-80 flex flex-col  justify-end border-b-8  border-b-primary relative;
 }
 
+.owl-dubai-child img {
+  @apply !w-8 mx-auto;
+}
+
 .owl-dubai-inner {
   @apply h-60 relative p-8 rounded-t-3xl;
+}
+
+.owl-dubai-inner > div:first-child {
+  @apply h-14 w-14 bg-white rounded-full mx-auto flex items-center justify-items-center;
 }
 
 .dubai-module {

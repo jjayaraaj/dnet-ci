@@ -1456,10 +1456,6 @@ p{
   --tw-text-opacity: 1;
   color: rgb(216 239 255 / var(--tw-text-opacity));
 }
-.text-primary-light{
-  --tw-text-opacity: 1;
-  color: rgb(18 120 194 / var(--tw-text-opacity));
-}
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -3835,12 +3831,31 @@ input.error{
   border-bottom-color: rgb(14 97 157 / var(--tw-border-opacity));
 }
 
+.owl-dubai-child img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 2rem !important;
+}
+
 .owl-dubai-inner{
   position: relative;
   height: 15rem;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   padding: 2rem;
+}
+
+.owl-dubai-inner > div:first-child{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  align-items: center;
+  justify-items: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .dubai-module{

@@ -134,7 +134,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestateproBanner-uae  ">
     <div class=" mobile-header-transparent">
         <div class="banner-space"></div>
         <div class=" mx-auto h-full big-screen">
@@ -212,9 +212,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary-dark owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p>Easy tracking of property information, vacancies, and occupancy data</p>
@@ -224,9 +224,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p>Secure storage of paperless documents with easy and quick retrievability
@@ -238,9 +238,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary-dark owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/time-consuming.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p> Structured and organized workflows for business operations
@@ -251,9 +251,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-obtain.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p> Automated generation of quotes, invoices, and agreement executions
@@ -265,9 +265,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary-dark owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p> Faster decision-making with timely and accurate data on prospects
@@ -278,9 +278,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/lack-of-accuracy.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p> Precise financial analytics for revenue-expense ratios, aging analysis, etc.
@@ -291,9 +291,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary-dark owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p>Flexible renewals and cancellations with automated billing updates
@@ -305,9 +305,9 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-manage.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p> Adapt to changing market conditions and rental value fluctuations
@@ -318,13 +318,12 @@
                 <div class=" owl-dubai-child ">
 
                     <div class="bg-secondary-dark owl-dubai-inner">
-                        <div class=" h-14 w-14 bg-white rounded-full mx-auto">
+                        <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" class="w-1/2" alt="">
                         </div>
                         <div class="h-10"></div>
                         <p>Mobile app for facility management and maintenance operations
-
 
                         </p>
                     </div>
