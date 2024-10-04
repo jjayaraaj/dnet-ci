@@ -134,7 +134,7 @@
 
 <?= $this->section("content") ?>
 
-<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestateproBanner-uae  ">
+<header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro-uae">
     <div class=" mobile-header-transparent">
         <div class="banner-space"></div>
         <div class=" mx-auto h-full big-screen">
@@ -355,58 +355,64 @@
         <p>It is expected that at least 65% of real estate and property management firms in Saudi Arabia will move from manual operations to SaaS Systems by 2025 to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
         </p>
 
+
         <!-- dynamic -->
-        <div class="flex items-end">
-            <div class="hidden lg:block w-96  ">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-Leasing-Image.svg" x-show="property === 1">
-                <img src="<?php echo base_url() ?>/images/realestatepro/Property-Sales.svg" x-show="property === 2">
-            </div>
-            <div class=" flex-1 space-y-8">
-                <div class=" inline-flex gap-4 pl-8">
-                    <button class="btn " :class="property === 1 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'" @click="property = 1">
-                        <h4>Property Leasing</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </button>
-
-                    <button class="btn btn-primary" @click="property = 2" :class="property === 2 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'">
-                        <h4>Property Sales</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-
-                    </button>
-                </div>
-
-                <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 1">
-                    <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for KSA seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.
-                    </p>
-
-                    <div class=" inline-flex gap-4 ">
-                        <button class="btn btn-yellow" href="#" @click="openFormDemoDiv('<?= uri_string() ?>')">
-                            <span>Request a Demo</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg>
+        <div class="md:flex gap-x-3">
+            <div class="md:w-2/5 w-full flex">
+                <div class="relative w-1/2">
+                    <div class="absolute bottom-0  w-full">
+                        <button class="!rounded-none !rounded-tl-xl !rounded-tr-xl w-full h-14 justify-center " :class="property === 1 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'" @click="property = 1">
+                            <h4>Property Leasing</h4>
 
                         </button>
+                    </div>
+                    <img src="<?php echo base_url() ?>/images/realestatepro/uae/property-leasing.svg">
 
-                        <a class="btn btn-yellow" href="<?php echo base_url() ?>/property-leasing">
-                            <span>Learn More</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg>
+                </div>
 
-                        </a>
+                <div class="relative flex-1">
+                    <div class="absolute bottom-0  w-full">
+                        <button class="!rounded-none !rounded-tl-xl !rounded-tr-xl w-full h-14 justify-center " :class="property === 2 ? 'property-active' : 'btn-primary !bg-secondary-dark !text-primary'" @click="property = 2">
+                            <h4>Property Sales</h4>
+
+                        </button>
+                    </div>
+                    <img src="<?php echo base_url() ?>/images/realestatepro/uae/property-sales.svg">
+
+                </div>
+
+
+
+            </div>
+            <div class=" flex-1 flex space-y-8 items-center  bg-primary  rounded-tr-[4em]">
+
+                <div class="  " x-show="property === 1">
+                    <div class="p-6 space-y-8">
+                        <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for KSA seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.
+                        </p>
+
+                        <div class=" inline-flex gap-4 ">
+                            <button class="btn btn-yellow" href="#" @click="openFormDemoDiv('<?= uri_string() ?>')">
+                                <span>Request a Demo</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+
+                            </button>
+
+                            <a class="btn btn-yellow" href="<?php echo base_url() ?>/property-leasing">
+                                <span>Learn More</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 2">
-                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for Saudi Arabia, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in Dubai.
-
-                    </p>
+                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for Saudi Arabia, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in KSA. </p>
 
                     <div class=" inline-flex gap-4 ">
                         <button class="btn btn-yellow" @click="openFormDemoDiv('<?= uri_string() ?>')">
@@ -429,7 +435,9 @@
 
 
             </div>
+
         </div>
+
 
     </div>
 </div>
@@ -533,7 +541,7 @@
 <!-- section 4 -->
 
 <!-- section-5 -->
-<div class="  bg-cloud bg-cover">
+<div class="  bg-building bg-cover">
     <div class=" max-w-container space-y-8 py-16 big-screen">
         <div class="flex">
             <div class=" w-full lg:w-2/5 space-y-8 px-6 lg:px-0 text-center lg:text-left">
@@ -572,7 +580,7 @@
         <p class=" text-center">RealEstatePro’s built-in features empower real estate managers and decision-makers to enhance business capabilities,
             improve operations and drive competitive advantage by offering.</p>
         <div>
-            <img src="<?php echo base_url() ?>/images/realestatepro/bubble-image.svg" alt="">
+            <img src="<?php echo base_url() ?>/images/realestatepro/uae/realestate-solution.svg" alt="">
         </div>
     </div>
 </div>

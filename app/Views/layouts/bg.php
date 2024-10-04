@@ -9,6 +9,7 @@ $footerBg = base_url() . '/images/footer-bg.svg';
 $realestateproBanner = base_url() . '/images/realestatepro/realestatepro-banner.svg';
 $realestateproBannerUae = base_url() . '/images/realestatepro/realestatepro-banner-UAE.svg';
 $cloudBg = base_url() . '/images/realestatepro/cloud-bg.svg';
+$buildingBg = base_url() . '/images/realestatepro/uae/property-management-solution-on-d365.svg';
 $supportBanner = base_url() . '/images/service/support/microsoft-dynamics-365-f-o-support.svg';
 $supportPartnerBg = base_url() . '/images/service/support/microsoft-dynamics-365-support-system.svg';
 $upgradeBanner = base_url() . '/images/service/upgrade/dynamics-365-finance-operations-upgrade-services.svg';
@@ -263,6 +264,10 @@ $contactBg = base_url() . '/images/contact/contact-us.svg';
 
     .bg-cloud {
         background-image: url('<?php echo $cloudBg ?>');
+    }
+
+    .bg-building {
+        background-image: url('<?php echo $buildingBg ?>');
     }
 
     .bg-support-banner {
