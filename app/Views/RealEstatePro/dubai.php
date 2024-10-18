@@ -137,10 +137,10 @@
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro-uae  ">
     <div class=" mobile-header-transparent">
         <div class="banner-space"></div>
-        <div class=" mx-auto h-full big-screen">
+        <div class=" mx-auto h-[300px] md:h-full big-screen">
 
 
-            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px] ">
+            <div class=" py-16 md:py-0   w-full h-[300px]  md:h-[500px] ">
 
 
                 <!-- inner banner -->
@@ -191,7 +191,7 @@
 
 
 
-        <div class="relative w-full px-10">
+        <div class="relative md:w-[80%] w-full mx-auto px-10">
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
 
 
@@ -210,7 +210,7 @@
 
             </div>
             <div class="h-10"></div>
-            <div class="owl-carousel owl-theme owl-dynamic ">
+            <div class="owl-carousel owl-theme owl-dynamic2 ">
 
                 <div class=" owl-dubai-child ">
 
@@ -351,9 +351,11 @@
             Discover Business Profitability with Microsoft Dynamics 365 Property Management Software </h2>
         <p class="text-center px-6 lg:px-0 ">In 2023, Dubai’s real estate and construction market contributed to 14.4% of it’s total GDP. Sales transactions in the industry went up by 56%, compared to the previous year, owing to the increased adoption of property management software in the UAE.
         </p>
-        <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.</p>
-        <p>It is expected that at least 80% of real estate and property management firms will move from manual operations to SaaS Systems to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
-        </p>
+        <div class="px-8 md:px-0 text-center md:text-left">
+            <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.</p>
+            <p>It is expected that at least 80% of real estate and property management firms will move from manual operations to SaaS Systems to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
+            </p>
+        </div>
         <!-- dynamic -->
         <!-- dynamic -->
         <div class="md:flex gap-x-3">
@@ -387,7 +389,8 @@
 
                 <div class="  " x-show="property === 1">
                     <div class="p-6 space-y-8">
-                        <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for KSA seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.
+                        <p class="text-blue-50">RealEstatePro redefines the property leasing process, powered by Microsoft Dynamics 365 to deliver an unparalleled experience for your prospects. From creation of property inventory to analytics for rent appraisals, this property management software designed for UAE seamlessly takes stakeholders through each stage of the property leasing process with minimal manual intervention and uncompromised compliance.
+
                         </p>
 
                         <div class=" inline-flex gap-4 ">
@@ -411,7 +414,8 @@
                 </div>
 
                 <div class="bg-primary p-6 space-y-8 rounded-tr-[4em]" x-show="property === 2">
-                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for Saudi Arabia, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in Dubai. </p>
+                    <p class="text-blue-50">RealEstatePro’s Property Sales module, powered by Microsoft Dynamics 365 offers the customizability and agile functionality required to optimise sales performance and profitability. With advanced analytics and reporting this real estate management software for UAE, offers the best in operational efficiency for all your property sales needs. Close deals faster and stay on top of the fluctuating real estate market in Dubai.
+                    </p>
 
                     <div class=" inline-flex gap-4 ">
                         <button class="btn btn-yellow" @click="openFormDemoDiv('<?= uri_string() ?>')">
@@ -572,15 +576,102 @@
 
 <!-- section-6 -->
 <div class="max-w-container py-16">
-    <div class="w-4/6 mx-auto space-y-8">
+    <div class="md:w-4/6 w-4/5 mx-auto space-y-8">
         <h2 class="heading-1 text-center ">
             Why Choose Our Leading-edge Real Estate Solution on Microsoft Dynamics?
         </h2>
         <p class=" text-center">RealEstatePro’s built-in features empower real estate managers and decision-makers to enhance business capabilities,
             improve operations and drive competitive advantage by offering.</p>
-        <div>
-            <img src="<?php echo base_url() ?>/images/realestatepro/bubble-image.svg" alt="">
+
+        <div class="w-full">
+            <div class=" md:flex     justify-center">
+                <div class=" dubai-circle z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>A secure and smart technology platform</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle-2 z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Operational visibility</div>
+                    </div>
+                </div>
+
+                <div class=" dubai-circle z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Advance Tools for report generation</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle-2 z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Streamlined workflows</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Effective resource allocation</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="md:flex justify-center md:-m-10">
+
+                <div class=" dubai-circle-2 z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Faster information access</div>
+                    </div>
+                </div>
+
+                <div class=" dubai-circle z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Improved opportunity conversions</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle-2 z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Integrated transaction capabilities</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Accurate
+                            data tracking</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="md:flex justify-center">
+                <div class=" dubai-circle-2 z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Parameters for decision making</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Customized analytics & reports</div>
+                    </div>
+                </div>
+
+                <div class=" dubai-circle-2 z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>Tracking of milestones and transactions</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle z-20 flex">
+                    <div class="dubai-circle-text  flex">
+                        <div>Operational cost savings</div>
+                    </div>
+                </div>
+                <div class=" dubai-circle-2 z-0  ">
+                    <div class="dubai-circle-text ">
+                        <div>User-friendly interface</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </div>
 </div>
 <!-- section-6 ends -->

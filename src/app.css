@@ -535,7 +535,7 @@ input.error {
 }
 
 .owl-dubai-inner {
-  @apply h-60 relative p-8 rounded-t-3xl;
+  @apply h-60 relative p-8 rounded-t-3xl text-center;
 }
 
 .owl-dubai-inner > div:first-child {
@@ -556,4 +556,16 @@ input.error {
 
 .dubai-module-main .curve-div {
   @apply rounded-xl;
+}
+
+.dubai-circle {
+  @apply md:w-44 md:h-44 bg-gradient-to-br from-secondary-dark to-white md:rounded-full relative border-l-2 md:border-l-8 md:border-b-8 border-primary-light flex shadow-lg;
+}
+
+.dubai-circle-2 {
+  @apply md:w-44 md:h-44 bg-gradient-to-br from-white to-secondary md:rounded-full relative border-dotted border-l-2 md:border-l-4 md:border-b-4 border-primary-light flex shadow-lg shadow-secondary-dark;
+}
+
+.dubai-circle-text {
+  @apply justify-center items-center md:p-6 p-2 text-sm md:text-center flex;
 }

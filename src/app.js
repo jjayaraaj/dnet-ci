@@ -61,12 +61,28 @@ function intiateOwl() {
     },
   });
 
+  $(".owl-dynamic2").owlCarousel({
+    margin: 50,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+      },
+    },
+  });
+
   $(".dynamicNext").click(function () {
     $(".owl-dynamic").trigger("next.owl.carousel");
+    $(".owl-dynamic2").trigger("next.owl.carousel");
   });
 
   $(".dynamicPrev").click(function () {
     $(".owl-dynamic").trigger("prev.owl.carousel");
+    $(".owl-dynamic2").trigger("prev.owl.carousel");
   });
 
   $(".owl-service").owlCarousel({

@@ -137,10 +137,10 @@
 <header class="relative z-40 flex-none text-sm font-semibold leading-6 text-slate-900 bg-right-bottom   bg-cover bg-realestatepro-uae">
     <div class=" mobile-header-transparent">
         <div class="banner-space"></div>
-        <div class=" mx-auto h-full big-screen">
+        <div class=" mx-auto h-[300px] md:h-full big-screen">
 
 
-            <div class=" py-16 md:py-0   w-full h-auto  md:h-[500px] ">
+            <div class=" py-16 md:py-0   w-full h-[300px]  md:h-[500px] ">
 
 
                 <!-- inner banner -->
@@ -188,7 +188,7 @@
 
 
 
-        <div class="relative w-full px-10">
+        <div class="relative md:w-[80%] w-full mx-auto px-10">
             <div class="absolute top-[60%] z-50 flex justify-between w-full left-0 ">
 
 
@@ -207,7 +207,7 @@
 
             </div>
             <div class="h-10"></div>
-            <div class="owl-carousel owl-theme owl-dynamic ">
+            <div class="owl-carousel owl-theme owl-dynamic2 ">
 
                 <div class=" owl-dubai-child ">
 
@@ -348,12 +348,14 @@
             Discover Business Profitability with Microsoft Dynamics 365 Property Management Software </h2>
         <p class="text-center px-6 lg:px-0 ">Saudi Arabia has one of the highest technology adoption rates in the Middle East. The demographic of investors and users of the real estate industry, predominantly in their 30s are driving the demand for digital solutions. 75% of property management firms cited cost control and efficiency and 60% of them cited data protection and privacy as the top most priorities to consider technology solutions for property management in Saudi Arabia.
         </p>
-        <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.
-        </p>
-        <p>Reduced deployment time and downtime incidents and improved financial accountability have brought about an 83% reduction in manual processes and improved stakeholder communication by 72%. More than 84% of the real estate industry in KSA reported enhanced lease management through access to accurate real-time data.
-        </p>
-        <p>It is expected that at least 65% of real estate and property management firms in Saudi Arabia will move from manual operations to SaaS Systems by 2025 to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
-        </p>
+        <div class="px-8 md:px-0 text-center md:text-left">
+            <p>The global property management industry is set to expand to the tune of 25.7 Billion USD with a CAGR of 6.5% by the end of 2024. It is not surprising that there is a parallel growth of the property management software industry estimated at 3.23 Billion USD in 2024. Up to 60% of this market is captured by cloud-based property management solutions.
+            </p>
+            <p>Reduced deployment time and downtime incidents and improved financial accountability have brought about an 83% reduction in manual processes and improved stakeholder communication by 72%. More than 84% of the real estate industry in KSA reported enhanced lease management through access to accurate real-time data.
+            </p>
+            <p>It is expected that at least 65% of real estate and property management firms in Saudi Arabia will move from manual operations to SaaS Systems by 2025 to make their operations efficient, economic, and customer-centric. This shift is facilitated by the near-endless benefits and convenience that property management software such as RealEstatePro brings to the table.
+            </p>
+        </div>
 
 
         <!-- dynamic -->
@@ -580,7 +582,95 @@
         <p class=" text-center">RealEstatePro’s built-in features empower real estate managers and decision-makers to enhance business capabilities,
             improve operations and drive competitive advantage by offering.</p>
         <div>
-            <img src="<?php echo base_url() ?>/images/realestatepro/uae/realestate-solution.svg" alt="">
+
+            <div class="w-full">
+                <div class=" md:flex     justify-center">
+                    <div class=" dubai-circle z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>A secure and smart technology platform</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle-2 z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Operational visibility</div>
+                        </div>
+                    </div>
+
+                    <div class=" dubai-circle z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Advance Tools for report generation</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle-2 z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Streamlined workflows</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Effective resource allocation</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="md:flex justify-center md:-m-10">
+
+                    <div class=" dubai-circle-2 z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Faster information access</div>
+                        </div>
+                    </div>
+
+                    <div class=" dubai-circle z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Improved opportunity conversions</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle-2 z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Integrated transaction capabilities</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Accurate
+                                data tracking</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="md:flex justify-center">
+                    <div class=" dubai-circle-2 z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Parameters for decision making</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Customized analytics & reports</div>
+                        </div>
+                    </div>
+
+                    <div class=" dubai-circle-2 z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>Tracking of milestones and transactions</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle z-20 flex">
+                        <div class="dubai-circle-text  flex">
+                            <div>Operational cost savings</div>
+                        </div>
+                    </div>
+                    <div class=" dubai-circle-2 z-0  ">
+                        <div class="dubai-circle-text ">
+                            <div>User-friendly interface</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -682,6 +682,57 @@ switch ($currenUrl) {
     </div>
   </div>
 
+  <!--footer localtion -->
+  <div class="bg-primary bg-footer bg-cover ">
+    <div class="max-w-container big-screen mx-auto py-16 space-y-6">
+      <div class=" lg:flex justify-between w-full ">
+        <div class="w-1/2">
+          <div class=" w-1/3">
+            <a href="<?php echo base_url() ?>"> <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt=""></a>
+          </div>
+
+          <div class="flex-1 flex justify-evenly">
+            <div class="space-y-4">
+              <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
+              <div class=" flex flex-col footer-link">
+                <a href="<?php echo base_url() ?>/about-us">About us</a>
+                <a href="<?php echo base_url() ?>/contact-us">Contact us</a>
+                <a href="<?php echo base_url() ?>/blog" target="_blank">Blog</a>
+                <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
+                <a href="<?php echo base_url() ?>/">Careers</a>
+                <a href="<?php echo base_url() ?>/privacy-policy">Privacy policy</a>
+                <a href="<?php echo base_url() ?>/">Events</a>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="text-base font-semibold text-white">SOLUTIONS</div>
+              <div class=" flex flex-col footer-link">
+                <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
+                <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
+                <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
+                <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
+                <a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a>
+                <a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AXOnePay</a>
+                <a href="<?php echo base_url() ?>/annata-365">Annata 365</a>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="text-base font-semibold text-white">SERVICES</div>
+              <div class=" flex flex-col footer-link">
+                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a>
+                <a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services"> Upgrade</a>
+                <a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <button @click="openCommonDownloadForm" class="fixed z-50 lg:top-1/2  mx-auto flex justify-center hover:bg-yellow-500  btn btn-yellow lg:rotate-90  text-center lg:-right-16  ">Download Brochure </button>
   <div class="fixed lg:hidden bottom-0 z-50 flex items-center justify-between w-full bg-secondary">
     <div class="px-4 py-2 bg-primary-gradient text-white rounded-tr-xl rounded-br-xl flex items-center gap-x-2" @click="openCommonDownloadForm">
