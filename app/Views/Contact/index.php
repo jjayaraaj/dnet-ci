@@ -207,6 +207,25 @@
                     <div class="flex flex-col justify-start h-full px-8 space-y-3">
                         <div class="flex items-center gap-x-3">
                             <div class="h-16 w-20 ">
+                                <img src="<?php echo base_url() ?>/images/about/dubai-flag.svg" alt="">
+                            </div>
+                            <div class="display-3 ">
+                                Dubai
+                            </div>
+                        </div>
+                        <div class="">
+                            9th Floor Burjuman,
+                            <br>Business Tower - Office No 914<br>
+                            Business Bay - Dubai <br>United Arab Emirates
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="   h-56">
+                    <div class="flex flex-col justify-start h-full px-8 space-y-3">
+                        <div class="flex items-center gap-x-3">
+                            <div class="h-16 w-20 ">
                                 <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" alt="">
                             </div>
                             <div class="display-3 ">

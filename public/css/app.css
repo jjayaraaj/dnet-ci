@@ -888,6 +888,9 @@ p{
 .w-\[100px\]{
   width: 100px;
 }
+.w-3\/5{
+  width: 60%;
+}
 .w-1\/3{
   width: 33.333333%;
 }
@@ -3846,7 +3849,7 @@ input.error{
 .owl-dubai-child img{
   margin-left: auto;
   margin-right: auto;
-  width: 2rem !important;
+  width: 3.5rem;
 }
 
 .owl-dubai-inner{
@@ -3866,9 +3869,6 @@ input.error{
   width: 3.5rem;
   align-items: center;
   justify-items: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .dubai-module{
@@ -4054,6 +4054,10 @@ input.error{
     height: 600px;
   }
 
+  .md\:h-\[200px\]{
+    height: 200px;
+  }
+
   .md\:h-full{
     height: 100%;
   }
@@ -4104,6 +4108,10 @@ input.error{
 
   .md\:w-80{
     width: 20rem;
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px;
   }
 
   .md\:w-\[45\%\]{

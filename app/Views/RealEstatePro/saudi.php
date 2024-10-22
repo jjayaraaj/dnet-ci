@@ -214,9 +214,9 @@
                     <div class="bg-secondary-dark owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/difficulty-tracking-property.svg" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/tracking-property.svg" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p>Easy tracking of property information, vacancies, and occupancy data</p>
                     </div>
                 </div>
@@ -226,9 +226,9 @@
                     <div class="bg-secondary owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/absence.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/accurate-information.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p>Secure storage of paperless documents with easy and quick retrievability
                         </p>
                     </div>
@@ -240,9 +240,9 @@
                     <div class="bg-secondary-dark owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/time-consuming.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/organized-workflow.svg" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Structured and organized workflows for business operations
                         </p>
                     </div>
@@ -253,9 +253,9 @@
                     <div class="bg-secondary owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-obtain.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/revenue-expense.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Automated generation of quotes, invoices, and agreement executions
                         </p>
                     </div>
@@ -267,9 +267,9 @@
                     <div class="bg-secondary-dark owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/provide-timely.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/time-consuming.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Faster decision-making with timely and accurate data on prospects
                         </p>
                     </div>
@@ -280,9 +280,9 @@
                     <div class="bg-secondary owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/lack-of-accuracy.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/accurate-information.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Precise financial analytics for revenue-expense ratios, aging analysis, etc.
                         </p>
                     </div>
@@ -293,9 +293,9 @@
                     <div class="bg-secondary-dark owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/flexibility-in-renewal.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/periodic-appraisal.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p>Flexible renewals and cancellations with automated billing updates
 
                         </p>
@@ -307,9 +307,9 @@
                     <div class="bg-secondary owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/inability-to-manage.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/time-consuming.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p> Adapt to changing market conditions and rental value fluctuations
                         </p>
                     </div>
@@ -320,9 +320,9 @@
                     <div class="bg-secondary-dark owl-dubai-inner">
                         <div>
 
-                            <img src="<?php echo base_url() ?>/images/realestatepro/automated-process.svg" class="w-1/2" alt="">
+                            <img src="<?php echo base_url() ?>/images/realestatepro/uae/periodic-appraisal.svg" class="w-1/2" alt="">
                         </div>
-                        <div class="h-10"></div>
+                        <div class="h-5"></div>
                         <p>Mobile app for facility management and maintenance operations
 
                         </p>

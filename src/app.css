@@ -531,7 +531,7 @@ input.error {
 }
 
 .owl-dubai-child img {
-  @apply !w-8 mx-auto;
+  @apply w-14 mx-auto;
 }
 
 .owl-dubai-inner {
@@ -539,7 +539,7 @@ input.error {
 }
 
 .owl-dubai-inner > div:first-child {
-  @apply h-14 w-14 bg-white rounded-full mx-auto flex items-center justify-items-center;
+  @apply h-14 w-14 mx-auto flex items-center justify-items-center;
 }
 
 .dubai-module {

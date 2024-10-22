@@ -620,77 +620,164 @@ switch ($currenUrl) {
 
 
 
-  <!-- footer -->
-  <div class="bg-primary bg-footer bg-cover ">
-    <div class="max-w-container big-screen mx-auto py-16 space-y-6">
-      <div class=" lg:flex justify-between w-full hidden ">
-        <div class=" w-1/3">
-          <a href="<?php echo base_url() ?>"> <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt=""></a>
-        </div>
-        <div class="flex-1 flex justify-evenly">
-          <div class="space-y-4">
-            <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
-            <div class=" flex flex-col footer-link">
-              <a href="<?php echo base_url() ?>/about-us">About us</a>
-              <a href="<?php echo base_url() ?>/contact-us">Contact us</a>
-              <a href="<?php echo base_url() ?>/blog" target="_blank">Blog</a>
-              <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
-              <a href="<?php echo base_url() ?>/">Careers</a>
-              <a href="<?php echo base_url() ?>/privacy-policy">Privacy policy</a>
-              <a href="<?php echo base_url() ?>/">Events</a>
+
+
+  <!--footer localtion -->
+  <?php if ($currenUrl === 'property-management-software-dynamics-365-UAE' || $currenUrl === 'property-management-software-dynamics-365-saudi-arabia') { ?>
+
+    <div class="bg-primary bg-footer bg-cover ">
+      <div class="max-w-container big-screen mx-auto py-16 space-y-6">
+        <div class=" lg:flex justify-between w-full ">
+          <div class="w-1/2 space-y-3">
+            <div class=" w-2/5 hidden md:block">
+              <a href="<?php echo base_url() ?>"> <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt=""></a>
+            </div>
+
+            <div class="flex-1 flex justify-evenly">
+              <div class="space-y-4 hidden md:block">
+                <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
+                <div class=" flex flex-col footer-link">
+                  <a href="<?php echo base_url() ?>/about-us">About us</a>
+                  <a href="<?php echo base_url() ?>/contact-us">Contact us</a>
+                  <a href="<?php echo base_url() ?>/blog" target="_blank">Blog</a>
+                  <a href="<?php echo base_url() ?>/become-a-partner">Become a partner</a>
+                  <a href="<?php echo base_url() ?>/">Careers</a>
+                  <a href="<?php echo base_url() ?>/privacy-policy">Privacy policy</a>
+                  <a href="<?php echo base_url() ?>/">Events</a>
+                </div>
+              </div>
+
+              <div class="space-y-4 hidden md:block">
+                <div class="text-base font-semibold text-white">SOLUTIONS</div>
+                <div class=" flex flex-col footer-link">
+                  <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
+                  <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
+                  <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
+                  <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
+                  <a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a>
+                  <a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AXOnePay</a>
+                  <a href="<?php echo base_url() ?>/annata-365">Annata 365</a>
+                </div>
+              </div>
+
+              <div class="space-y-4 hidden md:block">
+                <div class="text-base font-semibold text-white">SERVICES</div>
+                <div class=" flex flex-col footer-link">
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a>
+                  <a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services"> Upgrade</a>
+                  <a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a>
+                </div>
+                <div class="flex  flex-col-reverse lg:flex-row justify-between items-center py-6 lg:py-0 ">
+                  <div class=" flex flex-col space-y-4">
+                    <div class="text-xl text-white font-bold pb-2 md:pb-0">CONNECT WITH US</div>
+                    <div class="flex justify-between pb-3 md:pb-0">
+                      <a target="_blank" href="https://www.facebook.com/DynamicNetSoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/facebook.svg" alt="Facebook"></a>
+                      <a target="_blank" href="https://www.instagram.com/dynamicnetsoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/instagram.svg" alt="Instagram"></a>
+                      <a target="_blank" href="https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/linkedin.svg" alt="Linkedin"></a>
+                      <a target="_blank" href="https://twitter.com/dynamicnet_soft" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/twitter.svg" alt="Twitter"></a>
+                      <a target="_blank" href="https://www.youtube.com/c/DynamicNetsoftChennai" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/youtube.svg" alt="Youtube"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class=" hidden md:block text-sm text-white font-light text-center lg:text-left px-8 pt-8">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
+
+
+          </div>
+
+
+          <!-- ksa -->
+          <div class="flex-1 space-y-3 p-4 md:p-0">
+            <div class="flex items-center gap-x-2">
+
+              <?php if ($currenUrl === 'property-management-software-dynamics-365-UAE') { ?>
+                <img src="<?php echo base_url() ?>/images/about/dubai-flag.svg" class="h-10" alt="">
+                <div class="text-base font-semibold text-white">Dubai</div>
+              <?php } else { ?>
+
+                <img src="<?php echo base_url() ?>/images/about/saudi-arabia.svg" class="h-10" alt="">
+                <div class="text-base font-semibold text-white">KSA</div>
+              <?php } ?>
+            </div>
+
+            <?php if ($currenUrl === 'property-management-software-dynamics-365-UAE') { ?>
+              <div class="text-sm text-white font-light space-y-3">
+                SAIF Zone – R2-2622 PO Box 123695 Sharjah – U.A.E
+                <div> Phone: +971 43216563</div>
+                <div><a href="mailto:enquiry@dnetsoft.com" target="_blank">E-mail: enquiry@dnetsoft.com</a></div>
+              </div>
+            <?php } else { ?>
+              <div class="text-sm text-white font-light space-y-3">
+                PO Box 90706, Riyadh – 11623 Kingdom of Saudi Arabia
+                <div> Phone: +966 11 2926043</div>
+                <div><a href="mailto:enquiry@dnetsoft.com" target="_blank">E-mail: enquiry@dnetsoft.com</a></div>
+              </div>
+            <?php  } ?>
+
+
+            <div class="md:flex gap-4">
+              <div class="md:w-2/5 text-white font-light text-sm">
+                <div class=" text-base font-semibold text-white">Business Hours:</div>
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Monday</div>
+                    <div class="w-3/5">9.30 am-6.30 pm</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Tuesday</div>
+                    <div class="w-3/5">9.30 am-6.30 pm</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Wednesday</div>
+                    <div class="w-3/5">9.30 am-6.30 pm</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Thursday</div>
+                    <div class="w-3/5">9.30 am-6.30 pm</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Friday</div>
+                    <div class="w-3/5">9.30 am-6.30 pm</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Saturday</div>
+                    <div class="w-3/5">Closed</div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="w-2/5">Sunday</div>
+                    <div class="w-3/5">Closed</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <?php if ($currenUrl === 'property-management-software-dynamics-365-UAE') { ?>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7221.321130187439!2d55.2640284!3d25.1809367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d0b1f76102b%3A0x2fccdc6b94885c5!2sDynamic%20Netsoft%20Technologies%20(FZC)!5e0!3m2!1sen!2sin!4v1729520515375!5m2!1sen!2sin" class="md:w-[400px] md:h-[200px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <?php } else { ?>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7244.36248242707!2d46.7637041!3d24.7892467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd1c6b5969c7%3A0xe7c420a98b25fd3f!2sDynamic%20Netsoft%20Arabia!5e0!3m2!1sen!2sin!4v1729521508296!5m2!1sen!2sin" class="md:w-[400px] md:h-[200px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <?php } ?>
+
+              </div>
             </div>
           </div>
 
-          <div class="space-y-4">
-            <div class="text-base font-semibold text-white">SOLUTIONS</div>
-            <div class=" flex flex-col footer-link">
-              <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
-              <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
-              <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
-              <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
-              <a href="<?php echo base_url() ?>/investment-portfolio-management-software-dynamics">Investment Portfolio Management</a>
-              <a href="<?php echo base_url() ?>/dynamics-365-HR-payroll">AXOnePay</a>
-              <a href="<?php echo base_url() ?>/annata-365">Annata 365</a>
-            </div>
-          </div>
-
-          <div class="space-y-4">
-            <div class="text-base font-semibold text-white">SERVICES</div>
-            <div class=" flex flex-col footer-link">
-              <a href="<?php echo base_url() ?>/microsoft-dynamics-365-implementation">ERP Implementation</a>
-              <a href="<?php echo base_url() ?>/dynamics-365-finance-operations-upgrade-services"> Upgrade</a>
-              <a href="<?php echo base_url() ?>/microsoft-dynamics-365-support">Support</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="flex  flex-col-reverse lg:flex-row justify-between items-center py-6 lg:py-0 ">
-        <div class=" text-sm text-white font-light text-center lg:text-left ">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
-        <div class=" flex flex-col space-y-4">
-          <div class="text-xl text-white font-bold pb-2 md:pb-0">CONNECT WITH US</div>
-          <div class="flex justify-between pb-3 md:pb-0">
-            <a target="_blank" href="https://www.facebook.com/DynamicNetSoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/facebook.svg" alt="Facebook"></a>
-            <a target="_blank" href="https://www.instagram.com/dynamicnetsoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/instagram.svg" alt="Instagram"></a>
-            <a target="_blank" href="https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/linkedin.svg" alt="Linkedin"></a>
-            <a target="_blank" href="https://twitter.com/dynamicnet_soft" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/twitter.svg" alt="Twitter"></a>
-            <a target="_blank" href="https://www.youtube.com/c/DynamicNetsoftChennai" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/youtube.svg" alt="Youtube"></a>
-          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--footer localtion -->
-  <div class="bg-primary bg-footer bg-cover ">
-    <div class="max-w-container big-screen mx-auto py-16 space-y-6">
-      <div class=" lg:flex justify-between w-full ">
-        <div class="w-1/2">
+  <?php } else { ?>
+
+    <!-- footer -->
+    <div class="bg-primary bg-footer bg-cover ">
+      <div class="max-w-container big-screen mx-auto py-16 space-y-6">
+        <div class=" lg:flex justify-between w-full hidden ">
           <div class=" w-1/3">
             <a href="<?php echo base_url() ?>"> <img src="<?php echo base_url() ?>/images/footer-dnt-logo-white.svg" alt=""></a>
           </div>
-
           <div class="flex-1 flex justify-evenly">
             <div class="space-y-4">
               <div class="text-base font-semibold text-white">COMPANY OVERVIEW</div>
@@ -729,9 +816,23 @@ switch ($currenUrl) {
 
           </div>
         </div>
+
+        <div class="flex  flex-col-reverse lg:flex-row justify-between items-center py-6 lg:py-0 ">
+          <div class=" text-sm text-white font-light text-center lg:text-left ">Copyright © All Rights Reserved by Dynamic Netsoft Technologies Pvt Ltd</div>
+          <div class=" flex flex-col space-y-4">
+            <div class="text-xl text-white font-bold pb-2 md:pb-0">CONNECT WITH US</div>
+            <div class="flex justify-between pb-3 md:pb-0">
+              <a target="_blank" href="https://www.facebook.com/DynamicNetSoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/facebook.svg" alt="Facebook"></a>
+              <a target="_blank" href="https://www.instagram.com/dynamicnetsoft/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/instagram.svg" alt="Instagram"></a>
+              <a target="_blank" href="https://www.linkedin.com/company/dynamic-netsoft-technologies-private-limited/" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/linkedin.svg" alt="Linkedin"></a>
+              <a target="_blank" href="https://twitter.com/dynamicnet_soft" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/twitter.svg" alt="Twitter"></a>
+              <a target="_blank" href="https://www.youtube.com/c/DynamicNetsoftChennai" rel="nofollow"><img src="<?php echo base_url() ?>/images/home/youtube.svg" alt="Youtube"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  <?php } ?>
 
   <button @click="openCommonDownloadForm" class="fixed z-50 lg:top-1/2  mx-auto flex justify-center hover:bg-yellow-500  btn btn-yellow lg:rotate-90  text-center lg:-right-16  ">Download Brochure </button>
   <div class="fixed lg:hidden bottom-0 z-50 flex items-center justify-between w-full bg-secondary">
