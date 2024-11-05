@@ -651,6 +651,8 @@ switch ($currenUrl) {
                 <div class="text-base font-semibold text-white">SOLUTIONS</div>
                 <div class=" flex flex-col footer-link">
                   <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
+                  <a href="<?php echo base_url() ?>/property-management-software-dynamics-365-UAE">Property Management Software UAE</a>
+                  <a href="<?php echo base_url() ?>/property-management-software-dynamics-365-saudi-arabia">Property Management Software KSA</a>
                   <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
                   <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
                   <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
@@ -796,6 +798,8 @@ switch ($currenUrl) {
               <div class="text-base font-semibold text-white">SOLUTIONS</div>
               <div class=" flex flex-col footer-link">
                 <a href="<?php echo base_url() ?>/property-management-software-dynamics-365">RealEstatePro</a>
+                <a href="<?php echo base_url() ?>/property-management-software-dynamics-365-UAE">Property Management Software UAE</a>
+                <a href="<?php echo base_url() ?>/property-management-software-dynamics-365-saudi-arabia">Property Management Software KSA</a>
                 <a href="<?php echo base_url() ?>/contract-management-software-dynamics-365">Contract Management</a>
                 <a href="<?php echo base_url() ?>/dynamics-365-bid-management-software"> Bid Management</a>
                 <a href="<?php echo base_url() ?>/treasury-management-software-dynamics"> Treasury Management</a>
